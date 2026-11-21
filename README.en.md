@@ -5,7 +5,7 @@
 <br/>
 <br/>
 
-[简体中文](README.md) · **English** · [🌐 Interactive Product Website & HD Video](https://chongyangzhang92-hub.github.io/Sol-Next/) · [📊 Deep Comparison vs Mika](docs/guides/COMPARISON_WITH_MIKA.md) · [🔑 BYOK Setup Guide](docs/guides/BYOK_SETUP.md)
+[简体中文](README.md) · **English** · [🌐 Interactive Product Website & HD Video](https://chongyangzhang92-hub.github.io/Sol-Next/) · [🤖 `llms.txt`](llms.txt) · [🛠 `AGENTS.md`](AGENTS.md) · [📊 Deep Comparison vs Mika](docs/guides/COMPARISON_WITH_MIKA.md) · [🔑 BYOK Setup Guide](docs/guides/BYOK_SETUP.md)
 
 <br/>
 
@@ -56,6 +56,28 @@ Mika pioneered the hidden Android `VirtualDisplay` phone agent paradigm, compute
 1. **Install APK**: Grab `Sol-Next-v6.3.0-public-arm64.apk` from [Releases](https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest).
 2. **Enter Your Own API Key (BYOK)**: Open the **Control & Settings** tab → pick a preset (`DeepSeek`, `OpenAI`, `OpenRouter`, `SiliconFlow`, `Qwen`) or custom Base URL → paste your API Key → tap **Save & Test**.
 3. **Optional — Enable 1:1 Background Virtual Phone**: Tap **Auto-Pair Wireless Debugging** to unlock the 1:1 Virtual Display, zero-animation turbo, zero-accessibility tree direct read, and AI phone call audio bridge without needing a PC.
+
+## 🤖 Agent-Ready: Zero-Hallucination CLI (`--json`) & Stdio MCP Server
+
+Sol Next ships with [`llms.txt`](llms.txt), [`llms-full.txt`](llms-full.txt), [`AGENTS.md`](AGENTS.md), [`CLAUDE.md`](CLAUDE.md), [`.env.example`](.env.example), a zero-dependency Python 3.9+ CLI, and a native MCP Server:
+
+```bash
+python3 scripts/sol-cli.py status --json
+python3 scripts/sol-cli.py install --verify-sha256 --grant-permissions --json
+python3 scripts/sol-cli.py start-helper --json
+python3 scripts/sol-cli.py run --intent "Open Settings and check battery status" --json
+```
+
+```json
+{
+  "mcpServers": {
+    "sol-next": {
+      "command": "python3",
+      "args": ["/path/to/Sol-Next/mcp/sol_mcp_server.py"]
+    }
+  }
+}
+```
 
 ## 📄 License
 

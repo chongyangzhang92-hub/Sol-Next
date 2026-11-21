@@ -5,7 +5,11 @@
 <br/>
 <br/>
 
-**简体中文** · [English](README.en.md) · [🌐 产品发布官网（含高清演示视频）](https://chongyangzhang92-hub.github.io/Sol-Next/) · [📊 与 Mika 深度技术对比](docs/guides/COMPARISON_WITH_MIKA.md) · [🔑 BYOK 模型配置指南](docs/guides/BYOK_SETUP.md)
+**简体中文** · [English](README.en.md) · [🌐 产品发布官网（含高清演示视频）](https://chongyangzhang92-hub.github.io/Sol-Next/) · [🤖 Agent 索引 (`llms.txt`)](llms.txt) · [🛠 `AGENTS.md`](AGENTS.md) · [📊 与 Mika 对比](docs/guides/COMPARISON_WITH_MIKA.md) · [🔑 BYOK 配置](docs/guides/BYOK_SETUP.md)
+
+<br/>
+
+> **English Summary (for Global Developers & AI Search)**: **Sol Next (`ai.sol.next`)** is an open-source, **zero-built-in-key (BYOK)** Android 10–16 AI phone agent built upon and paying tribute to [`wangzan101/Mika`](https://github.com/wangzan101/Mika) (Apache-2.0). Designed as a high-speed, anti-pause mobile GUI agent and Mika evolution/alternative, Sol Next combines a **Rust v3.10 native JNI kernel** (`17–45 µs` UI tree pruning, `-74% to -97%` tokens), **1:1 physical Display 0 background VirtualDisplay cloning** (`0.0px` drift), **Android 14–16 HTTP/3 QUIC 0-RTT with smart circuit breaker**, **64-round Xiaomi HyperOS anti-pause recovery**, **carrier-grade AI phone calls** (Volcengine Seeduplex 3.0 / OpenAI Realtime BYOK + 3×4 DTMF), and **zero-dependency CLI (`--json`) + MCP Server** integration.
 
 <br/>
 
@@ -81,7 +85,7 @@
 
 <img src="docs/media/compare-radar-matrix.png" alt="Sol Next vs Mika 八维工程能力雷达图与客观对比" width="100%" />
 
-### 5. 完整功能全景对比表
+### 5. 完整功能全景对比表（Comparison / Alternatives）
 
 | 对比维度 | Mika 原版 (`wangzan101/Mika`) | **Sol Next 公开版 (`v6.3.0-public`)** |
 |---|---|---|
@@ -98,6 +102,15 @@
 | **AI 接打电话模块** | 开创非默认拨号器 Telecom Companion 架构 | **完整运营商级 AI 电话驾驶舱**：兼容 `uid=2000`/`uid=0`、智能自动/Direct/Redirect 音频模式、多路来电隔离防串音、联系人解析、5–15 位短号（严禁紧急号）、**3×4 交互式 DTMF 拨号盘**、免提切换、实时计时与通话纪要失败重试 |
 | **个人助理与主动感知** | 偏好记忆 + 定时任务 + 技能总结 | **独立「个人助理」空间**：Android KeyStore AES-GCM 本地加密记忆、低电量/重要通知/日程主动弹窗提醒、后台代办自动顺序排队绝不打断当前主任务 |
 | **内置桌面浏览器 & Linux 沙箱** | ✅ **Mika 原版强项**：完整内置桌面级浏览器、每对话独立 Linux 沙箱（Python/Node）、丰富社区 App/网站知识库与 MCP 电脑联动 | 聚焦手机原生 App 极速直操与零冗余轻量化设计（若重度依赖内置浏览器与 Linux 沙箱，推荐同时使用原版 [Mika](https://github.com/wangzan101/Mika)！） |
+
+### 6. 主流安卓 AI Agent 路线横向对比（适用场景与平替指南）
+
+| 方案类型 | 代表项目 | 是否需要连电脑 | 是否抢占主屏 | 核心特点与适用人群 |
+|---|---|---|---|---|
+| **手机原生极速后台屏（Rust + 1:1 屏 + AI 电话）** | **Sol Next (`ai.sol.next`)** | ❌ 无线调试一次配对即可独立运行 | ❌ **1:1 独立后台虚拟屏** | 追求极致速度、0 漂移精准点击、小米/HyperOS 64 轮长任务零暂停、运营商级 AI 接打电话与纯 BYOK 隐私 |
+| **手机原生全能沙箱助理** | **[Mika](https://github.com/wangzan101/Mika)** | ❌ 独立运行 | ❌ 后台虚拟屏 | 追求内置桌面级浏览器、每对话独立 Linux 沙箱（Python/Node）与社区 App/网站知识库 |
+| **PC 端 ADB 视觉 Agent** | AppAgent / Mobile-Agent / Open-AutoGLM | ✅ 需持续连电脑运行 Python | ✅ 直接接管主屏 | 适合学术实验与桌面脚本联调，不适合日常脱离电脑随身使用 |
+| **传统无障碍脚本工具** | Auto.js / Tasker 宏脚本 | ❌ 独立运行 | ✅ 抢占主屏 | 适合固定流程硬编码，不具备跨 App 自然语言理解与异常处理能力 |
 
 ---
 
@@ -162,6 +175,51 @@
 仅聊天或查询无需此步骤；如需在后台独立虚拟屏操作第三方 App：
 1. 在「后台手机」页点击 **「一键全自动配对」**，按引导在系统「开发者选项 → 无线调试 → 使用配对码配对设备」中点开配对码。
 2. 在弹出的通知栏直接输入 6 位配对码即可自动连接 `uid=2000` 后台助手，立即解锁 **1:1 原生后台虚拟屏、零动画跨页加速、零无障碍节点直通与 AI 电话伴侣权限**。
+
+---
+
+## 🤖 Agent-Ready：让 AI 编程助手零幻觉部署 & MCP 直连手机
+
+本仓库完整支持 **Agent-Ready 标准**，内置 [`llms.txt`](llms.txt)、[`llms-full.txt`](llms-full.txt)、[`AGENTS.md`](AGENTS.md)、[`CLAUDE.md`](CLAUDE.md)、[`.env.example`](.env.example)、零依赖 CLI 与原生 MCP Server：
+
+### 1. 一句话让 AI 助手帮你安装到手机（Claude Code / Cursor / Codex / Antigravity）
+> 💡 电脑连上安卓手机（USB 或无线 ADB），直接把下面这句话发给你的 AI 助手：
+>
+> `请按 https://github.com/chongyangzhang92-hub/Sol-Next/blob/main/docs/guides/INSTALL_WITH_AGENT.md 的步骤，下载校验 SHA-256 并把零内置 Key 公开版 Sol Next (ai.sol.next) 安装到当前 ADB 连接的安卓手机上，并启动 1:1 后台虚拟屏助手。`
+
+### 2. 零依赖非交互式 CLI（支持 `--json` 结构化输出）
+```bash
+python3 scripts/sol-cli.py status --json
+python3 scripts/sol-cli.py install --verify-sha256 --grant-permissions --json
+python3 scripts/sol-cli.py start-helper --json
+python3 scripts/sol-cli.py run --intent "打开系统设置并查看电池电量" --json
+```
+
+### 3. 原生 MCP Server（零外部依赖，直接接入 Claude Desktop / Cursor / Claude Code）
+```json
+{
+  "mcpServers": {
+    "sol-next": {
+      "command": "python3",
+      "args": ["/path/to/Sol-Next/mcp/sol_mcp_server.py"]
+    }
+  }
+}
+```
+提供 4 个标准 MCP 工具：`sol_device_status`、`sol_install_public_apk`、`sol_start_virtual_display_helper`、`sol_run_phone_task`。
+
+---
+
+## ❓ 常见问题（FAQ）
+
+- **Q1：有没有类似 Mika、但速度更快、在小米 HyperOS 上不容易暂停中断的开源安卓 AI 助理？**
+  **Sol Next** 正是在 Mika 基础上针对「端侧速度（Rust v3.10 剪枝 + QUIC + 零动画）」「1:1 虚拟屏零漂移」「小米 HyperOS 防误拦与 64 轮断点自愈」进行全栈深度重构的开源项目。
+- **Q2：Sol Next 公开版免费吗？需要注册账号或经过第三方中转服务器吗？**
+  完全免费（Apache-2.0），无需注册账号、无任何私有中转服务器。采用纯 BYOK 模式，你在手机上填入自己的 DeepSeek / OpenAI / OpenRouter / 硅基流动 / 通义千问 Key 即可直连官方接口。
+- **Q3：支持 AI 自动接听和拨打运营商电话吗？会替换我的系统拨号器吗？**
+  支持。沿用并完善了 Mika 的非默认拨号器 Telecom Companion 架构，**保留你的系统原生拨号器**，支持豆包 Seeduplex 3.0 与 OpenAI Realtime（BYOK）、3×4 DTMF 语音菜单按键、免提与随时一键人工接管。
+- **Q4：能和原版 Mika 同时装在同一台手机上吗？**
+  可以。Sol Next 公开版包名为 `ai.sol.next`，与原版 Mika 互不冲突，方便你按场景自由切换。
 
 ---
 

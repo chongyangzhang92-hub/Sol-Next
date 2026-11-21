@@ -3,8 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sol Next v6.3 公开版 — 致敬并深度重构自 Mika 的新一代极速安卓 AI 助理</title>
-  <meta name="description" content="Sol Next v6.3 Public Edition：在 wangzan101/Mika 基础上以 Rust v3.10 原生内核、1:1 物理屏克隆、HTTP/3 QUIC、64 轮防中断自愈与运营商级 AI 电话重构的纯公开零内置 Key 安卓 AI 助理。" />
+  <title>Sol Next v6.3 Public Edition — Ultra-Fast Android AI Phone Agent Built Upon Mika (Rust + 1:1 VirtualDisplay + BYOK)</title>
+  <meta name="description" content="Sol Next v6.3 Public Edition: Open-source, zero-built-in-key (BYOK) Android 10–16 AI phone assistant built upon wangzan101/Mika (Apache-2.0) with Rust v3.10 UI pruning, 1:1 native background VirtualDisplay cloning, HTTP/3 QUIC 0-RTT, 64-round Xiaomi HyperOS anti-pause recovery, carrier AI phone calls & MCP Server." />
+  <meta name="keywords" content="Sol Next, Mika alternative, Android AI agent, mobile GUI agent, Rust JNI, VirtualDisplay, BYOK, DeepSeek, Xiaomi HyperOS, AI phone call, MCP server, llms.txt, open source" />
+  <link rel="canonical" href="https://chongyangzhang92-hub.github.io/Sol-Next/" />
+  <link rel="alternate" type="text/plain" title="LLMs.txt Index" href="llms.txt" />
+  <link rel="alternate" type="text/plain" title="LLMs Full Documentation" href="llms-full.txt" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sol Next v6.3 — Ultra-Fast Android AI Phone Agent (Built Upon Mika)" />
+  <meta property="og:description" content="Rust v3.10 UI pruning (-74%~-97%), 1:1 native Display 0 background VirtualDisplay (0.0px drift), HTTP/3 QUIC, 64-round anti-pause engine, carrier AI calling & 100% BYOK zero built-in API keys." />
+  <meta property="og:url" content="https://chongyangzhang92-hub.github.io/Sol-Next/" />
+  <meta property="og:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/hero-banner.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sol Next v6.3 Public Edition — Android AI Phone Agent Built Upon Mika" />
+  <meta name="twitter:description" content="Zero built-in API keys (BYOK), Rust v3.10 native kernel, 1:1 native background VirtualDisplay, HTTP/3 QUIC & carrier AI calling." />
+  <meta name="twitter:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/hero-banner.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Sol Next (Public Edition)",
+        "alternateName": ["Sol Next Android AI Agent", "Sol Next BYOK"],
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Android 10 - Android 16 (API 29-36)",
+        "softwareVersion": "6.3.0-public",
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "url": "https://chongyangzhang92-hub.github.io/Sol-Next/",
+        "codeRepository": "https://github.com/chongyangzhang92-hub/Sol-Next",
+        "downloadUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v6.3.0-public/Sol-Next-v6.3.0-public-arm64.apk",
+        "isBasedOn": "https://github.com/wangzan101/Mika",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Rust v3.10 native JNI UI tree pruning (-74% to -97% tokens in 17-45 microseconds)",
+          "1:1 physical Display 0 background VirtualDisplay cloning with 0.0px tap accuracy",
+          "Android 14-16 Chromium HTTP/3 QUIC 0-RTT transport with smart circuit breaker",
+          "64-round anti-pause resilience and Xiaomi HyperOS compatibility",
+          "Carrier-grade AI phone call cockpit preserving native dialer with 3x4 DTMF",
+          "100% BYOK zero built-in API keys (DeepSeek, OpenAI, OpenRouter, SiliconFlow, Qwen)",
+          "Zero-dependency non-interactive CLI (--json) and stdio MCP Server"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Sol Next and how does it compare to Mika?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sol Next is an open-source, zero-built-in-key (BYOK) Android 10-16 AI phone agent built upon wangzan101/Mika (Apache-2.0). While honoring Mika's pioneering background VirtualDisplay and companion call architecture, Sol Next adds a Rust v3.10 native JNI kernel, 1:1 physical Display 0 cloning (0.0px drift), HTTP/3 QUIC with smart circuit breaker, 64-round Xiaomi HyperOS anti-pause resilience, and a complete carrier AI phone cockpit. Original Mika remains ideal if you prioritize its built-in desktop browser and per-chat Linux sandbox."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Sol Next Public Edition include built-in API keys or require a private server?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Sol Next Public Edition (package ai.sol.next) ships with zero built-in API keys and zero private relay servers. Users enter their own DeepSeek, OpenAI, OpenRouter, SiliconFlow, Qwen, or custom OpenAI-compatible API key directly on-device."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
       --bg: #070b16;
