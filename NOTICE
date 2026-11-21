@@ -1,0 +1,17 @@
+Sol Next (Public Edition)
+Copyright 2026 Sol Next Contributors (chongyangzhang92-hub)
+
+This product includes design inspiration, architectural foundations, and modified
+components derived from Mika:
+
+  Mika
+  Copyright 2026 wangzan101
+  https://github.com/wangzan101/Mika
+  Licensed under the Apache License, Version 2.0
+
+We sincerely thank @wangzan101 and the Mika open-source community for pioneering
+the Android background VirtualDisplay AI assistant and non-UI Telecom companion
+call architecture. Sol Next builds upon that foundation with a Rust v3.10 native
+JNI kernel, 1:1 physical display cloning, HTTP/3 QUIC 0-RTT transport, anti-pause
+long-task resilience, and a full BYOK (Bring Your Own Key) public distribution
+containing zero embedded API keys.

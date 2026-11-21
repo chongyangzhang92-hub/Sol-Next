@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sol Next v6.3 公开版 — 致敬并深度重构自 Mika 的新一代极速安卓 AI 助理</title>
+  <meta name="description" content="Sol Next v6.3 Public Edition：在 wangzan101/Mika 基础上以 Rust v3.10 原生内核、1:1 物理屏克隆、HTTP/3 QUIC、64 轮防中断自愈与运营商级 AI 电话重构的纯公开零内置 Key 安卓 AI 助理。" />
+  <style>
+    :root {
+      --bg: #070b16;
+      --bg2: #0d1426;
+      --card: rgba(19, 28, 50, 0.78);
+      --border: rgba(96, 130, 196, 0.24);
+      --ink: #f4f7ff;
+      --ink2: #b4c3e0;
+      --ink3: #7e90b8;
+      --cyan: #38bdf8;
+      --emerald: #34d399;
+      --indigo: #818cf8;
+      --amber: #fbbf24;
+      --radius: 22px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+      background:
+        radial-gradient(920px 540px at 12% -8%, rgba(37, 99, 235, 0.24), transparent 70%),
+        radial-gradient(840px 520px at 88% 8%, rgba(16, 185, 129, 0.18), transparent 70%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+      color: var(--ink);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+    /* Top Navigation */
+    header {
+      position: sticky; top: 0; z-index: 40;
+      backdrop-filter: blur(18px);
+      background: rgba(7, 11, 22, 0.76);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px; gap: 16px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 10px;
+      font-weight: 700; font-size: 19px; color: var(--ink);
+    }
+    .brand-dot {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--cyan), var(--emerald));
+      display: grid; place-items: center; color: #051120; font-weight: 900; font-size: 14px;
+    }
+    .nav-links { display: flex; gap: 22px; font-size: 14px; color: var(--ink2); flex-wrap: wrap; }
+    .nav-links a { color: var(--ink2); font-weight: 500; }
+    .nav-links a:hover { color: var(--cyan); text-decoration: none; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 12px 22px; border-radius: 999px; font-weight: 600; font-size: 15px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+      cursor: pointer; border: 1px solid transparent;
+    }
+    .btn:hover { transform: translateY(-1px); text-decoration: none; }
+    .btn-primary {
+      background: linear-gradient(135deg, #0ea5e9, #10b981);
+      color: #04131f; box-shadow: 0 10px 28px rgba(14, 165, 233, 0.28);
+    }
+    .btn-secondary {
+      background: rgba(30, 41, 68, 0.85); color: var(--ink);
+      border-color: rgba(148, 163, 184, 0.28);
+    }
+    .btn-sm { padding: 8px 16px; font-size: 13.5px; }
+
+    /* Hero */
+    .hero { padding: 68px 0 56px; text-align: center; }
+    .pills { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+    .pill {
+      padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 600;
+      border: 1px solid var(--border); background: rgba(19, 28, 50, 0.8); color: var(--ink2);
+    }
+    .pill.ok { color: var(--emerald); border-color: rgba(52, 211, 153, 0.4); background: rgba(16, 185, 129, 0.12); }
+    .pill.tribute { color: #a5b4fc; border-color: rgba(129, 140, 248, 0.42); background: rgba(99, 102, 241, 0.14); }
+    h1 {
+      font-size: clamp(36px, 5.4vw, 64px); line-height: 1.12; font-weight: 800;
+      letter-spacing: -0.02em; margin-bottom: 18px;
+    }
+    .grad {
+      background: linear-gradient(120deg, #f8fafc 15%, var(--cyan) 55%, var(--emerald) 95%);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .hero-sub {
+      max-width: 820px; margin: 0 auto 30px; font-size: clamp(16px, 2vw, 20px); color: var(--ink2);
+    }
+    .hero-cta { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-bottom: 42px; }
+
+    /* Video Stage */
+    .video-shell {
+      max-width: 980px; margin: 0 auto;
+      padding: 14px; border-radius: 26px;
+      background: linear-gradient(160deg, rgba(56, 189, 248, 0.2), rgba(52, 211, 153, 0.12));
+      border: 1px solid rgba(56, 189, 248, 0.34);
+      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.55);
+    }
+    .video-shell video {
+      width: 100%; border-radius: 16px; display: block; background: #050914;
+    }
+    .video-caption {
+      margin-top: 12px; font-size: 13.5px; color: var(--ink3);
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding: 0 8px;
+    }
+
+    /* Metrics Strip */
+    .metrics {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px; margin-top: 40px;
+    }
+    .metric-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+      padding: 22px; text-align: left;
+    }
+    .metric-val { font-size: 30px; font-weight: 800; margin-bottom: 6px; }
+    .metric-lbl { font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .metric-desc { font-size: 13.5px; color: var(--ink2); }
+
+    /* Sections */
+    section { padding: 68px 0; }
+    .sec-head { margin-bottom: 34px; }
+    .sec-tag {
+      display: inline-block; font-size: 12.5px; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--cyan); margin-bottom: 8px;
+    }
+    .sec-head h2 { font-size: clamp(26px, 3.6vw, 40px); font-weight: 800; margin-bottom: 10px; }
+    .sec-head p { color: var(--ink2); font-size: 16.5px; max-width: 820px; }
+
+    /* Tribute Banner */
+    .tribute-box {
+      background: linear-gradient(135deg, rgba(49, 46, 129, 0.34), rgba(15, 23, 42, 0.88));
+      border: 1px solid rgba(129, 140, 248, 0.45);
+      border-radius: var(--radius); padding: 32px;
+      display: grid; grid-template-columns: 1.5fr 1fr; gap: 28px; align-items: center;
+    }
+    @media (max-width: 840px) { .tribute-box { grid-template-columns: 1fr; } }
+    .tribute-box h3 { font-size: 24px; margin-bottom: 10px; color: #e0e7ff; }
+    .tribute-box p { color: var(--ink2); font-size: 15px; margin-bottom: 10px; }
+    .tribute-side {
+      background: rgba(15, 23, 42, 0.72); border: 1px solid rgba(129, 140, 248, 0.3);
+      border-radius: 16px; padding: 20px; font-size: 14px; color: var(--ink2);
+    }
+    .tribute-side strong { color: var(--ink); }
+
+    /* Interactive Comparison Tabs */
+    .tab-bar {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;
+    }
+    .tab-btn {
+      padding: 10px 18px; border-radius: 999px; font-size: 14px; font-weight: 600;
+      background: rgba(19, 28, 50, 0.85); color: var(--ink2);
+      border: 1px solid var(--border); cursor: pointer; transition: all 0.16s ease;
+    }
+    .tab-btn.active {
+      background: rgba(56, 189, 248, 0.18); color: var(--cyan);
+      border-color: var(--cyan);
+    }
+    .chart-stage {
+      background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 16px; box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
+    }
+    .chart-stage img { width: 100%; border-radius: 14px; display: block; }
+    .chart-panel { display: none; }
+    .chart-panel.active { display: block; }
+
+    /* Comparison Table */
+    .table-wrap {
+      overflow-x: auto; margin-top: 32px;
+      background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+    th, td { padding: 15px 18px; text-align: left; border-bottom: 1px solid rgba(96, 130, 196, 0.14); vertical-align: top; }
+    th { background: rgba(15, 23, 42, 0.85); font-weight: 700; color: var(--ink); }
+    tr:last-child td { border-bottom: none; }
+    td:first-child { font-weight: 700; color: var(--ink); white-space: nowrap; }
+    .col-sol { color: #d8f3ff; }
+    .badge-win { color: var(--emerald); font-weight: 700; }
+
+    /* Screenshots Gallery */
+    .gallery {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px;
+    }
+    .shot-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 22px;
+      padding: 18px; text-align: center;
+    }
+    .shot-card img {
+      width: 100%; max-width: 270px; border-radius: 20px;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.42); margin-bottom: 14px;
+    }
+    .shot-card h4 { font-size: 16px; margin-bottom: 6px; }
+    .shot-card p { font-size: 13.5px; color: var(--ink2); }
+
+    /* Steps / BYOK */
+    .steps {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px;
+    }
+    .step-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 24px;
+    }
+    .step-num {
+      width: 34px; height: 34px; border-radius: 10px;
+      background: rgba(56, 189, 248, 0.16); color: var(--cyan);
+      display: grid; place-items: center; font-weight: 800; margin-bottom: 14px;
+    }
+    .step-card h4 { font-size: 17px; margin-bottom: 8px; }
+    .step-card p { font-size: 14px; color: var(--ink2); }
+
+    /* Download Box */
+    .download-box {
+      background: linear-gradient(135deg, rgba(14, 165, 233, 0.16), rgba(16, 185, 129, 0.14));
+      border: 1px solid rgba(52, 211, 153, 0.42);
+      border-radius: 28px; padding: 40px 32px; text-align: center;
+    }
+    .download-box h2 { font-size: clamp(26px, 3.4vw, 38px); margin-bottom: 12px; }
+    .download-box p { color: var(--ink2); max-width: 720px; margin: 0 auto 24px; }
+    .sha {
+      display: inline-block; margin-top: 18px; padding: 10px 16px; border-radius: 12px;
+      background: rgba(7, 11, 22, 0.72); border: 1px solid var(--border);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; color: var(--ink2);
+      word-break: break-all;
+    }
+
+    footer {
+      border-top: 1px solid var(--border); padding: 36px 0 48px;
+      text-align: center; color: var(--ink3); font-size: 13.5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-dot">✦</div>
+        <span>Sol Next <span style="color:var(--cyan);font-size:13px;font-weight:600">v6.3 公开版</span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#demo-video">视频演示</a>
+        <a href="#tribute">致敬 Mika</a>
+        <a href="#compare">vs Mika 对比</a>
+        <a href="#gallery">实机界面</a>
+        <a href="#quickstart">30 秒上手</a>
+        <a href="https://github.com/chongyangzhang92-hub/Sol-Next" target="_blank">GitHub</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest" target="_blank">下载无 Key 公开版</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="pills">
+          <span class="pill ok">🔓 100% 零内置 API Key（BYOK 纯公开版）</span>
+          <span class="pill tribute">🙏 致敬并基于 wangzan101/Mika 深度重构 · Apache-2.0</span>
+          <span class="pill">🦀 Rust v3.10 原生内核 · Android 10–16</span>
+        </div>
+        <h1><span class="grad">站在 Mika 的肩膀上，<br/>重构手机 AI 助理的速度与稳定性极限</span></h1>
+        <p class="hero-sub">
+          Sol Next 是在开源项目 Mika 的启发与基础上打造的新一代安卓 AI 助理：以 <strong>Rust 原生剪枝内核</strong>、<strong>1:1 物理屏克隆后台虚拟手机</strong>、<strong>HTTP/3 QUIC 0-RTT</strong>、<strong>64 轮防中断自愈引擎</strong> 与 <strong>运营商级 AI 接打电话驾驶舱</strong>，带来零偏移、零无故暂停的旗舰体验。
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest" target="_blank">⬇ 下载 Sol Next v6.3 公开版 APK</a>
+          <a class="btn btn-secondary" href="#compare">📊 查看与 Mika 全维对比图</a>
+          <a class="btn btn-secondary" href="https://github.com/wangzan101/Mika" target="_blank">⭐ 致敬 Mika 原仓库</a>
+        </div>
+
+        <!-- Video Demo Player -->
+        <div id="demo-video" class="video-shell">
+          <video controls autoplay muted loop playsinline poster="media/hero-banner.png">
+            <source src="media/sol-next-demo.mp4" type="video/mp4" />
+            您的浏览器暂不支持 HTML5 视频，请直接点击下方下载 MP4 观看。
+          </video>
+          <div class="video-caption">
+            <span>🎬 Android 16 实机录屏：1:1 后台虚拟屏 · 26 步零暂停执行 · 全脑中枢 · AI 电话 · BYOK 零密钥配置</span>
+            <a href="media/sol-next-demo.mp4" download>下载高清 MP4 (1.4 MB)</a>
+          </div>
+        </div>
+
+        <!-- Key Metrics -->
+        <div class="metrics">
+          <div class="metric-card">
+            <div class="metric-val" style="color:var(--cyan)">17–45 μs</div>
+            <div class="metric-lbl">Rust v3.10 端侧极限剪枝</div>
+            <div class="metric-desc">UI 控件树体积压缩 -74% ~ -97%，System-0 BM25 路由仅 51 μs（0 Token）</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val" style="color:var(--emerald)">1:1 · 0.0px</div>
+            <div class="metric-lbl">原生手机屏像素级复刻</div>
+            <div class="metric-desc">100% 对齐 Display 0 分辨率与 DPI，injectTapPx 与浮点直投零漂移</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val" style="color:var(--indigo)">64 轮零暂停</div>
+            <div class="metric-lbl">长任务防中断自愈体系</div>
+            <div class="metric-desc">根治超时伪取消、QUIC 黑洞、小米设置误拦，支持自动断点续跑</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val" style="color:var(--amber)">0 内置 Key</div>
+            <div class="metric-lbl">纯粹公开 · 隐私留存本机</div>
+            <div class="metric-desc">支持 DeepSeek / OpenAI / OpenRouter / 硅基流动 / 通义千问一键直连</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tribute Section -->
+    <section id="tribute">
+      <div class="container">
+        <div class="tribute-box">
+          <div>
+            <span class="sec-tag" style="color:#a5b4fc">TRIBUTE &amp; ATTRIBUTION · 致敬开源先驱</span>
+            <h3>真诚致敬 Mika 原作者 @wangzan101</h3>
+            <p>
+              <strong>Sol Next</strong> 是在优秀开源项目 <a href="https://github.com/wangzan101/Mika" target="_blank"><strong>wangzan101/Mika</strong></a>（Apache-2.0，Trendshift GitHub Kotlin 日榜 &amp; 周榜 #1）的启发与架构基础上改造演进而来。
+            </p>
+            <p>
+              Mika 开创了安卓端「独立后台虚拟屏执行」「无线调试免电脑配对」与「保留原生拨号器的伴侣 AI 通话」的优雅范式。Sol Next 在继承这一优秀方向的同时，聚焦真机实战中的延迟、精度、小米 HyperOS 长任务断流与 AI 电话完整度，进行了从 Rust 原生内核到上层体验的全栈深度重构。
+            </p>
+          </div>
+          <div class="tribute-side">
+            <p style="margin-bottom:10px"><strong>开源渊源声明（Apache-2.0）</strong></p>
+            <p style="margin-bottom:10px">• 原项目：<a href="https://github.com/wangzan101/Mika" target="_blank">github.com/wangzan101/Mika</a></p>
+            <p style="margin-bottom:10px">• 原版优势：内置桌面级浏览器、独立 Linux 沙箱（Python/Node）、MCP 电脑联动与丰富 App 知识库</p>
+            <p>• 公开版独立包名：<code>ai.sol.next</code>，可与原版 Mika 同机共存、互不冲突</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Comparison Charts -->
+    <section id="compare">
+      <div class="container">
+        <div class="sec-head">
+          <span class="sec-tag">SOL NEXT VS MIKA · 全维深度对比</span>
+          <h2>4 组工程对比图 + 完整能力矩阵</h2>
+          <p>点击下方标签页自由切换查看架构演进、实测延迟、1:1 虚拟屏精度与 8 维客观能力雷达图。</p>
+        </div>
+
+        <div class="tab-bar" role="tablist">
+          <button class="tab-btn active" onclick="showTab(0, this)">① 六层架构演进对比</button>
+          <button class="tab-btn" onclick="showTab(1, this)">② 性能与延迟实测基准</button>
+          <button class="tab-btn" onclick="showTab(2, this)">③ 1:1 物理屏精度对比</button>
+          <button class="tab-btn" onclick="showTab(3, this)">④ 八维能力客观雷达图</button>
+        </div>
+
+        <div class="chart-stage">
+          <div class="chart-panel active"><img src="media/compare-architecture.png" alt="六层架构演进对比图" /></div>
+          <div class="chart-panel"><img src="media/compare-benchmark.png" alt="核心性能与延迟实测对比图" /></div>
+          <div class="chart-panel"><img src="media/compare-vdisplay-precision.png" alt="1:1 物理屏精度对比图" /></div>
+          <div class="chart-panel"><img src="media/compare-radar-matrix.png" alt="八维能力客观雷达图" /></div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th style="width:20%">核心维度</th>
+                <th style="width:36%">Mika 原版（wangzan101/Mika）</th>
+                <th style="width:44%">✦ Sol Next v6.3 公开版</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>端侧加速内核</td>
+                <td>Kotlin / JVM 控件树遍历</td>
+                <td class="col-sol"><span class="badge-win">Rust v3.10 原生 JNI</span>：UI 树压缩 -74%~-97%（17–45 μs）、BM25 路由 51 μs、SSE 增量抢跑解析 80 μs</td>
+              </tr>
+              <tr>
+                <td>后台虚拟屏精度</td>
+                <td>开创 VirtualDisplay 隔离运行（缩放尺寸 + 网格换算）</td>
+                <td class="col-sol"><span class="badge-win">1:1 复刻物理主屏 Display 0</span>（分辨率/DPI/刷新率 100% 一致，scale=1.0），<code>injectTapPx</code> 0.0px 零漂移 + <code>TOOL_TYPE_FINGER</code></td>
+              </tr>
+              <tr>
+                <td>网络与弱网恢复</td>
+                <td>标准 HTTP/2 请求模型</td>
+                <td class="col-sol"><span class="badge-win">Android 14–16 原生 HTTP/3 QUIC 0-RTT</span> + 12s 首包看门狗熔断切 H2 + 6 轮退避重试 + 自动断点续跑</td>
+              </tr>
+              <tr>
+                <td>长任务防暂停</td>
+                <td>基础超时与手动继续</td>
+                <td class="col-sol"><span class="badge-win">64 轮防中断自愈</span>：隔离 TimeoutCancellationException 伪取消、进程内 WakeLock+WifiLock 双保活、小米 HyperOS 零误拦与三级返回兜底</td>
+              </tr>
+              <tr>
+                <td>AI 接打电话</td>
+                <td>开创非默认拨号器 Telecom 伴侣框架</td>
+                <td class="col-sol"><span class="badge-win">完整运营商级 AI 电话驾驶舱</span>：豆包 / OpenAI 实时语音（BYOK）、3×4 DTMF 拨号盘、免提切换、多路隔离、随时人工接管与纪要重试</td>
+              </tr>
+              <tr>
+                <td>主动个人助理</td>
+                <td>记忆与定时任务</td>
+                <td class="col-sol"><span class="badge-win">端侧 KeyStore 加密全维感知</span>：重要通知与低电量主动提醒，后台代办顺序排队绝不打断主任务</td>
+              </tr>
+              <tr>
+                <td>内置浏览器 &amp; 沙箱</td>
+                <td><span class="badge-win">Mika 原版优势</span>：内置桌面级浏览器、Linux 沙箱、MCP 联动与社区 App 知识库</td>
+                <td class="col-sol">聚焦原生 App 极速直操与轻量化零冗余（独立包名 <code>ai.sol.next</code>，可与原版 Mika 共存）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real Screenshots Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="sec-head">
+          <span class="sec-tag">REAL DEVICE SCREENSHOTS · 实机界面画廊</span>
+          <h2>Android 16 实拍：纯净无内置 Key、零偏移虚拟屏与全栈驾驶舱</h2>
+          <p>以下所有界面均为 Android 16 (1080×2400 @ 420dpi) 实机运行截屏，所见即所得。</p>
+        </div>
+        <div class="gallery">
+          <div class="shot-card">
+            <img src="media/screen-public-welcome.png" alt="公开版零内置 Key 欢迎页" />
+            <h4>公开版零内置 Key 欢迎页</h4>
+            <p>清晰透明提示不内置任何 API Key，一键直达本机 BYOK 配置。</p>
+          </div>
+          <div class="shot-card">
+            <img src="media/screen-public-byok.png" alt="BYOK 模型配置页" />
+            <h4>30 秒 BYOK 模型配置</h4>
+            <p>内置 DeepSeek / OpenAI / OpenRouter / 硅基流动 / 通义千问预设，保存即测速生效。</p>
+          </div>
+          <div class="shot-card">
+            <img src="media/screen-vdisplay-1to1.png" alt="1:1 物理屏克隆悬浮窗" />
+            <h4>1:1 原生虚拟屏展开触控</h4>
+            <p>实测 1080×2400 @ 420dpi 零缩放，720p 清晰浮窗随时手控接管。</p>
+          </div>
+          <div class="shot-card">
+            <img src="media/screen-26step-task.png" alt="26 步长任务完整闭环" />
+            <h4>26 步自主任务全程零暂停</h4>
+            <p>后台独立翻屏读取系统设备全量信息并输出结构化摘要，主屏零打扰。</p>
+          </div>
+          <div class="shot-card">
+            <img src="media/screen-ai-call-active.png" alt="AI 接打电话实时驾驶舱" />
+            <h4>AI 接打电话驾驶舱 + DTMF</h4>
+            <p>保留原生拨号器，实时计时、静音托管、3×4 语音菜单拨号盘与一键接管。</p>
+          </div>
+          <div class="shot-card">
+            <img src="media/screen-brain-cockpit.png" alt="全脑中枢遥测面板" />
+            <h4>全脑中枢 · Rust/QUIC 遥测</h4>
+            <p>直观查看 HTTP/3 QUIC、Rust 剪枝压缩率、System-0 路由与零动画加速。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 30s Quick Start -->
+    <section id="quickstart">
+      <div class="container">
+        <div class="sec-head">
+          <span class="sec-tag">30-SECOND QUICK START · 三步开用</span>
+          <h2>纯公开零内置 Key，完全掌控在你手中</h2>
+          <p>不需要私有服务器、不需要注册账号，你的 API Key 永远只保存在你的手机本地。</p>
+        </div>
+        <div class="steps">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h4>安装公开版 APK</h4>
+            <p>下载 <code>Sol-Next-v6.3.0-public-arm64.apk</code>（独立包名 <code>ai.sol.next</code>），经零密钥安全审计，不含任何内置凭据。</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h4>填入自有模型 API Key</h4>
+            <p>进入「后台手机」顶部 BYOK 卡片，一键选 DeepSeek / OpenAI / OpenRouter 等预设，填 Key 点击「保存并测速」即可立即使用。</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h4>免电脑开启 1:1 后台虚拟屏</h4>
+            <p>点击「一键全自动配对」完成无线调试配对，瞬间解锁 1:1 后台虚拟手机、零动画加速、零无障碍直通与 AI 电话伴侣。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section id="download">
+      <div class="container">
+        <div class="download-box">
+          <h2>立即体验 Sol Next v6.3 公开版</h2>
+          <p>100% 开源透明 · 零内置 API Key · 零私有中转服务器 · 致敬 <strong>wangzan101/Mika</strong>（Apache-2.0）</p>
+          <div class="hero-cta" style="margin-bottom:0">
+            <a class="btn btn-primary" href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v6.3.0-public/Sol-Next-v6.3.0-public-arm64.apk">⬇ ARM64 推荐版 (85 MB)</a>
+            <a class="btn btn-secondary" href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v6.3.0-public/Sol-Next-v6.3.0-public-universal.apk">⬇ 全架构通用版 (106 MB)</a>
+            <a class="btn btn-secondary" href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest" target="_blank">查看完整 Release 说明</a>
+          </div>
+          <div class="sha">
+            ARM64 SHA-256: 9769f1e181d7cd84b5a8fd09cdcec40884567c901073ed8d80597293b42b9c6d
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p style="margin-bottom:8px">
+        Sol Next Public Edition · Apache-2.0 License · Built upon &amp; sincere tribute to
+        <a href="https://github.com/wangzan101/Mika" target="_blank">wangzan101/Mika</a>
+      </p>
+      <p>纯公开无内置 API 版本 · 数据与密钥 100% 留存本机 · 不推送个人测试渠道更新</p>
+    </div>
+  </footer>
+
+  <script>
+    function showTab(index, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.chart-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.chart-panel')[index].classList.add('active');
+    }
+  </script>
+</body>
+</html>
