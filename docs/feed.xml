@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sol Next — Open-Source Android AI Phone Agent (Built Upon Mika)</title>
+  <subtitle>Ultra-fast BYOK Android 10–16 AI phone agent with Rust v3.10 JNI kernel, 1:1 native background VirtualDisplay, HTTP/3 QUIC 0-RTT, Xiaomi HyperOS anti-pause recovery, carrier AI phone calls, and MCP Server.</subtitle>
+  <link href="https://chongyangzhang92-hub.github.io/Sol-Next/" rel="alternate" type="text/html" />
+  <link href="https://chongyangzhang92-hub.github.io/Sol-Next/feed.xml" rel="self" type="application/atom+xml" />
+  <id>https://chongyangzhang92-hub.github.io/Sol-Next/</id>
+  <updated>2026-11-22T00:00:00Z</updated>
+  <author>
+    <name>chongyangzhang92-hub</name>
+    <uri>https://github.com/chongyangzhang92-hub</uri>
+  </author>
+  <entry>
+    <title>Sol Next v6.3.0 Public Edition (Zero-API-Key BYOK) — Android AI Phone Agent Built Upon Mika</title>
+    <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v6.3.0-public" rel="alternate" type="text/html" />
+    <id>tag:github.com,2026-11-22:chongyangzhang92-hub/Sol-Next/v6.3.0-public</id>
+    <published>2026-11-21T16:40:39Z</published>
+    <updated>2026-11-22T00:00:00Z</updated>
+    <summary type="text">Open-source, zero-built-in-key (BYOK) Android 10–16 AI phone agent paying tribute to wangzan101/Mika (Apache-2.0). Features Rust v3.10 UI pruning (17–45 microseconds, -74% to -97% tokens), 1:1 Display 0 VirtualDisplay cloning (0.0px drift), HTTP/3 QUIC 0-RTT with smart circuit breaker, 64-round Xiaomi HyperOS anti-pause resilience, carrier-grade AI phone calls with 3x4 DTMF, non-interactive CLI (--json), and stdio MCP Server.</summary>
+  </entry>
+</feed>

@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+title: "Sol Next: Ultra-Fast Open-Source BYOK Android AI Phone Agent (Built Upon Mika)"
+message: "If you reference Sol Next in research, benchmarks, or open-source AI agent directories, please cite it using this metadata and also credit wangzan101/Mika."
+type: software
+authors:
+  - alias: chongyangzhang92-hub
+    name-particle: ""
+    family-names: Zhang
+    given-names: Chongyang
+repository-code: "https://github.com/chongyangzhang92-hub/Sol-Next"
+url: "https://chongyangzhang92-hub.github.io/Sol-Next/"
+abstract: >-
+  Sol Next (ai.sol.next) is an open-source, zero-built-in-key (BYOK) Android 10-16
+  AI phone agent built upon and paying tribute to wangzan101/Mika (Apache-2.0).
+  It combines a Rust v3.10 native JNI UI pruning and routing kernel (17-45 us,
+  -74% to -97% tokens), true 1:1 physical Display 0 background VirtualDisplay
+  cloning (0.0px coordinate drift), Android 14-16 HTTP/3 QUIC 0-RTT with smart
+  circuit breaker, 64-round Xiaomi HyperOS anti-pause recovery, carrier-grade AI
+  phone calls, and zero-dependency CLI (--json) and MCP Server integration.
+keywords:
+  - android-ai-agent
+  - mobile-gui-agent
+  - phone-use
+  - mika-alternative
+  - rust-jni
+  - virtual-display
+  - byok
+  - xiaomi-hyperos
+  - mcp-server
+  - llms-txt
+license: Apache-2.0
+version: "6.3.0-public"
+date-released: "2026-11-22"
+references:
+  - type: software
+    title: "Mika"
+    authors:
+      - alias: wangzan101
+    repository-code: "https://github.com/wangzan101/Mika"
+    license: Apache-2.0

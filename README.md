@@ -2,8 +2,7 @@
 
 <img src="docs/media/hero-banner.png" alt="Sol Next v6.3 Public Edition — 致敬并深度重构自 Mika 的新一代极速安卓 AI 助理" width="100%" />
 
-<br/>
-<br/>
+# Sol Next — Android AI Phone Agent（开源极速安卓 AI 手机助理 · 致敬并重构自 Mika）
 
 **简体中文** · [English](README.en.md) · [🌐 产品发布官网（含高清演示视频）](https://chongyangzhang92-hub.github.io/Sol-Next/) · [🤖 Agent 索引 (`llms.txt`)](llms.txt) · [🛠 `AGENTS.md`](AGENTS.md) · [📊 与 Mika 对比](docs/guides/COMPARISON_WITH_MIKA.md) · [🔑 BYOK 配置](docs/guides/BYOK_SETUP.md)
 

@@ -2,8 +2,7 @@
 
 <img src="docs/media/hero-banner.png" alt="Sol Next v6.3 Public Edition — Ultra-Fast Android AI Assistant Built Upon Mika" width="100%" />
 
-<br/>
-<br/>
+# Sol Next — Open-Source BYOK Android AI Phone Agent (Built Upon Mika)
 
 [简体中文](README.md) · **English** · [🌐 Interactive Product Website & HD Video](https://chongyangzhang92-hub.github.io/Sol-Next/) · [🤖 `llms.txt`](llms.txt) · [🛠 `AGENTS.md`](AGENTS.md) · [📊 Deep Comparison vs Mika](docs/guides/COMPARISON_WITH_MIKA.md) · [🔑 BYOK Setup Guide](docs/guides/BYOK_SETUP.md)
 
