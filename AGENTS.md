@@ -1,6 +1,8 @@
 # AGENTS.md — AI Agent Guide for Sol Next (Public Edition)
 
-This repository distributes **Sol Next `v6.3.0-public`** — a zero-built-in-key (BYOK) Android 10–16 AI phone agent built upon and paying tribute to [`wangzan101/Mika`](https://github.com/wangzan101/Mika) (Apache-2.0).
+> Release 7.0.7-public republishes the 6.5.1-public implementation with versionCode 727. Validation for this release covers signing, payload preservation, and Android 16 installation/launch; performance figures below are retained historical documentation.
+
+This repository distributes **Sol Next `v7.0.7-public`** — a zero-built-in-key (BYOK) Android 10–16 AI phone agent built upon and paying tribute to [`wangzan101/Mika`](https://github.com/wangzan101/Mika) (Apache-2.0).
 
 Read this file before installing, automating, documenting, or integrating with Sol Next.
 
@@ -56,7 +58,7 @@ All scripts use **Python 3.9+ standard library only** (`pip install` is NOT requ
 # 1. Inspect connected Android device, package state, and 1:1 VirtualDisplay status
 python3 scripts/sol-cli.py status --json
 
-# 2. Download verified v6.3.0-public ARM64 APK, verify SHA-256, install via ADB & grant permissions
+# 2. Download verified v7.0.7-public ARM64 APK, verify SHA-256, install via ADB & grant permissions
 python3 scripts/sol-cli.py install --verify-sha256 --grant-permissions --json
 
 # 3. Launch Sol Next UI on the connected device
