@@ -1,212 +1,101 @@
 <div align="center">
 
-<a href="https://chongyangzhang92-hub.github.io/Sol-Next/">
-  <img src="docs/media/v801/hero-banner.png" alt="Sol Next 8.0.1 — Grounded Multimodal Android OS Agent" width="100%" />
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.1-public">
+  <img src="docs/media/v901/hero-banner-901.png" alt="Sol Next 9.0.1 — Dawn Orbit Voice-First AI Mobile Agent" width="100%" />
 </a>
 
 <br/><br/>
 
-# ✦ Sol Next 8.0.1
+# Sol Next 9.0.1 — Dawn Orbit · Your AI Action Partner
 
-### Millisecond OS Reflexes · Full-Phone Multimodal Mastery · Zero-Trust Privacy
+### Speak Naturally. Drive Real Mobile Actions. Built for the Android 16/17 Intelligent OS Era.
 
-<sub>Open-Source Grounded Multimodal Android 10–16 OS Agent (Build <code>801</code> · 100% Zero Built-In Keys / BYOK · Built Upon &amp; Paying Tribute to <code>wangzan101/Mika</code>)</sub>
+<sub>Next-Generation Voice-First Android 10–16 OS Agent (Build <code>901</code> · 16KB Page-Aligned · 100% Zero Built-In Keys / Universal BYOK · Tribute to <code>wangzan101/Mika</code>)</sub>
 
 <br/><br/>
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v8.0.1-public/Sol-Next-v8.0.1-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20Download%20Public%20APK-v8.0.1%20(Zero%20API%20Keys)-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Download Public APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20Download%20v9.0.1%20Public%20APK-ARM64%20(Zero%20Key)-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="Download ARM64 APK" /></a>
 &nbsp;
-<a href="https://chongyangzhang92-hub.github.io/Sol-Next/"><img src="https://img.shields.io/badge/🌐%20Launch%20Website-1080p%20Demo%20Cinema-0ea5e9?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Launch Website" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20Universal%20APK-ARM64%20%2B%20x86__64-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Download Universal APK" /></a>
 &nbsp;
-<a href="https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html"><img src="https://img.shields.io/badge/📊%20vs%20Mika%20Comparison-7%202K%20Charts-8b5cf6?style=for-the-badge" alt="vs Mika Comparison" /></a>
-&nbsp;
-<a href="https://github.com/wangzan101/Mika"><img src="https://img.shields.io/badge/⭐%20Tribute%20to%20Pioneer-wangzan101%2FMika-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Tribute to Mika" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.1-public"><img src="https://img.shields.io/badge/📋%20Release%20Notes-v9.0.1--public-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Release Notes" /></a>
 
 <br/><br/>
 
-[简体中文](README.md) &nbsp;·&nbsp; **English** &nbsp;·&nbsp; [🛡️ Security & Privacy](https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html) &nbsp;·&nbsp; [⚡ Benchmarks](https://chongyangzhang92-hub.github.io/Sol-Next/android-ai-agent-benchmarks.html) &nbsp;·&nbsp; [🤖 MCP & BYOK](https://chongyangzhang92-hub.github.io/Sol-Next/mcp-and-byok-guide.html) &nbsp;·&nbsp; [`llms.txt`](llms.txt) &nbsp;·&nbsp; [`ai-facts.json`](docs/ai-facts.json)
-
-<br/>
-
-![Build 801](https://img.shields.io/badge/Release-v8.0.1--public%20(Build%20801)-0ea5e9?style=flat-square)
-![Tier-0A](https://img.shields.io/badge/Tier--0A%20Reflex-72%20ms%20·%200%20Tokens-10b981?style=flat-square)
-![Deep-Link](https://img.shields.io/badge/App%20Teleports-120%2B%20Apps%20(<250ms)-8b5cf6?style=flat-square)
-![Rust v5.00](https://img.shields.io/badge/Rust%20Kernel-v5.00%2016KB%20JNI-DEA584?style=flat-square&logo=rust&logoColor=white)
-![Zero Key](https://img.shields.io/badge/Public%20BYOK-Zero%20Built--In%20Keys-10b981?style=flat-square)
-![Tests](https://img.shields.io/badge/Unit%20Tests-99%2F99%20Passing-22c55e?style=flat-square)
-![License](https://img.shields.io/badge/License-Apache--2.0-3b82f6?style=flat-square)
+[简体中文](README.md) &nbsp;·&nbsp; **English** &nbsp;·&nbsp; [🌐 Website](https://chongyangzhang92-hub.github.io/Sol-Next/) &nbsp;·&nbsp; [`llms.txt`](llms.txt) &nbsp;·&nbsp; [`ai-facts.json`](docs/ai-facts.json) &nbsp;·&nbsp; [`SHA256SUMS.txt`](SHA256SUMS.txt)
 
 </div>
-
-<br/>
 
 ---
 
-<div align="center">
+## ✨ What Makes Sol Next 9.0.1 a Generational Leap
 
-<sub><b>ACT I &nbsp;·&nbsp; LIVE MOTION CINEMA</b></sub>
+Sol Next 9.0.1 reinvents the mobile AI agent from the ground up with **zero learning curve**: no cramped text input box on the home screen, no cryptic developer logs, and zero self-hosted local server dependencies. Speak naturally, watch clean human-readable progress & native Android 17 Generative UI cards unfold, and let Sol Next execute across apps, games, and live phone calls.
 
-## 🎬 Sol Next 8.0.1 Live Android 15 Recording & 1080p HD Cinema
-
-<sub>Real Android 15 (1080×2280 @ 440dpi) live capture: 72ms reflex · 1:1 VirtualDisplay live <code>#1..#15</code> Set-of-Mark annotations · Studio 8.0.1 tour · Zero-Key BYOK</sub>
-
-<br/>
-
-<a href="https://chongyangzhang92-hub.github.io/Sol-Next/#demo">
-  <img src="docs/media/v801/sol-next-hero-demo.gif" alt="Sol Next 8.0.1 Live Recording: 72ms Reflex, 1:1 VirtualDisplay SoM Vision & Studio UI" width="900" />
-</a>
-
-<br/><br/>
-
-<a href="https://chongyangzhang92-hub.github.io/Sol-Next/#demo"><img src="https://img.shields.io/badge/▶%20Play%20Full%201080p%20HD%20Demo%20Video-Interactive%20Launch%20Cinema-0ea5e9?style=for-the-badge" alt="Play Full 1080p Demo Video" /></a>
-&nbsp;&nbsp;
-<a href="https://chongyangzhang92-hub.github.io/Sol-Next/media/v801/sol-next-demo.mp4"><img src="https://img.shields.io/badge/⬇%20Direct%201080p%20H.264%20MP4-sol--next--demo.mp4%20(1.85%20MB)-10b981?style=for-the-badge" alt="Direct 1080p MP4" /></a>
-
-</div>
-
-<br/>
-
----
-
-<div align="center">
-
-<sub><b>ACT II &nbsp;·&nbsp; STUDIO 8.0.1 VISUAL GALLERY</b></sub>
-
-## 🎨 Sol Next 8.0.1 Real-Device Studio Showcase (All 10 Live Captures)
-
-<br/>
-
-<a href="docs/media/v801/showcase-studio-trio.png">
-  <img src="docs/media/v801/showcase-studio-trio.png" alt="Sol Next 8.0.1 Studio Triptych" width="100%" />
-</a>
-
-<sub>Full-res individual screens: <a href="docs/media/v801/screen-v8-workspace.png">Studio Workspace</a> · <a href="docs/media/v801/screen-v8-multimodal.png">Multimodal Closed-Loop Proof</a> · <a href="docs/media/v801/screen-v8-control-hub.png">2×2 Readiness Matrix</a></sub>
-
-<br/><br/>
-
-<a href="docs/media/v801/showcase-superpowers-stage.png">
-  <img src="docs/media/v801/showcase-superpowers-stage.png" alt="Sol Next 8.0.1 1:1 VirtualDisplay, Closed-Loop Execution & Carrier AI Calling" width="100%" />
-</a>
-
-<sub>Full-res individual screens: <a href="docs/media/v801/screen-26step-task.png">13-Step Verified Loop</a> · <a href="docs/media/v801/screen-vdisplay-1to1.png">1:1 Background VirtualDisplay</a> · <a href="docs/media/v801/screen-ai-call-active.png">Carrier AI Call Cockpit</a></sub>
-
-<br/><br/>
-
-<a href="docs/media/v801/showcase-ecosystem-byok.png">
-  <img src="docs/media/v801/showcase-ecosystem-byok.png" alt="Sol Next 8.0.1 Rust v5.00 Engine, KeyStore Personal Twin & 30s Zero-Key BYOK" width="100%" />
-</a>
-
-<sub>Full-res individual screens: <a href="docs/media/v801/screen-brain-cockpit.png">Rust v5.00 Engine</a> · <a href="docs/media/v801/screen-personal-twin.png">Encrypted Personal Twin</a> · <a href="docs/media/v801/screen-public-welcome.png">Zero-Key Welcome</a> · <a href="docs/media/v801/screen-public-byok.png">30s BYOK Setup</a></sub>
-
-</div>
-
-<br/>
-
----
-
-<div align="center">
-
-<sub><b>ACT III &nbsp;·&nbsp; ZERO-TRUST SECURITY &amp; PRIVACY</b></sub>
-
-## 🛡️ Six-Layer Zero-Trust Security, Privacy & Minimal Attack Surface
-
-<sub>Full auditable whitepaper 👉 <a href="https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html">Sol Next 8.0.1 Security &amp; Privacy Architecture →</a></sub>
-
-<br/>
-
-<a href="docs/media/v801/compare-security-privacy.png">
-  <img src="docs/media/v801/compare-security-privacy.png" alt="Sol Next 8.0.1 Six-Layer Zero-Trust Security & Privacy Architecture" width="100%" />
-</a>
-
-</div>
-
-<br/>
-
----
-
-<div align="center">
-
-<sub><b>ACT IV &nbsp;·&nbsp; TRIBUTE TO MIKA &amp; FULL 7-CHART COMPARISON</b></sub>
-
-## 💜 Sincere Tribute to Pioneer Mika (`@wangzan101`) & Full Comparison
-
-<br/>
-
-<a href="https://github.com/wangzan101/Mika">
-  <img src="docs/media/v801/showcase-mika-tribute-banner.png" alt="Standing on Pioneering Shoulders: Tribute to Mika & @wangzan101" width="100%" />
-</a>
-
-</div>
-
-<br/>
+### 1. The Unified 4-Screen "Dawn Orbit" Experience (Live Android 16 Captures)
 
 <table>
   <tr>
-    <td align="center" width="50%">
-      <a href="docs/media/v801/compare-architecture.png"><img src="docs/media/v801/compare-architecture.png" width="100%" alt="Architecture Evolution" /></a><br/>
-      <b>① Six-Layer Architecture Evolution (Mika → Sol Next 8.0.1)</b>
+    <td align="center" width="25%">
+      <img src="docs/media/v901/screen-1-voice-home.png" alt="Voice Home" width="210" /><br/>
+      <b>1. Voice-First Home</b><br/>
+      <sub>Zero text box · Tap the glowing orb or <code>∞</code> for full-duplex live voice</sub>
     </td>
-    <td align="center" width="50%">
-      <a href="docs/media/v801/compare-benchmark.png"><img src="docs/media/v801/compare-benchmark.png" width="100%" alt="Speed & Precision Benchmarks" /></a><br/>
-      <b>② Verified Speed, Pruning &amp; Coordinate Drift Benchmarks</b>
+    <td align="center" width="25%">
+      <img src="docs/media/v901/screen-2-task-execution.png" alt="Task Execution" width="210" /><br/>
+      <b>2. Visual Task Execution</b><br/>
+      <sub>Progress bar, human step tree, execution timeline &amp; Generative UI cards</sub>
     </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="docs/media/v801/compare-execution-pipeline.png"><img src="docs/media/v801/compare-execution-pipeline.png" width="100%" alt="Latency Waterfall & WeChat 9-Fix Hardening" /></a><br/>
-      <b>③ Dual-Track Latency Waterfall &amp; WeChat 8.0.80 9-Fix Hardening</b>
+    <td align="center" width="25%">
+      <img src="docs/media/v901/screen-3-ai-call.png" alt="AI Phone Call" width="210" /><br/>
+      <b>3. AI Live Phone Calls</b><br/>
+      <sub>35-bar voice spectrum, live transcript, Scam Shield &amp; 1-tap Live Whisper</sub>
     </td>
-    <td align="center" width="50%">
-      <a href="docs/media/v801/compare-vdisplay-precision.png"><img src="docs/media/v801/compare-vdisplay-precision.png" width="100%" alt="1:1 VirtualDisplay & Handle Precision" /></a><br/>
-      <b>④ 1:1 Display-0 Clone + Live `#1..#N` Handles (`0.0px`)</b>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="docs/media/v801/compare-radar-matrix.png"><img src="docs/media/v801/compare-radar-matrix.png" width="100%" alt="8-Axis Capability Radar" /></a><br/>
-      <b>⑤ 8-Dimension Objective Capability Radar</b>
-    </td>
-    <td align="center" width="50%">
-      <a href="docs/media/v801/compare-ecosystem-matrix.png"><img src="docs/media/v801/compare-ecosystem-matrix.png" width="100%" alt="12-Dimension Scorecard" /></a><br/>
-      <b>⑥ Complete 12-Dimension Engineering &amp; Ecosystem Scorecard</b>
+    <td align="center" width="25%">
+      <img src="docs/media/v901/screen-4-settings-byok.png" alt="Settings BYOK" width="210" /><br/>
+      <b>4. BYOK &amp; Privacy Settings</b><br/>
+      <sub>3-row universal cloud model config, on-device Privacy Firewall &amp; Auto-OTA</sub>
     </td>
   </tr>
 </table>
 
-<br/>
+### 2. Six Flagship Breakthroughs Shipping in Executable Code
+
+1. **Full-Duplex Real-Time Voice Agent**: Hardware DSP (`AcousticEchoCanceler` + `NoiseSuppressor` + `AutomaticGainControl`), `<20ms` barge-in interruption, `<400ms` conversational replies, and instant OS action dispatching with live spoken verification.
+2. **Google Android 16 / 17 Intelligent OS Roadmap Implemented Today**:
+   - **Android 17 Generative UI**: Instant `0-Token` native 120Hz Compose dashboards + agent-rendered interactive cards (`ui_render_card`).
+   - **Android 16/17 Magic Cue**: `<0.1ms` on-device proactive whisper pills (OTP copy, parcel tracking, hotlines, navigation, battery saver).
+   - **Android 16 AppFunctions & Live Updates**: Native on-device capability discovery (`AppFunctionManager` + `120+` Deep-Links) and `Notification.ProgressStyle` live status chips.
+   - **On-Device Private Compute Privacy Firewall**: Automatically redacts national IDs, Luhn-validated bank cards, API keys, and passwords locally before any cloud LLM request leaves your phone.
+3. **Universal Any-Cloud-Model BYOK Engine**: Zero local GPU servers required. Works out-of-the-box with OpenAI, DeepSeek, Claude, Gemini, Qwen-VL, OpenRouter, or any OpenAI-compatible API — with automatic endpoint capability learning, text-only on-device ML Kit OCR vision fallback, persistent long-horizon episodic memory, anti-oscillation detection, and adaptive test-time compute scaling.
+4. **Human-Like Real-Time Gaming**: Simultaneous 4-finger `multi_touch` (left thumb joystick + right thumb skills/aim), burst `ui_tap_sequence`, bottom-row card/button OCR, and 60Hz `realtime_play`.
+5. **Carrier-Grade AI Phone Calls + On-Device Scam Shield**: Non-default-dialer Telecom companion with `<0.1ms` real-time scam detection (screen-sharing, OTP theft, impersonation), 1-tap Pixel Call Screen-style live whisper steering, and instant human takeover.
+6. **Autonomous Built-In OTA Updater & 60Hz Background Virtual Display**: Startup + 6-hour background update checks, push notifications, Wi-Fi atomic pre-download, and `uid=2000` Picture-in-Picture background virtual screen execution.
 
 ---
 
-## 📦 Verified Release Artifacts (`v8.0.1-public` · Build 801)
+## 📊 Verified Android 16 (API 36 · 16KB) Benchmarks
 
-| Artifact | Target ABI | Size | SHA-256 Digest |
-|---|---|---:|---|
-| [**`Sol-Next-v8.0.1-public-arm64.apk`**](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v8.0.1-public/Sol-Next-v8.0.1-public-arm64.apk) *(Recommended)* | `arm64-v8a` | `33.6 MB` | `b6fc90c79fc4d927549c17414244ab6e276b1002da7fbf3b98451ce7c779c3cb` |
-| [**`Sol-Next-v8.0.1-public-universal.apk`**](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v8.0.1-public/Sol-Next-v8.0.1-public-universal.apk) | `arm64-v8a` + `x86_64` | `45.9 MB` | `7969661db1f9682012a144b79cd744c702238a4aa0b21aaf3e10f7ee679bf046` |
+<table>
+  <tr>
+    <td align="center" width="25%"><img src="docs/media/v901/demo-genui-dashboard.png" width="210" /><br/><sub><b>0-Token Android 17 GenUI</b></sub></td>
+    <td align="center" width="25%"><img src="docs/media/v901/demo-doudizhu-win.png" width="240" /><br/><sub><b>Dou Dizhu 3/3 Win (32.5s)</b></sub></td>
+    <td align="center" width="25%"><img src="docs/media/v901/demo-chess-stockfish.png" width="210" /><br/><sub><b>Stockfish Chess + Auto-Permission</b></sub></td>
+    <td align="center" width="25%"><img src="docs/media/v901/demo-gesture-4of4.png" width="210" /><br/><sub><b>4/4 Hardware Gestures (18.7s)</b></sub></td>
+  </tr>
+</table>
 
-- **Signing Certificate SHA-256**: `d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478`
-- **One-Line Zero-Key Audit** *(expected: empty output)*: `unzip -l Sol-Next-v8.0.1-public-arm64.apk | grep sol-models`
+- **Complex Multi-Step Settings Verification & Restore**: **9.3s · 4/4 verified** (`Dark theme OFF → ON → OFF` verified readback + native Generative UI report card).
+- **Dou Dizhu 3-Round Landscape Zero-A11y**: **32.5s · 10 steps · 3/3 rounds won**.
+- **4-Primitive Hardware Gesture Arena**: **18.7s · 4/4 first-try** (Tap ✓, Long-Press `823ms / 0px drift` ✓, Drag ✓, Two-Finger Pinch `1.63x` ✓).
+- **Android 16 `uid=2000` Background Virtual Display**: **24ms frame capture** with live floating PiP inside Task Execution.
+- **Verification**: 100% unit tests (`:sol-core:test`, `:app:testReleaseUnitTest`), `:app:lintVitalRelease`, and zero-key audit passed.
 
-```bash
-python3 scripts/sol-cli.py status --json
-python3 scripts/sol-cli.py install --verify-sha256 --grant-permissions --json
-python3 scripts/sol-cli.py start-helper --json
-python3 scripts/sol-cli.py run --intent "Open Settings and check battery status" --json
+---
+
+## 📦 SHA-256 Checksums (`v9.0.1-public`)
+
+```text
+e3e877e011907c8a8a92f88271252cb4c4ac653eba898395306367548fa1631b  Sol-Next-v9.0.1-public-arm64.apk
+a6bc9791d5717c08e3077bb406af8ce557c8157c28298f6f1285e7cb7359f689  Sol-Next-v9.0.1-public-universal.apk
 ```
-
-```json
-{
-  "mcpServers": {
-    "sol-next": {
-      "command": "python3",
-      "args": ["/path/to/Sol-Next/mcp/sol_mcp_server.py"]
-    }
-  }
-}
-```
-
-<div align="center">
-
-**✦ Sol Next 8.0.1 (Build 801)** · Apache-2.0 · Built with deep respect for [**`wangzan101/Mika`**](https://github.com/wangzan101/Mika)
-
-</div>
