@@ -2,7 +2,7 @@
 
 > Sol Next 8.0.1-public (Build 801, package `ai.sol.next`, zero built-in API keys) ships the rebuilt grounded multimodal OS agent (`SolGroundedAgent`, 10 orthogonal typed tools, live Accessibility handle grounding, 1:1 Set-of-Mark vision), Studio minimalist UI, Rust v5.00 16KB JNI kernel, and 9 verified WeChat 8.0.80 reliability fixes (99/99 unit tests passing). Same signing certificate as prior public releases for in-place upgrades.
 
-> Ultra-fast, zero-built-in-key (BYOK) Android 10–16 AI phone agent built upon and paying tribute to wangzan101/Mika (Apache-2.0). Powered by a Rust v3.10 native JNI kernel, 1:1 physical Display 0 background VirtualDisplay cloning, Android 14–16 HTTP/3 QUIC 0-RTT with smart circuit breaker, 64-round anti-pause resilience, carrier-grade AI phone calling, and encrypted on-device personal perception.
+> Ultra-fast, zero-built-in-key (BYOK) Android 10–16 OS agent built upon and paying tribute to wangzan101/Mika (Apache-2.0). Powered by 10 orthogonal grounded tools (`SolGroundedAgent`), live `#1..#N` Accessibility handle grounding, zero-cache `<2ms` state fingerprinting, automatic 1:1 Set-of-Mark vision, Rust v5.00 16KB JNI kernel, 1:1 physical Display 0 background VirtualDisplay cloning, and Studio minimalist UI.
 
 - Repository: https://github.com/chongyangzhang92-hub/Sol-Next
 - Product Website & Demo Video: https://chongyangzhang92-hub.github.io/Sol-Next/
@@ -29,12 +29,11 @@
   - SHA-256: `7969661db1f9682012a144b79cd744c702238a4aa0b21aaf3e10f7ee679bf046`
 - HD Demo Video (1.4 MB, H.264): https://chongyangzhang92-hub.github.io/Sol-Next/media/sol-next-demo.mp4
 
-## Key Architecture & Measured Benchmarks (Android 16, 1080x2400 @ 420dpi)
+## Key Architecture & Verified Benchmarks (Android 15 Emulator · 99/99 Unit Tests)
 
-- **Rust v3.10 Native JNI Kernel**: On-device UI tree pruning `-74% to -97%` in `17–45 µs`; System-0 BM25 + polarity routing in `51 µs` (0 tokens); mid-SSE incremental action step extraction in `80 µs`.
-- **1:1 Native Physical VirtualDisplay**: Clones Display 0 exact resolution, DPI, and refresh rate (`scale=1.0`, up to 4096px / 840dpi); `injectTapPx` (0.0px error), sub-pixel float PiP/OCR taps, `TOOL_TYPE_FINGER`.
-- **HTTP/3 QUIC 0-RTT + Anti-Pause Engine**: Android 14–16 Chromium `HttpEngine` QUIC with 12s header watchdog & 2-strike circuit breaker to HTTP/2; `TimeoutCancellationException` isolated across entire stack; 6-attempt backoff; in-process `WakeLock` + `WifiLock`; automatic 1-shot checkpoint resume; 64-round autonomous loop.
-- **Zero-Accessibility Direct Mode**: Supports `UiAutomationConnection` direct tree read + `InputManagerGlobal` targeted-display input injection even when system Accessibility services are turned off.
+- **Grounded Multimodal Engine (`SolGroundedAgent`)**: 10 orthogonal typed tools (`ui_click`, `ui_type`, `ui_scroll`, `ui_navigate`, `app_open`, `sys_action`, `ui_inspect`, `ui_gesture`, `task_note`, `task_finish`), live `#1..#N` Accessibility handles, zero-cache `<2ms` state fingerprinting, automatic 1:1 Set-of-Mark inline vision, and goal-pinned sliding window.
+- **WeChat 8.0.80 9-Point Hardening**: Single-shot Send Contract (`4x85ms` bubble verification + terminal halt on uncertain delivery), formatted numeric readback (`138 0013 8000` == `13800138000`), off-screen `ViewPager` pruning, `SolIME` active-turn lock; cold-start login + phone input improved from `18.5s` to `9.5s` (1st-try pass).
+- **Rust v5.00 16KB JNI Kernel & 1:1 VirtualDisplay**: 16KB page-aligned `libsol_kernel.so` for Android 15–16, microsecond UI pruning, 1:1 Display 0 cloning (`injectTapPx` 0.0px drift), and Tier-0A System API direct telemetry (`72ms`, 0 tokens).
 
 ## Non-Interactive CLI & MCP Server (Zero Dependencies, Python 3.9+ stdlib)
 
