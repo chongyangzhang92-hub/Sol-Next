@@ -8,7 +8,7 @@
 
 ### 快到像系统原生 · 强到接管整台手机 · 致敬并演进自 Mika (`@wangzan101`)
 
-**简体中文** · [English](README.en.md) · [🌐 国际产品发布官网](https://chongyangzhang92-hub.github.io/Sol-Next/) · [🎬 1080p 演示影院](https://chongyangzhang92-hub.github.io/Sol-Next/#demo) · [📦 下载 v8.0.1-public](https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v8.0.1-public) · [🔑 30 秒 BYOK 指南](docs/guides/BYOK_SETUP.md) · [💜 致敬 Mika](#%E8%87%B4%E6%95%AC-mika-%E4%B8%8E%E5%8E%9F%E4%BD%9C%E8%80%85-wangzan101) · [🤖 `llms.txt`](llms.txt)
+**简体中文** · [English](README.en.md) · [🌐 产品官网](https://chongyangzhang92-hub.github.io/Sol-Next/) · [📊 Sol Next vs Mika 深度对比](https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html) · [🛡️ 安全与隐私白皮书](https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html) · [⚡ Android 15 性能基准](https://chongyangzhang92-hub.github.io/Sol-Next/android-ai-agent-benchmarks.html) · [🤖 MCP & BYOK](https://chongyangzhang92-hub.github.io/Sol-Next/mcp-and-byok-guide.html) · [📦 下载 v8.0.1](https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v8.0.1-public) · [`llms.txt`](llms.txt)
 
 <br/>
 
@@ -49,7 +49,7 @@
 <br/>
 
 <a href="https://chongyangzhang92-hub.github.io/Sol-Next/#demo"><img src="https://img.shields.io/badge/▶%20在线播放%201080p%20高清演示视频-Sol%20Next%20发布官网影院-0ea5e9?style=for-the-badge" alt="在线播放 1080p 高清演示视频" /></a>
-<a href="https://chongyangzhang92-hub.github.io/Sol-Next/media/sol-next-demo.mp4"><img src="https://img.shields.io/badge/⬇%20直链下载%201080p%20MP4-sol--next--demo.mp4%20(1.4%20MB)-10b981?style=for-the-badge" alt="下载 1080p MP4 视频" /></a>
+<a href="https://chongyangzhang92-hub.github.io/Sol-Next/media/sol-next-demo.mp4"><img src="https://img.shields.io/badge/⬇%20直链下载%201080p%20MP4-sol--next--demo.mp4%20(1.85%20MB)-10b981?style=for-the-badge" alt="下载 1080p MP4 视频" /></a>
 
 <sub>提示：GitHub README 静态页不直接内联仓库 MP4 播放器，点击上方蓝色按钮即可在 <b>Sol Next 交互式产品发布官网</b> 原生流畅播放完整 1080p H.264 视频，或直接查看仓库内视频文件 <a href="docs/media/sol-next-demo.mp4"><code>docs/media/sol-next-demo.mp4</code></a>。</sub>
 
@@ -186,30 +186,61 @@
 
 ---
 
-## 📊 架构演进与 Mika 全景视觉对比（4 组高清图表直出）
+## 🛡️ 六重零信任安全、隐私与最小攻击面防线（可审计对比）
+
+> 当你把手机操作权限交给 AI 智能体时，**更快的端侧处理与更小的攻击面，本身就是最强的隐私保护**。完整白皮书见 👉 [**安全与隐私架构白皮书**](https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html)。
+
+1. **🔓 100% 零内置 Key & 零私服中转（支持本地离线 Ollama）**：公开版 `ai.sol.next` 通过构建期硬门禁禁止打包任何模型密钥与中转服地址，无需云账号登录；一行 `unzip -l Sol-Next-v8.0.1-public-arm64.apk | grep sol-models` 即可本地验证输出为空。
+2. **🧱 最小攻击面原生架构**：刻意剔除嵌入式桌面浏览器引擎与每对话 Linux Shell 沙箱容器，收敛本地二进制与脚本命令攻击面，严格收口为 10 个强类型正交 OS 工具。
+3. **🔒 端侧数据最小化防屏幕 PII 外泄**：`72 ms` Tier-0A 原生系统直通 100% 本地完成（`0 Token` 不离机）；复杂页面先经 **Rust v5.00 端侧剪枝剔除 `-74% ~ -97%` 无关节点** 再发往模型，大幅压低无关聊天记录与屏幕敏感信息外传。
+4. **🖼️ 单帧按需视觉滑窗（绝不持续录屏上云）**：仅在 WebView / 小程序 / `NO_CHANGE` 时按需附带 1:1 红框帧并强制滑窗仅留最新 1 帧，杜绝历史敏感截图长期堆积。
+5. **💬 单次发送防重发契约 + 财务红线审批**：点击微信「发送」强制 4×85ms 只读气泡核验，存疑即停机（0 重发）；付款、转账、删除与 AI 电话均内置不可绕过的人工确认护栏。
+6. **🔐 Android KeyStore 硬件加密 + 密码学供应链**：个人数字分身与私有记忆基于硬件 KeyStore AES-GCM 本地加密，每次发布公开完整 `SHA256SUMS.txt` 与固定签名证书指纹。
+
+---
+
+## 📊 架构演进与 Mika 全景视觉对比（全部 7 组 2K 高清图表直出）
+
+> 完整图文与 14 项实测参数对照见独立专页 👉 [**Sol Next 8.0.1 vs Mika 深度对比专页**](https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html) · [Markdown 深度报告](docs/guides/COMPARISON_WITH_MIKA.md)
 
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="docs/media/compare-architecture.png" width="100%" alt="Sol Next 8.0 vs Mika 架构演进全览对比" /><br/>
-      <b>① 系统架构演进对比（双轨反射 + 实时句柄闭环 + Rust v5.00 JNI）</b>
+      <img src="docs/media/compare-architecture.png" width="100%" alt="Sol Next 8.0.1 vs Mika 架构演进全览对比" /><br/>
+      <b>① 六层系统架构演进对比（Mika 先驱底座 → Sol Next 8.0.1）</b>
     </td>
     <td align="center" width="50%">
-      <img src="docs/media/compare-benchmark.png" width="100%" alt="Sol Next 端侧延迟与上下文压缩基准对比" /><br/>
-      <b>② 响应延迟与上下文压缩基准对比</b>
+      <img src="docs/media/compare-benchmark.png" width="100%" alt="Sol Next 8.0.1 核心速度与误差实测基准" /><br/>
+      <b>② 速度、剪枝与零漂移实测基准对比</b>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="docs/media/compare-vdisplay-precision.png" width="100%" alt="1:1 物理屏 DPI 复刻与 0.0px 精度对比" /><br/>
-      <b>③ 1:1 Display 0 物理分辨率/DPI 克隆精度对比（`0.0px` 误差）</b>
+      <img src="docs/media/compare-execution-pipeline.png" width="100%" alt="Sol Next 8.0.1 端到端时序瀑布与微信九项加固对比" /><br/>
+      <b>③ 端到端执行时序瀑布 &amp; 微信 8.0.80 九项加固</b>
     </td>
     <td align="center" width="50%">
-      <img src="docs/media/compare-radar-matrix.png" width="100%" alt="Sol Next 与 Mika 八维能力客观雷达图" /><br/>
-      <b>④ 八维能力客观对比雷达图（各自优势清晰标注）</b>
+      <img src="docs/media/compare-vdisplay-precision.png" width="100%" alt="1:1 物理屏克隆与 #1..#N 实时句柄精度对比" /><br/>
+      <b>④ 1:1 物理屏克隆 + `#1..#N` 实时句柄精度 (`0.0px`)</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/media/compare-security-privacy.png" width="100%" alt="Sol Next 8.0.1 六重零信任安全与隐私防线对比" /><br/>
+      <b>⑤ 零信任安全、隐私与最小攻击面六重防线对比</b>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/media/compare-radar-matrix.png" width="100%" alt="Sol Next 8.0.1 vs Mika 八维能力客观雷达图" /><br/>
+      <b>⑥ 八维工程能力客观对比雷达图（诚挚致敬 Mika）</b>
     </td>
   </tr>
 </table>
+
+<div align="center">
+  <img src="docs/media/compare-ecosystem-matrix.png" width="100%" alt="Sol Next 8.0.1 vs Mika 十二维全景工程与生态选型总表" /><br/>
+  <b>⑦ 十二维全景工程参数与互补选型总表（Sol Next 8.0.1 vs 原版 Mika）</b>
+</div>
+<br/>
 
 | 对比维度 | 原版 Mika (`wangzan101/Mika`) | **Sol Next 公开版 (`v8.0.1-public`)** |
 |---|---|---|

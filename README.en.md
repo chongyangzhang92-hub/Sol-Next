@@ -8,7 +8,7 @@
 
 ### Native-Speed OS Reflexes · Full-Phone Multimodal Mastery · Built Upon & Paying Tribute to Mika (`@wangzan101`)
 
-[简体中文](README.md) · **English** · [🌐 Interactive Launch Website](https://chongyangzhang92-hub.github.io/Sol-Next/) · [🎬 1080p Demo Cinema](https://chongyangzhang92-hub.github.io/Sol-Next/#demo) · [📦 Download v8.0.1-public](https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v8.0.1-public) · [🔑 30s BYOK Setup](docs/guides/BYOK_SETUP.md) · [💜 Tribute to Mika](#-tribute-to-mika--its-creator-wangzan101) · [🤖 `llms.txt`](llms.txt)
+[简体中文](README.md) · **English** · [🌐 Launch Site](https://chongyangzhang92-hub.github.io/Sol-Next/) · [📊 Sol Next vs Mika](https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html) · [🛡️ Security & Privacy](https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html) · [⚡ Benchmarks](https://chongyangzhang92-hub.github.io/Sol-Next/android-ai-agent-benchmarks.html) · [🤖 MCP & BYOK](https://chongyangzhang92-hub.github.io/Sol-Next/mcp-and-byok-guide.html) · [📦 Download v8.0.1](https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v8.0.1-public) · [`llms.txt`](llms.txt)
 
 <br/>
 
@@ -49,7 +49,7 @@
 <br/>
 
 <a href="https://chongyangzhang92-hub.github.io/Sol-Next/#demo"><img src="https://img.shields.io/badge/▶%20Play%201080p%20HD%20Demo%20Video-Interactive%20Launch%20Website-0ea5e9?style=for-the-badge" alt="Play 1080p HD Demo Video" /></a>
-<a href="https://chongyangzhang92-hub.github.io/Sol-Next/media/sol-next-demo.mp4"><img src="https://img.shields.io/badge/⬇%20Direct%201080p%20MP4-sol--next--demo.mp4%20(1.4%20MB)-10b981?style=for-the-badge" alt="Direct 1080p MP4" /></a>
+<a href="https://chongyangzhang92-hub.github.io/Sol-Next/media/sol-next-demo.mp4"><img src="https://img.shields.io/badge/⬇%20Direct%201080p%20MP4-sol--next--demo.mp4%20(1.85%20MB)-10b981?style=for-the-badge" alt="Direct 1080p MP4" /></a>
 
 <sub>Note: GitHub README pages strip inline repository <code>&lt;video&gt;</code> players — click the blue button above to stream the full 1080p H.264 showcase directly on the <b>Sol Next Interactive Launch Website</b>, or inspect <a href="docs/media/sol-next-demo.mp4"><code>docs/media/sol-next-demo.mp4</code></a>.</sub>
 
@@ -186,30 +186,61 @@
 
 ---
 
-## 📊 Architecture Evolution & Objective Visual Comparison with Mika
+## 🛡️ Six-Layer Zero-Trust Security, Privacy & Minimal Attack Surface
+
+> Full auditable whitepaper 👉 [**Sol Next 8.0.1 Security & Privacy Architecture**](https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html)
+
+1. **100% Zero Built-In Keys & Zero Relay Servers**: Build-gate audited public APK (`ai.sol.next`) connects directly from device to your chosen model provider or **100% offline LAN Ollama / vLLM**.
+2. **Minimal Attack Surface**: Deliberately omits embedded desktop browsers and per-chat Linux shell containers, constraining execution to 10 strictly-typed orthogonal OS tools.
+3. **On-Device Data Minimization (Less Screen PII Leaves Your Phone)**: `72 ms` Tier-0A system reflexes stay 100% local (`0 Tokens` uploaded); **Rust v5.00 JNI** strips **`-74% to -97%`** of noisy UI nodes on-device before cloud inference.
+4. **Single-Frame Bounded On-Demand Vision**: Captures 1:1 Set-of-Mark frames only when needed and evicts older screenshots immediately (`1-frame sliding window`).
+5. **Single-Shot Anti-Duplicate Send Contract & Financial Guardrails**: WeChat Send enforces `4×85ms` bubble polling + terminal halt on uncertainty (`0` duplicate sends); payments, transfers, deletions & AI phone calls require explicit human approval.
+6. **Android KeyStore Hardware AES-GCM Encryption + Cryptographic Supply Chain**: Personal digital twin memory is encrypted locally in hardware; every release publishes `SHA256SUMS.txt` and fixed signing certificate SHA-256.
+
+---
+
+## 📊 Architecture Evolution & Objective Visual Comparison with Mika (All 7 2K Charts)
+
+> Dedicated technical comparison landing page 👉 [**Sol Next 8.0.1 vs Mika Full Comparison**](https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html)
 
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="docs/media/compare-architecture.png" width="100%" alt="Sol Next 8.0 vs Mika Architecture Evolution" /><br/>
-      <b>① Architecture Evolution (Dual-Track Reflex + Grounded Kernel + Rust v5.00 JNI)</b>
+      <img src="docs/media/compare-architecture.png" width="100%" alt="Sol Next 8.0.1 vs Mika Architecture Evolution" /><br/>
+      <b>① Six-Layer Architecture Evolution (Mika Pioneer → Sol Next 8.0.1)</b>
     </td>
     <td align="center" width="50%">
-      <img src="docs/media/compare-benchmark.png" width="100%" alt="Latency & Context Compression Benchmark" /><br/>
-      <b>② On-Device Latency &amp; Context Compression Benchmarks</b>
+      <img src="docs/media/compare-benchmark.png" width="100%" alt="Speed, Pruning & Precision Benchmarks" /><br/>
+      <b>② Verified Speed, Pruning &amp; Coordinate Drift Benchmarks</b>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="docs/media/compare-vdisplay-precision.png" width="100%" alt="1:1 Physical DPI VirtualDisplay Precision Comparison" /><br/>
-      <b>③ 1:1 Display-0 Physical DPI Clone Precision (`0.0px` Drift)</b>
+      <img src="docs/media/compare-execution-pipeline.png" width="100%" alt="Dual-Track Latency Waterfall & WeChat 8.0.80 9-Fix Matrix" /><br/>
+      <b>③ Dual-Track Latency Waterfall &amp; WeChat 8.0.80 9-Fix Hardening</b>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/media/compare-vdisplay-precision.png" width="100%" alt="1:1 Physical DPI Clone & Live Handle Precision" /><br/>
+      <b>④ 1:1 Display-0 Physical Clone + Live `#1..#N` Handles (`0.0px`)</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/media/compare-security-privacy.png" width="100%" alt="6-Layer Zero-Trust Security & Privacy Comparison" /><br/>
+      <b>⑤ Six-Layer Zero-Trust Security, Privacy &amp; Attack Surface</b>
     </td>
     <td align="center" width="50%">
       <img src="docs/media/compare-radar-matrix.png" width="100%" alt="8-Dimension Capability Radar Chart" /><br/>
-      <b>④ 8-Dimension Objective Capability Radar</b>
+      <b>⑥ 8-Dimension Objective Capability Radar (Tribute to Mika)</b>
     </td>
   </tr>
 </table>
+
+<div align="center">
+  <img src="docs/media/compare-ecosystem-matrix.png" width="100%" alt="Sol Next 8.0.1 vs Mika 12-Dimension Engineering Scorecard" /><br/>
+  <b>⑦ Complete 12-Dimension Engineering &amp; Ecosystem Selection Scorecard</b>
+</div>
+<br/>
 
 | Dimension | Original Mika (`wangzan101/Mika`) | **Sol Next Public (`v8.0.1-public`)** |
 |---|---|---|

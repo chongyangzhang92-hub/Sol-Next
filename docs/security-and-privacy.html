@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sol Next 8.0.1 安全与隐私白皮书 — 零内置 Key、最小攻击面与数据最小化架构</title>
+  <meta name="description" content="Sol Next 8.0.1 零信任安全与隐私白皮书：详述公开版 100% 零内置 API Key 审计、直连自选模型/本地 Ollama、最小攻击面架构（对比重型浏览器与 Linux 沙箱）、Tier-0A 72ms 本地 0 Token 零上云、Rust v5.00 -97% 剪枝减少屏幕 PII 外传、单帧视觉滑窗、微信单次发送防重发契约与 Android KeyStore 硬件加密。" />
+  <meta name="keywords" content="Sol Next Security, Android AI Agent Privacy, Mika Privacy Comparison, Zero API Key Android Agent, BYOK Security Audit, Local Ollama Android Agent, Android KeyStore AI, WeChat Anti-Duplicate Send, Minimal Attack Surface Mobile Agent" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#05070c" />
+  <link rel="canonical" href="https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html" />
+  <link rel="alternate" type="text/plain" title="LLMs.txt" href="https://chongyangzhang92-hub.github.io/Sol-Next/llms.txt" />
+  <link rel="alternate" type="application/json" title="AI Facts JSON" href="https://chongyangzhang92-hub.github.io/Sol-Next/ai-facts.json" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Sol Next 8.0.1 Security & Privacy Architecture — Zero Built-In Keys, Minimal Attack Surface & Local Encryption" />
+  <meta property="og:description" content="7 auditable layers of security and privacy protection: zero built-in keys, zero relay servers, on-device Rust PII minimization (-74% to -97%), 72ms local 0-token execution, single-frame vision, anti-duplicate send contract & Android KeyStore hardware crypto." />
+  <meta property="og:url" content="https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html" />
+  <meta property="og:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/compare-security-privacy.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/compare-security-privacy.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "headline": "Sol Next 8.0.1 Security & Privacy Architecture: Zero Built-In Keys, Minimal Attack Surface & On-Device Data Minimization",
+        "datePublished": "2026-11-26",
+        "dateModified": "2026-11-26",
+        "url": "https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html",
+        "image": "https://chongyangzhang92-hub.github.io/Sol-Next/media/compare-security-privacy.png"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "为什么说 Sol Next 8.0.1 在安全与隐私架构上比常规手机 Agent 和重型沙箱方案更安全？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sol Next 8.0.1 从 6 个可审计维度降低了隐私与安全风险：1) 公开版 100% 零内置密钥与零私有中转（支持直连官方厂商或 100% 离线本地 Ollama/vLLM）；2) 坚持最小攻击面原则，不打包嵌入式桌面浏览器与 Linux Shell 沙箱容器，仅开放 10 个强类型正交 OS 工具；3) 端侧数据最小化，Tier-0A 系统查询 72ms 零上云，Rust v5.00 端侧剪枝 -74%~-97% 减少无关屏幕 PII 上传；4) 单帧按需视觉滑窗，绝不连续录屏上传云端；5) 微信单次发送 4x85ms 气泡核验 + 存疑即停机防误发，付款/转账/删除强制弹窗人工审批；6) Android KeyStore 硬件级 AES-GCM 本地加密个人数字分身与完整 SHA-256 供应链校验。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can users independently verify Sol Next 8.0.1 Public Edition has zero embedded API keys?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Download Sol-Next-v8.0.1-public-arm64.apk, verify its SHA-256 digest (b6fc90c79fc4d927549c17414244ab6e276b1002da7fbf3b98451ce7c779c3cb), and run: unzip -l Sol-Next-v8.0.1-public-arm64.apk | grep sol-models. The output is guaranteed empty."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root { --bg:#05070c; --surface:rgba(14,19,32,.84); --hair:rgba(255,255,255,.10); --ink:#f8fafc; --ink2:#94a3b8; --cyan:#38bdf8; --emerald:#34d399; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Inter",sans-serif; background:var(--bg); color:var(--ink); line-height:1.68; }
+    a { color:var(--cyan); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .wrap { max-width:1140px; margin:0 auto; padding:28px 22px 84px; }
+    nav { display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:center; padding:16px 0 28px; border-bottom:1px solid var(--hair); }
+    .brand { font-weight:800; font-size:19px; color:#fff; }
+    .nav-links { display:flex; flex-wrap:wrap; gap:16px; font-size:14px; color:var(--ink2); }
+    .kicker { display:inline-block; padding:6px 14px; border-radius:999px; font-size:12px; font-weight:700; letter-spacing:.06em; background:rgba(52,211,153,.14); border:1px solid rgba(52,211,153,.35); color:var(--emerald); margin:34px 0 14px; }
+    h1 { font-size:clamp(28px,4.2vw,46px); line-height:1.18; margin-bottom:14px; }
+    .lead { font-size:17px; color:var(--ink2); max-width:920px; margin-bottom:26px; }
+    figure { background:var(--surface); border:1px solid rgba(52,211,153,.3); border-radius:20px; padding:16px; margin:22px 0 36px; }
+    figure img { width:100%; border-radius:12px; display:block; }
+    figcaption { margin-top:12px; font-size:14px; color:var(--ink2); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:18px; }
+    .card { background:var(--surface); border:1px solid var(--hair); border-radius:18px; padding:22px; }
+    .card h3 { font-size:18px; color:var(--emerald); margin-bottom:8px; }
+    .card p { font-size:14.5px; color:var(--ink2); }
+    pre { background:#090d18; border:1px solid var(--hair); border-radius:14px; padding:16px; overflow-x:auto; font-family:"JetBrains Mono",Menlo,monospace; font-size:13.5px; color:#e2e8f0; margin:16px 0; }
+    footer { margin-top:54px; padding-top:24px; border-top:1px solid var(--hair); color:var(--ink2); font-size:14px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="./">✦ Sol Next 8.0.1</a>
+      <div class="nav-links">
+        <a href="./">产品官网</a>
+        <a href="./mika-vs-sol-next.html">Sol Next vs Mika</a>
+        <a href="./android-ai-agent-benchmarks.html">实测基准</a>
+        <a href="./mcp-and-byok-guide.html">MCP &amp; BYOK</a>
+        <a href="./ai-facts.json">ai-facts.json</a>
+      </div>
+    </nav>
+
+    <span class="kicker">ZERO-TRUST SECURITY &amp; PRIVACY WHITEPAPER · 可审计安全隐私架构</span>
+    <h1>Sol Next 8.0.1 安全与隐私架构：零内置密钥、最小攻击面与端侧数据最小化</h1>
+    <p class="lead">
+      把手机操作权限交给 AI 智能体时，<strong>速度与精准度之外，隐私边界与防误操作安全是第一生命线</strong>。Sol Next 8.0.1 在设计阶段就采用<strong>零信任 BYOK、最小攻击面、端侧数据剪枝、单帧视觉滑窗、确定性防重发契约与硬件加密</strong>六重纵深防御，让每一项安全承诺都可以被开发者和用户独立验证。
+    </p>
+
+    <figure>
+      <a href="media/compare-security-privacy.png" target="_blank"><img src="media/compare-security-privacy.png" alt="Sol Next 8.0.1 六重零信任安全与隐私架构对比图" /></a>
+      <figcaption><strong>Sol Next 8.0.1 零信任隐私与最小攻击面架构对比图</strong>（点击查看 2K 高清原图）。</figcaption>
+    </figure>
+
+    <div class="grid">
+      <div class="card">
+        <h3>1. 100% 零内置 Key &amp; 零私有中转（可离线 Ollama）</h3>
+        <p>公开版（<code>ai.sol.next</code>）通过构建期硬门禁禁止打包任何模型密钥与私服地址，不需要注册云账号；所有请求由手机直连你信任的官方厂商或局域网本地 Ollama / vLLM，彻底消除第三方代理窥探风险。</p>
+      </div>
+      <div class="card">
+        <h3>2. 最小攻击面（对比重型浏览器 + Linux Shell 沙箱）</h3>
+        <p>刻意剔除嵌入式桌面浏览器引擎与每对话 Linux Shell 沙箱容器，收敛二进制体积与本地命令执行面；执行层严格收口于 10 个强类型正交 OS 工具，降低潜在提示词注入导致的越权面。</p>
+      </div>
+      <div class="card">
+        <h3>3. 端侧数据最小化：0 Token 直通 + Rust -97% 剪枝</h3>
+        <p>查电量、存储、Wi-Fi、蓝牙、闹钟、验证码与通知直回走 <code>72 ms</code> Tier-0A 本地完成，数据 100% 不离机；复杂页面由 Rust v5.00 端侧剪枝剔除 <code>-74% ~ -97%</code> 无关节点后再发往模型，大幅减少无关聊天与屏幕 PII 暴露。</p>
+      </div>
+      <div class="card">
+        <h3>4. 单帧按需视觉滑窗（绝不持续录屏上云）</h3>
+        <p>仅在 WebView、小程序、无标签图标页或 <code>NO_CHANGE</code> 时按需附带 1:1 Set-of-Mark 标注帧，并强制滑窗只保留最新 1 帧图像、即时淘汰历史截图，避免敏感界面在云端多轮上下文堆积。</p>
+      </div>
+      <div class="card">
+        <h3>5. 单次发送防重发契约 + 财务红线人工审批</h3>
+        <p>微信发送按钮强制 4×85ms 只读气泡核验，送达状态不确定立即触发 <code>SEND_CONFIRMATION_PENDING</code> 停机（0 重发）；付款、转账、删除与 AI 电话均内置不可绕过的人工确认与「不付款不转账不承诺金额」红线。</p>
+      </div>
+      <div class="card">
+        <h3>6. Android KeyStore 硬件加密 + 供应链密码学校验</h3>
+        <p>个人数字分身与偏好记忆基于 Android Hardware KeyStore AES-GCM 纯本地加密；每次发布公开完整 <code>SHA256SUMS.txt</code> 与固定签名证书指纹，支持独立验签与一行零密钥审计。</p>
+      </div>
+    </div>
+
+    <h2 style="margin:36px 0 10px;font-size:24px">公开版密码学与零密钥独立审计命令</h2>
+    <pre># 1. 校验官方 ARM64 APK SHA-256 哈希
+sha256sum Sol-Next-v8.0.1-public-arm64.apk
+# 预期: b6fc90c79fc4d927549c17414244ab6e276b1002da7fbf3b98451ce7c779c3cb
+
+# 2. 审计 APK 内不含任何内置 API 密钥凭据文件（预期输出为空）
+unzip -l Sol-Next-v8.0.1-public-arm64.apk | grep sol-models
+
+# 3. 核验 APK 签名证书 SHA-256（与历史公开版完全一致）
+# d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478</pre>
+
+    <footer>
+      <span>Sol Next 8.0.1 (Build 801) · Apache-2.0 · 诚挚致敬先驱 <a href="https://github.com/wangzan101/Mika">wangzan101/Mika</a></span>
+      <span><a href="./">产品官网</a> · <a href="./mika-vs-sol-next.html">Mika 对比页</a> · <a href="./android-ai-agent-benchmarks.html">实测基准</a></span>
+    </footer>
+  </div>
+</body>
+</html>

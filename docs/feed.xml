@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Sol Next — Open-Source Android AI Phone Agent (Built Upon Mika)</title>
-  <subtitle>Ultra-fast BYOK Android 10–16 AI phone agent with Rust v3.10 JNI kernel, 1:1 native background VirtualDisplay, HTTP/3 QUIC 0-RTT, Xiaomi HyperOS anti-pause recovery, carrier AI phone calls, and MCP Server.</subtitle>
+  <title>Sol Next 8.0.1 — Grounded Multimodal Android OS Agent (Built Upon Mika)</title>
+  <subtitle>Open-source, 100% zero-built-in-key (BYOK) Android 10–16 OS agent built upon and paying tribute to wangzan101/Mika: 72ms Tier-0A System API reflexes, 120+ app teleports (&lt;250ms), 10 orthogonal grounded tools (#1..#N handles), Rust v5.00 16KB JNI kernel, 1:1 physical-DPI background VirtualDisplay (0.0px drift), 9 WeChat 8.0.80 reliability fixes, carrier AI phone calls, and CLI + stdio MCP Server.</subtitle>
   <link href="https://chongyangzhang92-hub.github.io/Sol-Next/" rel="alternate" type="text/html" />
   <link href="https://chongyangzhang92-hub.github.io/Sol-Next/feed.xml" rel="self" type="application/atom+xml" />
   <id>https://chongyangzhang92-hub.github.io/Sol-Next/</id>
-  <updated>2026-11-26T16:00:00Z</updated>
+  <updated>2026-11-26T17:30:00+08:00</updated>
   <author>
     <name>chongyangzhang92-hub</name>
     <uri>https://github.com/chongyangzhang92-hub</uri>
   </author>
   <entry>
-    <title>Sol Next 8.0.1 Public Edition — Grounded Multimodal Android OS Agent &amp; Studio UI (BYOK)</title>
+    <title>Sol Next 8.0.1 Public Edition (Build 801) — Grounded Multimodal Android OS Agent, Studio UI &amp; Full Mika Comparison</title>
     <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v8.0.1-public" rel="alternate" type="text/html" />
     <id>tag:github.com,2026-11-26:chongyangzhang92-hub/Sol-Next/v8.0.1-public</id>
-    <published>2026-11-26T13:43:00Z</published>
-    <updated>2026-11-26T16:00:00Z</updated>
-    <summary type="text">Sol Next 8.0.1 Public Edition (Build 801, package ai.sol.next, zero built-in API keys) introduces the grounded multimodal closed-loop engine (10 orthogonal tools, live Accessibility handle grounding, zero-cache state fingerprinting, 1:1 Set-of-Mark inline vision), redesigned Studio minimalist UI, Rust v5.00 16KB JNI kernel, and 9 real-app WeChat 8.0.80 reliability fixes verified across 99/99 automated tests.</summary>
+    <published>2026-11-26T13:43:00+08:00</published>
+    <updated>2026-11-26T17:30:00+08:00</updated>
+    <summary type="text">Sol Next 8.0.1 Public Edition (Build 801, package ai.sol.next, zero built-in API keys) ships the rebuilt grounded multimodal OS engine (SolGroundedAgent, 10 orthogonal tools, live #1..#N Accessibility handles, &lt;2ms zero-cache fingerprinting, 64ms 1:1 Set-of-Mark vision), 72ms Tier-0A System APIs, 120+ app teleports, redesigned Studio Dark UI, Rust v5.00 16KB JNI kernel, verified 1:1 Display 0 VirtualDisplay (1080x2280 @ 440dpi scale=1.0), 9 WeChat 8.0.80 reliability fixes (9.5s 1st-try login, 8/8 first-try, zero duplicate sends), 99/99 unit tests passing, 1080p live demo video, and 6 2K engineering comparison charts vs wangzan101/Mika.</summary>
   </entry>
   <entry>
-    <title>Sol Next v6.3.0 Public Edition (Zero-API-Key BYOK) — Android AI Phone Agent Built Upon Mika</title>
-    <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v6.3.0-public" rel="alternate" type="text/html" />
-    <id>tag:github.com,2026-11-22:chongyangzhang92-hub/Sol-Next/v6.3.0-public</id>
-    <published>2026-11-21T16:40:39Z</published>
-    <updated>2026-11-22T00:00:00Z</updated>
-    <summary type="text">Open-source, zero-built-in-key (BYOK) Android 10–16 AI phone agent paying tribute to wangzan101/Mika (Apache-2.0). Features Rust v3.10 UI pruning (17–45 microseconds, -74% to -97% tokens), 1:1 Display 0 VirtualDisplay cloning (0.0px drift), HTTP/3 QUIC 0-RTT with smart circuit breaker, 64-round Xiaomi HyperOS anti-pause resilience, carrier-grade AI phone calls with 3x4 DTMF, non-interactive CLI (--json), and stdio MCP Server.</summary>
+    <title>Sol Next 8.0.1 vs Mika (wangzan101/Mika) — Full 14-Dimension Technical Comparison &amp; Selection Guide</title>
+    <link href="https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html" rel="alternate" type="text/html" />
+    <id>tag:github.com,2026-11-26:chongyangzhang92-hub/Sol-Next/mika-vs-sol-next</id>
+    <published>2026-11-26T17:30:00+08:00</published>
+    <updated>2026-11-26T17:30:00+08:00</updated>
+    <summary type="text">Objective engineering comparison between pioneer wangzan101/Mika and Sol Next 8.0.1 across 6 2K comparison charts and 14 measured dimensions, explaining when to choose Sol Next 8.0.1, when to choose original Mika, and how both coexist side-by-side on the same Android phone.</summary>
   </entry>
 </feed>

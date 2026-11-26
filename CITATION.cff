@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "Sol Next: Ultra-Fast Open-Source BYOK Android AI Phone Agent (Built Upon Mika)"
+title: "Sol Next 8.0.1: Grounded Multimodal Android OS Agent (Zero-Key BYOK, Built Upon Mika)"
 message: "If you reference Sol Next in research, benchmarks, or open-source AI agent directories, please cite it using this metadata and also credit wangzan101/Mika."
 type: software
 authors:
@@ -10,22 +10,29 @@ authors:
 repository-code: "https://github.com/chongyangzhang92-hub/Sol-Next"
 url: "https://chongyangzhang92-hub.github.io/Sol-Next/"
 abstract: >-
-  Sol Next (ai.sol.next) is an open-source, zero-built-in-key (BYOK) Android 10-16
-  AI phone agent built upon and paying tribute to wangzan101/Mika (Apache-2.0).
-  It combines a Rust v3.10 native JNI UI pruning and routing kernel (17-45 us,
-  -74% to -97% tokens), true 1:1 physical Display 0 background VirtualDisplay
-  cloning (0.0px coordinate drift), Android 14-16 HTTP/3 QUIC 0-RTT with smart
-  circuit breaker, 64-round Xiaomi HyperOS anti-pause recovery, carrier-grade AI
-  phone calls, and zero-dependency CLI (--json) and MCP Server integration.
+  Sol Next 8.0.1 (ai.sol.next, Build 801) is an open-source, zero-built-in-key (BYOK)
+  grounded multimodal Android 10-16 OS agent built upon and paying tribute to
+  wangzan101/Mika (Apache-2.0). It combines 72ms Tier-0A zero-token native System APIs,
+  120+ app deep-link teleports (<250ms), 10 orthogonal typed OS tools (SolGroundedAgent)
+  with live #1..#N Accessibility handles and <2ms zero-cache state fingerprinting,
+  on-demand 64ms 1:1 Set-of-Mark vision, a Rust v5.00 16KB page-aligned JNI kernel
+  (-74% to -97% UI tree pruning for on-device PII minimization), verified 1:1 physical
+  Display 0 background VirtualDisplay cloning (0.0px drift), 9 WeChat 8.0.80 hardening
+  fixes (9.5s first-try login, 8/8 first-try, zero duplicate sends), Android KeyStore
+  hardware encryption, carrier-grade AI calling, and zero-dependency CLI (--json) +
+  stdio MCP Server integration.
 keywords:
   - android-ai-agent
   - mobile-gui-agent
+  - multimodal-os-agent
   - phone-use
   - mika-alternative
+  - mika-fork
   - rust-jni
   - virtual-display
+  - wechat-automation
+  - zero-trust-privacy
   - byok
-  - xiaomi-hyperos
   - mcp-server
   - llms-txt
 license: Apache-2.0

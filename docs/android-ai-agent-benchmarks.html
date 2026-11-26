@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Android AI Agent 性能基准与横向评测（Sol Next 8.0.1 vs Mika / 常规视觉方案）</title>
+  <meta name="description" content="Android 15 (API 35 · arm64-v8a) 透明实测与 99/99 自动化回归基准：详述 Sol Next 8.0.1 的 72ms Tier-0A 原生系统直通、120+ App <250ms Deep-Link 瞬移、Rust v5.00 16KB JNI (-74%~-97% 树剪枝)、微信 8.0.80 9.5s 一次登录与 8/8 首击零误双击、0.0px 1:1 虚拟屏精度。" />
+  <meta name="keywords" content="Android AI Agent Benchmark, Fastest Android AI Agent, Mobile GUI Agent Comparison, Sol Next 8.0.1 Benchmark, WeChat AI Automation, Rust JNI Android, Set-of-Mark Android, Mika vs Sol Next Benchmarks, Android 15 16KB Agent" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#05070c" />
+  <link rel="canonical" href="https://chongyangzhang92-hub.github.io/Sol-Next/android-ai-agent-benchmarks.html" />
+  <link rel="alternate" type="text/plain" title="LLMs.txt" href="https://chongyangzhang92-hub.github.io/Sol-Next/llms.txt" />
+  <link rel="alternate" type="application/json" title="AI Machine-Readable Facts" href="https://chongyangzhang92-hub.github.io/Sol-Next/ai-facts.json" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Android AI Agent Benchmarks — Sol Next 8.0.1 Verified Speed, Precision & WeChat 8.0.80 Results" />
+  <meta property="og:description" content="72ms Tier-0A System API (0 Tokens), <250ms 120+ app teleports, 9.5s WeChat login 1st-try, 8/8 first-try with 0 double-taps, 0.0px 1:1 VirtualDisplay, 99/99 tests." />
+  <meta property="og:url" content="https://chongyangzhang92-hub.github.io/Sol-Next/android-ai-agent-benchmarks.html" />
+  <meta property="og:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/compare-benchmark.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/compare-benchmark.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "headline": "Sol Next 8.0.1 Android AI Agent Benchmarks: Speed, Precision, Rust v5.00 JNI & WeChat 8.0.80 Hardening",
+        "datePublished": "2026-11-26",
+        "dateModified": "2026-11-26",
+        "url": "https://chongyangzhang92-hub.github.io/Sol-Next/android-ai-agent-benchmarks.html",
+        "image": [
+          "https://chongyangzhang92-hub.github.io/Sol-Next/media/compare-benchmark.png",
+          "https://chongyangzhang92-hub.github.io/Sol-Next/media/compare-execution-pipeline.png",
+          "https://chongyangzhang92-hub.github.io/Sol-Next/media/compare-vdisplay-precision.png"
+        ]
+      },
+      {
+        "@type": "Dataset",
+        "name": "Sol Next 8.0.1 Android 15 (API 35) Verified Execution Benchmarks",
+        "description": "Measured latency, accuracy, coordinate drift, and unit test verification results for Sol Next 8.0.1 (Build 801) on Android 15 arm64-v8a emulator with real installed apps.",
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "creator": { "@type": "Organization", "name": "Sol Next Open-Source Project" },
+        "variableMeasured": [
+          "Tier-0A Native System Reflex Latency (72 ms, 0 Tokens)",
+          "120+ App Deep-Link Teleport Latency (<250 ms)",
+          "Zero-Cache State Fingerprinting Latency (<2 ms)",
+          "1:1 Set-of-Mark Vision Encoding Latency (64 ms)",
+          "WeChat 8.0.80 Cold-Start Login + Grouped Phone Input (9.5 s 1st-Try)",
+          "WeChat 8.0.80 8-Step Flow Accuracy (8/8 First-Try, 0 Double-Taps)",
+          "Background VirtualDisplay Coordinate Drift (0.0 px, 1080x2280 @ 440dpi scale=1.0)",
+          "Automated Unit & Regression Test Pass Rate (99/99)"
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root { --bg:#05070c; --surface:rgba(14,19,32,.84); --hair:rgba(255,255,255,.10); --ink:#f8fafc; --ink2:#94a3b8; --cyan:#38bdf8; --emerald:#34d399; --indigo:#818cf8; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Inter",sans-serif; background:var(--bg); color:var(--ink); line-height:1.68; }
+    a { color:var(--cyan); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .wrap { max-width:1160px; margin:0 auto; padding:28px 22px 84px; }
+    nav { display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:center; padding:16px 0 28px; border-bottom:1px solid var(--hair); }
+    .brand { font-weight:800; font-size:19px; color:#fff; }
+    .nav-links { display:flex; flex-wrap:wrap; gap:16px; font-size:14px; color:var(--ink2); }
+    .kicker { display:inline-block; padding:6px 14px; border-radius:999px; font-size:12px; font-weight:700; letter-spacing:.06em; background:rgba(52,211,153,.14); border:1px solid rgba(52,211,153,.35); color:var(--emerald); margin:34px 0 14px; }
+    h1 { font-size:clamp(28px,4.2vw,46px); line-height:1.18; margin-bottom:14px; }
+    .lead { font-size:17px; color:var(--ink2); max-width:920px; margin-bottom:28px; }
+    .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; margin-bottom:36px; }
+    .kpi { background:var(--surface); border:1px solid var(--hair); border-radius:18px; padding:20px; }
+    .kpi b { display:block; font-size:32px; color:var(--cyan); margin-bottom:4px; }
+    .kpi span { font-size:13px; color:var(--ink2); }
+    h2 { font-size:26px; margin:42px 0 16px; }
+    table { width:100%; border-collapse:collapse; margin:14px 0 28px; background:var(--surface); border:1px solid var(--hair); border-radius:16px; overflow:hidden; font-size:14px; }
+    th, td { text-align:left; padding:14px 16px; border-bottom:1px solid var(--hair); vertical-align:top; }
+    th { background:rgba(30,41,66,.75); color:#fff; }
+    td { color:var(--ink2); }
+    .ok { color:var(--emerald); font-weight:700; }
+    .grid-2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(460px,1fr)); gap:18px; margin-top:16px; }
+    figure { background:var(--surface); border:1px solid var(--hair); border-radius:18px; padding:14px; }
+    figure img { width:100%; border-radius:12px; display:block; }
+    figcaption { margin-top:10px; font-size:14px; color:var(--ink2); }
+    footer { margin-top:54px; padding-top:24px; border-top:1px solid var(--hair); color:var(--ink2); font-size:14px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; }
+    @media (max-width:600px){ .grid-2 { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="./">✦ Sol Next 8.0.1</a>
+      <div class="nav-links">
+        <a href="./">产品官网</a>
+        <a href="./mika-vs-sol-next.html">Sol Next vs Mika</a>
+        <a href="./mcp-and-byok-guide.html">MCP &amp; BYOK 指南</a>
+        <a href="./llms.txt">llms.txt</a>
+        <a href="./ai-facts.json">ai-facts.json</a>
+      </div>
+    </nav>
+
+    <span class="kicker">TRANSPARENT BENCHMARKS · ANDROID 15 EMULATOR &amp; 99/99 AUTOMATED TESTS</span>
+    <h1>Android AI Agent 速度、精度与微信实战基准报告（Sol Next 8.0.1）</h1>
+    <p class="lead">
+      本文档公开披露 <strong>Sol Next 8.0.1（Build 801 · Apache-2.0 · 基于 <code>wangzan101/Mika</code> 深度演进）</strong> 在 <strong>Android 15（API 35 · <code>arm64-v8a</code> · <code>1080×2280 @ 440dpi</code>）模拟器真装应用</strong> 与 <strong>99 项自动化单元测试</strong> 中的全部可复现基准数据，并与纯云端截屏视觉 Agent 及早期底座进行透明横向对比。
+    </p>
+
+    <div class="kpis">
+      <div class="kpi"><b>72 ms</b><span>Tier-0A 系统原生直通（0 Token）</span></div>
+      <div class="kpi"><b>&lt; 250 ms</b><span>120+ 主流 App Deep-Link 瞬移</span></div>
+      <div class="kpi"><b>9.5 s</b><span>微信 8.0.80 冷启登录输入一次过（原 18.5s）</span></div>
+      <div class="kpi"><b>0.0 px</b><span>Display 0 1:1 物理屏克隆偏移误差</span></div>
+      <div class="kpi"><b>99 / 99</b><span>自动化单元与回归套件全绿 0 崩溃</span></div>
+    </div>
+
+    <h2>一、Android 15 真装实测与 8.0.0 → 8.0.1 回归对比</h2>
+    <table>
+      <thead>
+        <tr><th>实测任务场景</th><th>底层执行链路</th><th>v8.0.0 基线</th><th>Sol Next 8.0.1 实测</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>系统电量、存储与状态查询</td><td>Tier-0A 原生 System API（0 Token）</td><td>72 ms</td><td class="ok">72 ms · PASS</td></tr>
+        <tr><td>120+ 主流 App 目标页直达</td><td>SolAppGraphEngine Deep-Link + t=0ms 预启动</td><td>多轮点击 ~2.4s+</td><td class="ok">&lt; 250 ms · PASS</td></tr>
+        <tr><td>当前屏幕多模态视觉解析</td><td>64 ms 1:1 Set-of-Mark 红框标注（1 轮）</td><td>5.1 s</td><td class="ok">5.1 s · PASS</td></tr>
+        <tr><td>系统设置直达 WLAN 核验</td><td>并发预启动 + 实时 #id 句柄点击</td><td>7.2 s</td><td class="ok">7.2 s · PASS</td></tr>
+        <tr><td>微信 8.0.80 冷启 → 登录 → 分组手机号 <code>138 0013 8000</code></td><td>app_open + 实时句柄 + 格式化数字回读</td><td>18.5 s（回读重试）</td><td class="ok">9.5 s · 一次通过 (~2×)</td></tr>
+        <tr><td>微信 8.0.80 搜「日本」→ 切账号 → 中文输入（8 步）</td><td>实时 #1..#N 句柄 + &lt;2ms 零缓存指纹</td><td>20.5 s</td><td class="ok">20.8 s · 8/8 首击（0 误双击）</td></tr>
+        <tr><td>微信长流程（&gt;22 条消息裁剪 + WebView 返回）</td><td>目标钉死滑窗 + 自动视觉恢复</td><td>裁剪偶发目标跑偏</td><td class="ok">100% 目标锁定 · PASS</td></tr>
+        <tr><td>1:1 后台虚拟屏 <code>dumpsys display</code> 实证</td><td>Built-in Screen vs sol-next-bg</td><td>1080×2280 @ 440dpi</td><td class="ok">1080×2280 @ 440dpi · scale=1.0</td></tr>
+        <tr><td>自动化单元与回归套件</td><td><code>:sol-core:test</code> (73) + <code>:app:testReleaseUnitTest</code> (26)</td><td>96 / 96</td><td class="ok">99 / 99 · 0 Crashes</td></tr>
+      </tbody>
+    </table>
+
+    <h2>二、横向对比：Sol Next 8.0.1 vs 典型 Android AI Agent 范式</h2>
+    <table>
+      <thead>
+        <tr><th>对比维度</th><th>纯云端 VLM 截屏 Agent（AppAgent / Mobile-Agent 等）</th><th>原版 Mika（<code>wangzan101/Mika</code>）</th><th>Sol Next 8.0.1（公开版 BYOK）</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>电脑依赖</strong></td><td>多数需 PC + USB/ADB 脚本循环驱动</td><td>免电脑手机端独立运行（无线配对开创者）</td><td class="ok">免电脑手机端独立运行 + 可选零依赖 CLI/MCP 桌面直驱</td></tr>
+        <tr><td><strong>前景打扰</strong></td><td>直接霸占主屏，执行期间无法正常用机</td><td>开创独立后台 VirtualDisplay（不抢主屏）</td><td class="ok">Display 0 1:1 物理屏克隆（0.0px 零漂移，前景自由用机）</td></tr>
+        <tr><td><strong>高频系统响应</strong></td><td>每步截屏上传云端，延迟 2–5 秒</td><td>常规云端规划</td><td class="ok">Tier-0A 72 ms 原生直通（0 Token）+ 120+ App &lt;250ms 瞬移</td></tr>
+        <tr><td><strong>端侧加速与精校</strong></td><td>纯视觉猜坐标，密集列表易点偏</td><td>Kotlin / JVM 树处理</td><td class="ok">Rust v5.00 16KB JNI (-74%~-97%) + #1..#N 实时句柄 + 64ms 1:1 SoM</td></tr>
+        <tr><td><strong>微信防误发/误双击</strong></td><td>无专用契约，易因网络延迟连发消息</td><td>通用无障碍适配</td><td class="ok">单次发送 4×85ms 气泡核验契约 + &lt;2ms 零缓存指纹（0 重发/0 误双击）</td></tr>
+        <tr><td><strong>独特生态定位</strong></td><td>偏学术基准与单机脚本实验</td><td><strong style="color:#a5b4fc">内置桌面浏览器 + 每对话 Linux 沙箱 + 社区知识包</strong></td><td class="ok">极速原生 App 闭环 + AI 接打电话 + 100% 零内置 Key + 原生 MCP</td></tr>
+      </tbody>
+    </table>
+
+    <h2>三、高清基准可视化图谱</h2>
+    <div class="grid-2">
+      <figure>
+        <a href="media/compare-benchmark.png" target="_blank"><img src="media/compare-benchmark.png" alt="Sol Next 8.0.1 核心速度与精度实测基准图" /></a>
+        <figcaption><strong>速度、剪枝与精度四维基准图</strong>（72ms 直通 / &lt;250ms 瞬移 / 9.5s 微信登录 / 0.0px 偏移）。</figcaption>
+      </figure>
+      <figure>
+        <a href="media/compare-execution-pipeline.png" target="_blank"><img src="media/compare-execution-pipeline.png" alt="Sol Next 8.0.1 双轨时序瀑布与微信九项加固图" /></a>
+        <figcaption><strong>端到端时序瀑布与微信 8.0.80 九项实战加固图</strong>。</figcaption>
+      </figure>
+    </div>
+
+    <footer>
+      <span>Sol Next 8.0.1 (Build 801) · Apache-2.0 · 诚挚致敬 <a href="https://github.com/wangzan101/Mika">wangzan101/Mika</a></span>
+      <span><a href="./">产品官网</a> · <a href="./mika-vs-sol-next.html">Mika 对比页</a> · <a href="./mcp-and-byok-guide.html">MCP &amp; BYOK 指南</a></span>
+    </footer>
+  </div>
+</body>
+</html>
