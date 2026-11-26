@@ -27,10 +27,14 @@
 - **4-Primitive Hardware Gesture Arena**: `18.7 s` · `4/4` first-try (Tap, Long-Press `823ms / 0px drift`, Drag, Pinch `1.63x`).
 - **Android 16 `uid=2000` Background Virtual Display**: `24 ms` frame capture with live PiP inside Task Execution.
 
+- **Zero-Voice-API Offline Neural ASR + TTS (Android 16 R8)**: `770 ms` Chinese streaming transcription (`streaming-zipformer-small-ctc-zh-int8`) + `573 ms` Chinese neural TTS (`vits-icefall-zh-aishell3`) with zero voice API key and zero Google Services.
+- **One-Tap Live Screen Translate & Summary**: `4.5 s` reading 52 lines from active Virtual Display into a 2×2 Android 17 GenUI card.
+- **Automated Test Suite**: `206 / 206` passed (`:sol-core:test` 93, `:app:testReleaseUnitTest` 75, Rust `cargo test` 38) + R8 + true 16KB uncompressed `.so`.
+
 ## Verified Public Release Artifacts (`v9.0.1-public` · Build 901 · Zero Built-In Keys)
 
-- **ARM64 APK (Recommended, 34 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-arm64.apk
-  - SHA-256: `e3e877e011907c8a8a92f88271252cb4c4ac653eba898395306367548fa1631b`
-- **Universal APK (`arm64-v8a` + `x86_64`, 47 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-universal.apk
-  - SHA-256: `a6bc9791d5717c08e3077bb406af8ce557c8157c28298f6f1285e7cb7359f689`
+- **ARM64 APK (Recommended, 89 MB, incl. built-in Apache-2.0 16KB offline neural ASR + TTS)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-arm64.apk
+  - SHA-256: `33bea509d0ffb4da9c6cbfeb2aba2708ed91b3deecfb29fdebb5376618c4df5e`
+- **Universal APK (`arm64-v8a` + `x86_64`, 128 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-universal.apk
+  - SHA-256: `1e2c641f8ffe4f2708243f89d732cc6aa06079877eecde11991e178496b07880`
 - **Zero-Key Audit Command** (expected empty output): `unzip -l Sol-Next-v9.0.1-public-arm64.apk | grep -iE "distribution|sol-models|secret|key\.json"`

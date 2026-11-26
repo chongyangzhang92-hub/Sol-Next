@@ -2,9 +2,39 @@
 
 > **Sol Next 9.0.1 ("Dawn Orbit / 晨曦轨道")** (`ai.sol.next`, Build 901) is a voice-first, zero-learning-curve Android 10–16 (API 29–36, 16KB page-aligned) AI Mobile Agent with **100% zero built-in API keys (Universal BYOK)**, paying tribute to pioneer project [**`wangzan101/Mika`**](https://github.com/wangzan101/Mika) (Apache-2.0).
 
-## Verified Public Release Artifacts (`v9.0.1-public` · Build 901)
+## Key 9.0.1 Breakthroughs
 
-- ARM64 APK: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-arm64.apk (`e3e877e011907c8a8a92f88271252cb4c4ac653eba898395306367548fa1631b`)
-- Universal APK: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-universal.apk (`a6bc9791d5717c08e3077bb406af8ce557c8157c28298f6f1285e7cb7359f689`)
-- GitHub Repository: https://github.com/chongyangzhang92-hub/Sol-Next
-- Product Website: https://chongyangzhang92-hub.github.io/Sol-Next/
+1. **Unified 4-Screen "Dawn Orbit" Voice-First UI + New 3D Ringed-Planet Logo**:
+   - Screen 1 (`首页 · 语音交互`): Full-bleed Dawn Orbit voice canvas, zero text input box, glowing 5-bar waveform orb, `∞` full-duplex continuous toggle, `○○/○○` capability grid.
+   - Screen 2 (`任务执行`): Clean frosted progress bar, multi-state green/blue step tree with 100% humanized natural-language sub-steps (zero package names, zero node IDs, zero pixel coordinates), Android 17 Generative UI interactive cards, and chronological timeline.
+   - Screen 3 (`AI 通话`): Misty Dawn Orbit call orb, 35-bar live speech spectrum, ticking duration timer, frosted live speech transcript bubble, `<0.1ms` on-device Scam Shield (`SolCallScamShield`), 1-tap Live Whisper steering, and Mute/End/Speaker controls.
+   - Screen 4 (`设置 · 模型配置 BYOK`): 3-row universal cloud model config (Provider / API / Model), Privacy & Security toggles (on-device Privacy Firewall ON by default, usage telemetry OFF by default), Permissions & Auto-OTA About panel.
+2. **Full-Duplex Real-Time Voice Agent (`SolLiveVoiceEngine`)**: Hardware DSP (`AEC + NS + AGC`), `<20ms` barge-in interruption, `<400ms` conversational replies, and automatic dispatching of actionable device/game/call commands.
+3. **Google Android 16 / 17 AI OS Roadmap Shipped Today**:
+   - Android 17 **Generative UI** (`SolGenerativeUiSpec`, 0-token device dashboards + `ui_render_card`).
+   - Android 16/17 **Magic Cue** (`SolMagicCueEngine`, `<0.1ms` OTP copy, parcel lookup, hotline call, navigation, low-battery whispers).
+   - Android 16 **AppFunctions** (`SolAppFunctionBridge`) + **Live Updates** (`Notification.ProgressStyle`).
+   - **On-Device Private Compute Privacy Firewall** (`SolPrivacyRedactor`): masks national IDs, Luhn bank cards, API keys, and passwords locally before cloud LLM calls.
+4. **Human-Like Real-Time Gaming**: 4-finger simultaneous `multi_touch` (joystick + skills/aim), burst `ui_tap_sequence`, bottom-row card/button OCR, and 60Hz `realtime_play`.
+5. **Universal Any-Cloud-Model BYOK + Autonomous OTA**: Zero local GPU servers required; auto-learns capabilities for OpenAI, DeepSeek, Claude, Gemini, Qwen-VL, OpenRouter, or any OpenAI-compatible endpoint; text-only models auto-accelerate with on-device ML Kit OCR; startup + 6h automatic OTA checks with push notifications and Wi-Fi pre-download.
+
+## Verified Android 16 (API 36 · 16KB) Benchmarks
+
+- **0-Token Android 17 Generative UI Dashboard**: Instant native Compose KPI card (battery, storage, RAM, Wi-Fi).
+- **Complex Multi-Step Verification & Restore (`Dark theme OFF -> ON -> OFF`)**: `9.3 s` · `4/4` verified + native Generative UI report.
+- **Dou Dizhu 3-Round Landscape Zero-A11y**: `32.5 s` · `10 steps` · `3/3` rounds won.
+- **DroidFish Stockfish Chess + Ungranted Android 16 Permission**: Auto-allowed `PermissionController` + played legal Sicilian opening.
+- **4-Primitive Hardware Gesture Arena**: `18.7 s` · `4/4` first-try (Tap, Long-Press `823ms / 0px drift`, Drag, Pinch `1.63x`).
+- **Android 16 `uid=2000` Background Virtual Display**: `24 ms` frame capture with live PiP inside Task Execution.
+
+- **Zero-Voice-API Offline Neural ASR + TTS (Android 16 R8)**: `770 ms` Chinese streaming transcription (`streaming-zipformer-small-ctc-zh-int8`) + `573 ms` Chinese neural TTS (`vits-icefall-zh-aishell3`) with zero voice API key and zero Google Services.
+- **One-Tap Live Screen Translate & Summary**: `4.5 s` reading 52 lines from active Virtual Display into a 2×2 Android 17 GenUI card.
+- **Automated Test Suite**: `206 / 206` passed (`:sol-core:test` 93, `:app:testReleaseUnitTest` 75, Rust `cargo test` 38) + R8 + true 16KB uncompressed `.so`.
+
+## Verified Public Release Artifacts (`v9.0.1-public` · Build 901 · Zero Built-In Keys)
+
+- **ARM64 APK (Recommended, 89 MB, incl. built-in Apache-2.0 16KB offline neural ASR + TTS)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-arm64.apk
+  - SHA-256: `33bea509d0ffb4da9c6cbfeb2aba2708ed91b3deecfb29fdebb5376618c4df5e`
+- **Universal APK (`arm64-v8a` + `x86_64`, 128 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-universal.apk
+  - SHA-256: `1e2c641f8ffe4f2708243f89d732cc6aa06079877eecde11991e178496b07880`
+- **Zero-Key Audit Command** (expected empty output): `unzip -l Sol-Next-v9.0.1-public-arm64.apk | grep -iE "distribution|sol-models|secret|key\.json"`

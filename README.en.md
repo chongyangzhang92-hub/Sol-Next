@@ -61,16 +61,16 @@ Sol Next 9.0.1 reinvents the mobile AI agent from the ground up with **zero lear
 
 ### 2. Six Flagship Breakthroughs Shipping in Executable Code
 
-1. **Full-Duplex Real-Time Voice Agent**: Hardware DSP (`AcousticEchoCanceler` + `NoiseSuppressor` + `AutomaticGainControl`), `<20ms` barge-in interruption, `<400ms` conversational replies, and instant OS action dispatching with live spoken verification.
+1. **Zero-Voice-API Real-Time Neural Voice Agent (Built-In 16KB Offline Streaming ASR + TTS)**: Ships Apache-2.0 `sherpa-onnx v2.0.3` + `streaming-zipformer-small-ctc-zh-int8` (`770ms` live Chinese transcription) + `vits-icefall-zh-aishell3` neural Chinese TTS (`573ms` synthesis) directly inside the APK. Works seamlessly with **text-only models (DeepSeek, Claude, Kimi, GLM)** and **zero Google Services / zero voice API keys**, alongside hardware DSP (`AEC + NS + AGC`), forced loudspeaker routing, and `<20ms` barge-in queue flush.
 2. **Google Android 16 / 17 Intelligent OS Roadmap Implemented Today**:
-   - **Android 17 Generative UI**: Instant `0-Token` native 120Hz Compose dashboards + agent-rendered interactive cards (`ui_render_card`).
+   - **Android 17 Generative UI**: Instant `0-Token` native 120Hz Compose dashboards, 2×2 non-truncating verification/translation cards (`sol://copy|speak|save_fact` at 0ms), and agent-rendered interactive cards.
    - **Android 16/17 Magic Cue**: `<0.1ms` on-device proactive whisper pills (OTP copy, parcel tracking, hotlines, navigation, battery saver).
    - **Android 16 AppFunctions & Live Updates**: Native on-device capability discovery (`AppFunctionManager` + `120+` Deep-Links) and `Notification.ProgressStyle` live status chips.
-   - **On-Device Private Compute Privacy Firewall**: Automatically redacts national IDs, Luhn-validated bank cards, API keys, and passwords locally before any cloud LLM request leaves your phone.
-3. **Universal Any-Cloud-Model BYOK Engine**: Zero local GPU servers required. Works out-of-the-box with OpenAI, DeepSeek, Claude, Gemini, Qwen-VL, OpenRouter, or any OpenAI-compatible API — with automatic endpoint capability learning, text-only on-device ML Kit OCR vision fallback, persistent long-horizon episodic memory, anti-oscillation detection, and adaptive test-time compute scaling.
-4. **Human-Like Real-Time Gaming**: Simultaneous 4-finger `multi_touch` (left thumb joystick + right thumb skills/aim), burst `ui_tap_sequence`, bottom-row card/button OCR, and 60Hz `realtime_play`.
-5. **Carrier-Grade AI Phone Calls + On-Device Scam Shield**: Non-default-dialer Telecom companion with `<0.1ms` real-time scam detection (screen-sharing, OTP theft, impersonation), 1-tap Pixel Call Screen-style live whisper steering, and instant human takeover.
-6. **Autonomous Built-In OTA Updater & 60Hz Background Virtual Display**: Startup + 6-hour background update checks, push notifications, Wi-Fi atomic pre-download, and `uid=2000` Picture-in-Picture background virtual screen execution.
+   - **On-Device Private Compute Privacy Firewall & Minimal 2-Step Permissions**: Redacts national IDs, Luhn bank cards, API keys, and passwords locally; encrypts BYOK keys, routines, and Personal AI Memory with Android KeyStore AES-256; requires ONLY Mic + Accessibility (zero custom keyboard, zero default assistant takeover, zero device admin).
+3. **Universal Any-Cloud-Model BYOK Engine (Incl. Native Anthropic `/v1/messages`)**: Works out-of-the-box with OpenAI, DeepSeek, official Anthropic Claude (`/v1/messages`), Gemini, Qwen-VL, OpenRouter, or any OpenAI-compatible API — with automatic endpoint capability learning, ML Kit OCR fallback, persistent episodic memory, anti-stall recovery, and blocking high-risk confirmations.
+4. **Golden Spatula (`JccSkillPack` + Rust FSD) & Universal Multi-Genre 60Hz Gaming**: Full real execution for Battle of Golden Spatula (`com.tencent.jkchess`) via Rust `<15µs` SwiGLU Value Network + `4×7` Hex Simulator + zero-slip drag, plus multi-genre 60Hz `SolVisualServoEngine` (`FPS`, `MOBA/ARPG` dual-thumb joystick + hazard dodge + skill combos, `Arcade/Runner`, `Tap/Rhythm`, with foreground Accessibility fallback) and 1-tap Quick Center Game Hub.
+5. **Carrier-Grade AI Phone Calls, Smart Routines & Live Screen Translator**: Non-default-dialer Telecom companion with `<0.1ms` Scam Shield, 1-tap Live Whisper, 4.5s one-tap Screen Translate & Summary GenUI card, encrypted scheduled routines, and Personal AI Memory Manager.
+6. **Hardened Cert-Verified OTA, R8 + True 16KB Alignment & Default Background Virtual Display**: Startup + 6h update checks with APK signing-cert + SHA-256 verification, R8 minification with uncompressed 16KB-aligned native `.so`, and default `uid=2000` Background Virtual Display with an inline collapsible live preview card.
 
 ---
 
@@ -89,13 +89,15 @@ Sol Next 9.0.1 reinvents the mobile AI agent from the ground up with **zero lear
 - **Dou Dizhu 3-Round Landscape Zero-A11y**: **32.5s · 10 steps · 3/3 rounds won**.
 - **4-Primitive Hardware Gesture Arena**: **18.7s · 4/4 first-try** (Tap ✓, Long-Press `823ms / 0px drift` ✓, Drag ✓, Two-Finger Pinch `1.63x` ✓).
 - **Android 16 `uid=2000` Background Virtual Display**: **24ms frame capture** with live floating PiP inside Task Execution.
-- **Verification**: 100% unit tests (`:sol-core:test`, `:app:testReleaseUnitTest`), `:app:lintVitalRelease`, and zero-key audit passed.
+- **Zero-Voice-API Offline Neural ASR + TTS (Android 16 R8)**: **770ms** live Chinese WAV transcription (`streaming-zipformer-small-ctc-zh-int8`) + **573ms** neural Mandarin TTS (`vits-icefall-zh-aishell3`), verified zero-crash with DeepSeek text-only BYOK & zero voice API key.
+- **One-Tap Live Screen Translate & Summary**: **4.5s** reading 52 lines from active Virtual Display into a 2×2 Android 17 GenUI card.
+- **Verification**: **206/206 tests passed** (`:sol-core:test` 93, `:app:testReleaseUnitTest` 75, Rust `cargo test` 38), `:app:lintVitalRelease`, R8 + true 16KB uncompressed `.so` alignment, and zero-key audit passed.
 
 ---
 
 ## 📦 SHA-256 Checksums (`v9.0.1-public`)
 
 ```text
-e3e877e011907c8a8a92f88271252cb4c4ac653eba898395306367548fa1631b  Sol-Next-v9.0.1-public-arm64.apk
-a6bc9791d5717c08e3077bb406af8ce557c8157c28298f6f1285e7cb7359f689  Sol-Next-v9.0.1-public-universal.apk
+33bea509d0ffb4da9c6cbfeb2aba2708ed91b3deecfb29fdebb5376618c4df5e  Sol-Next-v9.0.1-public-arm64.apk
+1e2c641f8ffe4f2708243f89d732cc6aa06079877eecde11991e178496b07880  Sol-Next-v9.0.1-public-universal.apk
 ```

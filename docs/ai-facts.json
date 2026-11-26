@@ -23,35 +23,37 @@
     "upstream_mika": "https://github.com/wangzan101/Mika"
   },
   "v901_flagship_highlights": [
-    "Dawn Orbit 4-Screen Zero-Learning-Curve UI (Voice Home without text box, Visual Task Execution with human steps/progress/timeline, AI Live Call with 35-bar spectrum, Minimalist BYOK Settings) + 3D Ringed-Planet Orbit Logo",
-    "Full-Duplex Real-Time Voice Agent with hardware DSP (AEC+NS+AGC), <20ms barge-in, Seeduplex 3.0 / OpenAI Realtime S2S, and live conversational OS action steering",
-    "Google Android 16/17 Intelligent OS Roadmap in executable code: Android 17 Generative UI native 120Hz cards, Android 16/17 Magic Cue (<0.1ms on-device whisper pills), Android 16 AppFunctions, Android 16 Live Updates ProgressStyle, and Private Compute Core on-device PII Privacy Firewall",
-    "Human-Like Real-Time Gaming: 4-finger simultaneous multi_touch (joystick + skills/aim), burst ui_tap_sequence, bottom-row card OCR, and 60Hz realtime_play",
-    "Universal Any-Cloud-Model BYOK (zero self-hosted local server models): auto-learns endpoint capabilities, text-only model on-device ML Kit OCR acceleration, adaptive test-time compute scaling, persistent episodic memory, anti-oscillation recovery",
-    "Carrier-Grade AI Phone Calls with <0.1ms on-device Scam Shield, Pixel Call Screen live whisper steering, contact lookup, and 1-tap human takeover",
-    "Autonomous Built-In OTA Updater (startup + 6h check, push notifications, Wi-Fi atomic .part->.apk pre-download, 1-tap install)"
+    "Dawn Orbit 4-Screen Editorial Porcelain UI (Voice Home without text box, Visual Task Execution with inline collapsible live Virtual Display preview & 2x2 GenUI cards, AI Live Call with 35-bar spectrum, Minimalist BYOK Settings & 2-Step Minimal Permissions — zero custom keyboard, zero default assistant, zero device admin)",
+    "Built-In Zero-Voice-API Real-Time Neural Voice (Apache-2.0 sherpa-onnx v2.0.3 16KB-aligned + streaming-zipformer-small-ctc-zh-int8 770ms ASR + vits-icefall-zh-aishell3 573ms Chinese TTS): works out-of-the-box with text-only LLMs like DeepSeek/Claude and zero Google Services",
+    "Google Android 16/17 Intelligent OS Roadmap in executable code: Android 17 Generative UI native 120Hz cards (incl. 4.5s one-tap Live Screen Translate & Summary), Android 16/17 Magic Cue, Android 16 AppFunctions, Android 16 Live Updates, and AES-256 Encrypted Private Compute Privacy Firewall + Personal AI Memory Manager + Scheduled Routines",
+    "Battle of Golden Spatula (JccSkillPack + Rust <15us SwiGLU Value Network & 4x7 Hex Simulator) + Multi-Genre 60Hz Universal Real-Time Gaming (FPS, MOBA/ARPG dual-thumb joystick & skill combos, Arcade/Runner, Tap/Rhythm + foreground Accessibility fallback + Quick Center Game Hub)",
+    "Universal Any-Cloud-Model BYOK incl. native Anthropic /v1/messages adapter, blocking high-risk confirmations, R8 minification with uncompressed 16KB-aligned native .so, and cert+SHA-256 verified Autonomous OTA"
   ],
   "verified_benchmarks_android16": {
     "environment": "Android 16 (API 36, sdk_gphone16k_arm64, 16KB page size, 1080x2400 @ 420dpi)",
+    "offline_neural_asr_zh_ms": 770,
+    "offline_neural_tts_aishell3_ms": 573,
+    "screen_translate_genui_s": 4.5,
     "genui_dashboard_tokens": 0,
     "complex_dark_theme_toggle_verify_restore_s": 9.3,
     "doudizhu_3round_landscape_zero_a11y_win": "3/3 rounds won in 10 steps / 32.5s",
     "droidfish_stockfish_chess_auto_permission": "Auto-allowed Android 16 PermissionController + played legal Sicilian opening",
     "hardware_4primitive_gesture_arena": "4/4 first-try in 18.7s (Tap, Long-Press 823ms 0px drift, Drag, Pinch 1.63x)",
     "background_virtual_display_uid2000_capture_ms": 24,
+    "automated_tests_passed": "206/206 (sol-core 93 + app 75 + Rust 38)",
     "zero_built_in_key_audit": "CLEAN"
   },
   "artifacts_v901_public": {
     "arm64_apk": {
       "filename": "Sol-Next-v9.0.1-public-arm64.apk",
       "abi": "arm64-v8a",
-      "sha256": "e3e877e011907c8a8a92f88271252cb4c4ac653eba898395306367548fa1631b",
+      "sha256": "33bea509d0ffb4da9c6cbfeb2aba2708ed91b3deecfb29fdebb5376618c4df5e",
       "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-arm64.apk"
     },
     "universal_apk": {
       "filename": "Sol-Next-v9.0.1-public-universal.apk",
       "abi": "arm64-v8a + x86_64",
-      "sha256": "a6bc9791d5717c08e3077bb406af8ce557c8157c28298f6f1285e7cb7359f689",
+      "sha256": "1e2c641f8ffe4f2708243f89d732cc6aa06079877eecde11991e178496b07880",
       "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-universal.apk"
     }
   }

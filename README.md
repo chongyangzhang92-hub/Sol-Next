@@ -81,21 +81,35 @@
 </table>
 
 <details>
-<summary><b>👀 展开查看更多真机细节（全双工实时收音状态 · 全新 3D 轨道桌面图标 · 后台独立虚拟屏画中画）</b></summary>
+<summary><b>👀 展开查看更多真机细节（零语音 API 端侧流式语音 · 快捷中心与游戏直通舱 · 虚拟屏内嵌预览 · 一键读屏翻译 · 定时任务 · AI 记忆管理）</b></summary>
 <br/>
 <table>
   <tr>
     <td align="center" width="33%">
-      <img src="docs/media/v901/screen-1-voice-live.png" alt="全双工实时语音收音中" width="230" /><br/>
-      <sub><b>实时全双工语音对话中</b>（Android 16 麦克风激活 · <code>&lt;20ms</code> 随时语音打断）</sub>
+      <img src="docs/media/v901/screen-1-voice-live.png" alt="零语音 API 端侧流式实时语音" width="220" /><br/>
+      <sub><b>零语音 API 端侧流式语音</b>（仅填 DeepSeek 纯文本 Key · 内置 Zipformer-CTC <code>770ms</code> 转写）</sub>
     </td>
     <td align="center" width="33%">
-      <img src="docs/media/v901/screen-2-vdisplay-live.png" alt="后台独立虚拟屏实时画中画" width="230" /><br/>
-      <sub><b>Android 16 后台独立虚拟屏 PiP</b>（<code>24ms</code> 截帧 · 不打扰主屏）</sub>
+      <img src="docs/media/v901/screen-2-vdisplay-live.png" alt="后台独立虚拟屏内嵌实时预览" width="220" /><br/>
+      <sub><b>后台独立虚拟屏内嵌预览卡</b>（默认虚拟屏操作 · 零遮挡步骤与时间线）</sub>
     </td>
     <td align="center" width="33%">
-      <img src="docs/media/v901/launcher-orbit-icon.png" alt="全新 3D 环形轨道桌面 Logo" width="230" /><br/>
-      <sub><b>全新 3D 环形轨道星球图标</b>（自适应圆/方图标 + 状态栏剪影全量焕新）</sub>
+      <img src="docs/media/v901/screen-quick-center.png" alt="快捷中心与游戏直通舱" width="220" /><br/>
+      <sub><b>快捷中心 · 游戏直通舱</b>（《金铲铲之战》/ 斗地主 / 王者 / 和平精英一键畅玩）</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <img src="docs/media/v901/screen-translate-genui.png" alt="一键读屏翻译 2x2 GenUI 卡" width="220" /><br/>
+      <sub><b>4.5s 一键读屏翻译 · 要点卡</b>（2×2 GenUI + 0ms 复制/朗读/存记忆）</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/media/v901/screen-routines.png" alt="端侧加密定时任务" width="220" /><br/>
+      <sub><b>端侧 AES-256 定时自动任务</b>（早安播报 / 金铲铲每日领取 / 锁屏守护）</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/media/v901/screen-memory.png" alt="个人 AI 记忆管理" width="220" /><br/>
+      <sub><b>个人 AI 记忆管理</b>（仅存本机 AES-256 加密 · 写入前自动脱敏）</sub>
     </td>
   </tr>
 </table>
@@ -105,11 +119,9 @@
 
 ## 🚀 二、Sol Next 9.0.1 六大跨代王牌能力
 
-### 1. 🎙️ 全双工实时语音对话处理任务（Voice-First Live Agent）
-- **硬件级语音前处理**：直连 Android `VOICE_COMMUNICATION` 16kHz PCM16 麦克风管线，自动挂载硬件级 `AcousticEchoCanceler`（回声消除）+ `NoiseSuppressor`（环境降噪）+ `AutomaticGainControl`（自动增益），嘈杂环境依然识别精准。
-- **双轨实时分流**：
-  - 闲聊、问答、头脑风暴：经全双工语音流 **&lt;400ms** 拟人自然应答，支持 **&lt;20ms 随时插话打断**。
-  - 手机操作、查状态、发消息、打游戏、设闹钟：高精度中文同音纠偏后即时派发行动引擎，自动切入「任务执行」屏可视化展示，并在完成后通过语音实时向你口头汇报核验结果。
+### 1. 🎙️ 零语音 API 全双工实时语音对话（内置 16KB 端侧流式神经 ASR + 中文神经 TTS）
+- **不配任何语音模型 API、无谷歌服务也能实时完美语音**：内置 16KB 页对齐 Apache-2.0 `sherpa-onnx v2.0.3` + `streaming-zipformer-small-ctc-zh-int8` 真流式中文语音识别（Android 16 实测 5.6s 真实中文音频 **770ms** 精准转写）+ `vits-icefall-zh-aishell3` 端侧自然中文神经语音合成（**573ms** 出声）。哪怕只填了 DeepSeek / Claude / Kimi / GLM 等纯文本模型 Key，依然支持零弹窗逐字流式识别 + 外放人声播报 + 连续全双工对话！
+- **硬件级语音前处理与外放强路由**：自动路由至手机扬声器/蓝牙耳机，挂载硬件 `AcousticEchoCanceler` + `NoiseSuppressor` + `AutomaticGainControl`，支持 `<20ms` 真打断清队列；闲聊毫秒级自然应答，手机操作、游戏与通话指令自动切入「任务执行」屏可视化并语音汇报结果。
 - **任务中随时语音改口**：执行到一半直接说「停」「别点了，改成打开闹钟」，立刻实时转向或熔断。
 
 ### 2. 🧠 率先实装 Google Android 16 / 17 AI OS 前沿规划与论文智慧
@@ -124,14 +136,15 @@
 | **端侧 Private Compute 隐私防火墙** | Android Private Compute Core | 请求发往任何云端大模型前，在手机本地毫秒级自动脱敏 **18 位身份证号、Luhn 校验银行卡号、API 密钥与密码字段**，零云端明文泄露 |
 | **动态测试时算力缩放 & 长任务情节记忆** | Test-Time Compute Scaling / Grounded Episodic Memory | 顺畅步骤保持极速低延迟；检测到页面振荡（`A→B→A→B`）、触底或异常时自动升档深度推理并压缩保留 `[任务长期记忆]`，支持 56–120 轮超长任务不丢目标 |
 
-### 3. 🎮 真人级全游戏实时操控（任何游戏都能像人一样实时操作）
-- **4 指并发多点触控 (`multi_touch`)**：支持同时按下并滑动多达 4 根手指（例如左手持续拖动虚拟摇杆移动 + 右手连点普攻/释放技能/滑动调视角），在 60Hz 后台虚拟屏与免 ADB 前台双通路均原生生效。
-- **单回合高速连点 (`ui_tap_sequence`) + 自动并行融合**：一次规划出牌选多张牌或棋盘起止落子，毫秒级连续精准触控，杜绝多轮往返延迟。
-- **零无障碍游戏专用视觉增强**：针对纯画布/横屏游戏内置底排手牌精细 OCR、按钮定位 OCR 与 60Hz `realtime_play` 实时闭环控制。
+### 3. 🎮 《金铲铲之战》满血引擎 + 全品类任意游戏 60Hz 实时畅玩能赢
+- **《金铲铲之战》专属实操引擎 (`JccSkillPack` + Rust FSD)**：在运行态直接调度 Rust `<15µs` SwiGLU 价值网络 + `4×7` 六边形棋盘模拟器 + 视觉定位 `ScreenMap` 与零滑移精准拖拽，支持搜牌、升人口、上阵摆位、36 神装合成、选海克斯与法球拾取全流程托管，并沉淀吃分赢法。
+- **全品类 60Hz 多指实时引擎 (`SolVisualServoEngine`)**：自动识别并切换 `FPS`（光流自瞄/压枪/换弹）、`MOBA / ARPG`（左手虚拟摇杆追击+躲避红圈 AOE + 右手自适应技能连招，适配王者荣耀/原神/英雄联盟手游）、`跑酷竞速`（三道障碍瞬闪滑步）与 `音游连点`，且支持**免无线调试无障碍前台兜底**；快捷中心内置「游戏直通舱」一键开玩！
+- **4 指并发多点触控 (`multi_touch`) + 单回合连点 (`ui_tap_sequence`)**：横屏卡牌/棋牌（斗地主、纸牌、肉鸽）自动附带底排手牌/按钮端侧 OCR 坐标，一轮极速完成连点出牌。
 
-### 4. 🌐 任意云端大模型零配置直连（纯云端 + 端侧引擎，零自建本地模型依赖）
-- **彻底告别本地部署负担**：无需电脑、无需局域网 GPU、无需自建推理服务器，只要有一个云端 API Key（**OpenAI GPT-4o/4.1/5、DeepSeek、Claude、Gemini 2.5、通义千问 Qwen-VL、Kimi、GLM、OpenRouter 或任意 OpenAI 兼容中转**），3 秒填入即满血。
-- **端点能力自学习 + 纯文本模型满血视觉加速**：自动归一化误粘贴的 `/chat/completions` URL；遇到不支持 Vision/Reasoning/ToolChoice 的模型自动学习一次并永久降级，零重复 HTTP 400；遇到纯文本云端模型自动开启端侧 Google ML Kit 高精度 OCR + UI 树融合，同样流畅看屏操控。
+### 4. 🌐 任意云端大模型零配置直连 + 极简 2 步权限 + 四大日常旗舰能力
+- **原生全模型直连（含原生 Anthropic `/v1/messages`）**：无需自建服务器，填入 OpenAI / DeepSeek / Claude / Gemini / 通义千问 / Kimi / GLM / OpenRouter 任意 Key 即满血；BYOK 密钥与个人记忆全面升级 **Android KeyStore AES-256 加密存储**。
+- **极致极简 2 步权限**：彻底删除自定义输入法、默认数字助理、设备管理员与 18+ 无关敏感权限，首次打开仅需 **1. 麦克风 + 2. 辅助操控（无障碍）** 即可进入主页，高危操作启用真实阻塞二次确认弹窗。
+- **日常旗舰套件**：一键 **读屏翻译·页面总结**（4.5s 输出 2×2 GenUI 双语要点卡 + 0ms 复制/朗读/存记忆）、**定时/循环自动任务**（AES-256 加密 + 锁屏守护）、**个人 AI 记忆管理**（写入前自动本地脱敏）。
 
 ### 5. 📞 AI 实时通话前沿完全体（Pixel Call Screen 级体验）
 - **不替换系统默认拨号器**：基于 Telecom 非 UI 伴随架构与 `uid=2000` 全双工音频桥，原生通话界面与来电体验丝毫无损。
@@ -180,8 +193,9 @@
 | **Suite 3 · 斗地主实战三局（横屏无无障碍）** | **32.5 s · 10 步 · 3/3 全部获胜** | 5-6-7-8-9 顺子 / 对 J / 单 2 全部一次连点合法压制 |
 | **Suite 4 · DroidFish 国际象棋 + 未授权权限弹窗** | **自动授权 + 合法西西里防御开局** | 自动通过 Android 16 `PermissionController` 弹窗并对阵 Stockfish |
 | **Suite 5 · 4 项硬件触控手势考场** | **18.7 s · 4/4 首次尝试满分** | 点击 ✓ · 长按 `823ms / 0px 漂移` ✓ · 精准拖拽 ✓ · 双指放大 `1.63x` ✓ |
-| **Suite 6 · Android 16 `uid=2000` 后台独立虚拟屏** | **`24 ms` 虚拟屏截帧 · 画中画实时渲染** | 无线调试/USB 启动独立后台屏并发运行应用，不抢占主屏 |
-| **工程质量 & 安全性** | **100+ 单元测试全通过 · 零 Fatal 崩溃** | `:sol-core:test` + `:app:testReleaseUnitTest` + `:app:lintVitalRelease` + 零密钥审计全绿 |
+| **Suite 6 · Android 16 `uid=2000` 默认后台独立虚拟屏** | **`24 ms` 截帧 · 内嵌可折叠实时预览卡** | 默认在独立后台屏并发运行系统设置与第三方应用，零遮挡步骤与时间线 |
+| **Suite 7 · 零语音 API 端侧神经语音 & 一键读屏翻译** | **`770 ms` 中文流式转写 · `573 ms` 端侧合成 · `4.5 s` 读屏翻译** | Public 零 Key 版仅配 DeepSeek Key 即秒开端侧流式语音；4.5s 输出 2×2 译文要点卡 |
+| **工程质量、R8 & 16KB 安全校验** | **206 项单测全绿（Kotlin 168 + Rust 38）· 零 Fatal 崩溃** | R8 混淆瘦身 + `useLegacyPackaging=false` 真正 16KB 0% 无压缩对齐 + OTA 签名校验 + 零密钥审计全绿 |
 
 ---
 
@@ -204,17 +218,17 @@ Sol Next 衷心致敬开源先驱 [wangzan101/Mika](https://github.com/wangzan10
 ## 📦 五、下载安装与安全校验（零内置密钥公开版）
 
 1. **下载安装**：
-   - 📱 **绝大多数现代安卓手机（推荐）**：[Sol-Next-v9.0.1-public-arm64.apk](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-arm64.apk)（34 MB，Android 10–16 / 16KB 页对齐）
-   - 💻 **通用全架构（含 x86_64 模拟器）**：[Sol-Next-v9.0.1-public-universal.apk](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-universal.apk)（47 MB）
+   - 📱 **绝大多数现代安卓手机（推荐）**：[Sol-Next-v9.0.1-public-arm64.apk](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-arm64.apk)（89 MB · 内置 16KB 对齐开源离线流式中文 ASR + AISHELL-3 中文神经 TTS，Android 10–16）
+   - 💻 **通用全架构（含 x86_64 模拟器）**：[Sol-Next-v9.0.1-public-universal.apk](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-universal.apk)（128 MB）
 2. **30 秒极简上手**：
-   - 安装并授予**无障碍服务**与**麦克风权限**；
-   - 点击右下角 `○○/○○` → **设置** → 填入你自己的任意云端模型 API Key（OpenAI / DeepSeek / Claude / Gemini / 通义千问 / OpenRouter 等）；
+   - 首次启动完成 2 步极简引导：**1. 麦克风权限** + **2. 辅助操控（无障碍）**（不装输入法、不抢默认助理）；
+   - 打开 **设置 › 模型配置**，填入你自己的任意云端模型 API Key（OpenAI / DeepSeek / Claude / Gemini / 通义千问 / OpenRouter 等——**无需额外配置任何语音 API Key**）；
    - 回到晨曦首页，轻点发光声波球，直接说出你想让手机做的任何事！
 3. **SHA-256 校验与零内置密钥审计**：
 
 ```text
-e3e877e011907c8a8a92f88271252cb4c4ac653eba898395306367548fa1631b  Sol-Next-v9.0.1-public-arm64.apk
-a6bc9791d5717c08e3077bb406af8ce557c8157c28298f6f1285e7cb7359f689  Sol-Next-v9.0.1-public-universal.apk
+33bea509d0ffb4da9c6cbfeb2aba2708ed91b3deecfb29fdebb5376618c4df5e  Sol-Next-v9.0.1-public-arm64.apk
+1e2c641f8ffe4f2708243f89d732cc6aa06079877eecde11991e178496b07880  Sol-Next-v9.0.1-public-universal.apk
 ```
 
 ```bash

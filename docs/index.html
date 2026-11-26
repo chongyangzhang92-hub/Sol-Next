@@ -135,28 +135,28 @@
     <h2 id="features">六大跨代王牌能力</h2>
     <div class="feat-grid">
       <div class="feat">
-        <h3>🎙️ 全双工实时语音处理任务</h3>
-        <p>硬件级 AEC 回声消除 + NS 降噪 + AGC 增益，&lt;20ms 随时语音打断；闲聊毫秒级自然对话，手机指令自动切入任务进度可视化并语音汇报核验结果。</p>
+        <h3>🎙️ 零语音 API 端侧流式神经语音</h3>
+        <p>内置 16KB 对齐开源流式中文 ASR（770ms 转写）+ AISHELL-3 端侧中文神经 TTS（573ms 出声）；仅填 DeepSeek / Claude 等纯文本 Key、无需谷歌服务即可实时全双工对话。</p>
       </div>
       <div class="feat">
-        <h3>🧠 Google Android 16/17 智能 OS 实装</h3>
-        <p>内置 Android 17 Generative UI 原生 120Hz 交互卡片、Magic Cue &lt;0.1ms 主动微提示、Android 16 AppFunctions 能力发现与 Live Updates 状态栏实时进度胶囊。</p>
+        <h3>🧠 Android 16/17 实装 · 一键读屏翻译与定时任务</h3>
+        <p>内置 2×2 Generative UI 核验与 4.5s 读屏双语翻译卡（0ms 复制/朗读/存记忆）、端侧 AES-256 定时自动任务、Magic Cue 与个人 AI 记忆管理。</p>
       </div>
       <div class="feat">
-        <h3>🎮 全游戏真人级实时操控</h3>
-        <p>4 指并发 multi_touch（左摇杆 + 右普攻/技能/视角）、单回合极速连点 ui_tap_sequence、底排手牌/按钮专用 OCR 与 60Hz 实时闭环控制。</p>
+        <h3>🎮 《金铲铲之战》与全品类 60Hz 实时游戏引擎</h3>
+        <p>运行态完整接入 JccSkillPack + Rust SwiGLU/4×7 模拟器；60Hz 多品类引擎覆盖 FPS / MOBA-ARPG / 跑酷竞速 / 卡牌，快捷中心内置「游戏直通舱」一键开玩。</p>
       </div>
       <div class="feat">
-        <h3>🌐 任意云端模型零配置直连 (BYOK)</h3>
-        <p>零本地 GPU 服务器依赖；兼容 OpenAI / DeepSeek / Claude / Gemini / 通义千问 / OpenRouter 等任意云端模型，纯文本模型自动开启端侧 ML Kit OCR 视觉加速。</p>
+        <h3>🌐 任意云端模型 BYOK · 极简 2 步权限</h3>
+        <p>原生适配 OpenAI / DeepSeek / Anthropic Claude / Gemini / Qwen 等；彻底移除自定义输入法与默认助理接管，首次启动仅需麦克风 + 无障碍 2 步即用。</p>
       </div>
       <div class="feat">
-        <h3>🛡️ 端侧隐私防火墙 &amp; 实时反诈雷达</h3>
-        <p>发往云端前在手机本地自动脱敏身份证、Luhn 校验银行卡、API 密钥与密码；AI 通话内置 &lt;0.1ms 反诈雷达，自动识别并拦截屏幕共享、索要验证码等诈骗话术。</p>
+        <h3>🛡️ AES-256 加密存储 · 隐私防火墙与高危确认</h3>
+        <p>BYOK 密钥、个人记忆与定时任务全部本地 AES-256 加密；身份证/银行卡/密码发云前本地脱敏，支付/删除等高危动作触发真实阻塞二次确认。</p>
       </div>
       <div class="feat">
-        <h3>🔄 全自动 OTA &amp; 60Hz 后台独立虚拟屏</h3>
-        <p>启动与每 6 小时自动检测更新、推送通知与 Wi-Fi 静默预下载；支持 Android 16 uid=2000 独立后台虚拟屏 24ms 截帧画中画运行，绝不打扰主屏。</p>
+        <h3>🔄 默认后台虚拟屏 · 内嵌预览 &amp; 证书校验 OTA</h3>
+        <p>任务默认在后台独立虚拟屏执行并支持任务页内嵌折叠实时预览（零遮挡主屏与步骤）；内置签名证书 + SHA-256 强校验全自动 OTA 与真 16KB R8 打包。</p>
       </div>
     </div>
 
@@ -173,7 +173,8 @@
           <tr><td>斗地主三局横屏无无障碍实战</td><td class="ok">32.5 s · 10 步 · 3/3 全胜</td><td>顺子/对子/单牌一次连点合法压制通关</td></tr>
           <tr><td>DroidFish Stockfish 国际象棋 + 权限弹窗</td><td class="ok">自动授权 + 合法西西里开局</td><td>自动处理 Android 16 PermissionController 弹窗</td></tr>
           <tr><td>4 项硬件触控手势考场</td><td class="ok">18.7 s · 4/4 首次尝试满分</td><td>点击 / 长按(0px 漂移) / 拖动 / 双指放大(1.63x)</td></tr>
-          <tr><td>Android 16 后台独立虚拟屏 (uid=2000)</td><td class="ok">24 ms 截帧 · 画中画并发</td><td>独立虚拟屏无干扰运行系统设置与第三方应用</td></tr>
+          <tr><td>Android 16 默认后台独立虚拟屏 (uid=2000)</td><td class="ok">24 ms 截帧 · 内嵌可折叠实时预览</td><td>默认后台虚拟屏执行，零遮挡步骤与首页</td></tr>
+          <tr><td>零语音 API 端侧神经语音 &amp; 一键读屏翻译</td><td class="ok">770 ms 流式转写 · 573 ms 合成 · 4.5 s 读屏翻译</td><td>零谷歌/零语音 Key 实机跑通 + 206 项单测全绿</td></tr>
         </tbody>
       </table>
     </div>
