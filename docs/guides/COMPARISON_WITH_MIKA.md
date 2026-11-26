@@ -13,38 +13,38 @@
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="../media/compare-architecture.png" width="100%" alt="Sol Next 8.0.1 vs Mika 六层全栈架构演进对比" /><br/>
+      <img src="../media/v801/compare-architecture.png" width="100%" alt="Sol Next 8.0.1 vs Mika 六层全栈架构演进对比" /><br/>
       <b>① 全栈六层架构演进对比</b>
     </td>
     <td align="center" width="50%">
-      <img src="../media/compare-benchmark.png" width="100%" alt="Sol Next 8.0.1 核心速度与误差实测基准" /><br/>
+      <img src="../media/v801/compare-benchmark.png" width="100%" alt="Sol Next 8.0.1 核心速度与误差实测基准" /><br/>
       <b>② 核心速度、剪枝与精度实测基准</b>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="../media/compare-execution-pipeline.png" width="100%" alt="Sol Next 8.0.1 端到端时序瀑布与微信九项加固对比" /><br/>
+      <img src="../media/v801/compare-execution-pipeline.png" width="100%" alt="Sol Next 8.0.1 端到端时序瀑布与微信九项加固对比" /><br/>
       <b>③ 端到端执行时序瀑布 &amp; 微信 8.0.80 九项加固</b>
     </td>
     <td align="center" width="50%">
-      <img src="../media/compare-vdisplay-precision.png" width="100%" alt="1:1 物理屏克隆与 #1..#N 实时句柄精度对比" /><br/>
+      <img src="../media/v801/compare-vdisplay-precision.png" width="100%" alt="1:1 物理屏克隆与 #1..#N 实时句柄精度对比" /><br/>
       <b>④ 1:1 物理屏克隆 + `#1..#N` 句柄定位精度 (`0.0px`)</b>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="../media/compare-security-privacy.png" width="100%" alt="Sol Next 8.0.1 六重零信任安全与隐私架构对比" /><br/>
+      <img src="../media/v801/compare-security-privacy.png" width="100%" alt="Sol Next 8.0.1 六重零信任安全与隐私架构对比" /><br/>
       <b>⑤ 六重零信任安全、隐私与最小攻击面防线对比</b>
     </td>
     <td align="center" width="50%">
-      <img src="../media/compare-radar-matrix.png" width="100%" alt="Sol Next 8.0.1 vs Mika 八维工程能力客观雷达图" /><br/>
+      <img src="../media/v801/compare-radar-matrix.png" width="100%" alt="Sol Next 8.0.1 vs Mika 八维工程能力客观雷达图" /><br/>
       <b>⑥ 八维工程能力客观对比雷达图</b>
     </td>
   </tr>
 </table>
 
 <div align="center">
-  <img src="../media/compare-ecosystem-matrix.png" width="100%" alt="Sol Next 8.0.1 vs Mika 十二维全景工程总表" /><br/>
+  <img src="../media/v801/compare-ecosystem-matrix.png" width="100%" alt="Sol Next 8.0.1 vs Mika 十二维全景工程总表" /><br/>
   <b>⑦ 十二维全景工程与生态选型总表（完整零信任白皮书见 <a href="https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html">安全与隐私白皮书</a>）</b>
 </div>
 
