@@ -1,8 +1,8 @@
 <div align="center">
 
-> **Sol Next 9.0.0 Public Edition (Build 900 · Zero Built-In Keys / BYOK)**: Frontier 6-Pillar Android OS Agent — Tier-0D Executable App State-Graph (`1.3s / 0 Tokens` WeChat login-wall detection), Verified Speculative Action Chunking (`ui_chunk`), Decoupled Visual Grounder (`GUI-Actor` / `UI-TARS-1.5`), Android 16 AppFunctions, 16×16 ROI Visual Diff & KV-Cache Screen Folding (106/106 unit tests passing). Dedicated package `ai.sol.next` preserving the original public signing certificate for seamless upgrades.
+> **Sol Next 8.0.1 Public Edition (Build 801 · Zero Built-In Keys / BYOK)**: Grounded multimodal closed-loop engine (`SolGroundedAgent` with 10 orthogonal tools, live Accessibility handle grounding, 1:1 Set-of-Mark vision), redesigned Studio minimalist UI, and 9 real-device WeChat 8.0.80 fixes (99/99 unit tests passing). Dedicated package `ai.sol.next` preserving the original public signing certificate for seamless upgrades.
 
-<img src="docs/media/hero-banner.png" alt="Sol Next v9.0.0 Public Edition — Frontier 6-Pillar Android OS Agent Built Upon Mika" width="100%" />
+<img src="docs/media/hero-banner.png" alt="Sol Next v8.0.1 Public Edition — Grounded Multimodal Android OS Agent Built Upon Mika" width="100%" />
 
 # Sol Next — Open-Source BYOK Android AI Phone Agent (Built Upon Mika)
 
@@ -10,7 +10,7 @@
 
 <br/>
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest"><img src="https://img.shields.io/badge/Download%20Public%20APK-v9.0.0%20(Zero%20API%20Keys)-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Download Public APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest"><img src="https://img.shields.io/badge/Download%20Public%20APK-v8.0.1%20(Zero%20API%20Keys)-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Download Public APK" /></a>
 <a href="https://chongyangzhang92-hub.github.io/Sol-Next/"><img src="https://img.shields.io/badge/Product%20Page-Watch%20HD%20Demo-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Product Website" /></a>
 <a href="https://github.com/wangzan101/Mika"><img src="https://img.shields.io/badge/Tribute%20to-wangzan101%2FMika-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Tribute to Mika" /></a>
 
@@ -38,24 +38,24 @@ Mika pioneered the hidden Android `VirtualDisplay` phone agent paradigm, compute
 
 ---
 
-## 📱 Sol Next 9.0.0 Live Captures (Android 15 · Real WeChat 8.0.80)
+## 📱 Sol Next 8.0.1 Studio Interface (Live Android 15 Captures)
 
 <table>
 <tr>
 <td align="center" width="33%">
-<img src="docs/media/screen-v9-appgraph.png" width="250" alt="Sol Next 9.0 Tier-0D App-Graph 1.3s Zero-Token" /><br/>
-<b>Tier-0D App-Graph · 1.3s / 0 Tokens</b><br/>
-<sub>Zero-LLM WeChat login-wall detection &amp; deterministic FSM</sub>
+<img src="docs/media/screen-v8-workspace.png" width="250" alt="Sol Next 8.0 Studio Workspace" /><br/>
+<b>Studio Workspace</b><br/>
+<sub>Calm command surface with instant screen vision &amp; quick tasks</sub>
 </td>
 <td align="center" width="33%">
-<img src="docs/media/screen-v9-closedloop.png" width="250" alt="Sol Next 9.0 Verified Chunking 8/8 First-Try" /><br/>
-<b>Verified Chunking · 8/8 First-Try</b><br/>
-<sub>ui_chunk 2/2 in 1 round · 9-step WeChat flow in 24.6s</sub>
+<img src="docs/media/screen-v8-multimodal.png" width="250" alt="Sol Next 8.0 Multimodal Closed-Loop Trace" /><br/>
+<b>Verified Closed-Loop Trace</b><br/>
+<sub>Collapsible handle-level proof with latency &amp; verification badges</sub>
 </td>
 <td align="center" width="33%">
-<img src="docs/media/screen-v9-control-hub.png" width="250" alt="Sol Next 9.0 Telemetry & Visual Grounder Hub" /><br/>
-<b>9.0 Telemetry &amp; Grounder Hub</b><br/>
-<sub>App-Graph, Chunk, Pixel Priors, KV Folding &amp; GB10 Grounder</sub>
+<img src="docs/media/screen-v8-control-hub.png" width="250" alt="Sol Next 8.0 Device Hub & BYOK" /><br/>
+<b>Device Hub &amp; Native BYOK</b><br/>
+<sub>2×2 readiness matrix, wireless VirtualDisplay &amp; local BYOK engine</sub>
 </td>
 </tr>
 </table>
@@ -78,7 +78,7 @@ Mika pioneered the hidden Android `VirtualDisplay` phone agent paradigm, compute
 
 ## 🚀 Quick Start (30 Seconds, Zero Built-In Keys)
 
-1. **Install APK**: Grab `Sol-Next-v9.0.0-public-arm64.apk` from [Releases](https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest).
+1. **Install APK**: Grab `Sol-Next-v8.0.1-public-arm64.apk` from [Releases](https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest).
 2. **Enter Your Own API Key (BYOK)**: Open the **Control & Settings** tab → pick a preset (`DeepSeek`, `OpenAI`, `OpenRouter`, `SiliconFlow`, `Qwen`) or custom Base URL → paste your API Key → tap **Save & Test**.
 3. **Optional — Enable 1:1 Background Virtual Phone**: Tap **Auto-Pair Wireless Debugging** to unlock the 1:1 Virtual Display, zero-animation turbo, zero-accessibility tree direct read, and AI phone call audio bridge without needing a PC.
 

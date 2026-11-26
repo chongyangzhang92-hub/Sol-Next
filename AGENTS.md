@@ -1,6 +1,6 @@
 # AGENTS.md — AI Agent Guide for Sol Next (Public Edition)
 
-> Sol Next 9.0.0-public (Build 900, package `ai.sol.next`, zero built-in API keys) ships the Frontier 6-Pillar Android OS Agent (`SolAppGraphEngine` 1.3s/0-token WeChat state-graph, `ui_chunk` verified action chunking, decoupled `GUI-Actor`/`UI-TARS-1.5` visual grounder, Android 16 AppFunctions, 16×16 ROI diff, KV-Cache old-screen folding, and live IME/modal-dialog/SoM fixes verified across 106/106 unit tests). Same signing certificate as prior public releases for in-place upgrades.
+> Sol Next 8.0.1-public (Build 801, package `ai.sol.next`, zero built-in API keys) ships the rebuilt grounded multimodal OS agent (`SolGroundedAgent`, 10 orthogonal typed tools, live Accessibility handle grounding, 1:1 Set-of-Mark vision), Studio minimalist UI, Rust v5.00 16KB JNI kernel, and 9 verified WeChat 8.0.80 reliability fixes (99/99 unit tests passing). Same signing certificate as prior public releases for in-place upgrades.
 
 This repository distributes **Sol Next `v8.0.1-public`** — a zero-built-in-key (BYOK) Android 10–16 AI phone agent built upon and paying tribute to [`wangzan101/Mika`](https://github.com/wangzan101/Mika) (Apache-2.0).
 

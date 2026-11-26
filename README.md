@@ -1,8 +1,8 @@
-> **Sol Next 9.0.0-public（Build 900 · 零内置 Key / BYOK 公开版）**：六大前沿架构——Tier-0D 状态图 0 Token 直达（微信未登录拦截 1.3s）、`ui_chunk` 核验微批量连招、独立视觉精校器接入、Android 16 AppFunctions、16×16 ROI 差值截屏与 KV-Cache 历史折叠；独立包名 `ai.sol.next`，同签名可直接覆盖升级。
+> **Sol Next 8.0.1-public（Build 801 · 零内置 Key / BYOK 公开版）**：全新 8.0 多模态闭环内核 (`SolGroundedAgent`) + Studio 极简界面 + 微信 8.0.80 实测深度修复，独立包名 `ai.sol.next`，与旧公开版同签名可直接覆盖升级。
 
 <div align="center">
 
-<img src="docs/media/hero-banner.png" alt="Sol Next v9.0.0 Public Edition — 六大前沿架构开源安卓 OS 智能体" width="100%" />
+<img src="docs/media/hero-banner.png" alt="Sol Next v8.0.1 Public Edition — 致敬并深度重构自 Mika 的新一代多模态闭环安卓 OS 智能体" width="100%" />
 
 # Sol Next — Android AI Phone Agent（开源极速安卓 AI 手机助理 · 致敬并重构自 Mika）
 
@@ -14,7 +14,7 @@
 
 <br/>
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest"><img src="https://img.shields.io/badge/下载公开版%20APK-v9.0.0%20(零内置%20Key)-10b981?style=for-the-badge&logo=android&logoColor=white" alt="下载公开版 APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest"><img src="https://img.shields.io/badge/下载公开版%20APK-v8.0.1%20(零内置%20Key)-10b981?style=for-the-badge&logo=android&logoColor=white" alt="下载公开版 APK" /></a>
 <a href="https://chongyangzhang92-hub.github.io/Sol-Next/"><img src="https://img.shields.io/badge/在线产品官网-高清视频演示-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="在线产品官网" /></a>
 <a href="https://github.com/wangzan101/Mika"><img src="https://img.shields.io/badge/致敬原作者-wangzan101%2FMika-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="致敬 Mika" /></a>
 
@@ -88,7 +88,7 @@
 
 ### 5. 完整功能全景对比表（Comparison / Alternatives）
 
-| 对比维度 | Mika 原版 (`wangzan101/Mika`) | **Sol Next 公开版 (`v9.0.0-public`)** |
+| 对比维度 | Mika 原版 (`wangzan101/Mika`) | **Sol Next 公开版 (`v8.0.1-public`)** |
 |---|---|---|
 | **开源协议与渊源** | Apache-2.0 原创开源标杆 | Apache-2.0 · 致敬并基于 Mika 深度重构演进 |
 | **模型接入与隐私** | BYOK 自带 Key / 账号登录，无中转服务器 | **纯公开零内置 Key（BYOK）**，直连用户所选服务商，支持 DeepSeek / OpenAI / OpenRouter / 硅基流动 / 通义千问一键预设 + 实时握手测速 |
@@ -115,24 +115,24 @@
 
 ---
 
-## 📱 Sol Next 9.0.0 Studio 真实界面实拍
+## 📱 Sol Next 8.0.1 Studio 真实界面实拍
 
 <table>
 <tr>
 <td align="center" width="33%">
-<img src="docs/media/screen-v9-appgraph.png" width="250" alt="Sol Next 9.0 Tier-0D 状态图 1.3s 零 Token 直达" /><br/>
-<b>Tier-0D 状态图 · 1.3s 零 Token</b><br/>
-<sub>微信冷启秒级识别未登录，0 轮大模型直达</sub>
+<img src="docs/media/screen-v8-workspace.png" width="250" alt="Sol Next 8.0 Studio 极简工作台" /><br/>
+<b>Studio 极简工作台</b><br/>
+<sub>零冗余浮层，聚焦自然语言指令与快捷视觉看屏</sub>
 </td>
 <td align="center" width="33%">
-<img src="docs/media/screen-v9-closedloop.png" width="250" alt="Sol Next 9.0 核验连招闭环 8/8 首击零重试" /><br/>
-<b>核验连招闭环 · 8/8 首击零重试</b><br/>
-<sub>ui_chunk 2/2 一轮直通，微信 9 步 24.6s 闭环核验</sub>
+<img src="docs/media/screen-v8-multimodal.png" width="250" alt="Sol Next 8.0 多模态闭环核验卡片" /><br/>
+<b>多模态闭环核验卡片</b><br/>
+<sub>每步真实句柄操作可折叠回溯，附核验状态与耗时统计</sub>
 </td>
 <td align="center" width="33%">
-<img src="docs/media/screen-v9-control-hub.png" width="250" alt="Sol Next 9.0 前沿遥测与视觉精校引擎" /><br/>
-<b>9.0 前沿遥测 · 视觉精校引擎</b><br/>
-<sub>状态图/连招/像素先验/KV 折叠 + GB10 精校接入</sub>
+<img src="docs/media/screen-v8-control-hub.png" width="250" alt="Sol Next 8.0 设备就绪矩阵与 BYOK 配置" /><br/>
+<b>设备就绪矩阵 · BYOK 引擎</b><br/>
+<sub>2×2 权限矩阵、1:1 虚拟屏配对、自带模型 Key 与 OTA 检测</sub>
 </td>
 </tr>
 </table>
@@ -184,8 +184,8 @@
 
 ### 第 1 步：下载安装公开版 APK
 前往 [**Releases 页面**](https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest) 下载：
-- **`Sol-Next-v9.0.0-public-arm64.apk`**（推荐绝大多数现代安卓手机，33.7 MB，包名 `ai.sol.next`）
-- **`Sol-Next-v9.0.0-public-universal.apk`**（全架构通用包，含 `arm64-v8a` + `x86_64`，46.0 MB）
+- **`Sol-Next-v8.0.1-public-arm64.apk`**（推荐绝大多数现代安卓手机，33.6 MB，包名 `ai.sol.next`）
+- **`Sol-Next-v8.0.1-public-universal.apk`**（全架构通用包，含 `arm64-v8a` + `x86_64`，45.9 MB）
 
 > 公开版使用独立包名 `ai.sol.next`，与任何其他应用互不冲突，且**不包含任何内置密钥、不连接任何私有服务器**。
 

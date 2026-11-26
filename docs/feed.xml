@@ -5,19 +5,11 @@
   <link href="https://chongyangzhang92-hub.github.io/Sol-Next/" rel="alternate" type="text/html" />
   <link href="https://chongyangzhang92-hub.github.io/Sol-Next/feed.xml" rel="self" type="application/atom+xml" />
   <id>https://chongyangzhang92-hub.github.io/Sol-Next/</id>
-  <updated>2026-11-26T16:38:00Z</updated>
+  <updated>2026-11-26T16:00:00Z</updated>
   <author>
     <name>chongyangzhang92-hub</name>
     <uri>https://github.com/chongyangzhang92-hub</uri>
   </author>
-  <entry>
-    <title>Sol Next 9.0.0 Public Edition — Frontier 6-Pillar Android OS Agent (BYOK)</title>
-    <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.0-public" rel="alternate" type="text/html" />
-    <id>tag:github.com,2026-11-26:chongyangzhang92-hub/Sol-Next/v9.0.0-public</id>
-    <published>2026-11-26T16:38:00Z</published>
-    <updated>2026-11-26T16:38:00Z</updated>
-    <summary type="text">Sol Next 9.0.0 Public Edition (Build 900, package ai.sol.next, zero built-in API keys) introduces the Frontier 6-Pillar Architecture: Tier-0D Executable App State-Graph (1.3s / 0-token WeChat login-wall detection), Verified Speculative Action Chunking (ui_chunk), Decoupled Visual Grounder (GUI-Actor / UI-TARS-1.5), Android 16 AppFunctions bridge, 16x16 ROI visual diff, KV-Cache old-screen folding (51k+ chars saved), and live IME/modal-dialog/SoM fixes verified across 106/106 unit tests.</summary>
-  </entry>
   <entry>
     <title>Sol Next 8.0.1 Public Edition — Grounded Multimodal Android OS Agent &amp; Studio UI (BYOK)</title>
     <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v8.0.1-public" rel="alternate" type="text/html" />
