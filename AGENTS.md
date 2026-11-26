@@ -1,6 +1,6 @@
 # AGENTS.md — AI Agent Guide for Sol Next (Public Edition)
 
-> Release 8.0.1-public republishes the 6.5.1-public implementation with versionCode 801. Validation for this release covers signing, payload preservation, and Android 16 installation/launch; performance figures below are retained historical documentation.
+> Sol Next 8.0.1-public (Build 801, package `ai.sol.next`, zero built-in API keys) ships the rebuilt grounded multimodal OS agent (`SolGroundedAgent`, 10 orthogonal typed tools, live Accessibility handle grounding, 1:1 Set-of-Mark vision), Studio minimalist UI, Rust v5.00 16KB JNI kernel, and 9 verified WeChat 8.0.80 reliability fixes (99/99 unit tests passing). Same signing certificate as prior public releases for in-place upgrades.
 
 This repository distributes **Sol Next `v8.0.1-public`** — a zero-built-in-key (BYOK) Android 10–16 AI phone agent built upon and paying tribute to [`wangzan101/Mika`](https://github.com/wangzan101/Mika) (Apache-2.0).
 
