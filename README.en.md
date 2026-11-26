@@ -1,8 +1,8 @@
 <div align="center">
 
-> Release 8.0.1-public republishes the 6.5.1-public implementation with versionCode 801. Validation for this release covers signing, payload preservation, and Android 16 installation/launch; performance figures below are retained historical documentation.
+> **Sol Next 8.0.1 Public Edition (Build 801 · Zero Built-In Keys / BYOK)**: Grounded multimodal closed-loop engine (`SolGroundedAgent` with 10 orthogonal tools, live Accessibility handle grounding, 1:1 Set-of-Mark vision), redesigned Studio minimalist UI, and 9 real-device WeChat 8.0.80 fixes (99/99 unit tests passing). Dedicated package `ai.sol.next` preserving the original public signing certificate for seamless upgrades.
 
-<img src="docs/media/hero-banner.png" alt="Sol Next v6.3 Public Edition — Ultra-Fast Android AI Assistant Built Upon Mika" width="100%" />
+<img src="docs/media/hero-banner.png" alt="Sol Next v8.0.1 Public Edition — Grounded Multimodal Android OS Agent Built Upon Mika" width="100%" />
 
 # Sol Next — Open-Source BYOK Android AI Phone Agent (Built Upon Mika)
 
@@ -35,6 +35,30 @@ Mika pioneered the hidden Android `VirtualDisplay` phone agent paradigm, compute
 3. **HTTP/3 QUIC 0-RTT + Anti-Pause Long-Task Engine**: Chromium `HttpEngine` QUIC transport with a 12s header watchdog & smart circuit breaker, 64-round autonomous loop, `TimeoutCancellationException` isolation, in-process WakeLock + WifiLock keep-alive, Xiaomi HyperOS 3-tier Back & zero false-positive safety shields, and automatic checkpoint recovery.
 4. **Complete Carrier AI Phone Call Cockpit & Personal Assistant**: Native dialer untouched, Volcengine Seeduplex 3.0 & OpenAI Realtime BYOK voice bridge, 3×4 interactive DTMF keypad, speakerphone toggle, multi-call isolation, one-tap human takeover, and encrypted on-device personal perception.
 5. **100% Zero Built-In API Keys (Public BYOK Edition)**: Standalone package `ai.sol.next` with zero embedded secrets and zero private relay servers — connect directly to DeepSeek, OpenAI, OpenRouter, SiliconFlow, Qwen, or any OpenAI-compatible API right from Settings.
+
+---
+
+## 📱 Sol Next 8.0.1 Studio Interface (Live Android 15 Captures)
+
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="docs/media/screen-v8-workspace.png" width="250" alt="Sol Next 8.0 Studio Workspace" /><br/>
+<b>Studio Workspace</b><br/>
+<sub>Calm command surface with instant screen vision &amp; quick tasks</sub>
+</td>
+<td align="center" width="33%">
+<img src="docs/media/screen-v8-multimodal.png" width="250" alt="Sol Next 8.0 Multimodal Closed-Loop Trace" /><br/>
+<b>Verified Closed-Loop Trace</b><br/>
+<sub>Collapsible handle-level proof with latency &amp; verification badges</sub>
+</td>
+<td align="center" width="33%">
+<img src="docs/media/screen-v8-control-hub.png" width="250" alt="Sol Next 8.0 Device Hub & BYOK" /><br/>
+<b>Device Hub &amp; Native BYOK</b><br/>
+<sub>2×2 readiness matrix, wireless VirtualDisplay &amp; local BYOK engine</sub>
+</td>
+</tr>
+</table>
 
 ---
 

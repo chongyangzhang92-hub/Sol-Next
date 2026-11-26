@@ -1,8 +1,8 @@
-> 当前版本 8.0.1-public（构建号 801）基于 6.5.1-public 原始 APK 提升版本重新签名发布；本次验证签名、文件保留和 Android 16 安装启动，历史性能数据未在本次重新测量。
+> **Sol Next 8.0.1-public（Build 801 · 零内置 Key / BYOK 公开版）**：全新 8.0 多模态闭环内核 (`SolGroundedAgent`) + Studio 极简界面 + 微信 8.0.80 实测深度修复，独立包名 `ai.sol.next`，与旧公开版同签名可直接覆盖升级。
 
 <div align="center">
 
-<img src="docs/media/hero-banner.png" alt="Sol Next v6.3 Public Edition — 致敬并深度重构自 Mika 的新一代极速安卓 AI 助理" width="100%" />
+<img src="docs/media/hero-banner.png" alt="Sol Next v8.0.1 Public Edition — 致敬并深度重构自 Mika 的新一代多模态闭环安卓 OS 智能体" width="100%" />
 
 # Sol Next — Android AI Phone Agent（开源极速安卓 AI 手机助理 · 致敬并重构自 Mika）
 
@@ -115,8 +115,31 @@
 
 ---
 
-## 📱 真实界面实拍画廊（Android 16 实机截图）
+## 📱 Sol Next 8.0.1 Studio 真实界面实拍
 
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="docs/media/screen-v8-workspace.png" width="250" alt="Sol Next 8.0 Studio 极简工作台" /><br/>
+<b>Studio 极简工作台</b><br/>
+<sub>零冗余浮层，聚焦自然语言指令与快捷视觉看屏</sub>
+</td>
+<td align="center" width="33%">
+<img src="docs/media/screen-v8-multimodal.png" width="250" alt="Sol Next 8.0 多模态闭环核验卡片" /><br/>
+<b>多模态闭环核验卡片</b><br/>
+<sub>每步真实句柄操作可折叠回溯，附核验状态与耗时统计</sub>
+</td>
+<td align="center" width="33%">
+<img src="docs/media/screen-v8-control-hub.png" width="250" alt="Sol Next 8.0 设备就绪矩阵与 BYOK 配置" /><br/>
+<b>设备就绪矩阵 · BYOK 引擎</b><br/>
+<sub>2×2 权限矩阵、1:1 虚拟屏配对、自带模型 Key 与 OTA 检测</sub>
+</td>
+</tr>
+</table>
+
+<details>
+<summary>查看更多实机截图（1:1 物理屏克隆悬浮窗 · 26 步长任务 · AI 电话驾驶舱 · 全脑遥测）</summary>
+<br/>
 <table>
 <tr>
 <td align="center" width="33%">
@@ -153,6 +176,7 @@
 </td>
 </tr>
 </table>
+</details>
 
 ---
 
