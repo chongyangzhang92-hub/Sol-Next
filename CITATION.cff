@@ -29,8 +29,8 @@ keywords:
   - mcp-server
   - llms-txt
 license: Apache-2.0
-version: "7.0.7-public"
-date-released: "2026-11-25"
+version: "8.0.1-public"
+date-released: "2026-11-26"
 references:
   - type: software
     title: "Mika"

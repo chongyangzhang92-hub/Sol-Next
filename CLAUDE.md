@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-See [`AGENTS.md`](AGENTS.md) and [`llms.txt`](llms.txt) for complete, authoritative instructions for Sol Next (`v7.0.7-public`, package `ai.sol.next`).
+See [`AGENTS.md`](AGENTS.md) and [`llms.txt`](llms.txt) for complete, authoritative instructions for Sol Next (`v8.0.1-public`, package `ai.sol.next`).
 
 ## Quick Reference for Claude Code / AI Coding Assistants
 

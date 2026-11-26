@@ -1,6 +1,6 @@
 <div align="center">
 
-> Release 7.0.7-public republishes the 6.5.1-public implementation with versionCode 727. Validation for this release covers signing, payload preservation, and Android 16 installation/launch; performance figures below are retained historical documentation.
+> Release 8.0.1-public republishes the 6.5.1-public implementation with versionCode 801. Validation for this release covers signing, payload preservation, and Android 16 installation/launch; performance figures below are retained historical documentation.
 
 <img src="docs/media/hero-banner.png" alt="Sol Next v6.3 Public Edition — Ultra-Fast Android AI Assistant Built Upon Mika" width="100%" />
 
@@ -10,7 +10,7 @@
 
 <br/>
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest"><img src="https://img.shields.io/badge/Download%20Public%20APK-v7.0.7%20(Zero%20API%20Keys)-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Download Public APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest"><img src="https://img.shields.io/badge/Download%20Public%20APK-v8.0.1%20(Zero%20API%20Keys)-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Download Public APK" /></a>
 <a href="https://chongyangzhang92-hub.github.io/Sol-Next/"><img src="https://img.shields.io/badge/Product%20Page-Watch%20HD%20Demo-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Product Website" /></a>
 <a href="https://github.com/wangzan101/Mika"><img src="https://img.shields.io/badge/Tribute%20to-wangzan101%2FMika-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Tribute to Mika" /></a>
 
@@ -54,7 +54,7 @@ Mika pioneered the hidden Android `VirtualDisplay` phone agent paradigm, compute
 
 ## 🚀 Quick Start (30 Seconds, Zero Built-In Keys)
 
-1. **Install APK**: Grab `Sol-Next-v7.0.7-public-arm64.apk` from [Releases](https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest).
+1. **Install APK**: Grab `Sol-Next-v8.0.1-public-arm64.apk` from [Releases](https://github.com/chongyangzhang92-hub/Sol-Next/releases/latest).
 2. **Enter Your Own API Key (BYOK)**: Open the **Control & Settings** tab → pick a preset (`DeepSeek`, `OpenAI`, `OpenRouter`, `SiliconFlow`, `Qwen`) or custom Base URL → paste your API Key → tap **Save & Test**.
 3. **Optional — Enable 1:1 Background Virtual Phone**: Tap **Auto-Pair Wireless Debugging** to unlock the 1:1 Virtual Display, zero-animation turbo, zero-accessibility tree direct read, and AI phone call audio bridge without needing a PC.
 

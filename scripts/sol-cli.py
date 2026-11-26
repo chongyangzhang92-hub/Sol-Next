@@ -23,19 +23,19 @@ from typing import Any
 
 PACKAGE_ID = "ai.sol.next"
 MAIN_ACTIVITY = f"{PACKAGE_ID}/ai.sol.next.canvas.SolCanvasActivity"
-RELEASE_TAG = "v7.0.7-public"
+RELEASE_TAG = "v8.0.1-public"
 REPO_SLUG = "chongyangzhang92-hub/Sol-Next"
 
 ARTIFACTS = {
     "arm64": {
-        "filename": "Sol-Next-v7.0.7-public-arm64.apk",
-        "url": f"https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v7.0.7-public-arm64.apk",
-        "sha256": "4a5baef34d66d25d5bfbec932f4c54bd33ffd75630fbca8ad583007382c2c226",
+        "filename": "Sol-Next-v8.0.1-public-arm64.apk",
+        "url": f"https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v8.0.1-public-arm64.apk",
+        "sha256": "b6fc90c79fc4d927549c17414244ab6e276b1002da7fbf3b98451ce7c779c3cb",
     },
     "universal": {
-        "filename": "Sol-Next-v7.0.7-public-universal.apk",
-        "url": f"https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v7.0.7-public-universal.apk",
-        "sha256": "ed74866ddf0664c35f07b41df90fd5c89dcaea3f525fc6a9561d8763d375cdb7",
+        "filename": "Sol-Next-v8.0.1-public-universal.apk",
+        "url": f"https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v8.0.1-public-universal.apk",
+        "sha256": "7969661db1f9682012a144b79cd744c702238a4aa0b21aaf3e10f7ee679bf046",
     },
 }
 
