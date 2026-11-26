@@ -266,6 +266,40 @@
     .sec-head h2 { font-size: clamp(26px, 3.6vw, 40px); font-weight: 800; letter-spacing: -0.032em; line-height: 1.14; margin-bottom: 12px; }
     .sec-head p { font-size: 16px; color: var(--ink-2); }
 
+    /* Speed & Power Showcase */
+    .sp-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 18px; align-items: stretch; }
+    .sp-panel {
+      padding: 28px; border-radius: var(--radius-lg);
+      background: linear-gradient(165deg, rgba(16, 24, 42, 0.86), rgba(8, 12, 22, 0.94));
+      border: 1px solid var(--hair-strong); display: flex; flex-direction: column; gap: 18px;
+      position: relative; overflow: hidden;
+    }
+    .sp-panel::before {
+      content: ""; position: absolute; top: 0; left: 24px; right: 24px; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.45), transparent);
+    }
+    .sp-panel.power::before {
+      background: linear-gradient(90deg, transparent, rgba(52, 211, 153, 0.45), transparent);
+    }
+    .sp-panel h3 { font-size: 21px; font-weight: 800; letter-spacing: -0.025em; }
+    .sp-panel .sp-lead { font-size: 14px; color: var(--ink-2); line-height: 1.6; }
+    .speed-rows { display: flex; flex-direction: column; gap: 13px; margin-top: 4px; }
+    .speed-row { display: flex; flex-direction: column; gap: 6px; }
+    .speed-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font-size: 13.5px; }
+    .speed-name { color: var(--ink); font-weight: 600; }
+    .speed-num { font-family: var(--mono); font-size: 13px; font-weight: 700; color: var(--accent); white-space: nowrap; }
+    .speed-bar { height: 6px; border-radius: 999px; background: rgba(255, 255, 255, 0.06); overflow: hidden; }
+    .speed-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #38bdf8, #34d399); }
+    .speed-note { font-size: 12px; color: var(--ink-3); }
+    .power-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 4px; }
+    .power-item {
+      padding: 15px; border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.03); border: 1px solid var(--hair);
+      display: flex; flex-direction: column; gap: 5px;
+    }
+    .power-item strong { font-size: 13.8px; color: var(--ink); letter-spacing: -0.01em; }
+    .power-item span { font-size: 12.4px; color: var(--ink-2); line-height: 1.5; }
+
     /* Bento Grid */
     .bento { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .bento-card {
@@ -420,7 +454,7 @@
     @media (max-width: 960px) {
       .nav-links { display: none; }
       .kpi-strip { grid-template-columns: repeat(2, 1fr); }
-      .studio-grid, .bento, .steps-grid, .dl-grid, .attest-grid { grid-template-columns: 1fr; }
+      .studio-grid, .sp-grid, .power-list, .bento, .steps-grid, .dl-grid, .attest-grid { grid-template-columns: 1fr; }
       .bento-card.span-2 { grid-column: span 1; }
       .hero { padding: 62px 0 48px; }
       .studio-stage { padding: 22px 16px; }
@@ -441,10 +475,10 @@
         <span class="brand-ver">v8.0.1</span>
       </a>
       <nav class="nav-links">
+        <a href="#speed-power"><span class="t-zh">强大与速度</span><span class="t-en">Power &amp; Speed</span></a>
         <a href="#architecture"><span class="t-zh">8.0 架构</span><span class="t-en">Architecture</span></a>
         <a href="#quickstart"><span class="t-zh">30 秒上手</span><span class="t-en">Quickstart</span></a>
         <a href="#benchmarks"><span class="t-zh">实测基准</span><span class="t-en">Benchmarks</span></a>
-        <a href="#demo"><span class="t-zh">演示与对比</span><span class="t-en">Demo</span></a>
         <a href="#download"><span class="t-zh">下载与校验</span><span class="t-en">Downloads</span></a>
       </nav>
       <div class="nav-actions">
@@ -469,13 +503,13 @@
       </div>
 
       <h1>
-        <span class="t-zh">面向 Android 10–16 的<br/><span class="hero-grad">多模态闭环 OS 智能体</span></span>
-        <span class="t-en">The Grounded Multimodal<br/><span class="hero-grad">Android OS Agent</span></span>
+        <span class="t-zh">毫秒级响应，全手机掌控<br/><span class="hero-grad">新一代多模态 OS 智能体</span></span>
+        <span class="t-en">Millisecond Reflexes.<br/><span class="hero-grad">Full-Phone OS Mastery.</span></span>
       </h1>
 
       <p class="hero-sub">
-        <span class="t-zh">从执行内核到界面全栈重构：10 个正交原子工具、实时元素句柄精准绑定、1:1 Set-of-Mark 自动视觉精校、Rust v5.00 原生加速与 Studio 极简工作台。100% 开源零内置密钥，自带任意 OpenAI 兼容模型 Key 30 秒开用。</span>
-        <span class="t-en">Rebuilt from first principles in v8.0: 10 orthogonal typed tools, live Accessibility handle grounding, automatic 1:1 Set-of-Mark multimodal vision, Rust v5.00 JNI acceleration, and a calm Studio workspace. 100% open BYOK with zero embedded secrets.</span>
+        <span class="t-zh">72ms 原生系统直通、120+ 主流 App 瞬移直达、Rust v5.00 原生加速、1:1 后台独立虚拟屏与实时句柄闭环操控——从微信长流程到运营商级 AI 接打电话，一台手机全自动完成。100% 开源零内置密钥，自带 Key 30 秒开用。</span>
+        <span class="t-en">72ms zero-token System API reflexes, 120+ instant app teleports, Rust v5.00 native JNI speed, 1:1 invisible background VirtualDisplay, live Accessibility handle grounding, and carrier-grade AI calling. 100% open BYOK with zero embedded secrets.</span>
       </p>
 
       <div class="cta-row">
@@ -549,6 +583,111 @@
         </div>
       </div>
     </div>
+
+    <!-- Speed & Power Showcase -->
+    <section id="speed-power">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="sec-kicker">UNMATCHED SPEED &amp; FULL-PHONE POWER</span>
+          <h2>
+            <span class="t-zh">快到像原生系统，强到接管整台手机</span>
+            <span class="t-en">Engineered to Feel Instant. Built to Command Everything.</span>
+          </h2>
+          <p>
+            <span class="t-zh">传统手机 Agent 动辄每步等 5–10 秒、动不动点歪或卡死；Sol Next 8.0.1 把能下沉的算力全部压到毫秒级端侧，把复杂跨 App 能力打通成完整操作系统级代理。</span>
+            <span class="t-en">While legacy mobile agents stall for seconds per tap and misclick dynamic layouts, Sol Next 8.0.1 pushes deterministic reflexes down to milliseconds and unifies full-device control in one engine.</span>
+          </p>
+        </div>
+
+        <div class="sp-grid reveal">
+          <div class="sp-panel">
+            <span class="bento-tag">EXTREME SPEED · 毫秒级端云提速</span>
+            <h3><span class="t-zh">把等待时间压缩到极限</span><span class="t-en">Sub-Second Reflexes Across Every Layer</span></h3>
+            <p class="sp-lead">
+              <span class="t-zh">不把每一件事都丢给大模型慢吞吞兜圈子：原生 API 直读、Deep-Link 瞬移、并发预启动与 Rust 原生内核逐层砍掉多余延迟。</span>
+              <span class="t-en">Every layer removes unnecessary round-trips: native System APIs, 120+ Deep-Link teleports, t=0ms app prelaunch, and microsecond Rust JNI pruning.</span>
+            </p>
+            <div class="speed-rows">
+              <div class="speed-row">
+                <div class="speed-top">
+                  <span class="speed-name"><span class="t-zh">零缓存实时状态指纹校验</span><span class="t-en">Zero-Cache Live State Fingerprint</span></span>
+                  <span class="speed-num">&lt; 2 ms</span>
+                </div>
+                <div class="speed-bar"><div class="speed-fill" style="width:98%"></div></div>
+                <span class="speed-note"><span class="t-zh">点击后毫秒级确认界面变化，彻底取代盲等与误双击</span><span class="t-en">Instant post-click state verification with zero blind sleep or false double-taps</span></span>
+              </div>
+              <div class="speed-row">
+                <div class="speed-top">
+                  <span class="speed-name"><span class="t-zh">1:1 Set-of-Mark 红框视觉编码</span><span class="t-en">1:1 Set-of-Mark WebP Vision Encoding</span></span>
+                  <span class="speed-num">64 ms</span>
+                </div>
+                <div class="speed-bar"><div class="speed-fill" style="width:92%"></div></div>
+                <span class="speed-note"><span class="t-zh">端侧原生绘制 #1..#N 标注与紧凑 WebP，滑窗仅保留最新一帧</span><span class="t-en">On-device numbered bounding boxes with compact WebP &amp; single-frame window</span></span>
+              </div>
+              <div class="speed-row">
+                <div class="speed-top">
+                  <span class="speed-name"><span class="t-zh">Tier-0A 系统直读与直控（0 Token）</span><span class="t-en">Tier-0A Native System API (0 Tokens)</span></span>
+                  <span class="speed-num">72 ms</span>
+                </div>
+                <div class="speed-bar"><div class="speed-fill" style="width:95%"></div></div>
+                <span class="speed-note"><span class="t-zh">电量、存储、Wi-Fi、蓝牙、亮度、音量、闹钟、手电筒一步直出</span><span class="t-en">Battery, storage, Wi-Fi, Bluetooth, brightness, volume, alarms &amp; torch with zero LLM wait</span></span>
+              </div>
+              <div class="speed-row">
+                <div class="speed-top">
+                  <span class="speed-name"><span class="t-zh">120+ 主流 App 瞬移直达 + t=0ms 预启动</span><span class="t-en">120+ App Deep-Link Teleport + Prelaunch</span></span>
+                  <span class="speed-num">&lt; 250 ms</span>
+                </div>
+                <div class="speed-bar"><div class="speed-fill" style="width:88%"></div></div>
+                <span class="speed-note"><span class="t-zh">直接空降站内搜索页/功能页，多步任务不等模型先拉起目标 App</span><span class="t-en">Jumps straight into search &amp; action screens while prelaunching target apps at t=0ms</span></span>
+              </div>
+              <div class="speed-row">
+                <div class="speed-top">
+                  <span class="speed-name"><span class="t-zh">微信 8.0.80 冷启 → 登录 → 核验输入分组手机号</span><span class="t-en">WeChat 8.0.80 Cold Start → Verified Phone Input</span></span>
+                  <span class="speed-num">9.5 s (vs 18.5s)</span>
+                </div>
+                <div class="speed-bar"><div class="speed-fill" style="width:82%"></div></div>
+                <span class="speed-note"><span class="t-zh">8.0.1 实测提速近 2 倍，一次写入通过后验断言、0 误弹粘贴框</span><span class="t-en">Nearly 2x faster than v8.0.0 with 1st-try readback verification on Android 15</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sp-panel power">
+            <span class="bento-tag ok">FULL-PHONE POWER · 全栈操作系统级掌控</span>
+            <h3><span class="t-zh">不止会点按钮，真正能办事</span><span class="t-en">Far Beyond Simple Tapping — End-to-End OS Agency</span></h3>
+            <p class="sp-lead">
+              <span class="t-zh">打通无障碍句柄、视觉精校、后台虚拟屏、运营商通话与开发者生态，覆盖日常高频与硬核复杂任务。</span>
+              <span class="t-en">Combines live UI handles, multimodal vision, isolated virtual display, carrier calling, local encrypted memory, and MCP tooling.</span>
+            </p>
+            <div class="power-list">
+              <div class="power-item">
+                <strong><span class="t-zh">1:1 隐形后台虚拟手机</span><span class="t-en">1:1 Invisible Virtual Phone</span></strong>
+                <span><span class="t-zh">完整复刻主屏分辨率与 DPI 后台静默跑任务，前台照常刷视频聊天互不打扰，0.0px 零漂移。</span><span class="t-en">Clones Display 0 resolution &amp; DPI off-screen so tasks run silently while you keep using your phone.</span></span>
+              </div>
+              <div class="power-item">
+                <strong><span class="t-zh">微信 / 超级 App 深度实战</span><span class="t-en">Super-App Hardened</span></strong>
+                <span><span class="t-zh">8 步复杂微信流程 8/8 首击零误双击；发送消息强制气泡核验与防重发停机，绝不发重。</span><span class="t-en">8/8 first-try accuracy on complex WeChat flows with single-shot bubble-verified send guarantees.</span></span>
+              </div>
+              <div class="power-item">
+                <strong><span class="t-zh">运营商级 AI 接打电话</span><span class="t-en">Carrier-Grade AI Calling</span></strong>
+                <span><span class="t-zh">保留原生拨号器，支持实时语音代接/外呼、3×4 IVR 按键菜单、免提与随时一键人工接管。</span><span class="t-en">Keeps native dialer intact with realtime AI voice, 3x4 DTMF keypad, speakerphone &amp; 1-tap takeover.</span></span>
+              </div>
+              <div class="power-item">
+                <strong><span class="t-zh">跨页长任务记忆与视觉精校</span><span class="t-en">Long-Horizon + Vision</span></strong>
+                <span><span class="t-zh">目标钉死滑窗 + <code>task_note</code> 跨 App 比价备忘 + 224×224 局部放大精校，长任务不跑偏。</span><span class="t-en">Goal-pinned memory, cross-app fact notes, and 224x224 ROI zoom refinement keep long tasks locked.</span></span>
+              </div>
+              <div class="power-item">
+                <strong><span class="t-zh">硬件级加密与安全门控</span><span class="t-en">Hardware Crypto &amp; Guards</span></strong>
+                <span><span class="t-zh">Android KeyStore 本地加密记忆与钥匙串；付款、转账、删除等高风险动作强制人工确认。</span><span class="t-en">Android KeyStore local encryption plus explicit human confirmation before payments or deletions.</span></span>
+              </div>
+              <div class="power-item">
+                <strong><span class="t-zh">原生 CLI &amp; MCP 驱动真机</span><span class="t-en">Agent-Ready CLI &amp; MCP</span></strong>
+                <span><span class="t-zh">零依赖 Python CLI (<code>--json</code>) + stdio MCP Server，让 Claude Code / Cursor 直接操控手机。</span><span class="t-en">Zero-dependency CLI &amp; stdio MCP Server let desktop coding agents command your Android phone directly.</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Architecture Bento -->
     <section id="architecture">
