@@ -23,19 +23,23 @@ from typing import Any
 
 PACKAGE_ID = "ai.sol.next"
 MAIN_ACTIVITY = f"{PACKAGE_ID}/ai.sol.next.canvas.SolCanvasActivity"
-RELEASE_TAG = "v9.0.3-public"
+RELEASE_TAG = "v9.0.4-public"
 REPO_SLUG = "chongyangzhang92-hub/Sol-Next"
 
 ARTIFACTS = {
     "arm64": {
-        "filename": "Sol-Next-v9.0.3-public-arm64.apk",
-        "url": f"https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.0.3-public-arm64.apk",
-        "sha256": "b6fc90c79fc4d927549c17414244ab6e276b1002da7fbf3b98451ce7c779c3cb",
+        "filename": "Sol-Next-v9.0.4-public-arm64.apk",
+        "url": f"https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.0.4-public-arm64.apk",
+        "china_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.4/Sol-Next-v9.0.4-public-arm64.apk",
+        "ghfast_url": f"https://ghfast.top/https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.0.4-public-arm64.apk",
+        "sha256": "3ba39118a3c793350254481711997f7455019f3760c98a4a573f5069335c4756",
     },
     "universal": {
-        "filename": "Sol-Next-v9.0.3-public-universal.apk",
-        "url": f"https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.0.3-public-universal.apk",
-        "sha256": "7969661db1f9682012a144b79cd744c702238a4aa0b21aaf3e10f7ee679bf046",
+        "filename": "Sol-Next-v9.0.4-public-universal.apk",
+        "url": f"https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.0.4-public-universal.apk",
+        "china_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.4/Sol-Next-v9.0.4-public-universal.apk",
+        "ghfast_url": f"https://ghfast.top/https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.0.4-public-universal.apk",
+        "sha256": "788af5ea0805216dbf6c531e53e5eaeb6367d80ed2fb48ba10652598b2f2d3aa",
     },
 }
 
@@ -189,7 +193,9 @@ def cmd_install(args: argparse.Namespace) -> dict[str, Any]:
         cache_dir.mkdir(parents=True, exist_ok=True)
         apk_path = cache_dir / meta["filename"]
         if not apk_path.is_file() or sha256_file(apk_path) != meta["sha256"]:
-            urllib.request.urlretrieve(meta["url"], apk_path)
+            mirror = getattr(args, "mirror", "github") or "github"
+            dl_url = meta["china_url"] if mirror == "china" else (meta["ghfast_url"] if mirror == "ghfast" else meta["url"])
+            urllib.request.urlretrieve(dl_url, apk_path)
             downloaded = True
         else:
             downloaded = False
@@ -219,7 +225,7 @@ def cmd_install(args: argparse.Namespace) -> dict[str, Any]:
         "sha256": actual_sha,
         "sha256Verified": (actual_sha == meta["sha256"]) if not args.apk else None,
         "permissionsGrantedCount": len(granted),
-        "nextStep": "Open Sol Next -> Control tab -> enter your own DeepSeek/OpenAI/OpenRouter API Key (BYOK).",
+        "nextStep": "Open Sol Next v9.0.4 -> works immediately with free built-in Rust-encrypted DeepSeek V4.1 Flash, or override in Settings with your own BYOK API Key.",
     }
 
 
@@ -290,6 +296,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     p_inst = sub.add_parser("install", help="Download, SHA-256 verify, and install Sol Next Public Edition APK")
     p_inst.add_argument("--abi", choices=["arm64", "universal"], default="arm64")
+    p_inst.add_argument("--mirror", choices=["github", "china", "ghfast"], default="github", help="Download channel (default github; use china for direct CN mirror)")
     p_inst.add_argument("--apk", help="Install from a local APK path instead of downloading from GitHub")
     p_inst.add_argument("--verify-sha256", action="store_true", default=True, help="Verify official SHA-256 (default true)")
     p_inst.add_argument("--grant-permissions", action="store_true", help="Grant runtime permissions via pm grant")
