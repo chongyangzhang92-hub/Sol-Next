@@ -1,2 +1,2 @@
-3ba39118a3c793350254481711997f7455019f3760c98a4a573f5069335c4756  Sol-Next-v9.0.4-public-arm64.apk
-788af5ea0805216dbf6c531e53e5eaeb6367d80ed2fb48ba10652598b2f2d3aa  Sol-Next-v9.0.4-public-universal.apk
+c7af007aa9595ec951b69136ac50ded9fe6c73ec0f170441e13e14deeb4f8ebb  Sol-Next-v9.0.7-public-arm64.apk
+c32eb99d16183b29b7d5bca462eb566bed00ea3afbd7b550797f8c0730f58602  Sol-Next-v9.0.7-public-universal.apk
