@@ -1,26 +1,26 @@
 <div align="center">
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.2-public">
-  <img src="docs/media/v901/hero-banner-901.png" alt="Sol Next 9.0.2 — 晨曦轨道 · 你的实时语音 AI 行动伙伴" width="100%" />
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.3-public">
+  <img src="docs/media/v901/hero-banner-901.png" alt="Sol Next 9.0.3 — 晨曦轨道 · 你的实时语音 AI 行动伙伴" width="100%" />
 </a>
 
 <br/><br/>
 
-# Sol Next 9.0.2 — 晨曦轨道 · 你的 AI 行动伙伴
+# Sol Next 9.0.3 — 晨曦轨道 · 你的 AI 行动伙伴
 
 ### 用自然对话与文字，驱动真实的手机行动 · 率先落地 Android 16/17 智能 OS 架构
 
 > **👨‍💻 作者：许昌北海医院张重阳** &nbsp;·&nbsp; **📕 关注小红书：`871348474` 映像河南 就可以联系作者**
 
-<sub>全新 <code>9.0.2</code> 跨代架构（Build <code>902</code> · Android 10–16 / 16KB 页对齐 · 自动识别鸿蒙系统免无线调试 · 100% 零内置密钥 / 任意云端模型 BYOK · 致敬先驱 <code>wangzan101/Mika</code>）</sub>
+<sub>全新 <code>9.0.3</code> 跨代架构（Build <code>903</code> · Android 10–16 / 16KB 页对齐 · 自动识别鸿蒙系统免无线调试 · 免费内置原生加密 DeepSeek V4.1 Flash（开箱即用）+ 任意云端模型 BYOK · 致敬先驱 <code>wangzan101/Mika</code>）</sub>
 
 <br/><br/>
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.2-public/Sol-Next-v9.0.2-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20下载%20v9.0.2%20公开版%20APK-ARM64%20(零内置%20Key)-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="下载 ARM64 APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.3-public/Sol-Next-v9.0.3-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20下载%20v9.0.3%20公开版%20APK-ARM64%20(免费内置%20DeepSeek)-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="下载 ARM64 APK" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.2-public/Sol-Next-v9.0.2-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20下载全架构通用版-Universal%20APK-10b981?style=for-the-badge&logo=android&logoColor=white" alt="下载 Universal APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.3-public/Sol-Next-v9.0.3-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20下载全架构通用版-Universal%20APK-10b981?style=for-the-badge&logo=android&logoColor=white" alt="下载 Universal APK" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.2-public"><img src="https://img.shields.io/badge/📋%20v9.0.2%20发布日志-SHA256%20校验-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="发布日志" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.3-public"><img src="https://img.shields.io/badge/📋%20v9.0.3%20发布日志-SHA256%20校验-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="发布日志" /></a>
 &nbsp;
 <a href="https://github.com/wangzan101/Mika"><img src="https://img.shields.io/badge/⭐%20致敬先驱原作者-wangzan101%2FMika-475569?style=for-the-badge&logo=github&logoColor=white" alt="致敬原作者 Mika" /></a>
 
@@ -32,7 +32,7 @@
 
 ![Author](https://img.shields.io/badge/作者-许昌北海医院张重阳-D9A441?style=flat-square)
 ![Xiaohongshu](https://img.shields.io/badge/小红书-871348474%20映像河南-FF2442?style=flat-square)
-![Version 9.0.2](https://img.shields.io/badge/Release-v9.0.2--public%20(Build%20902)-3E78E0?style=flat-square)
+![Version 9.0.3](https://img.shields.io/badge/Release-v9.0.3--public%20(Build%20902)-3E78E0?style=flat-square)
 ![Voice And Text](https://img.shields.io/badge/交互范式-全双工实时语音%20%2B%20晨曦文字输入-0ea5e9?style=flat-square)
 ![Execution Guard](https://img.shields.io/badge/执行护栏-任务常亮屏%20·%20防误触%20·%20付款%2F微信先问后行-10b981?style=flat-square)
 ![Android 16/17](https://img.shields.io/badge/Android%2016%2F17-GenUI%20·%20Magic%20Cue%20·%20AppFunctions-10b981?style=flat-square)
@@ -48,9 +48,9 @@
 
 ---
 
-## ✨ 为什么 Sol Next 9.0.2 是一次彻底的跨代进化？
+## ✨ 为什么 Sol Next 9.0.3 是一次彻底的跨代进化？
 
-**Sol Next 9.0.2** 彻底重构了移动 AI 助手的产品形态与底层大脑——**弃用繁琐的文字输入框与满屏工程参数**，以 **「晨曦轨道」极简四屏语音体系 + Google Android 16/17 前沿智能 OS 规划实装 + 真人级全游戏实时操控 + 任意云端模型零配置引擎**，把“能聊天但干不了活、能干活但难用得像开发者工具”的旧时代彻底翻篇。
+**Sol Next 9.0.3** 彻底重构了移动 AI 助手的产品形态与底层大脑——**弃用繁琐的文字输入框与满屏工程参数**，以 **「晨曦轨道」极简四屏语音体系 + Google Android 16/17 前沿智能 OS 规划实装 + 真人级全游戏实时操控 + 任意云端模型零配置引擎**，把“能聊天但干不了活、能干活但难用得像开发者工具”的旧时代彻底翻篇。
 
 > **零学习成本，拿来即用**：打开即见晨曦轨道语音主场，张口说话即可驱动整台手机；闲聊毫秒级语音秒回，复杂行动自动切入清晰可视化的步骤进度与时间线。
 
@@ -122,7 +122,7 @@
 
 ---
 
-## 🚀 二、Sol Next 9.0.2 六大跨代王牌能力
+## 🚀 二、Sol Next 9.0.3 六大跨代王牌能力
 
 ### 1. 🎙️ 零语音 API 全双工实时语音对话（内置 16KB 端侧流式神经 ASR + 中文神经 TTS）
 - **不配任何语音模型 API、无谷歌服务也能实时完美语音**：内置 16KB 页对齐 Apache-2.0 `sherpa-onnx v2.0.3` + `streaming-zipformer-small-ctc-zh-int8` 真流式中文语音识别（Android 16 实测 5.6s 真实中文音频 **770ms** 精准转写）+ `vits-icefall-zh-aishell3` 端侧自然中文神经语音合成（**573ms** 出声）。哪怕只填了 DeepSeek / Claude / Kimi / GLM 等纯文本模型 Key，依然支持零弹窗逐字流式识别 + 外放人声播报 + 连续全双工对话！
@@ -132,7 +132,7 @@
 ### 2. 🧠 率先实装 Google Android 16 / 17 AI OS 前沿规划与论文智慧
 不是停留在概念里，而是每一项都在 Android 16 (API 36) 真机实装可运行：
 
-| 前沿能力 | 对应 Google / 学术界方向 | Sol Next 9.0.2 端侧实装效果 |
+| 前沿能力 | 对应 Google / 学术界方向 | Sol Next 9.0.3 端侧实装效果 |
 | --- | --- | --- |
 | **原生 120Hz Generative UI 交互卡片** | Android 17 Generative UI | `0-Token` 瞬间生成设备巡检 KPI 仪表盘 + Agent 自主调用 `ui_render_card` 渲染带勾选、状态标签与一键续跑按钮的原生 Compose 卡片 |
 | **端侧 Magic Cue 主动微提示** | Android 16/17 Magic Cue | `< 0.1 ms` 全端侧提取通知验证码一键复制、快递单号追踪、客服电话直拨、地址导航与低电量省电提示 |
@@ -205,11 +205,11 @@
 
 ---
 
-## ⚖️ 四、Sol Next 9.0.2 vs 传统手机 AI 助手（含致敬先驱 Mika）
+## ⚖️ 四、Sol Next 9.0.3 vs 传统手机 AI 助手（含致敬先驱 Mika）
 
-Sol Next 衷心致敬开源先驱 [wangzan101/Mika](https://github.com/wangzan101/Mika) 在后台虚拟屏与伴随通话范式上的开创性探索（公开版独立包名 `ai.sol.next`，与 Mika `com.wangzan101.mika` 完美共存）。在 9.0.2 中，Sol Next 带来了以下独有体验：
+Sol Next 衷心致敬开源先驱 [wangzan101/Mika](https://github.com/wangzan101/Mika) 在后台虚拟屏与伴随通话范式上的开创性探索（公开版独立包名 `ai.sol.next`，与 Mika `com.wangzan101.mika` 完美共存）。在 9.0.3 中，Sol Next 带来了以下独有体验：
 
-| 核心维度 | 传统手机 AI 助手 / 早期方案 | **Sol Next 9.0.2（晨曦轨道）** |
+| 核心维度 | 传统手机 AI 助手 / 早期方案 | **Sol Next 9.0.3（晨曦轨道）** |
 | --- | --- | --- |
 | **主交互方式** | 文字聊天框 + 复杂技术日志列表 | **全双工实时语音主屏（零输入框）+ 四屏可视化进度/时间线** |
 | **步骤可读性** | 暴露包名、元素编号、像素坐标 | **100% 人类自然语言可视化步骤与进度条，零学习成本** |
@@ -224,8 +224,8 @@ Sol Next 衷心致敬开源先驱 [wangzan101/Mika](https://github.com/wangzan10
 ## 📦 五、下载安装与安全校验（零内置密钥公开版）
 
 1. **下载安装**：
-   - 📱 **绝大多数现代安卓手机（推荐）**：[Sol-Next-v9.0.2-public-arm64.apk](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.2-public/Sol-Next-v9.0.2-public-arm64.apk)（89 MB · 内置 16KB 对齐开源离线流式中文 ASR + AISHELL-3 中文神经 TTS，Android 10–16）
-   - 💻 **通用全架构（含 x86_64 模拟器）**：[Sol-Next-v9.0.2-public-universal.apk](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.2-public/Sol-Next-v9.0.2-public-universal.apk)（128 MB）
+   - 📱 **绝大多数现代安卓手机（推荐）**：[Sol-Next-v9.0.3-public-arm64.apk](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.3-public/Sol-Next-v9.0.3-public-arm64.apk)（89 MB · 内置 16KB 对齐开源离线流式中文 ASR + AISHELL-3 中文神经 TTS，Android 10–16）
+   - 💻 **通用全架构（含 x86_64 模拟器）**：[Sol-Next-v9.0.3-public-universal.apk](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.3-public/Sol-Next-v9.0.3-public-universal.apk)（128 MB）
 2. **30 秒极简上手**：
    - 首次启动完成 2 步极简引导：**1. 麦克风权限** + **2. 辅助操控（无障碍）**（不装输入法、不抢默认助理）；
    - 打开 **设置 › 模型配置**，填入你自己的任意云端模型 API Key（OpenAI / DeepSeek / Claude / Gemini / 通义千问 / OpenRouter 等——**无需额外配置任何语音 API Key**）；
@@ -233,13 +233,13 @@ Sol Next 衷心致敬开源先驱 [wangzan101/Mika](https://github.com/wangzan10
 3. **SHA-256 校验与零内置密钥审计**：
 
 ```text
-ee3a0fb931703d168fe93d4d8ea7dbc113b325d65d4bcdc67af8e925ce10d00f  Sol-Next-v9.0.2-public-arm64.apk
-d0f7e126b23d25db5232191e15b1a01a7180c9eca1d4661f7ee424d9391c43cf  Sol-Next-v9.0.2-public-universal.apk
+a6d3024ae721c5ce63762c698aaf9e70d10168b942667c5e63dd125026b16462  Sol-Next-v9.0.3-public-arm64.apk
+908abbe121ea4e8e5063bf00d431b870dddcb879291250cf4a8cdde25f92358b  Sol-Next-v9.0.3-public-universal.apk
 ```
 
 ```bash
 # 任何人均可一行验证公开版 APK 不含任何内置 API 密钥资产（输出为空即纯净）：
-unzip -l Sol-Next-v9.0.2-public-arm64.apk | grep -iE "distribution|sol-models|secret|key\.json"
+unzip -l Sol-Next-v9.0.3-public-arm64.apk | grep -iE "distribution|sol-models|secret|key\.json"
 ```
 
 ---

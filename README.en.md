@@ -1,26 +1,26 @@
 <div align="center">
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.2-public">
-  <img src="docs/media/v901/hero-banner-901.png" alt="Sol Next 9.0.2 — Dawn Orbit Voice-First AI Mobile Agent" width="100%" />
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.3-public">
+  <img src="docs/media/v901/hero-banner-901.png" alt="Sol Next 9.0.3 — Dawn Orbit Voice-First AI Mobile Agent" width="100%" />
 </a>
 
 <br/><br/>
 
-# Sol Next 9.0.2 — Dawn Orbit · Your AI Action Partner
+# Sol Next 9.0.3 — Dawn Orbit · Your AI Action Partner
 
 ### Speak or Type Naturally. Drive Real Mobile Actions. Built for the Android 16/17 Intelligent OS Era.
 
 > **👨‍💻 Author: 许昌北海医院张重阳 (Zhang Chongyang, Xuchang Beihai Hospital)** &nbsp;·&nbsp; **📕 Contact Author: Follow Xiaohongshu (RedNote) `871348474` (映像河南)**
 
-<sub>Next-Generation Voice + Text Android 10–16 OS Agent (Build <code>902</code> · 16KB Page-Aligned · Auto-Detects HarmonyOS to Skip Wireless Debugging · Keep-Screen-On &amp; Touch Guard · Sensitive Payment/WeChat Confirmation Gate · 100% Zero Built-In Keys / Universal BYOK · Tribute to <code>wangzan101/Mika</code>)</sub>
+<sub>Next-Generation Voice + Text Android 10–16 OS Agent (Build <code>903</code> · 16KB Page-Aligned · Auto-Detects HarmonyOS to Skip Wireless Debugging · Keep-Screen-On &amp; Touch Guard · Sensitive Payment/WeChat Confirmation Gate · 100% Zero Built-In Keys / Universal BYOK · Tribute to <code>wangzan101/Mika</code>)</sub>
 
 <br/><br/>
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.2-public/Sol-Next-v9.0.2-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20Download%20v9.0.2%20Public%20APK-ARM64%20(Zero%20Key)-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="Download ARM64 APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.3-public/Sol-Next-v9.0.3-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20Download%20v9.0.3%20Public%20APK-ARM64%20(Free%20DeepSeek)-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="Download ARM64 APK" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.2-public/Sol-Next-v9.0.2-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20Universal%20APK-ARM64%20%2B%20x86__64-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Download Universal APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.3-public/Sol-Next-v9.0.3-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20Universal%20APK-ARM64%20%2B%20x86__64-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Download Universal APK" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.2-public"><img src="https://img.shields.io/badge/📋%20Release%20Notes-v9.0.2--public-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Release Notes" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.3-public"><img src="https://img.shields.io/badge/📋%20Release%20Notes-v9.0.3--public-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Release Notes" /></a>
 
 <br/><br/>
 
@@ -30,9 +30,9 @@
 
 ---
 
-## ✨ What Makes Sol Next 9.0.2 a Generational Leap
+## ✨ What Makes Sol Next 9.0.3 a Generational Leap
 
-Sol Next 9.0.2 reinvents the mobile AI agent from the ground up with **zero learning curve**: no cramped text input box on the home screen, no cryptic developer logs, and zero self-hosted local server dependencies. Speak naturally, watch clean human-readable progress & native Android 17 Generative UI cards unfold, and let Sol Next execute across apps, games, and live phone calls.
+Sol Next 9.0.3 reinvents the mobile AI agent from the ground up with **zero learning curve**: no cramped text input box on the home screen, no cryptic developer logs, and zero self-hosted local server dependencies. Speak naturally, watch clean human-readable progress & native Android 17 Generative UI cards unfold, and let Sol Next execute across apps, games, and live phone calls.
 
 ### 1. The Unified 4-Screen "Dawn Orbit" Experience (Live Android 16 Captures)
 
@@ -97,9 +97,9 @@ Sol Next 9.0.2 reinvents the mobile AI agent from the ground up with **zero lear
 
 ---
 
-## 📦 SHA-256 Checksums (`v9.0.2-public`)
+## 📦 SHA-256 Checksums (`v9.0.3-public`)
 
 ```text
-33bea509d0ffb4da9c6cbfeb2aba2708ed91b3deecfb29fdebb5376618c4df5e  Sol-Next-v9.0.2-public-arm64.apk
-1e2c641f8ffe4f2708243f89d732cc6aa06079877eecde11991e178496b07880  Sol-Next-v9.0.2-public-universal.apk
+a6d3024ae721c5ce63762c698aaf9e70d10168b942667c5e63dd125026b16462  Sol-Next-v9.0.3-public-arm64.apk
+908abbe121ea4e8e5063bf00d431b870dddcb879291250cf4a8cdde25f92358b  Sol-Next-v9.0.3-public-universal.apk
 ```
