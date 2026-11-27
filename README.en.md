@@ -1,12 +1,12 @@
 <div align="center">
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.9-public">
-  <img src="docs/media/v901/hero-banner-901.png" alt="Sol Next 9.0.9 — Dawn Orbit · Your Free Open-Source AI Action Partner on Android & HarmonyOS" width="100%" />
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.0-public">
+  <img src="docs/media/v901/hero-banner-901.png" alt="Sol Next 9.1.0 — Dawn Orbit · Your Free Open-Source AI Action Partner on Android & HarmonyOS" width="100%" />
 </a>
 
 <br/><br/>
 
-# Sol Next 9.0.9 — Your Open-Source AI "Hands" on Android & HarmonyOS
+# Sol Next 9.1.0 — Your Open-Source AI "Hands" on Android & HarmonyOS
 
 ### Speak or Type Naturally. Let AI Operate Apps in a Hidden 1:1 Background Screen, Handle Real Phone Calls & Play Games — Free Built-In DeepSeek, Wi-Fi-Off Persistent, 20 Languages
 
@@ -16,11 +16,11 @@
 
 <br/><br/>
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.9-public/Sol-Next-v9.0.9-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20Download%20v9.0.9%20APK-ARM64%20(Free%20DeepSeek)-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="Download ARM64 APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.0-public/Sol-Next-v9.1.0-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20Download%20v9.1.0%20APK-ARM64%20(Free%20DeepSeek)-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="Download ARM64 APK" /></a>
 &nbsp;
-<a href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.9/Sol-Next-v9.0.9-public-arm64.apk"><img src="https://img.shields.io/badge/🚀%20High--Speed%20Direct%20Mirror-China%20%2F%20Asia-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Direct Mirror ARM64" /></a>
+<a href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.0/Sol-Next-v9.1.0-public-arm64.apk"><img src="https://img.shields.io/badge/🚀%20High--Speed%20Direct%20Mirror-China%20%2F%20Asia-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Direct Mirror ARM64" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.9-public/Sol-Next-v9.0.9-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20Universal%20APK-ARM64%20%2B%20x86__64-6366f1?style=for-the-badge&logo=android&logoColor=white" alt="Download Universal APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.0-public/Sol-Next-v9.1.0-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20Universal%20APK-ARM64%20%2B%20x86__64-6366f1?style=for-the-badge&logo=android&logoColor=white" alt="Download Universal APK" /></a>
 
 <br/><br/>
 
@@ -35,7 +35,7 @@
 
 ---
 
-### 🆕 What's New in v9.0.9 (Build 909)
+### 🆕 What's New in v9.1.0 (Build 910)
 - **⚡ New "Singularity OS Command Center" (World-Frontier Super-Compute Suite)**: Ships **🚀 Full-Autopilot Geek Mode** (1-tap zero-popup uninterrupted autonomy), **🐝 4-Agent Parallel Swarm Council** (Architect · Analyst · Innovator · Chief Synthesizer), **🌐 Autonomous Multi-Hop Web Deep Research** (headless cited research reports + `web_deep_research` tool), **🌳 Test-Time Compute Tree Search + PRM Verifier**, **🧬 AlphaEvolve Goal Optimizer**, **🎨 Generative HTML5 Mini-App Studio (Artifacts)** (4 built-in apps + 1-sentence AI generator), **💻 0ms Deterministic Compute & Bill-Stats Sandbox (`compute_engine`)**, **🔮 Probabilistic World Model & Bellman Rollout Simulator**, **🧠 Google Titans/MIRAS Surprise Memory + 2-Hop GraphRAG Knowledge Graph**, **🛠️ Project Mariner Teach & Repeat Macro Studio**, **🔌 Universal MCP (Streamable HTTP) + Google A2A v1.0 Hub**, and **Magic Cue 2.0 (12 contextual triggers)**.
 - **✍️ Free Report Operations & Full Archive Lifecycle**: Native free text drag-selection, inline title/Markdown editing + 3-preset 0-UI **AI Quick Rewrite**, single & batch export (`.md` / `.txt` / `.html` to `Download/SolNext/`), Android FileProvider Share Sheet, confirmed delete, and 1-tap Convert to Scheduled Routine.
 - **🚀 Multi-Edition High-Speed OTA Upgrade**: Public Edition now ships with China high-speed VPS OTA mirrors + structured JSON fallback (`latest.json`), device-ABI-aware ARM64/Universal asset selection, strict edition isolation, mirror-race fast-fail bugfix, and automatic stale APK cache cleanup.
@@ -131,26 +131,26 @@ Regular AI chat apps (ChatGPT, DeepSeek Web, Gemini) can only *talk*—they cann
 
 ---
 
-## ⚔️ 5. Where Mika Falls Short & Why Sol Next 9.0.9 Decisively Leads
+## ⚔️ 5. Where Mika Falls Short & Why Sol Next 9.1.0 Decisively Leads
 
-**Sol Next 9.0.9** is a completely independent next-generation product built from the ground up. Earlier mobile agents like **Mika** suffer from major everyday usability bottlenecks that Sol Next 9.0.9 eliminates completely:
+**Sol Next 9.1.0** is a completely independent next-generation product built from the ground up. Earlier mobile agents like **Mika** suffer from major everyday usability bottlenecks that Sol Next 9.1.0 eliminates completely:
 
-1. **Mika cannot work out of the box** (requires manually buying and configuring API keys before your first message) → **Sol Next 9.0.9** includes **free built-in Rust-encrypted DeepSeek V4.1 Flash** (with APK signing cert binding & TLS SPKI pinning) plus universal BYOK anytime.
-2. **Mika disconnects the moment you turn off Wi-Fi** (leaving home breaks wireless debugging; HarmonyOS still needs tedious ADB pairing) → **Sol Next 9.0.9** locks `adb_enabled=1` + `127.0.0.1:5555` loopback so **Wi-Fi-off / 5G mobile data stays 100% connected**, and **HarmonyOS auto-skips wireless debugging**.
-3. **Mika is slow, token-heavy, and drifts on scaled virtual screens** (`~2,400 ms` cloud loops even for simple device toggles, Kotlin/JVM UI parsing, scaled grid coordinate rounding) → **Sol Next 9.0.9** runs **`72 ms` 0-token native reflexes (33× faster)**, `<250 ms` deep-link teleports across 120+ apps, a **pure-Rust 16KB JNI kernel (`-74% to -97%` UI pruning)**, and **1:1 Display 0 physical cloning (`scale=1.0`, `0.0px` drift)**.
-4. **Mika exposes raw engineering logs & lacks built-in offline voice** → **Sol Next 9.0.9** delivers the zero-learning-curve **Dawn Orbit 4-screen UI** plus **built-in 16KB offline neural ASR (`770 ms`) & TTS (`112 ms`)** requiring zero Google services or voice API keys.
-5. **Mika uploads raw screen text, packs a heavy browser/Linux attack surface & risks duplicate WeChat sends** → **Sol Next 9.0.9** runs a minimal-attack-surface native engine with an **on-device Privacy Firewall**, **9 WeChat 8.0.80 reliability fixes (`0` duplicate sends, `9.5s` first-try login)**, and mandatory confirmation before payments or messaging.
-6. **Mika is single-language, slow to update & lacks multi-finger gaming / full AI call defense** → **Sol Next 9.0.9** supports **20 world languages (with Arabic RTL)**, **auto-popup OTA with release notes & 4-stream multi-mirror acceleration (3–8× faster)**, **60Hz 4-finger gaming**, and **35-bar voiceprint AI calling with `<0.1ms` on-device anti-scam shield**.
+1. **Mika cannot work out of the box** (requires manually buying and configuring API keys before your first message) → **Sol Next 9.1.0** includes **free built-in Rust-encrypted DeepSeek V4.1 Flash** (with APK signing cert binding & TLS SPKI pinning) plus universal BYOK anytime.
+2. **Mika disconnects the moment you turn off Wi-Fi** (leaving home breaks wireless debugging; HarmonyOS still needs tedious ADB pairing) → **Sol Next 9.1.0** locks `adb_enabled=1` + `127.0.0.1:5555` loopback so **Wi-Fi-off / 5G mobile data stays 100% connected**, and **HarmonyOS auto-skips wireless debugging**.
+3. **Mika is slow, token-heavy, and drifts on scaled virtual screens** (`~2,400 ms` cloud loops even for simple device toggles, Kotlin/JVM UI parsing, scaled grid coordinate rounding) → **Sol Next 9.1.0** runs **`72 ms` 0-token native reflexes (33× faster)**, `<250 ms` deep-link teleports across 120+ apps, a **pure-Rust 16KB JNI kernel (`-74% to -97%` UI pruning)**, and **1:1 Display 0 physical cloning (`scale=1.0`, `0.0px` drift)**.
+4. **Mika exposes raw engineering logs & lacks built-in offline voice** → **Sol Next 9.1.0** delivers the zero-learning-curve **Dawn Orbit 4-screen UI** plus **built-in 16KB offline neural ASR (`770 ms`) & TTS (`112 ms`)** requiring zero Google services or voice API keys.
+5. **Mika uploads raw screen text, packs a heavy browser/Linux attack surface & risks duplicate WeChat sends** → **Sol Next 9.1.0** runs a minimal-attack-surface native engine with an **on-device Privacy Firewall**, **9 WeChat 8.0.80 reliability fixes (`0` duplicate sends, `9.5s` first-try login)**, and mandatory confirmation before payments or messaging.
+6. **Mika is single-language, slow to update & lacks multi-finger gaming / full AI call defense** → **Sol Next 9.1.0** supports **20 world languages (with Arabic RTL)**, **auto-popup OTA with release notes & 4-stream multi-mirror acceleration (3–8× faster)**, **60Hz 4-finger gaming**, and **35-bar voiceprint AI calling with `<0.1ms` on-device anti-scam shield**.
 
-👉 Full 16-dimension benchmarks & 2K architecture charts: [Sol Next 9.0.9 vs Mika Deep Dive](docs/guides/COMPARISON_WITH_MIKA.md)
+👉 Full 16-dimension benchmarks & 2K architecture charts: [Sol Next 9.1.0 vs Mika Deep Dive](docs/guides/COMPARISON_WITH_MIKA.md)
 
 ---
 
-## 📦 SHA-256 Checksums (`v9.0.9-public`) & MCP Setup
+## 📦 SHA-256 Checksums (`v9.1.0-public`) & MCP Setup
 
 ```text
-4630a09068f65fd75bc0575bf7baef27c0735c6385d7dd3be480384c05210277  Sol-Next-v9.0.9-public-arm64.apk
-1aff7e9944fdf4223c9567260f0f7fffb650cfd2ef0c0a0ff2625cd4cccb6b41  Sol-Next-v9.0.9-public-universal.apk
+e77f1b9523b8716d3a53fd2442966d36407015c4c93af6a51e1a532b0a21c0d5  Sol-Next-v9.1.0-public-arm64.apk
+ffb1582d737ccd7a545e80decd1a2fcb98a132306417fe2ec74b1692fc0895ef  Sol-Next-v9.1.0-public-universal.apk
 ```
 
 ```json

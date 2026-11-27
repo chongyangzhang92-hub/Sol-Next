@@ -1,28 +1,28 @@
 <div align="center">
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.9-public">
-  <img src="docs/media/v901/hero-banner-901.png" alt="Sol Next 9.0.9 — 晨曦轨道 · 装在你手机上的免费开源 AI 行动替身" width="100%" />
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.0-public">
+  <img src="docs/media/v901/hero-banner-901.png" alt="Sol Next 9.1.0 — 晨曦轨道 · 装在你手机上的免费开源 AI 行动替身" width="100%" />
 </a>
 
 <br/><br/>
 
-# Sol Next 9.0.9 — 装在你手机上的免费开源 AI「行动替身」
+# Sol Next 9.1.0 — 装在你手机上的免费开源 AI「行动替身」
 
 ### 动嘴说话或打字，让 AI 在后台独立虚拟屏替你点手机、跨 App 办事、高清接打电话、打游戏 · 无需买 Key · 关 Wi-Fi 不断连 · 全球 20 国语言
 
 > **👨‍💻 作者：许昌北海医院张重阳** &nbsp;·&nbsp; **💬 [微信扫码联系作者 / 进小红书「SolNext用户群」](#-七联系作者与加入官方用户群)** &nbsp;·&nbsp; **📕 小红书：`871348474`（映像河南）**
 
-<sub>全新独立产品 <code>v9.0.9</code>（Build <code>909</code> · Apache-2.0 开源 · 支持 Android 10–16 &amp; 华为鸿蒙 · 开箱免费内置 Rust 加密 DeepSeek V4.1 Flash + 随时换 BYOK · 全球 20 国语言按手机语言自动切换 · 关 Wi-Fi 切 5G 无线调试永不断连 · OTA 自动弹窗更新说明 + 4 线程极速加速）</sub>
+<sub>全新独立产品 <code>v9.1.0</code>（Build <code>909</code> · Apache-2.0 开源 · 支持 Android 10–16 &amp; 华为鸿蒙 · 开箱免费内置 Rust 加密 DeepSeek V4.1 Flash + 随时换 BYOK · 全球 20 国语言按手机语言自动切换 · 关 Wi-Fi 切 5G 无线调试永不断连 · OTA 自动弹窗更新说明 + 4 线程极速加速）</sub>
 
 <br/><br/>
 
-<a href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.9/Sol-Next-v9.0.9-public-arm64.apk"><img src="https://img.shields.io/badge/🇨🇳%20国内高速直连镜像-ARM64%20免梯子下载-10b981?style=for-the-badge&logo=android&logoColor=white" alt="国内高速直连下载" /></a>
+<a href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.0/Sol-Next-v9.1.0-public-arm64.apk"><img src="https://img.shields.io/badge/🇨🇳%20国内高速直连镜像-ARM64%20免梯子下载-10b981?style=for-the-badge&logo=android&logoColor=white" alt="国内高速直连下载" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.9-public/Sol-Next-v9.0.9-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20GitHub%20官方%20v9.0.9-ARM64%20(免费内置%20DeepSeek)-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="下载 ARM64 APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.0-public/Sol-Next-v9.1.0-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20GitHub%20官方%20v9.1.0-ARM64%20(免费内置%20DeepSeek)-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="下载 ARM64 APK" /></a>
 &nbsp;
-<a href="https://ghfast.top/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.9-public/Sol-Next-v9.0.9-public-arm64.apk"><img src="https://img.shields.io/badge/⚡%20国内加速镜像%202-ghfast.top%20直链-f59e0b?style=for-the-badge&logo=cloudflare&logoColor=white" alt="国内加速镜像 2" /></a>
+<a href="https://ghfast.top/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.0-public/Sol-Next-v9.1.0-public-arm64.apk"><img src="https://img.shields.io/badge/⚡%20国内加速镜像%202-ghfast.top%20直链-f59e0b?style=for-the-badge&logo=cloudflare&logoColor=white" alt="国内加速镜像 2" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.9-public/Sol-Next-v9.0.9-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20全架构通用版-Universal%20APK-6366f1?style=for-the-badge&logo=android&logoColor=white" alt="下载 Universal APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.0-public/Sol-Next-v9.1.0-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20全架构通用版-Universal%20APK-6366f1?style=for-the-badge&logo=android&logoColor=white" alt="下载 Universal APK" /></a>
 
 <br/><br/>
 
@@ -36,7 +36,7 @@
 <br/>
 
 ![Author](https://img.shields.io/badge/作者-许昌北海医院张重阳-D9A441?style=flat-square)
-![Version 9.0.9](https://img.shields.io/badge/Release-v9.0.9--public%20(Build%20909)-3E78E0?style=flat-square)
+![Version 9.1.0](https://img.shields.io/badge/Release-v9.1.0--public%20(Build%20909)-3E78E0?style=flat-square)
 ![20 Languages](https://img.shields.io/badge/全球语言-20国语言%20·%20按手机语言自动切换-0ea5e9?style=flat-square)
 ![Free DeepSeek](https://img.shields.io/badge/开箱即用-免费内置%20Rust%20加密%20DeepSeek-10b981?style=flat-square)
 ![Fast OTA](https://img.shields.io/badge/极速%20OTA-自动弹窗版本说明%20%2B%204线程多镜像加速-8b5cf6?style=flat-square)
@@ -47,7 +47,7 @@
 
 ---
 
-## 🆕 v9.0.9 最新重磅特性（Build 909）
+## 🆕 v9.1.0 最新重磅特性（Build 910）
 
 - **⚡ 全新「前沿智核 · Singularity OS」（世界顶级实验室前沿超算全家桶）**：原生集成 **🚀 全自动极客狂飙模式**（一键解锁零弹窗全速执行）、**🐝 4-Agent 多智能体蜂群辩论 (Swarm Council)**、**🌐 全网多跳深度研究 (Autonomous Deep Research)**、**🌳 测试时树搜索 + PRM 验证精修 (Tree-of-Thought)**、**🧬 AlphaEvolve 目标指令进化器**、**🎨 AI 生成式 HTML5 交互小应用工坊 (Artifacts Studio)**、**💻 0ms 零幻觉精确算力与账单统计沙盒 (`compute_engine`)**、**🔮 DreamerV3 概率转移世界模型 (World Model)**、**🧠 Google Titans / MIRAS 长期惊喜记忆 + GraphRAG 2 跳个人知识图谱**、**🛠️ Project Mariner「Teach & Repeat」参数化技能工坊（内置 10 套高频技能）**、**🔌 通用 MCP (Streamable HTTP) + Google A2A v1.0 生态中心（支持导出本机 AgentCard JSON）** 与 **Magic Cue 2.0（12 维零延迟场景预判）**。
 - **✍️ 任务报告自由操作 & 历史文档全管理**：Screen 2 与历史档案全面支持**自由划选复制**、**标题/正文自由编辑 + 3 档一键 AI 改写**（精简要点/转待办/润色汇报稿）、**导出 `.md` / `.txt` / `.html` 单篇与批量合集至 `Download/SolNext/`**、Android 原生文件分享、确认删除与一键设为定时任务。
@@ -193,37 +193,37 @@
 
 ---
 
-## ⚔️ 五、讲明白：Mika 到底差在哪？Sol Next 9.0.9 比它强在哪？
+## ⚔️ 五、讲明白：Mika 到底差在哪？Sol Next 9.1.0 比它强在哪？
 
-**Sol Next 9.0.9** 是从底层 Rust 内核、通信协议到四屏交互体系**完全独立打造的全新一代产品**。很多用户之前试过早期的手机代理 **Mika**，用几天就卸载了，核心原因在于 Mika 存在 **8 大致命短板**——而这正是 **Sol Next 9.0.9 彻底重写并全面碾压它的地方**：
+**Sol Next 9.1.0** 是从底层 Rust 内核、通信协议到四屏交互体系**完全独立打造的全新一代产品**。很多用户之前试过早期的手机代理 **Mika**，用几天就卸载了，核心原因在于 Mika 存在 **8 大致命短板**——而这正是 **Sol Next 9.1.0 彻底重写并全面碾压它的地方**：
 
-### ❌ 早期代理 Mika 的 8 大真实短板 vs ✅ Sol Next 9.0.9 的降维解决
+### ❌ 早期代理 Mika 的 8 大真实短板 vs ✅ Sol Next 9.1.0 的降维解决
 
 1. **❌ Mika 上手门槛极高，装完不能直接用**
    - Mika 装好后是一张空白配置页，必须用户自己去注册大模型平台、实名充值、申请 API Key 再手动填对 Base URL 和 Model ID 才能说第一句话，90% 的普通人第一步就被劝退。
-   - **✅ Sol Next 9.0.9**：**开箱免费内置 DeepSeek V4.1 Flash**（1M 上下文 + 视觉 + 工具调用），密钥经纯 Rust 四分片白盒加密封装在原生 `libsol_kernel.so` 中，并绑定 APK 签名证书与 TLS SPKI 证书防抓包（零明文泄露）；**装好直接免费用**，想换自己的 OpenAI / Claude / Gemini / DeepSeek / 通义千问 Key 随时一键替换。
+   - **✅ Sol Next 9.1.0**：**开箱免费内置 DeepSeek V4.1 Flash**（1M 上下文 + 视觉 + 工具调用），密钥经纯 Rust 四分片白盒加密封装在原生 `libsol_kernel.so` 中，并绑定 APK 签名证书与 TLS SPKI 证书防抓包（零明文泄露）；**装好直接免费用**，想换自己的 OpenAI / Claude / Gemini / DeepSeek / 通义千问 Key 随时一键替换。
 2. **❌ Mika 一关 Wi-Fi 无线调试就断连，出了家门直接罢工**
    - Android 系统一旦关掉 Wi-Fi 就会自动停掉无线调试，导致 Mika 只要走出家门切 5G 流量立刻断连失效；在华为鸿蒙手机上依然需要繁琐的无线调试配对。
-   - **✅ Sol Next 9.0.9**：在底层 `uid=2000` 持久化锁死 `adb_enabled=1` 并接管 `127.0.0.1:5555` 本机回环通道——**连上一次后关闭 Wi-Fi 切 5G 出门依然 100% 持续在线永不断连**；**华为鸿蒙系统自动识别免无线调试**，3 步直达满血体验。
+   - **✅ Sol Next 9.1.0**：在底层 `uid=2000` 持久化锁死 `adb_enabled=1` 并接管 `127.0.0.1:5555` 本机回环通道——**连上一次后关闭 Wi-Fi 切 5G 出门依然 100% 持续在线永不断连**；**华为鸿蒙系统自动识别免无线调试**，3 步直达满血体验。
 3. **❌ Mika 执行又慢又费 Token，后台虚拟屏经常点偏**
    - Mika 连查电量、开蓝牙、进设置这种基础指令都要先截屏上传云端等 LLM 慢吞吞思考（平均 `~2,400 ms`/步）；控件树用纯 Kotlin/JVM 笨重解析导致 Token 暴涨；后台虚拟屏靠缩放网格换算坐标，遇到不同分辨率/DPI 手机极易点歪。
-   - **✅ Sol Next 9.0.9**：高频系统指令走本地 0-Token 原生通道仅需 **`72 ms`（快 33 倍）**；120+ 主流 App 支持 **`<250 ms` Deep-Link 协议瞬移**；纯 Rust 16KB 原生内核微秒级剪枝掉 **`-74% ~ -97%` 冗余控件**大幅省钱提速；后台虚拟屏 **1:1 完整克隆物理 Display 0（`scale=1.0`）实现 `0.0px` 外科级零误差点击**！
+   - **✅ Sol Next 9.1.0**：高频系统指令走本地 0-Token 原生通道仅需 **`72 ms`（快 33 倍）**；120+ 主流 App 支持 **`<250 ms` Deep-Link 协议瞬移**；纯 Rust 16KB 原生内核微秒级剪枝掉 **`-74% ~ -97%` 冗余控件**大幅省钱提速；后台虚拟屏 **1:1 完整克隆物理 Display 0（`scale=1.0`）实现 `0.0px` 外科级零误差点击**！
 4. **❌ Mika 界面像开发者调试日志，且缺少免 Key 实时语音**
    - Mika 主界面充斥工程日志和工具调用代码，普通用户看不懂它在干什么、卡在哪；想语音对话还得额外折腾第三方云端语音 API。
-   - **✅ Sol Next 9.0.9**：独创 **「晨曦轨道」四屏零学习成本设计** + 100% 自然语言步骤树 + 内嵌可折叠虚拟屏实时预览；更内置 **16KB 对齐开源离线神经 ASR（`770ms`）+ 端侧神经 TTS（`112ms`）**，**零谷歌服务、零语音 Key 也能全双工实时语音交流**。
+   - **✅ Sol Next 9.1.0**：独创 **「晨曦轨道」四屏零学习成本设计** + 100% 自然语言步骤树 + 内嵌可折叠虚拟屏实时预览；更内置 **16KB 对齐开源离线神经 ASR（`770ms`）+ 端侧神经 TTS（`112ms`）**，**零谷歌服务、零语音 Key 也能全双工实时语音交流**。
 5. **❌ Mika 隐私与防误操作薄弱，发微信易重发、缺少脱敏护栏**
    - Mika 直接把整屏原始界面和敏感文字发往云端，且打包了重型内置浏览器与 Linux Shell 容器导致攻击面过大；在微信 8.0.80 等复杂界面上容易误双击或因气泡延迟导致**消息重复发送**；任务执行时缺少防误触保护。
-   - **✅ Sol Next 9.0.9**：采用**最小攻击面原生架构**，内置 **端侧隐私脱敏防火墙**（身份证号、银行卡、密码发云前在手机本地先脱敏）、**微信九项实战加固**（登录 `9.5s` 一次过、8/8 首击零误双击、发送气泡核验 **0 重发**）、任务常亮屏 + 防误触保护层，以及**付款/转账/发微信强制弹窗人工确认**。
+   - **✅ Sol Next 9.1.0**：采用**最小攻击面原生架构**，内置 **端侧隐私脱敏防火墙**（身份证号、银行卡、密码发云前在手机本地先脱敏）、**微信九项实战加固**（登录 `9.5s` 一次过、8/8 首击零误双击、发送气泡核验 **0 重发**）、任务常亮屏 + 防误触保护层，以及**付款/转账/发微信强制弹窗人工确认**。
 6. **❌ Mika 只面向单一语言，全球与多语用户无法使用**
-   - **✅ Sol Next 9.0.9**：原生支持 **全球 20 国语言**，严格按手机系统语言自动切换（绝不按地区误判），完整支持**阿拉伯语 RTL 镜像排版**，并同步联动大模型回复语种与语音识别/播报语种。
+   - **✅ Sol Next 9.1.0**：原生支持 **全球 20 国语言**，严格按手机系统语言自动切换（绝不按地区误判），完整支持**阿拉伯语 RTL 镜像排版**，并同步联动大模型回复语种与语音识别/播报语种。
 7. **❌ Mika 游戏操控只能慢速单点，AI 电话功能简陋**
-   - **✅ Sol Next 9.0.9**：支持 **60Hz 4 指并发多点触控** + 《金铲铲之战》Rust `<15µs` SwiGLU 专属引擎 + 斗地主 3/3 全胜；AI 高清通话升级为完全体——**35 柱实时声纹 + `<0.1ms` 端侧实时反诈雷达 + 通话中一键悄悄话指挥 + 一键人工接管 + 3×4 DTMF**。
+   - **✅ Sol Next 9.1.0**：支持 **60Hz 4 指并发多点触控** + 《金铲铲之战》Rust `<15µs` SwiGLU 专属引擎 + 斗地主 3/3 全胜；AI 高清通话升级为完全体——**35 柱实时声纹 + `<0.1ms` 端侧实时反诈雷达 + 通话中一键悄悄话指挥 + 一键人工接管 + 3×4 DTMF**。
 8. **❌ Mika 升级全靠手动翻仓库，国内下载极其缓慢**
-   - **✅ Sol Next 9.0.9**：发新版后 **App 内自动弹出更新说明弹窗（What's New）**，下载引擎自动并发测速竞速多条高速镜像并启用 **4 线程 HTTP Range 分片并发下载（提速 3–8 倍）**，下载完成强制校验 **SHA-256 + 包名 + 单调版本号 + 签名证书**；同时专门为国内用户开放多条免梯子高速直连下载通道！
+   - **✅ Sol Next 9.1.0**：发新版后 **App 内自动弹出更新说明弹窗（What's New）**，下载引擎自动并发测速竞速多条高速镜像并启用 **4 线程 HTTP Range 分片并发下载（提速 3–8 倍）**，下载完成强制校验 **SHA-256 + 包名 + 单调版本号 + 签名证书**；同时专门为国内用户开放多条免梯子高速直连下载通道！
 
 ### 📊 核心 12 维速查对比表
 
-| 核心维度 | 早期手机代理 Mika（痛点） | **Sol Next 9.0.9（全新独立旗舰）** |
+| 核心维度 | 早期手机代理 Mika（痛点） | **Sol Next 9.1.0（全新独立旗舰）** |
 | --- | --- | --- |
 | **开箱即用门槛** | ❌ 必须自行注册并付费配置 API Key | **✅ 免费内置 Rust 原生加密 DeepSeek V4.1 Flash（装完直接用）+ 随时换 BYOK** |
 | **关 Wi-Fi 外出稳态** | ❌ 一关 Wi-Fi 无线调试秒断连 | **✅ 锁死 `adb_enabled=1` + `127.0.0.1:5555` 回环，关 Wi-Fi / 切 5G 100% 持续在线** |
@@ -238,24 +238,24 @@
 | **OTA 更新速度与体验** | ❌ 手动找包或单线程龟速下载 | **✅ 新版自动弹窗更新说明 + 多镜像测速竞速 + 4 线程 HTTP Range 加速（快 3–8×）** |
 | **桌面 AI 工具联动** | ❌ 仅移动端孤立运行 | **✅ 零依赖 Python CLI (`--json`) + stdio MCP Server，无缝接入 Claude Code / Cursor** |
 
-👉 查看完整 **16 项定量对比 + 6 组 2K 实测架构图谱**：[Sol Next 9.0.9 vs Mika 深度对比](docs/guides/COMPARISON_WITH_MIKA.md) ｜ [在线图文对比页](https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html)
+👉 查看完整 **16 项定量对比 + 6 组 2K 实测架构图谱**：[Sol Next 9.1.0 vs Mika 深度对比](docs/guides/COMPARISON_WITH_MIKA.md) ｜ [在线图文对比页](https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html)
 
 ---
 
 ## 📥 六、国内用户多通道免梯子高速下载 & SHA-256 安全校验
 
-> **全部渠道提供完全一致的官方签名 APK（`v9.0.9-public` · Build 909），可随时核对下方 SHA-256 校验码！**
+> **全部渠道提供完全一致的官方签名 APK（`v9.1.0-public` · Build 910），可随时核对下方 SHA-256 校验码！**
 
 | 下载通道 | 推荐地区与网络 | ARM64 主流安卓/鸿蒙手机（90 MB · 推荐） | Universal 全架构通用版（128 MB） |
 | --- | --- | --- | --- |
-| **🇨🇳 通道 1：自有高速 HTTPS 直连镜像** | **中国大陆免梯子首选（满速直连）** | [⬇ 立即下载 ARM64](https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.9/Sol-Next-v9.0.9-public-arm64.apk) | [⬇ 立即下载 Universal](https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.9/Sol-Next-v9.0.9-public-universal.apk) |
-| **⚡ 通道 2：国内高速加速镜像 (`ghfast.top`)** | 中国大陆备用加速线路 | [⬇ 立即下载 ARM64](https://ghfast.top/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.9-public/Sol-Next-v9.0.9-public-arm64.apk) | [⬇ 立即下载 Universal](https://ghfast.top/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.9-public/Sol-Next-v9.0.9-public-universal.apk) |
-| **⚡ 通道 3：国内加速镜像 (`gh-proxy.com`)** | 中国大陆多线路分流 | [⬇ 立即下载 ARM64](https://gh-proxy.com/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.9-public/Sol-Next-v9.0.9-public-arm64.apk) | [⬇ 立即下载 Universal](https://gh-proxy.com/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.9-public/Sol-Next-v9.0.9-public-universal.apk) |
-| **🌍 通道 4：GitHub Releases 官方 CDN** | 全球 / 港澳台 / 海外用户 | [⬇ 立即下载 ARM64](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.9-public/Sol-Next-v9.0.9-public-arm64.apk) | [⬇ 立即下载 Universal](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.9-public/Sol-Next-v9.0.9-public-universal.apk) |
+| **🇨🇳 通道 1：自有高速 HTTPS 直连镜像** | **中国大陆免梯子首选（满速直连）** | [⬇ 立即下载 ARM64](https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.0/Sol-Next-v9.1.0-public-arm64.apk) | [⬇ 立即下载 Universal](https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.0/Sol-Next-v9.1.0-public-universal.apk) |
+| **⚡ 通道 2：国内高速加速镜像 (`ghfast.top`)** | 中国大陆备用加速线路 | [⬇ 立即下载 ARM64](https://ghfast.top/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.0-public/Sol-Next-v9.1.0-public-arm64.apk) | [⬇ 立即下载 Universal](https://ghfast.top/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.0-public/Sol-Next-v9.1.0-public-universal.apk) |
+| **⚡ 通道 3：国内加速镜像 (`gh-proxy.com`)** | 中国大陆多线路分流 | [⬇ 立即下载 ARM64](https://gh-proxy.com/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.0-public/Sol-Next-v9.1.0-public-arm64.apk) | [⬇ 立即下载 Universal](https://gh-proxy.com/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.0-public/Sol-Next-v9.1.0-public-universal.apk) |
+| **🌍 通道 4：GitHub Releases 官方 CDN** | 全球 / 港澳台 / 海外用户 | [⬇ 立即下载 ARM64](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.0-public/Sol-Next-v9.1.0-public-arm64.apk) | [⬇ 立即下载 Universal](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.0-public/Sol-Next-v9.1.0-public-universal.apk) |
 
 ```text
-4630a09068f65fd75bc0575bf7baef27c0735c6385d7dd3be480384c05210277  Sol-Next-v9.0.9-public-arm64.apk
-1aff7e9944fdf4223c9567260f0f7fffb650cfd2ef0c0a0ff2625cd4cccb6b41  Sol-Next-v9.0.9-public-universal.apk
+e77f1b9523b8716d3a53fd2442966d36407015c4c93af6a51e1a532b0a21c0d5  Sol-Next-v9.1.0-public-arm64.apk
+ffb1582d737ccd7a545e80decd1a2fcb98a132306417fe2ec74b1692fc0895ef  Sol-Next-v9.1.0-public-universal.apk
 ```
 
 ```bash
@@ -263,7 +263,7 @@
 python3 scripts/sol-cli.py install --abi arm64 --mirror china --verify-sha256 --grant-permissions
 
 # 一行验证公开版 APK 零明文密钥资产（输出为空即纯净，免费内置密钥均经纯 Rust 加密封装于 libsol_kernel.so）：
-unzip -l Sol-Next-v9.0.9-public-arm64.apk | grep -iE "distribution|sol-models|secret|key\.json"
+unzip -l Sol-Next-v9.1.0-public-arm64.apk | grep -iE "distribution|sol-models|secret|key\.json"
 ```
 
 ---
