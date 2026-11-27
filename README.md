@@ -8,9 +8,11 @@
 
 # Sol Next 9.0.1 — 晨曦轨道 · 你的 AI 行动伙伴
 
-### 用自然对话，驱动真实的手机行动 · 率先落地 Android 16/17 智能 OS 架构
+### 用自然对话与文字，驱动真实的手机行动 · 率先落地 Android 16/17 智能 OS 架构
 
-<sub>全新 <code>9.0.1</code> 跨代架构（Build <code>901</code> · Android 10–16 / 16KB 页对齐 · 100% 零内置密钥 / 任意云端模型 BYOK · 致敬先驱 <code>wangzan101/Mika</code>）</sub>
+> **👨‍💻 作者：许昌北海医院张重阳** &nbsp;·&nbsp; **📕 联系作者：关注小红书 `871348474`（映像河南）**
+
+<sub>全新 <code>9.0.1</code> 跨代架构（Build <code>901</code> · Android 10–16 / 16KB 页对齐 · 自动识别鸿蒙系统免无线调试 · 100% 零内置密钥 / 任意云端模型 BYOK · 致敬先驱 <code>wangzan101/Mika</code>）</sub>
 
 <br/><br/>
 
@@ -28,8 +30,11 @@
 
 <br/>
 
+![Author](https://img.shields.io/badge/作者-许昌北海医院张重阳-D9A441?style=flat-square)
+![Xiaohongshu](https://img.shields.io/badge/小红书-871348474%20映像河南-FF2442?style=flat-square)
 ![Version 9.0.1](https://img.shields.io/badge/Release-v9.0.1--public%20(Build%20901)-3E78E0?style=flat-square)
-![Voice First](https://img.shields.io/badge/交互范式-全双工实时语音%20·%20零输入框-0ea5e9?style=flat-square)
+![Voice And Text](https://img.shields.io/badge/交互范式-全双工实时语音%20%2B%20晨曦文字输入-0ea5e9?style=flat-square)
+![Execution Guard](https://img.shields.io/badge/执行护栏-任务常亮屏%20·%20防误触%20·%20付款%2F微信先问后行-10b981?style=flat-square)
 ![Android 16/17](https://img.shields.io/badge/Android%2016%2F17-GenUI%20·%20Magic%20Cue%20·%20AppFunctions-10b981?style=flat-square)
 ![Real-Time Gaming](https://img.shields.io/badge/实时游戏代打-4指并发多点触控%20·%2060Hz-8b5cf6?style=flat-square)
 ![Any Cloud Model](https://img.shields.io/badge/云端大脑-任意模型%20BYOK%20·%20自动适配-f59e0b?style=flat-square)
@@ -58,9 +63,9 @@
 <table>
   <tr>
     <td align="center" width="25%">
-      <img src="docs/media/v901/screen-1-voice-home.png" alt="首页 · 语音交互" width="210" /><br/>
-      <b>1. 首页 · 语音交互</b><br/>
-      <sub>零文字输入框 · 点击声波球或 <code>∞</code> 全双工实时对话，张口即执行</sub>
+      <img src="docs/media/v901/screen-1-voice-home.png" alt="首页 · 语音与文字交互" width="210" /><br/>
+      <b>1. 首页 · 语音与文字交互</b><br/>
+      <sub>60fps 晨曦声波球 + 底部毛玻璃文字栏，张口或打字皆可瞬时执行</sub>
     </td>
     <td align="center" width="25%">
       <img src="docs/media/v901/screen-2-task-execution.png" alt="任务执行可视化" width="210" /><br/>
@@ -73,9 +78,9 @@
       <sub>晨曦柔雾通话球 + 35 柱实时声纹 + 字幕泡 + 实时反诈 & 悄悄话</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/media/v901/screen-4-settings-byok.png" alt="设置 · 模型配置 BYOK" width="210" /><br/>
-      <b>4. 设置 · 模型与隐私 (BYOK)</b><br/>
-      <sub>三行极简配置任意云端模型，本地隐私防火墙与自动 OTA 一目了然</sub>
+      <img src="docs/media/v901/screen-4-settings-byok.png" alt="设置 · 模型配置与安全护栏" width="210" /><br/>
+      <b>4. 设置 · 模型与执行保护</b><br/>
+      <sub>三行 BYOK 配置、任务常亮屏、防误触保护与付款/微信敏感授权开关</sub>
     </td>
   </tr>
 </table>
@@ -194,7 +199,8 @@
 | **Suite 4 · DroidFish 国际象棋 + 未授权权限弹窗** | **自动授权 + 合法西西里防御开局** | 自动通过 Android 16 `PermissionController` 弹窗并对阵 Stockfish |
 | **Suite 5 · 4 项硬件触控手势考场** | **18.7 s · 4/4 首次尝试满分** | 点击 ✓ · 长按 `823ms / 0px 漂移` ✓ · 精准拖拽 ✓ · 双指放大 `1.63x` ✓ |
 | **Suite 6 · Android 16 `uid=2000` 默认后台独立虚拟屏** | **`24 ms` 截帧 · 内嵌可折叠实时预览卡** | 默认在独立后台屏并发运行系统设置与第三方应用，零遮挡步骤与时间线 |
-| **Suite 7 · 零语音 API 端侧神经语音 & 一键读屏翻译** | **`770 ms` 中文流式转写 · `573 ms` 端侧合成 · `4.5 s` 读屏翻译** | Public 零 Key 版仅配 DeepSeek Key 即秒开端侧流式语音；4.5s 输出 2×2 译文要点卡 |
+| **Suite 7 · 零语音 API 端侧神经语音 & 一键读屏翻译** | **`112 ms` 端侧神经合成 · `798 ms` 流式转写 · `4.5 s` 读屏翻译** | Public 零 Key 版仅配 DeepSeek Key 即秒开端侧流式语音 + 边生成边播报；4.5s 输出 2×2 译文要点卡 |
+| **Suite 8 · 执行护栏与敏感操作二次确认** | **任务常亮屏 + 主屏防误触护盾 + 付款/微信默认拦截确认** | 未开启允许前打开微信/付款自动弹窗询问（支持拒绝拦截 / 本次允许 / 始终允许此类） |
 | **工程质量、R8 & 16KB 安全校验** | **206 项单测全绿（Kotlin 168 + Rust 38）· 零 Fatal 崩溃** | R8 混淆瘦身 + `useLegacyPackaging=false` 真正 16KB 0% 无压缩对齐 + OTA 签名校验 + 零密钥审计全绿 |
 
 ---
@@ -227,8 +233,8 @@ Sol Next 衷心致敬开源先驱 [wangzan101/Mika](https://github.com/wangzan10
 3. **SHA-256 校验与零内置密钥审计**：
 
 ```text
-33bea509d0ffb4da9c6cbfeb2aba2708ed91b3deecfb29fdebb5376618c4df5e  Sol-Next-v9.0.1-public-arm64.apk
-1e2c641f8ffe4f2708243f89d732cc6aa06079877eecde11991e178496b07880  Sol-Next-v9.0.1-public-universal.apk
+1e680fff61f8e6f88beffa5ea6b1a9ddabea7aa88ee0823af3865e1ec7167a61  Sol-Next-v9.0.1-public-arm64.apk
+1bd82d6406c0b51712cb6fff25e4bfe3c8a4167772ec868799cdfb717f4d905d  Sol-Next-v9.0.1-public-universal.apk
 ```
 
 ```bash
@@ -239,5 +245,6 @@ unzip -l Sol-Next-v9.0.1-public-arm64.apk | grep -iE "distribution|sol-models|se
 ---
 
 <div align="center">
+<b>作者：许昌北海医院张重阳</b> &nbsp;·&nbsp; 关注小红书：<code>871348474</code>（映像河南）即可联系作者<br/>
 <sub>Apache-2.0 Open Source · Built with love for the Android AI OS future · Tribute to <a href="https://github.com/wangzan101/Mika">wangzan101/Mika</a></sub>
 </div>

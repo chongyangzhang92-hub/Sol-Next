@@ -8,9 +8,11 @@
 
 # Sol Next 9.0.1 — Dawn Orbit · Your AI Action Partner
 
-### Speak Naturally. Drive Real Mobile Actions. Built for the Android 16/17 Intelligent OS Era.
+### Speak or Type Naturally. Drive Real Mobile Actions. Built for the Android 16/17 Intelligent OS Era.
 
-<sub>Next-Generation Voice-First Android 10–16 OS Agent (Build <code>901</code> · 16KB Page-Aligned · 100% Zero Built-In Keys / Universal BYOK · Tribute to <code>wangzan101/Mika</code>)</sub>
+> **👨‍💻 Author: 许昌北海医院张重阳 (Zhang Chongyang, Xuchang Beihai Hospital)** &nbsp;·&nbsp; **📕 Xiaohongshu (RedNote): `871348474` (映像河南)**
+
+<sub>Next-Generation Voice + Text Android 10–16 OS Agent (Build <code>901</code> · 16KB Page-Aligned · Auto-Detects HarmonyOS to Skip Wireless Debugging · Keep-Screen-On &amp; Touch Guard · Sensitive Payment/WeChat Confirmation Gate · 100% Zero Built-In Keys / Universal BYOK · Tribute to <code>wangzan101/Mika</code>)</sub>
 
 <br/><br/>
 
@@ -37,9 +39,9 @@ Sol Next 9.0.1 reinvents the mobile AI agent from the ground up with **zero lear
 <table>
   <tr>
     <td align="center" width="25%">
-      <img src="docs/media/v901/screen-1-voice-home.png" alt="Voice Home" width="210" /><br/>
-      <b>1. Voice-First Home</b><br/>
-      <sub>Zero text box · Tap the glowing orb or <code>∞</code> for full-duplex live voice</sub>
+      <img src="docs/media/v901/screen-1-voice-home.png" alt="Voice & Text Home" width="210" /><br/>
+      <b>1. Voice + Text Home</b><br/>
+      <sub>60fps Dawn voice orb + translucent text bar for effortless voice or typing</sub>
     </td>
     <td align="center" width="25%">
       <img src="docs/media/v901/screen-2-task-execution.png" alt="Task Execution" width="210" /><br/>

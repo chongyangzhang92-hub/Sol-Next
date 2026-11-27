@@ -1,6 +1,8 @@
 # Sol Next 9.0.1 (Build 901 · Dawn Orbit · Public Edition · Apache-2.0)
 
-> **Sol Next 9.0.1 ("Dawn Orbit / 晨曦轨道")** (`ai.sol.next`, Build 901) is a voice-first, zero-learning-curve Android 10–16 (API 29–36, 16KB page-aligned) AI Mobile Agent with **100% zero built-in API keys (Universal BYOK)**, paying tribute to pioneer project [**`wangzan101/Mika`**](https://github.com/wangzan101/Mika) (Apache-2.0).
+> **Author: 许昌北海医院张重阳 (Zhang Chongyang, Xuchang Beihai Hospital)** · Contact: Xiaohongshu `871348474` (映像河南)
+>
+> **Sol Next 9.0.1 ("Dawn Orbit / 晨曦轨道")** (`ai.sol.next`, Build 901) is a voice + text dual-mode, zero-learning-curve Android 10–16 (API 29–36, 16KB page-aligned) AI Mobile Agent with **100% zero built-in API keys (Universal BYOK)**, paying tribute to pioneer project [**`wangzan101/Mika`**](https://github.com/wangzan101/Mika) (Apache-2.0).
 
 ## Key 9.0.1 Breakthroughs
 
@@ -33,8 +35,8 @@
 
 ## Verified Public Release Artifacts (`v9.0.1-public` · Build 901 · Zero Built-In Keys)
 
-- **ARM64 APK (Recommended, 89 MB, incl. built-in Apache-2.0 16KB offline neural ASR + TTS)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-arm64.apk
-  - SHA-256: `33bea509d0ffb4da9c6cbfeb2aba2708ed91b3deecfb29fdebb5376618c4df5e`
+- **ARM64 APK (Recommended, 89 MB, incl. built-in Apache-2.0 16KB offline neural ASR + 112ms TTS)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-arm64.apk
+  - SHA-256: `1e680fff61f8e6f88beffa5ea6b1a9ddabea7aa88ee0823af3865e1ec7167a61`
 - **Universal APK (`arm64-v8a` + `x86_64`, 128 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-universal.apk
-  - SHA-256: `1e2c641f8ffe4f2708243f89d732cc6aa06079877eecde11991e178496b07880`
+  - SHA-256: `1bd82d6406c0b51712cb6fff25e4bfe3c8a4167772ec868799cdfb717f4d905d`
 - **Zero-Key Audit Command** (expected empty output): `unzip -l Sol-Next-v9.0.1-public-arm64.apk | grep -iE "distribution|sol-models|secret|key\.json"`
