@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sol Next 9.0.4 — 晨曦轨道 · 全球 20 语言实时语音 AI 行动伙伴 (Android 10–16/17 &amp; 鸿蒙)</title>
-  <meta name="description" content="Sol Next 9.0.4 (Build 904) 全新独立下一代 Android & 鸿蒙 AI 手机智能体：全球 20 国语言按手机系统语言自动切换、免费内置 Rust 原生加密 DeepSeek V4.1 Flash + 任意模型 BYOK、OTA 新版本自动弹窗说明与 4 线程多镜像极速加速、关 Wi-Fi 无线调试持续在线、国内免梯子高速镜像直连下载。" />
+  <title>Sol Next 9.0.4 — 装在手机上的免费开源 AI「行动替身」(Android &amp; 鸿蒙)</title>
+  <meta name="description" content="Sol Next 9.0.4 是装在安卓/鸿蒙手机上的免费开源 AI 行动替身：动嘴说话或打字，替你在后台 1:1 虚拟屏自动点手机、跨 App 比价办事、4.5 秒读屏翻译、高清接打电话与打游戏。免费内置 Rust 加密 DeepSeek 开箱即用、关 Wi-Fi 无线调试永不断连、全球 20 语言自动切换，在 8 大核心痛点上全面超越 Mika。" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sol Next 9.0.4 — Dawn Orbit · Independent Global 20-Language AI Mobile OS Agent" />
-  <meta property="og:description" content="20 world languages auto-matching phone language · Free built-in Rust-encrypted DeepSeek V4.1 Flash + BYOK · Auto-popup OTA with release notes & 4-stream multi-mirror boost · Wi-Fi-off Shell Helper · Android 16/17 GenUI." />
+  <meta property="og:title" content="Sol Next 9.0.4 — Your Open-Source AI Action Partner on Android &amp; HarmonyOS" />
+  <meta property="og:description" content="What Sol Next is, what it does, 3-minute how-to guide, live real-device demos, and why Sol Next 9.0.4 decisively outperforms Mika." />
   <meta property="og:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/v901/hero-banner-901.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#EFF2F7" />
@@ -39,13 +39,13 @@
       "price": "0",
       "priceCurrency": "CNY"
     },
-    "description": "Sol Next 9.0.4 (Build 904) — Brand-new independent Android & HarmonyOS AI mobile OS agent with 20-language auto-detection by phone language, free Rust-encrypted DeepSeek V4.1 Flash + universal BYOK, auto-popup OTA with release notes and 4-stream multi-mirror accelerator, Wi-Fi-off persistent Wireless Debugging Shell Helper, and Android 16/17 Generative UI."
+    "description": "Sol Next 9.0.4 is a free, open-source AI action agent installed directly on Android & HarmonyOS phones. Speak or type naturally and it operates apps inside a hidden 1:1 background virtual screen, translates screens in 4.5s, handles AI phone calls with anti-scam defense, and plays games — with free built-in Rust-encrypted DeepSeek, Wi-Fi-off persistent wireless debugging, 20 languages, and 4-stream OTA updates."
   }
   </script>
   <style>
     :root {
       --bg: #eef2f7;
-      --card: rgba(255, 255, 255, 0.90);
+      --card: rgba(255, 255, 255, 0.92);
       --border: #dde4ef;
       --ink: #1c222d;
       --ink2: #5b6577;
@@ -53,6 +53,8 @@
       --blue-soft: #ddeaff;
       --green: #169c53;
       --green-soft: #e2f7ec;
+      --red: #d9384a;
+      --red-soft: #fff1f2;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -65,7 +67,7 @@
     .nav {
       display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;
       padding: 12px 18px; background: var(--card); border: 1px solid var(--border);
-      border-radius: 28px; backdrop-filter: blur(18px); margin-bottom: 24px;
+      border-radius: 28px; backdrop-filter: blur(18px); margin-bottom: 24px; position: sticky; top: 10px; z-index: 20;
     }
     .brand { font-weight: 700; font-size: 17px; display: flex; align-items: center; gap: 10px; }
     .badge { font-size: 12px; padding: 3px 10px; border-radius: 999px; background: var(--blue-soft); color: var(--blue); font-weight: 600; }
@@ -80,9 +82,9 @@
       width: 100%; border-radius: 28px; border: 1px solid rgba(255,255,255,0.85);
       box-shadow: 0 24px 64px rgba(28, 34, 45, 0.14); display: block;
     }
-    .hero-copy { text-align: center; padding: 36px 12px 24px; }
+    .hero-copy { text-align: center; padding: 34px 12px 20px; }
     .hero-copy h1 { font-size: clamp(28px, 4.2vw, 44px); font-weight: 700; letter-spacing: -0.5px; margin-bottom: 12px; }
-    .hero-copy p { max-width: 820px; margin: 0 auto 20px; color: var(--ink2); font-size: 16px; }
+    .hero-copy p { max-width: 860px; margin: 0 auto 18px; color: var(--ink2); font-size: 16px; }
     .cta-row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 14px; }
     .btn {
       display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 999px;
@@ -93,28 +95,51 @@
     .btn-primary { background: var(--blue); color: #fff; box-shadow: 0 10px 26px rgba(62, 120, 224, 0.28); }
     .btn-secondary { background: #fff; color: var(--ink); border: 1px solid var(--border); }
     .mirror-note { font-size: 12.5px; color: var(--ink2); margin-top: 10px; }
-    h2 { font-size: 26px; margin: 50px 0 16px; text-align: center; letter-spacing: -0.3px; }
-    .subhead { text-align: center; color: var(--ink2); margin-top: -8px; margin-bottom: 26px; font-size: 15px; }
-    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+    h2 { font-size: 27px; margin: 54px 0 14px; text-align: center; letter-spacing: -0.3px; }
+    .subhead { text-align: center; color: var(--ink2); margin-top: -6px; margin-bottom: 24px; font-size: 15px; max-width: 820px; margin-left: auto; margin-right: auto; }
+    .what-box {
+      background: var(--card); border: 1px solid var(--border); border-radius: 24px; padding: 26px 28px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px;
+      box-shadow: 0 10px 30px rgba(28, 34, 45, 0.05);
+    }
+    .what-item h3 { font-size: 16.5px; margin-bottom: 6px; color: var(--ink); }
+    .what-item p { font-size: 14px; color: var(--ink2); }
+    .feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px; }
+    .feat { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 20px 22px; }
+    .feat h3 { font-size: 16.5px; margin-bottom: 8px; color: var(--ink); }
+    .feat .prompt { display: inline-block; margin-bottom: 8px; padding: 4px 10px; border-radius: 8px; background: var(--blue-soft); color: var(--blue); font-size: 12.5px; font-weight: 600; }
+    .feat p { font-size: 14px; color: var(--ink2); }
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .step-card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 20px; }
+    .step-num { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 999px; background: var(--blue); color: #fff; font-weight: 700; font-size: 14px; margin-bottom: 10px; }
+    .step-card h3 { font-size: 16px; margin-bottom: 6px; }
+    .step-card p { font-size: 13.5px; color: var(--ink2); }
+    .demo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; }
     .screen-card {
       background: var(--card); border: 1px solid var(--border); border-radius: 22px; padding: 14px;
       text-align: center; box-shadow: 0 8px 26px rgba(28, 34, 45, 0.05);
     }
     .screen-card img { width: 100%; border-radius: 16px; border: 1px solid #e5eaf2; display: block; margin-bottom: 12px; }
-    .screen-card h3 { font-size: 15.5px; margin-bottom: 4px; }
+    .screen-card h3 { font-size: 15.5px; margin-bottom: 6px; }
     .screen-card p { font-size: 13px; color: var(--ink2); }
-    .feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px; }
-    .feat { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 20px 22px; }
-    .feat h3 { font-size: 16.5px; margin-bottom: 8px; color: var(--ink); }
-    .feat p { font-size: 14px; color: var(--ink2); }
+    .vs-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; margin-bottom: 20px; }
+    .vs-card { background: var(--card); border-radius: 22px; padding: 22px 24px; border: 1px solid var(--border); }
+    .vs-card.bad-card { border-color: #fecdd3; background: var(--red-soft); }
+    .vs-card.good-card { border-color: #bbf7d0; background: #f0fdf4; }
+    .vs-card h3 { font-size: 18px; margin-bottom: 10px; }
+    .vs-card ul { padding-left: 18px; font-size: 14px; color: var(--ink2); }
+    .vs-card li { margin: 7px 0; }
+    .vs-card.bad-card strong { color: var(--red); }
+    .vs-card.good-card strong { color: var(--green); }
     .table-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 20px; overflow-x: auto; padding: 8px 16px; }
     table { width: 100%; border-collapse: collapse; font-size: 14px; }
     th, td { text-align: start; padding: 13px 12px; border-bottom: 1px solid var(--border); }
     th { color: var(--ink2); font-weight: 600; }
     tr:last-child td { border-bottom: none; }
     .ok { color: var(--green); font-weight: 600; }
+    .bad { color: var(--red); font-weight: 600; }
     .contact-card {
-      margin: 46px auto 0; max-width: 740px; background: var(--card); border: 1px solid var(--border);
+      margin: 46px auto 0; max-width: 760px; background: var(--card); border: 1px solid var(--border);
       border-radius: 24px; padding: 28px; display: flex; flex-wrap: wrap; align-items: center;
       justify-content: center; gap: 24px; box-shadow: 0 12px 34px rgba(28, 34, 45, 0.07);
     }
@@ -146,9 +171,12 @@
     <nav class="nav">
       <div class="brand">Sol Next <span class="badge">v9.0.4 · Build 904</span></div>
       <div class="nav-right">
-        <a href="#features" data-i18n="nav_features">核心突破</a>
-        <a href="#compare" data-i18n="nav_compare">全面领先对比</a>
-        <a href="#contact" data-i18n="nav_contact">扫码联系作者</a>
+        <a href="#what" data-i18n="nav_what">它是什么</a>
+        <a href="#usecases" data-i18n="nav_usecases">有什么用</a>
+        <a href="#howto" data-i18n="nav_howto">怎么用</a>
+        <a href="#demos" data-i18n="nav_demos">演示案例</a>
+        <a href="#compare" data-i18n="nav_compare">为什么远超 Mika</a>
+        <a href="#contact" data-i18n="nav_contact">联系作者/进群</a>
         <a href="https://github.com/chongyangzhang92-hub/Sol-Next">GitHub</a>
         <select id="lang-switcher" class="lang-select" aria-label="Language">
           <option value="zh-CN">简体中文</option>
@@ -175,73 +203,187 @@
       </div>
     </nav>
 
-    <img class="hero-img" src="media/v901/hero-banner-901.png" alt="Sol Next 9.0.4 Dawn Orbit Product Showcase" />
+    <img class="hero-img" src="media/v901/hero-banner-901.png" alt="Sol Next 9.0.4 晨曦轨道产品实拍展示" />
 
     <section class="hero-copy">
-      <h1 data-i18n="hero_title">你的全球 20 语言实时语音 AI 行动伙伴</h1>
-      <p style="font-weight: 600; color: var(--blue); margin-bottom: 10px;" data-i18n="author_line">全新独立产品 · 作者：许昌北海医院张重阳 · 微信扫码 / 小红书 871348474（映像河南）联系作者</p>
-      <p data-i18n="hero_desc">Sol Next 9.0.4 是全新一代独立 Android &amp; 鸿蒙多模态 AI 手机智能体：内置全球 20 国语言严格按手机系统语言自动切换（支持阿拉伯语 RTL），免费内置 Rust 原生加密 DeepSeek V4.1 Flash 开箱即用（随时换 BYOK），OTA 推送新版自动弹窗展示更新说明并启用 4 线程多镜像高速加速，连接无线调试后关闭 Wi-Fi 依然持续在线，在速度、体验、安全与全球化上全面超越早期手机代理 Mika。</p>
+      <h1 data-i18n="hero_title">装在你手机上的免费开源 AI「行动替身」</h1>
+      <p style="font-weight: 600; color: var(--blue); margin-bottom: 10px;" data-i18n="author_line">全新独立产品 · 作者：许昌北海医院张重阳 · 微信扫码 / 小红书「SolNext用户群」欢迎交流</p>
+      <p data-i18n="hero_desc">普通 AI 只能陪你聊天，而 Sol Next 9.0.4 能真正在手机后台 1:1 虚拟屏里替你点屏幕、跨 App 比价办事、4.5 秒读屏翻译、高清接打电话与打游戏——不用买 API Key（免费内置 Rust 加密 DeepSeek）、不用 Root、关 Wi-Fi 切 5G 永不断连、支持全球 20 国语言，彻底解决早期代理 Mika 的全部痛点。</p>
       <div class="cta-row">
         <a class="btn btn-china" href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.4/Sol-Next-v9.0.4-public-arm64.apk" data-i18n="cta_china">🇨🇳 国内高速直连镜像 (ARM64 · 免梯子)</a>
         <a class="btn btn-primary" href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.4-public/Sol-Next-v9.0.4-public-arm64.apk" data-i18n="cta_github">🌍 GitHub 官方高速下载 (ARM64)</a>
         <a class="btn btn-secondary" href="https://ghfast.top/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.4-public/Sol-Next-v9.0.4-public-arm64.apk" data-i18n="cta_proxy">⚡ 国内加速镜像线路 2</a>
-        <a class="btn btn-secondary" href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.4-public/Sol-Next-v9.0.4-public-universal.apk" data-i18n="cta_univ">全架构通用版 (Universal)</a>
+        <a class="btn btn-secondary" href="https://github.com/chongyangzhang92-hub/Sol-Next" data-i18n="cta_star">⭐ 前往 GitHub 点 Star</a>
       </div>
-      <div class="mirror-note" data-i18n="mirror_note">全部渠道 APK 均具备统一 SHA-256 校验与数字签名验证，请放心下载安装 · 支持 Android 10–16 &amp; 鸿蒙系统</div>
+      <div class="mirror-note" data-i18n="mirror_note">全部渠道 APK 均具备统一 SHA-256 校验与数字签名验证 · 支持 Android 10–16 &amp; 华为鸿蒙系统</div>
     </section>
 
-    <h2 id="features" data-i18n="sec_features">Sol Next 9.0.4 六大跨代王牌能力</h2>
-    <div class="feat-grid">
-      <div class="feat">
-        <h3 data-i18n="f1_t">🌐 全球 20 国语言 · 严格按手机语言自动切换</h3>
-        <p data-i18n="f1_d">自动识别手机系统语言（绝不按地区误判），支持简/繁中文、英、日、韩、西、法、德、葡、俄、阿（RTL 镜像）等 20 语言，设置页即时切换并同步大模型回答与语音引擎。</p>
+    <h2 id="what" data-i18n="sec_what">💡 一、Sol Next 到底是什么？（30 秒看懂）</h2>
+    <p class="subhead" data-i18n="sec_what_sub">它不是又一个只会打字聊天的问答机器人，而是真正拥有「眼睛和双手」、能在后台静默替你操作手机 App 的开源智能体。</p>
+    <div class="what-box">
+      <div class="what-item">
+        <h3 data-i18n="w1_t">🤖 真动手，不只动嘴</h3>
+        <p data-i18n="w1_d">你说一句话或打一行字，它自动看懂界面、打开美团/微信/系统设置等真实 App、一步步点击核验把事办完。</p>
       </div>
-      <div class="feat">
-        <h3 data-i18n="f2_t">🚀 OTA 自动弹窗版本说明 + 4 线程多镜像极速加速</h3>
-        <p data-i18n="f2_d">推送新版本后 App 页面自动弹出更新说明对话框；多镜像并行测速竞速 + 4 通道 HTTP Range 分片并发下载（提速 3–8 倍），下载完成后强制校验 SHA-256 与签名证书。</p>
+      <div class="what-item">
+        <h3 data-i18n="w2_t">📱 后台 1:1 虚拟屏，不抢你屏幕</h3>
+        <p data-i18n="w2_d">AI 在手机后台独立虚拟屏悄悄干活，你在前台继续刷抖音、回微信，互不打扰，随时可点开预览或说话叫停。</p>
       </div>
-      <div class="feat">
-        <h3 data-i18n="f3_t">🔐 免费内置 Rust 加密 DeepSeek + 任意模型 BYOK</h3>
-        <p data-i18n="f3_d">装好即可免费对话与驱动手机！密钥经纯 Rust ChaCha20+HMAC+HKDF 加密封装并绑定 APK 签名证书与 TLS Pinning 防抓包，零明文泄露；也可随时替换为自有 API Key。</p>
+      <div class="what-item">
+        <h3 data-i18n="w3_t">🎁 装好直接用，零配置门槛</h3>
+        <p data-i18n="w3_d">免费内置纯 Rust 加密 DeepSeek V4.1 Flash（也可随时换自有 API Key），无需 Root、无需电脑、关 Wi-Fi 出门也不掉线。</p>
       </div>
-      <div class="feat">
-        <h3 data-i18n="f4_t">📶 关 Wi-Fi 不断连的无线调试 + 鸿蒙免配对</h3>
-        <p data-i18n="f4_d">自动锁定 adb_enabled=1 并托管 127.0.0.1:5555 回环，连接后关闭 Wi-Fi 切 5G 依然稳健运行后台 1:1 虚拟屏与 AI 高清电话；鸿蒙设备自动识别免无线调试。</p>
-      </div>
-      <div class="feat">
-        <h3 data-i18n="f5_t">🎙️ 零语音 API 端侧神经语音 &amp; Android 17 GenUI</h3>
-        <p data-i18n="f5_d">内置 16KB 对齐开源离线流式 ASR（770ms）与端侧神经 TTS（112ms），支持 0-Token 原生交互卡片、4.5s 读屏翻译、端侧 AES-256 隐私防火墙与敏感操作拦截确认。</p>
-      </div>
-      <div class="feat">
-        <h3 data-i18n="f6_t">🎮 60Hz 多指游戏引擎 &amp; Pixel 级 AI 电话</h3>
-        <p data-i18n="f6_d">4 指并发触控 + Rust SwiGLU《金铲铲之战》专属策略 + 斗地主 3/3 全胜；AI 通话内置 35 柱实时声纹、0.1ms 端侧反诈盾、通话中一键悄悄话与一键本人接管。</p>
+      <div class="what-item">
+        <h3 data-i18n="w4_t">🛡️ 付款/发微信必须先问你</h3>
+        <p data-i18n="w4_d">身份证与银行卡发云前先在手机本地自动打码；凡涉及付款、转账、发微信、删除等敏感动作，一律暂停弹窗等你点头确认。</p>
       </div>
     </div>
 
-    <h2 id="compare" data-i18n="sec_compare">为什么 Sol Next 9.0.4 全面超越 Mika？</h2>
-    <p class="subhead" data-i18n="sec_compare_sub">全新独立全栈架构 · 每一项关键指标均可真机复现</p>
+    <h2 id="usecases" data-i18n="sec_usecases">🎯 二、Sol Next 能帮你做什么？（6 大实用场景）</h2>
+    <div class="feat-grid">
+      <div class="feat">
+        <h3>🛒 跨 App 比价 &amp; 找美食外卖</h3>
+        <span class="prompt">试着说：“去美团搜附近评分最高的火锅店，整理前 3 家价格”</span>
+        <p>后台自动打开多个 App 检索对比，整理成清晰摘要汇报；遇到加购或付款会自动停住等你确认。</p>
+      </div>
+      <div class="feat">
+        <h3>⚡ 72ms 零 Token 手机秒控</h3>
+        <span class="prompt">试着说：“开启深色模式 / 看看电量存储 / 设明早 7:30 闹钟”</span>
+        <p>高频系统指令走本地原生直通仅需 72 毫秒，不耗 Token 不离机；120+ 主流 App 支持 &lt;250ms 瞬移直达。</p>
+      </div>
+      <div class="feat">
+        <h3>📞 AI 高清代接 / 代打电话</h3>
+        <span class="prompt">试着说：“帮我接快递电话放驿站 / 帮我订今晚 7 点四人座”</span>
+        <p>35 柱实时声纹 + 实时字幕 + 0.1ms 端侧反诈雷达；通话中随时发“悄悄话”指挥改口，或一键自己接管。</p>
+      </div>
+      <div class="feat">
+        <h3>🌐 4.5 秒一键读屏翻译 &amp; 20 语言</h3>
+        <span class="prompt">试着说：“把当前这个全英文界面翻译并提炼 5 条重点”</span>
+        <p>4.5 秒读懂外文 App/网页生成结构化中文要点卡；界面自动匹配手机系统语言（全球 20 国语言 + 阿拉伯语 RTL）。</p>
+      </div>
+      <div class="feat">
+        <h3>🎮 60Hz 多指游戏助手 &amp; 棋牌</h3>
+        <span class="prompt">试着说：“帮我打一局斗地主 / 下国际象棋 / 金铲铲辅助”</span>
+        <p>4 指并发多点触控 + 60Hz 视觉伺服：斗地主实测 3/3 全胜（32.5s）、Stockfish 国际象棋、《金铲铲》Rust 专属决策。</p>
+      </div>
+      <div class="feat">
+        <h3>💻 桌面 AI 工具联动（CLI + MCP）</h3>
+        <span class="prompt">接入 Claude Code / Cursor / Codex 标准 MCP Server</span>
+        <p>自带零依赖 Python CLI 与 stdio MCP Server，让桌面 AI 编程助手直接控制你的真机执行安装与自动化任务。</p>
+      </div>
+    </div>
+
+    <h2 id="howto" data-i18n="sec_howto">📖 三、怎么用？（新手 3 分钟保姆级上手）</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>下载并安装 APK</h3>
+        <p>点击页面顶部绿色「国内高速直连镜像」下载 90MB ARM64 安装包（免梯子满速），支持 Android 10–16 与华为鸿蒙。</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>打开直接用（免配 Key）</h3>
+        <p>已免费内置加密 DeepSeek V4.1 Flash，装完立刻能说话或打字！想用自己的 OpenAI/Claude/DeepSeek/通义千问 Key 随时去设置页切换。</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>30 秒开启操作手机权限</h3>
+        <p><strong>华为鸿蒙</strong>自动免无线调试 3 步搞定；<strong>安卓手机</strong>按图文引导填一次 6 位无线调试配对码（无需电脑/Root），连上后<strong>关 Wi-Fi 切 5G 永不断连</strong>！</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h3>说话或打字，看它干活</h3>
+        <p>点击晨曦声波球说话或在底部打字下任务，可随时展开虚拟屏实时画面围观；付款或发微信前会自动弹窗等你点同意。</p>
+      </div>
+    </div>
+
+    <h2 id="demos" data-i18n="sec_demos">🎬 四、真实真机演示案例（Android 15/16 实拍）</h2>
+    <p class="subhead" data-i18n="sec_demos_sub">所见即所得：每一张都是 Sol Next 真机运行时的真实截图与耗时记录。</p>
+    <div class="demo-grid">
+      <div class="screen-card">
+        <img src="media/v901/screen-1-voice-home.png" alt="案例1：晨曦轨道首页语音与文字交互" />
+        <h3>案例 1 · 语音/文字一键下达</h3>
+        <p>点击 60fps 晨曦声波球说话或直接打字，自带离线神经语音，零语音 Key 也能全双工对话。</p>
+      </div>
+      <div class="screen-card">
+        <img src="media/v901/screen-2-vdisplay-live.png" alt="案例2：后台1比1虚拟屏自动打开深色模式" />
+        <h3>案例 2 · 后台 1:1 虚拟屏自动操作</h3>
+        <p>指令「开启深色主题」→ 后台独立虚拟屏实时点击并绿勾核验，完全不打扰前台屏幕。</p>
+      </div>
+      <div class="screen-card">
+        <img src="media/v901/screen-translate-genui.png" alt="案例3：4.5秒一键全屏读屏翻译与要点提取" />
+        <h3>案例 3 · 4.5 秒读屏翻译要点卡</h3>
+        <p>4.5 秒读取 52 行全英文设置界面，自动输出 6 条结构化中文要点交互卡。</p>
+      </div>
+      <div class="screen-card">
+        <img src="media/v901/screen-3-ai-call.png" alt="案例4：AI实时高清接打电话与反诈盾" />
+        <h3>案例 4 · AI 通话 + 反诈盾 + 悄悄话</h3>
+        <p>35 柱声纹 + 实时字幕 + 0.1ms 端侧反诈监测，支持通话中悄悄话指挥与一键本人接管。</p>
+      </div>
+      <div class="screen-card">
+        <img src="media/v901/demo-genui-dashboard.png" alt="案例5：72ms 零Token原生系统巡检卡" />
+        <h3>案例 5 · 72ms 零 Token 原生巡检</h3>
+        <p>查电量、存储与网络状态直接本地原生直出，72 毫秒秒现 Android 17 GenUI 交互卡。</p>
+      </div>
+      <div class="screen-card">
+        <img src="media/v901/demo-doudizhu-win.png" alt="案例6：斗地主横屏实战3比3全胜" />
+        <h3>案例 6 · 斗地主 3/3 全胜 (32.5s)</h3>
+        <p>实时识牌与 60Hz 多指操控，横屏连胜 3 局；同步支持 Stockfish 象棋与金铲铲策略。</p>
+      </div>
+    </div>
+
+    <h2 id="compare" data-i18n="sec_compare">⚔️ 五、讲明白：Mika 到底差在哪？Sol Next 9.0.4 比它强在哪？</h2>
+    <p class="subhead" data-i18n="sec_compare_sub">全新独立产品 · 用大白话把早期手机代理 Mika 的 8 大真实短板与 Sol Next 的全面超越一次讲透</p>
+
+    <div class="vs-cards">
+      <div class="vs-card bad-card">
+        <h3>❌ 为什么很多人用 Mika 很快卸载？（8 大硬伤）</h3>
+        <ul>
+          <li><strong>装完根本用不了</strong>：必须自己注册买 API Key 配接口，普通人第一步就劝退。</li>
+          <li><strong>关 Wi-Fi 无线调试秒断</strong>：一出家门切 5G 就废了；鸿蒙手机还要折腾复杂配对。</li>
+          <li><strong>慢、费 Token、经常点歪</strong>：简单操作也要等云端截屏思考（~2.4 秒/步），缩放虚拟屏坐标漂移。</li>
+          <li><strong>满屏工程日志 + 没离线语音</strong>：像极客调试面板，语音对话还得另买第三方接口。</li>
+          <li><strong>隐私薄弱、微信易重发</strong>：明文整屏上云、内置重型浏览器/Linux 容器攻击面大、微信容易重复发消息。</li>
+          <li><strong>单语言 + 手动找包龟速更新</strong>：海外多语用户用不了，国内下载慢且无更新弹窗说明。</li>
+        </ul>
+      </div>
+      <div class="vs-card good-card">
+        <h3>✅ Sol Next 9.0.4 如何逐条降维超越？</h3>
+        <ul>
+          <li><strong>装好免费直接用</strong>：内置纯 Rust 加密 DeepSeek V4.1 Flash（+ TLS 防抓包），随时可换任意 BYOK。</li>
+          <li><strong>关 Wi-Fi 切 5G 100% 在线</strong>：锁死 <code>adb_enabled=1</code> + 本机回环保活；<strong>鸿蒙免无线调试</strong>。</li>
+          <li><strong>快 33 倍 + 0.0px 零漂移</strong>：<code>72ms</code> 零 Token 直通、120+ App <code>&lt;250ms</code> 瞬移、Rust 剪枝 <code>-97%</code>、1:1 物理屏克隆。</li>
+          <li><strong>零学习成本 + 端侧离线语音</strong>：晨曦轨道大白话步骤树 + 内置 16KB 离线 ASR/TTS（零语音 Key）。</li>
+          <li><strong>金融级隐私 + 微信 0 重发</strong>：端侧隐私脱敏防火墙 + 微信九项加固（0 重发）+ 付款强制人工确认。</li>
+          <li><strong>20 国语言 + 4 线程极速 OTA</strong>：按手机语言自动切换（含阿拉伯语 RTL）+ 自动弹窗说明 + 提速 3–8 倍。</li>
+        </ul>
+      </div>
+    </div>
+
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>核心维度</th><th>早期工具型代理 Mika</th><th>Sol Next 9.0.4（全新独立旗舰）</th></tr>
+          <tr><th>核心维度</th><th>早期手机代理 Mika（短板）</th><th>Sol Next 9.0.4（全新独立旗舰）</th></tr>
         </thead>
         <tbody>
-          <tr><td>开箱即用与大模型</td><td>需用户自行配置 API Key</td><td class="ok">免费内置 Rust 原生加密 DeepSeek V4.1 Flash + 随时换 BYOK</td></tr>
-          <tr><td>全球多语言支持</td><td>单一语言为主</td><td class="ok">全球 20 国语言按手机系统语言自动切换 + 阿拉伯语 RTL 镜像</td></tr>
-          <tr><td>关 Wi-Fi 无线调试稳态</td><td>关闭 Wi-Fi 立即断连</td><td class="ok">锁死 adb_enabled + 127.0.0.1:5555 回环，关 Wi-Fi 100% 持续在线</td></tr>
-          <tr><td>高频系统指令速度</td><td>~2,400 ms（读屏+LLM）</td><td class="ok">72 ms · 0 Token（快 33×）+ 120+ App &lt;250ms 瞬移</td></tr>
-          <tr><td>后台虚拟屏操控精度</td><td>缩放网格坐标换算</td><td class="ok">Display 0 1:1 物理屏克隆（scale=1.0 · 0.0px 零漂移）+ 内嵌预览</td></tr>
-          <tr><td>OTA 升级速度与体验</td><td>手动找包 / 单线程慢速</td><td class="ok">自动弹窗版本说明 + 多镜像竞速 + 4 线程 HTTP Range 极速下载</td></tr>
-          <tr><td>安全与隐私防线</td><td>常规明文发送</td><td class="ok">端侧脱敏防火墙 + Rust 密钥库 + TLS Pinning + 付款/微信先问后行</td></tr>
+          <tr><td>开箱即用与大模型</td><td class="bad">❌ 需自行购买并配置 API Key</td><td class="ok">✅ 免费内置 Rust 加密 DeepSeek V4.1 Flash + 随时换 BYOK</td></tr>
+          <tr><td>关 Wi-Fi 无线调试稳态</td><td class="bad">❌ 关闭 Wi-Fi 立即断连失效</td><td class="ok">✅ 锁死 adb_enabled + 本机回环，关 Wi-Fi 切 5G 100% 持续在线</td></tr>
+          <tr><td>华为鸿蒙系统适配</td><td class="bad">❌ 仍需繁琐无线调试配对</td><td class="ok">✅ 自动识别鸿蒙 OS 免无线调试，3 步直达满血体验</td></tr>
+          <tr><td>高频系统指令速度</td><td class="bad">❌ ~2,400 ms（读屏+LLM）</td><td class="ok">✅ 72 ms · 0 Token（快 33×）+ 120+ App &lt;250ms 瞬移</td></tr>
+          <tr><td>后台虚拟屏操控精度</td><td class="bad">❌ 缩放网格换算，易点偏</td><td class="ok">✅ Display 0 1:1 物理屏克隆（scale=1.0 · 0.0px 零误差）</td></tr>
+          <tr><td>全球多语言支持</td><td class="bad">❌ 单一语言为主</td><td class="ok">✅ 全球 20 国语言按手机系统语言自动切换 + 阿拉伯语 RTL</td></tr>
+          <tr><td>安全防线与微信稳态</td><td class="bad">❌ 明文上传 / 攻击面大 / 微信易重发</td><td class="ok">✅ 端侧脱敏防火墙 + 微信 0 重发九项加固 + 付款先问后行</td></tr>
+          <tr><td>OTA 升级速度与体验</td><td class="bad">❌ 手动找包 / 单线程慢速</td><td class="ok">✅ 自动弹窗更新说明 + 多镜像竞速 + 4 线程加速（快 3–8×）</td></tr>
         </tbody>
       </table>
     </div>
+    <p style="text-align:center; margin-top:16px;"><a class="btn btn-secondary" href="mika-vs-sol-next.html">📊 查看完整 14 项参数 + 7 张 2K 对比图谱 →</a></p>
 
     <section id="contact" class="contact-card">
       <img src="assets/author-wechat-qr.jpg" alt="微信扫码联系作者 · Author WeChat QR" />
       <div class="contact-info">
-        <h3 data-i18n="contact_title">微信扫码联系作者</h3>
-        <p data-i18n="contact_desc">使用微信扫描左侧二维码，即可直接添加作者好友，获取最新动态、反馈建议或进行技术交流。</p>
+        <h3 data-i18n="contact_title">微信扫码联系作者 &amp; 加入官方用户群</h3>
+        <p data-i18n="contact_desc">使用微信扫描左侧二维码，即可直接添加作者好友，获取最新内测、反馈建议或技术交流。</p>
         <div class="pill-tag" data-i18n="contact_pill">作者：许昌北海医院张重阳 · 小红书：871348474（映像河南）</div>
         <div class="group-box">
           <strong data-i18n="group_title">📕 一键加入小红书「SolNext用户群」（复制口令后打开小红书）</strong>
@@ -253,88 +395,103 @@
 
     <footer>
       <p><strong>Sol Next 9.0.4 (Build 904)</strong> · Apache-2.0 Open Source · 全新独立产品 · 作者：许昌北海医院张重阳</p>
-      <p style="margin-top:6px;"><a href="mika-vs-sol-next.html">深度对比</a> · <a href="security-and-privacy.html">安全白皮书</a> · <a href="android-ai-agent-benchmarks.html">Android 16 实测</a> · <a href="https://github.com/chongyangzhang92-hub/Sol-Next">GitHub</a></p>
+      <p style="margin-top:6px;"><a href="mika-vs-sol-next.html">Mika 深度对比</a> · <a href="security-and-privacy.html">安全白皮书</a> · <a href="android-ai-agent-benchmarks.html">Android 16 实测</a> · <a href="https://github.com/chongyangzhang92-hub/Sol-Next">GitHub</a></p>
     </footer>
   </div>
 
   <script>
     const I18N = {
       "zh-CN": {
-        nav_features: "核心突破", nav_compare: "全面领先对比", nav_contact: "扫码联系作者",
-        hero_title: "你的全球 20 语言实时语音 AI 行动伙伴",
-        author_line: "全新独立产品 · 作者：许昌北海医院张重阳 · 微信扫码 / 小红书 871348474（映像河南）联系作者",
-        hero_desc: "Sol Next 9.0.4 是全新一代独立 Android & 鸿蒙多模态 AI 手机智能体：内置全球 20 国语言严格按手机系统语言自动切换（支持阿拉伯语 RTL），免费内置 Rust 原生加密 DeepSeek V4.1 Flash 开箱即用（随时换 BYOK），OTA 推送新版自动弹窗展示更新说明并启用 4 线程多镜像高速加速，连接无线调试后关闭 Wi-Fi 依然持续在线，在速度、体验、安全与全球化上全面超越早期手机代理 Mika。",
+        nav_what: "它是什么", nav_usecases: "有什么用", nav_howto: "怎么用", nav_demos: "演示案例", nav_compare: "为什么远超 Mika", nav_contact: "联系作者/进群",
+        hero_title: "装在你手机上的免费开源 AI「行动替身」",
+        author_line: "全新独立产品 · 作者：许昌北海医院张重阳 · 微信扫码 / 小红书「SolNext用户群」欢迎交流",
+        hero_desc: "普通 AI 只能陪你聊天，而 Sol Next 9.0.4 能真正在手机后台 1:1 虚拟屏里替你点屏幕、跨 App 比价办事、4.5 秒读屏翻译、高清接打电话与打游戏——不用买 API Key（免费内置 Rust 加密 DeepSeek）、不用 Root、关 Wi-Fi 切 5G 永不断连、支持全球 20 国语言，彻底解决早期代理 Mika 的全部痛点。",
         cta_china: "🇨🇳 国内高速直连镜像 (ARM64 · 免梯子)", cta_github: "🌍 GitHub 官方高速下载 (ARM64)",
-        cta_proxy: "⚡ 国内加速镜像线路 2", cta_univ: "全架构通用版 (Universal)",
-        mirror_note: "全部渠道 APK 均具备统一 SHA-256 校验与数字签名验证，请放心下载安装 · 支持 Android 10–16 & 鸿蒙系统",
-        sec_features: "Sol Next 9.0.4 六大跨代王牌能力", sec_compare: "为什么 Sol Next 9.0.4 全面超越 Mika？",
-        sec_compare_sub: "全新独立全栈架构 · 每一项关键指标均可真机复现",
-        contact_title: "微信扫码联系作者", contact_desc: "使用微信扫描左侧二维码，即可直接添加作者好友，获取最新动态、反馈建议或进行技术交流。",
+        cta_proxy: "⚡ 国内加速镜像线路 2", cta_star: "⭐ 前往 GitHub 点 Star",
+        mirror_note: "全部渠道 APK 均具备统一 SHA-256 校验与数字签名验证 · 支持 Android 10–16 & 华为鸿蒙系统",
+        sec_what: "💡 一、Sol Next 到底是什么？（30 秒看懂）",
+        sec_what_sub: "它不是又一个只会打字聊天的问答机器人，而是真正拥有「眼睛和双手」、能在后台静默替你操作手机 App 的开源智能体。",
+        sec_usecases: "🎯 二、Sol Next 能帮你做什么？（6 大实用场景）",
+        sec_howto: "📖 三、怎么用？（新手 3 分钟保姆级上手）",
+        sec_demos: "🎬 四、真实真机演示案例（Android 15/16 实拍）",
+        sec_demos_sub: "所见即所得：每一张都是 Sol Next 真机运行时的真实截图与耗时记录。",
+        sec_compare: "⚔️ 五、讲明白：Mika 到底差在哪？Sol Next 9.0.4 比它强在哪？",
+        sec_compare_sub: "全新独立产品 · 用大白话把早期手机代理 Mika 的 8 大真实短板与 Sol Next 的全面超越一次讲透",
+        contact_title: "微信扫码联系作者 & 加入官方用户群",
+        contact_desc: "使用微信扫描左侧二维码，即可直接添加作者好友，获取最新内测、反馈建议或技术交流。",
         contact_pill: "作者：许昌北海医院张重阳 · 小红书：871348474（映像河南）"
       },
-      "zh-TW": {
-        nav_features: "核心突破", nav_compare: "全面領先對比", nav_contact: "掃碼聯絡作者",
-        hero_title: "你的全球 20 語言即時語音 AI 行動夥伴",
-        author_line: "全新獨立產品 · 作者：許昌北海醫院張重陽 · 微信掃碼 / 小紅書 871348474 聯絡作者",
-        hero_desc: "Sol Next 9.0.4 是全新一代獨立 Android 與鴻蒙 AI 手機智慧體：支援全球 20 國語言依手機系統語言自動切換，免費內建 Rust 原生加密 DeepSeek V4.1 Flash 開箱即用，OTA 推播新版自動彈窗展示更新說明並啟用 4 執行緒多鏡像極速下載，關閉 Wi-Fi 無線偵錯依然持續在線。",
-        cta_china: "🚀 高速直連鏡像下載 (ARM64)", cta_github: "🌍 GitHub 官方下載 (ARM64)",
-        cta_proxy: "⚡ 加速鏡像線路 2", cta_univ: "全架構通用版 (Universal)",
-        mirror_note: "全部通道 APK 均具備統一 SHA-256 校驗與數位簽章驗證 · 支援 Android 10–16 與鴻蒙系統",
-        sec_features: "Sol Next 9.0.4 六大跨代王牌能力", sec_compare: "為什麼 Sol Next 9.0.4 全面超越 Mika？",
-        sec_compare_sub: "全新獨立全棧架構 · 每項關鍵指標皆可真機實測",
-        contact_title: "微信掃碼聯絡作者", contact_desc: "使用微信掃描二維碼即可直接新增作者好友，回饋建議或技術交流。",
-        contact_pill: "作者：許昌北海醫院張重陽 · 小紅書：871348474（映像河南）"
-      },
       "en": {
-        nav_features: "Breakthroughs", nav_compare: "Why Sol Next Leads", nav_contact: "Contact Author",
-        hero_title: "Your Global 20-Language AI Action Partner",
-        author_line: "Independent Next-Gen Product · Author: Zhang Chongyang (Xuchang Beihai Hospital) · WeChat QR / RedNote 871348474",
-        hero_desc: "Sol Next 9.0.4 is a brand-new, independent Android & HarmonyOS multimodal AI mobile OS agent: 20 world languages auto-matching your phone's system language (never region, with full Arabic RTL), free built-in Rust-encrypted DeepSeek V4.1 Flash out-of-the-box (+ universal BYOK), auto-popup OTA with release notes & 4-stream multi-mirror download acceleration, and Wi-Fi-off persistent Wireless Debugging — decisively outperforming Mika across every metric.",
-        cta_china: "🚀 High-Speed Direct Mirror (ARM64)", cta_github: "🌍 GitHub Official Release (ARM64)",
-        cta_proxy: "⚡ Fast Mirror #2", cta_univ: "Universal APK (ARM64 + x86_64)",
-        mirror_note: "Every download channel serves the exact same SHA-256 & signature-verified APK · Android 10–16 & HarmonyOS",
-        sec_features: "Six Flagship Breakthroughs in Sol Next 9.0.4", sec_compare: "Why Sol Next 9.0.4 Decisively Outperforms Mika",
-        sec_compare_sub: "Brand-new independent full-stack architecture · Verified on live Android 15/16",
-        contact_title: "Scan WeChat QR to Contact Author", contact_desc: "Scan the QR code with WeChat to connect directly with the author for feedback, ideas, or technical collaboration.",
-        contact_pill: "Author: Zhang Chongyang · RedNote (Xiaohongshu): 871348474"
+        nav_what: "What It Is", nav_usecases: "Use Cases", nav_howto: "How to Use", nav_demos: "Live Demos", nav_compare: "Why It Beats Mika", nav_contact: "Contact",
+        hero_title: "Your Open-Source AI 'Hands' on Android & HarmonyOS",
+        author_line: "Independent Next-Gen Product · Author: Zhang Chongyang (许昌北海医院张重阳) · WeChat QR & RedNote Group",
+        hero_desc: "Regular AI apps only chat. Sol Next 9.0.4 actually operates your phone inside a hidden 1:1 background screen—comparing prices across apps, translating screens in 4.5s, handling AI phone calls with anti-scam defense, and playing games—with free built-in Rust-encrypted DeepSeek, Wi-Fi-off 5G persistence, and 20 languages, eliminating every bottleneck of Mika.",
+        cta_china: "🚀 High-Speed Direct Mirror (ARM64)", cta_github: "🌍 GitHub Official APK (ARM64)",
+        cta_proxy: "⚡ Fast Mirror #2", cta_star: "⭐ Star on GitHub",
+        mirror_note: "Unified SHA-256 & signature-verified APK across all channels · Android 10–16 & HarmonyOS",
+        sec_what: "💡 1. What Is Sol Next? (30-Second Overview)",
+        sec_what_sub: "Not another text-only chatbot—an open-source mobile agent with real eyes and hands working quietly in a 1:1 background screen.",
+        sec_usecases: "🎯 2. What Can Sol Next Do for You?",
+        sec_howto: "📖 3. How to Use (3-Minute Quick Start)",
+        sec_demos: "🎬 4. Real-Device Live Demos (Android 15/16)",
+        sec_demos_sub: "Unedited screenshots from live Android 15/16 execution with verified latencies.",
+        sec_compare: "⚔️ 5. Where Mika Falls Short & Why Sol Next 9.0.4 Leads",
+        sec_compare_sub: "A plain-English breakdown of Mika's 8 major everyday weaknesses and how Sol Next solves every one of them.",
+        contact_title: "Contact Author & Join Official User Group",
+        contact_desc: "Scan the WeChat QR code or copy the RedNote group code to connect directly with the author.",
+        contact_pill: "Author: Zhang Chongyang · RedNote: 871348474"
+      },
+      "zh-TW": {
+        nav_what: "它是什麼", nav_usecases: "有什麼用", nav_howto: "怎麼用", nav_demos: "演示案例", nav_compare: "為什麼遠超 Mika", nav_contact: "聯絡作者",
+        hero_title: "裝在你手機上的免費開源 AI「行動替身」",
+        author_line: "全新獨立產品 · 作者：許昌北海醫院張重陽 · 微信掃碼 / 小紅書群歡迎交流",
+        hero_desc: "普通 AI 只會聊天，Sol Next 9.0.4 能在手機背景 1:1 虛擬螢幕真正替你點手機、跨 App 辦事、4.5 秒讀屏翻譯與 AI 高清通話——免費內建加密 DeepSeek、關 Wi-Fi 切 5G 永不斷線、全球 20 國語言，全面超越早期代理 Mika。",
+        cta_china: "🚀 高速直連鏡像下載 (ARM64)", cta_github: "🌍 GitHub 官方下載 (ARM64)",
+        cta_proxy: "⚡ 加速鏡像線路 2", cta_star: "⭐ 前往 GitHub 點 Star",
+        mirror_note: "全部通道提供一致的 SHA-256 與數位簽章校驗 APK · 支援 Android 10–16 與鴻蒙",
+        sec_what: "💡 一、Sol Next 到底是什麼？", sec_usecases: "🎯 二、Sol Next 能幫你做什麼？",
+        sec_howto: "📖 三、怎麼用？（3 分鐘上手）", sec_demos: "🎬 四、真機演示案例",
+        sec_compare: "⚔️ 五、Mika 差在哪？Sol Next 9.0.4 強在哪？",
+        contact_title: "微信掃碼聯絡作者與加入官方群", contact_desc: "使用微信掃描二維碼或複製小紅書群口令加入交流。",
+        contact_pill: "作者：許昌北海醫院張重陽 · 小紅書：871348474"
       },
       "ja": {
-        nav_features: "主な機能", nav_compare: "圧倒的な優位性", nav_contact: "作者へ連絡",
-        hero_title: "世界20言語対応・あなたの AI アクションパートナー",
-        author_line: "完全独立プロダクト · 作者：許昌北海病院 張重陽 · WeChat QR / RedNote 871348474",
-        hero_desc: "Sol Next 9.0.4 は端末のシステム言語に応じて20言語へ自動切替し、Rust暗号化 DeepSeek V4.1 Flash を無料内蔵。OTA 自動ポップアップ更新内容表示・4並列マルチミラー高速ダウンロード・Wi-Fiオフでも維持されるワイヤレスデバッグにより、あらゆる面で Mika を凌駕します。",
-        cta_china: "🚀 高速ダイレクトミラー (ARM64)", cta_github: "🌍 GitHub 公式ダウンロード (ARM64)",
-        cta_proxy: "⚡ 高速ミラー #2", cta_univ: "ユニバーサル版 APK",
-        mirror_note: "全チャネル同一の SHA-256・署名検証済み APK · Android 10–16 / HarmonyOS 対応",
-        sec_features: "Sol Next 9.0.4 の6大ブレイクスルー", sec_compare: "Sol Next 9.0.4 が Mika より優れる理由",
-        sec_compare_sub: "完全独立フルスタック設計 · Android 15/16 実機検証済み",
-        contact_title: "WeChat QR スキャンで作者に連絡", contact_desc: "WeChat で QR コードをスキャンして作者へ直接ご連絡いただけます。",
-        contact_pill: "作者：張重陽 · RedNote (小紅書): 871348474"
+        nav_what: "概要", nav_usecases: "活用例", nav_howto: "使い方", nav_demos: "実機デモ", nav_compare: "Mikaとの比較", nav_contact: "連絡先",
+        hero_title: "スマホを実際に操作する無料オープンソース AI エージェント",
+        author_line: "完全独立プロダクト · 作者：張重陽 · WeChat QR / RedNote 871348474",
+        hero_desc: "チャットだけの AI と違い、Sol Next 9.0.4 は背面の 1:1 仮想画面でアプリ操作・4.5秒画面翻訳・AI通話・ゲームまで自律実行。Rust暗号化 DeepSeek 無料内蔵・Wi-Fiオフでも維持・世界20言語対応で Mika を全方位で凌駕します。",
+        cta_china: "🚀 高速ダイレクトミラー (ARM64)", cta_github: "🌍 GitHub 公式ダウンロード", cta_proxy: "⚡ 高速ミラー #2", cta_star: "⭐ GitHub で Star",
+        mirror_note: "全チャネル同一の SHA-256・署名検証済み APK · Android 10–16 / HarmonyOS",
+        sec_what: "💡 1. Sol Next とは？", sec_usecases: "🎯 2. できること（6つの活用例）",
+        sec_howto: "📖 3. 使い方（3分クイックスタート）", sec_demos: "🎬 4. Android 15/16 実機デモ",
+        sec_compare: "⚔️ 5. Mika の弱点と Sol Next 9.0.4 の圧倒的優位性",
+        contact_title: "作者への連絡・ユーザーコミュニティ", contact_desc: "WeChat QR スキャンまたは RedNote グループコードからご参加ください。",
+        contact_pill: "作者：張重陽 · RedNote: 871348474"
       },
       "ko": {
-        nav_features: "핵심 기능", nav_compare: "압도적 비교", nav_contact: "개발자 문의",
-        hero_title: "전 세계 20개 언어 AI 액션 파트너",
-        author_line: "독립 차세대 제품 · 개발자: 장충양 · 위챗 QR / 샤오홍슈 871348474",
-        hero_desc: "Sol Next 9.0.4는 휴대폰 시스템 언어에 따라 20개 언어로 자동 전환되며 Rust 암호화 DeepSeek V4.1 Flash를 무료 내장했습니다. OTA 자동 업데이트 팝업·버전 설명·4채널 멀티미러 고속 다운로드 및 Wi-Fi 오프 무선 디버깅 유지까지 모든 면에서 Mika를 뛰어넘습니다.",
-        cta_china: "🚀 고속 직통 미러 (ARM64)", cta_github: "🌍 GitHub 공식 다운로드 (ARM64)",
-        cta_proxy: "⚡ 고속 미러 #2", cta_univ: "유니버설 APK",
-        mirror_note: "모든 다운로드 경로는 동일한 SHA-256 및 서명 검증 APK를 제공합니다.",
-        sec_features: "Sol Next 9.0.4 6대 핵심 혁신", sec_compare: "Sol Next 9.0.4가 Mika보다 뛰어난 이유",
-        sec_compare_sub: "완전 독립 풀스택 아키텍처",
-        contact_title: "위챗 QR 스캔으로 개발자 문의", contact_desc: "위챗으로 QR 코드를 스캔해 개발자와 직접 소통하세요.",
+        nav_what: "소개", nav_usecases: "활용 사례", nav_howto: "사용법", nav_demos: "실기 데모", nav_compare: "Mika 비교", nav_contact: "문의",
+        hero_title: "스마트폰을 직접 조작하는 무료 오픈소스 AI 액션 파트너",
+        author_line: "완전 독립 제품 · 개발자: 장충양 · 위챗 QR / 샤오홍슈 871348474",
+        hero_desc: "대화만 하는 AI가 아니라 1:1 백그라운드 가상 화면에서 앱 조작, 4.5초 화면 번역, AI 통화, 게임까지 실행합니다. Rust 암호화 DeepSeek 무료 내장, Wi-Fi 오프 유지, 20개 언어 지원으로 Mika의 모든 한계를 해결했습니다.",
+        cta_china: "🚀 고속 직통 미러 (ARM64)", cta_github: "🌍 GitHub 공식 다운로드", cta_proxy: "⚡ 고속 미러 #2", cta_star: "⭐ GitHub Star",
+        mirror_note: "모든 경로에서 동일한 SHA-256 검증 APK 제공 · Android 10–16 & HarmonyOS",
+        sec_what: "💡 1. Sol Next란 무엇인가요?", sec_usecases: "🎯 2. 무엇을 할 수 있나요?",
+        sec_howto: "📖 3. 사용 방법 (3분 시작)", sec_demos: "🎬 4. 실기 데모 사례",
+        sec_compare: "⚔️ 5. Mika의 단점과 Sol Next 9.0.4의 압도적 강점",
+        contact_title: "개발자 문의 및 사용자 그룹", contact_desc: "위챗 QR 스캔 또는 샤오홍슈 그룹 코드로 참여하세요.",
         contact_pill: "개발자: 장충양 · 샤오홍슈: 871348474"
       },
       "ar": {
-        nav_features: "المزايا", nav_compare: "التفوق التقني", nav_contact: "تواصل مع المؤلف",
-        hero_title: "شريكك الذكي العالمي بـ 20 لغة لتنفيذ المهام",
+        nav_what: "ما هو", nav_usecases: "الاستخدامات", nav_howto: "طريقة الاستخدام", nav_demos: "عروض حية", nav_compare: "التفوق على Mika", nav_contact: "التواصل",
+        hero_title: "وكيلك الذكي المجاني ومفتوح المصدر لتشغيل هاتف Android و HarmonyOS",
         author_line: "منتج مستقل بالكامل · المؤلف: تشانغ تشونغيانغ · WeChat QR / RedNote 871348474",
-        hero_desc: "Sol Next 9.0.4 وكيل ذكاء اصطناعي مستقل لنظام Android و HarmonyOS يدعم 20 لغة تلقائياً حسب لغة الهاتف مع دعم كامل للغة العربية RTL، ونموذج DeepSeek V4.1 Flash مجاني ومشفر بلغة Rust، ونافذة تحديث OTA تلقائية مع تسريع تنزيل بـ 4 مسارات متوازية.",
-        cta_china: "🚀 تنزيل سريع مباشر (ARM64)", cta_github: "🌍 تنزيل GitHub الرسمي (ARM64)",
-        cta_proxy: "⚡ خادم تسريع إضافي", cta_univ: "النسخة الشاملة Universal",
-        mirror_note: "جميع الروابط توفر نفس الحزمة الموثقة بـ SHA-256 والتوقيع الرقمي",
-        sec_features: "أبرز 6 إنجازات في Sol Next 9.0.4", sec_compare: "لماذا يتفوق Sol Next 9.0.4 بالكامل على Mika؟",
-        sec_compare_sub: "معمارية مستقلة بالكامل ومختبرة على Android 15/16",
-        contact_title: "امسح رمز WeChat للتواصل مع المؤلف", contact_desc: "امسح الرمز عبر تطبيق WeChat للتواصل المباشر مع المؤلف.",
+        hero_desc: "لا يكتفي بالدردشة؛ بل ينفذ المهام فعلياً داخل شاشة افتراضية خلفية 1:1، ويترجم الشاشة خلال 4.5 ثوانٍ، ويجري مكالمات ذكية مع حماية ضد الاحتيال، مع DeepSeek مجاني مشفر بلغة Rust ودعم 20 لغة متفوقاً بالكامل على Mika.",
+        cta_china: "🚀 تنزيل مباشر سريع (ARM64)", cta_github: "🌍 تنزيل GitHub الرسمي", cta_proxy: "⚡ خادم تسريع إضافي", cta_star: "⭐ نجمة على GitHub",
+        mirror_note: "نفس الحزمة الموثقة بـ SHA-256 عبر جميع الروابط",
+        sec_what: "💡 1. ما هو Sol Next؟", sec_usecases: "🎯 2. ماذا يمكنه أن يفعل لك؟",
+        sec_howto: "📖 3. كيف تبدأ في 3 دقائق؟", sec_demos: "🎬 4. عروض حقيقية على Android 15/16",
+        sec_compare: "⚔️ 5. نقاط ضعف Mika ولماذا يتفوق Sol Next 9.0.4",
+        contact_title: "تواصل مع المؤلف وانضم لمجموعة المستخدمين", contact_desc: "امسح رمز WeChat أو انسخ رمز مجموعة RedNote للانضمام.",
         contact_pill: "المؤلف: تشانغ تشونغيانغ · RedNote: 871348474"
       }
     };
@@ -344,12 +501,8 @@
       for (const raw of langs) {
         const t = String(raw || "").toLowerCase().replace("_", "-");
         const base = t.split("-")[0];
-        if (base === "zh") {
-          return (t.includes("hant") || t === "zh-tw" || t === "zh-hk" || t === "zh-mo") ? "zh-TW" : "zh-CN";
-        }
-        if (["en","ja","ko","es","fr","de","pt","ru","ar","hi","id","vi","th","tr","it","nl","pl","ms"].includes(base)) {
-          return base;
-        }
+        if (base === "zh") return (t.includes("hant") || t === "zh-tw" || t === "zh-hk" || t === "zh-mo") ? "zh-TW" : "zh-CN";
+        if (["en","ja","ko","es","fr","de","pt","ru","ar","hi","id","vi","th","tr","it","nl","pl","ms"].includes(base)) return base;
       }
       return "en";
     }

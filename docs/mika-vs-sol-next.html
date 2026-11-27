@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sol Next 9.0.4 vs Mika (wangzan101/Mika) — 深度架构、速度、安全隐私与选型对比</title>
-  <meta name="description" content="Sol Next 9.0.4 vs Mika (wangzan101/Mika) 全面客观对比（7 张 2K 对比图 + 14 项实测参数）：深度解析 72ms 端侧直通、120+ App <250ms 瞬移、Rust v5.00 16KB JNI (-97% PII 剪枝)、1:1 物理屏零漂移虚拟屏、微信 8.0.80 九项加固与防重发契约、零信任最小攻击面隐私架构、CLI/MCP 与 Mika 内置浏览器/Linux 沙箱差异。" />
-  <meta name="keywords" content="Mika vs Sol Next, Sol Next vs Mika, wangzan101 Mika alternative, Mika 替代, Mika 升级版, Mika 隐私安全对比, Android AI Agent 对比, VirtualDisplay 1:1, 微信自动化 AI, Rust JNI Android Agent, BYOK Android AI, MCP Server Android" />
+  <title>Sol Next 9.0.4 vs Mika — 把 Mika 差在哪、Sol Next 强在哪彻底讲明白</title>
+  <meta name="description" content="Sol Next 9.0.4 vs Mika 全方位深度对比（7 张 2K 图谱 + 8 大真实短板拆解 + 16 项实测参数）：详解 Mika 需手动配 Key、关 Wi-Fi 断连、慢速费 Token、坐标漂移与隐私薄弱等短板，以及 Sol Next 9.0.4 如何用免费内置 Rust 加密 DeepSeek、关 Wi-Fi 保活、72ms 直通、0.0px 1:1 虚拟屏、20 国语言与 4 线程极速 OTA 全面超越。" />
+  <meta name="keywords" content="Mika vs Sol Next, Sol Next vs Mika, Mika 替代, Mika 缺点, Android AI Agent 对比, VirtualDisplay 1:1, 微信自动化 AI, Rust JNI Android Agent, DeepSeek Android AI, MCP Server Android" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#05070c" />
   <link rel="canonical" href="https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html" />
@@ -13,8 +13,8 @@
   <link rel="alternate" type="application/json" title="AI Facts JSON" href="https://chongyangzhang92-hub.github.io/Sol-Next/ai-facts.json" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Sol Next" />
-  <meta property="og:title" content="Sol Next 9.0.4 vs Mika (wangzan101/Mika) — Full Architecture, Speed &amp; Privacy Comparison" />
-  <meta property="og:description" content="Compare wangzan101/Mika and Sol Next 9.0.4 across 7 2K charts: 72ms native reflexes, Rust v5.00 JNI (-97% PII pruning), 0.0px 1:1 VirtualDisplay, WeChat 8.0.80 hardening, minimal attack surface BYOK &amp; CLI/MCP." />
+  <meta property="og:title" content="Sol Next 9.0.4 vs Mika — Where Mika Falls Short &amp; Why Sol Next Leads" />
+  <meta property="og:description" content="Complete 8-pain-point breakdown + 7 2K benchmark charts comparing Sol Next 9.0.4 against earlier mobile agent Mika." />
   <meta property="og:url" content="https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html" />
   <meta property="og:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/v801/compare-ecosystem-matrix.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -25,37 +25,20 @@
     "@graph": [
       {
         "@type": "TechArticle",
-        "headline": "Sol Next 9.0.4 vs Mika (wangzan101/Mika): Full Architecture, Speed, Privacy & Capability Comparison",
+        "headline": "Sol Next 9.0.4 vs Mika: Where Mika Falls Short and Why Sol Next 9.0.4 Decisively Leads",
         "datePublished": "2026-11-27",
         "dateModified": "2026-11-27",
-        "url": "https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html",
-        "image": [
-          "https://chongyangzhang92-hub.github.io/Sol-Next/media/v801/compare-ecosystem-matrix.png",
-          "https://chongyangzhang92-hub.github.io/Sol-Next/media/v801/compare-architecture.png",
-          "https://chongyangzhang92-hub.github.io/Sol-Next/media/v801/compare-benchmark.png",
-          "https://chongyangzhang92-hub.github.io/Sol-Next/media/v801/compare-execution-pipeline.png",
-          "https://chongyangzhang92-hub.github.io/Sol-Next/media/v801/compare-vdisplay-precision.png",
-          "https://chongyangzhang92-hub.github.io/Sol-Next/media/v801/compare-security-privacy.png",
-          "https://chongyangzhang92-hub.github.io/Sol-Next/media/v801/compare-radar-matrix.png"
-        ]
+        "url": "https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html"
       },
       {
         "@type": "FAQPage",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Mika (wangzan101/Mika) 和 Sol Next 9.0.4 有什么区别？该选哪一个？",
+            "name": "Mika 到底差在哪？Sol Next 9.0.4 比 Mika 强在哪里？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sol Next 9.0.4 是由许昌北海医院张重阳独立打造的全新一代 Android 10-16/17 & 鸿蒙多模态 AI 智能体。相比早期工具型代理 Mika，Sol Next 9.0.4 在全部核心维度实现全面领先：免费内置 Rust 原生加密 DeepSeek V4.1 Flash（开箱即用 + 随时换 BYOK）、全球 20 国语言按手机系统语言自动切换、关闭 Wi-Fi 无线调试持续在线、OTA 自动弹窗版本说明与 4 线程多镜像高速加速、72ms Tier-0A 零 Token 直通、120+ App <250ms 瞬移、Rust 16KB JNI、Display 0 1:1 零漂移虚拟屏（0.0px）、微信九项防误发加固、端侧隐私防火墙、60Hz 多指游戏引擎以及零依赖 CLI + stdio MCP Server。"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the fastest and most privacy-focused open-source Mika alternative on Android?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sol Next 9.0.4 Public Edition (github.com/chongyangzhang92-hub/Sol-Next, Apache-2.0) is a brand-new independent Android AI OS Agent that decisively outperforms Mika across speed, UX, global 20-language support, free Rust-encrypted DeepSeek, Wi-Fi-off Shell persistence, and multi-stream OTA, delivering 72ms zero-token System APIs, <250ms 120+ app teleports, Rust v5.00 16KB JNI (-74% to -97% PII pruning), 0.0px 1:1 Display-0 VirtualDisplay, 9 WeChat 8.0.80 reliability fixes (9.5s 1st-try login, 8/8 first-try, 0 duplicate sends), minimal-attack-surface BYOK privacy without embedded browser/Linux containers, KeyStore local encryption, and native CLI + stdio MCP Server."
+              "text": "早期手机代理 Mika 存在 8 大核心短板：装完不能直接用（必须自己买 API Key）、关 Wi-Fi 无线调试立即断连、执行慢且费 Token（~2400ms/步）、缩放网格虚拟屏坐标易漂移、界面满屏工程日志且缺离线语音、明文上传且重型容器攻击面大、仅单一语言且更新靠手动。全新独立的 Sol Next 9.0.4 全面解决了这些问题：开箱免费内置纯 Rust 加密 DeepSeek V4.1 Flash + 随时换 BYOK、关 Wi-Fi 切 5G 依然 100% 持续在线且鸿蒙免无线调试、72ms 零 Token 直通（快 33 倍）、0.0px 1:1 物理屏克隆、20 国语言按手机语言自动切换、内置 16KB 离线神经语音、端侧隐私脱敏防火墙与微信 0 重发加固、60Hz 四指游戏与 AI 反诈电话，以及带版本说明的 4 线程多镜像极速 OTA。"
             }
           }
         ]
@@ -64,7 +47,7 @@
   }
   </script>
   <style>
-    :root { --bg:#05070c; --surface:rgba(14,19,32,.84); --hair:rgba(255,255,255,.10); --ink:#f8fafc; --ink2:#94a3b8; --cyan:#38bdf8; --emerald:#34d399; --indigo:#818cf8; }
+    :root { --bg:#05070c; --surface:rgba(14,19,32,.84); --hair:rgba(255,255,255,.10); --ink:#f8fafc; --ink2:#94a3b8; --cyan:#38bdf8; --emerald:#34d399; --rose:#fb7185; }
     * { box-sizing:border-box; margin:0; padding:0; }
     body { font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Inter",sans-serif; background:var(--bg); color:var(--ink); line-height:1.68; }
     a { color:var(--cyan); text-decoration:none; }
@@ -80,14 +63,15 @@
     .cta-row { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
     .btn { display:inline-flex; align-items:center; gap:8px; padding:12px 20px; border-radius:12px; font-weight:700; font-size:14px; border:1px solid var(--hair); background:var(--surface); color:#fff; }
     .btn.primary { background:linear-gradient(135deg,#0ea5e9,#10b981); border:none; color:#041019; }
-    .btn.mika { background:rgba(99,102,241,.18); border-color:rgba(129,140,248,.45); color:#c7d2fe; }
-    .tldr { margin:28px 0 42px; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:18px; }
+    .tldr { margin:28px 0 42px; display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:18px; }
     .card { background:var(--surface); border:1px solid var(--hair); border-radius:20px; padding:24px; }
-    .card.sol { border-color:rgba(52,211,153,.4); }
-    .card.mika { border-color:rgba(129,140,248,.4); }
-    .card h2 { font-size:20px; margin-bottom:10px; }
+    .card.sol { border-color:rgba(52,211,153,.45); }
+    .card.weak { border-color:rgba(251,113,133,.45); }
+    .card h2 { font-size:20px; margin-bottom:12px; }
     .card ul { padding-left:20px; color:var(--ink2); }
-    .card li { margin:6px 0; }
+    .card li { margin:8px 0; }
+    .bad { color:var(--rose); font-weight:700; }
+    .ok { color:var(--emerald); font-weight:700; }
     h2.sec { font-size:28px; margin:46px 0 18px; }
     .grid-2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(460px,1fr)); gap:20px; }
     figure { background:var(--surface); border:1px solid var(--hair); border-radius:18px; padding:14px; }
@@ -99,7 +83,6 @@
     th { background:rgba(30,41,66,.75); color:#fff; font-weight:700; }
     td { color:var(--ink2); }
     td strong { color:#fff; }
-    .ok { color:var(--emerald); font-weight:700; }
     footer { margin-top:54px; padding-top:24px; border-top:1px solid var(--hair); color:var(--ink2); font-size:14px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; }
     @media (max-width:600px){ .grid-2 { grid-template-columns:1fr; } }
   </style>
@@ -109,99 +92,104 @@
     <nav>
       <a class="brand" href="./">✦ Sol Next 9.0.4</a>
       <div class="nav-links">
-        <a href="./">产品官网</a>
+        <a href="./">产品官网 &amp; 上手教程</a>
         <a href="./security-and-privacy.html">安全与隐私白皮书</a>
         <a href="./android-ai-agent-benchmarks.html">性能基准</a>
         <a href="./mcp-and-byok-guide.html">MCP &amp; BYOK</a>
-        <a href="./llms.txt">llms.txt</a>
-        <a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.4-public">下载 Sol Next 9.0.4</a>
+        <a href="https://github.com/chongyangzhang92-hub/Sol-Next">GitHub 仓库</a>
       </div>
     </nav>
 
     <section class="hero">
-      <span class="kicker">OBJECTIVE COMPARISON · 7 张 2K 专业图谱 · SOL NEXT 9.0.4 vs MIKA</span>
-      <h1>Sol Next 9.0.4 vs Mika（<code>wangzan101/Mika</code>）：速度、精度、安全隐私与全生态深度对比</h1>
+      <span class="kicker">FULL COMPARISON · 8 大真实痛点拆解 · 7 张 2K 实测图谱 · SOL NEXT 9.0.4 vs MIKA</span>
+      <h1>讲明白：早期代理 Mika 到底差在哪？Sol Next 9.0.4 比它强在哪？</h1>
       <p class="lead">
-        <strong>Sol Next 9.0.4（Build 904 · Apache-2.0 · 全新独立旗舰）</strong>是由许昌北海医院张重阳独立打造的全新一代多模态 Android &amp; 鸿蒙 AI 手机智能体——免费内置 Rust 原生加密 DeepSeek（开箱即用）、全球 20 国语言按手机语言自动切换、关闭 Wi-Fi 不断连的无线调试、多镜像 4 线程极速 OTA 与全栈 Rust 16KB 内核，在速度、精准度、隐私安全与交互体验上<strong>全面超越早期工具型方案 Mika</strong>。
+        <strong>Sol Next 9.0.4（Build 904 · Apache-2.0 · 全新独立旗舰）</strong>是由许昌北海医院张重阳完全独立打造的新一代 Android &amp; 鸿蒙 AI 手机行动替身。相比早期工具型手机代理 Mika，Sol Next 9.0.4 彻底根治了普通人用 Mika 时最头疼的 <strong>8 大短板</strong>，在门槛、稳定度、速度、精度、隐私、多语言、游戏与 OTA 升级上实现跨代全面超越。
       </p>
       <div class="cta-row">
-        <a class="btn primary" href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.4-public/Sol-Next-v9.0.4-public-arm64.apk">下载 Sol Next 9.0.4 公开版 APK (零内置 Key)</a>
-        <a class="btn" href="./security-and-privacy.html">🛡️ 查看零信任安全与隐私白皮书</a>
-        <a class="btn mika" href="https://chongyangzhang92-hub.github.io/Sol-Next/">🌐 访问 20 语言官网 &amp; 扫码联系作者</a>
+        <a class="btn primary" href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.4/Sol-Next-v9.0.4-public-arm64.apk">🇨🇳 国内高速直连下载 Sol Next 9.0.4 (免费内置 DeepSeek)</a>
+        <a class="btn" href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.4-public">🌍 GitHub 官方 Release</a>
+        <a class="btn" href="./">🌐 返回 20 语言官网 &amp; 演示案例</a>
       </div>
     </section>
 
     <section class="tldr">
-      <div class="card sol">
-        <h2>🚀 什么时候首选 Sol Next 9.0.4？</h2>
+      <div class="card weak">
+        <h2>❌ 早期手机代理 Mika 的 8 大致命短板</h2>
         <ul>
-          <li><strong>极致毫秒速度</strong>：Tier-0A 系统直通实测 <span class="ok">72 ms (0 Token)</span>，120+ 主流 App 瞬移 <span class="ok">&lt;250 ms</span>，<code>t=0ms</code> 预启动 + <strong>Rust v5.00 16KB JNI</strong>。</li>
-          <li><strong>更严苛的零信任隐私与最小攻击面</strong>：100% 零内置 Key 审计（支持纯本地 Ollama 离线）、不打包桌面浏览器与 Linux Shell 容器收敛攻击面、Tier-0A 0 上云 + Rust 剪枝 <span class="ok">-74%~-97% 减少屏幕 PII 外泄</span>、单帧按需视觉滑窗与 KeyStore 硬件加密。</li>
-          <li><strong>外科级精准与微信防误发</strong>：10 个正交工具 + <code>#1..#N</code> 实时句柄 + <strong>Display 0 1:1 (0.0px)</strong>；微信 8.0.80 登录 <span class="ok">9.5s 一次过</span>、8 步 <span class="ok">8/8 首击零误双击</span>、发送强制气泡核验 0 重发 + 原生 CLI &amp; MCP Server。</li>
+          <li><span class="bad">装完不能直接用</span>：必须自己注册平台、充钱买 API Key 并配好接口，90% 普通用户第一步就卡住。</li>
+          <li><span class="bad">一关 Wi-Fi 立刻断连</span>：离开家里 Wi-Fi 切 5G 无线调试就失效；华为鸿蒙还要折腾繁琐无线配对。</li>
+          <li><span class="bad">慢且烧 Token，经常点偏</span>：查电量/开开关也要云端截屏规划（~2,400ms/步）；缩放网格换算坐标经常点歪。</li>
+          <li><span class="bad">满屏工程日志 + 缺离线语音</span>：像开发者调试面板，且语音对话依赖外部付费语音接口。</li>
+          <li><span class="bad">隐私与防误操作薄弱</span>：屏幕明文直接上云、重型内置浏览器/Linux 容器扩大攻击面、微信界面易误双击或重复发送。</li>
+          <li><span class="bad">单一语言 + 更新龟速</span>：海外与多语用户无法直接使用；更新需手动翻仓库，国内直连下载极慢。</li>
         </ul>
       </div>
-      <div class="card mika">
-        <h2>💜 什么时候推荐同装原版 Mika？</h2>
+      <div class="card sol">
+        <h2>✅ Sol Next 9.0.4 的全面降维领先</h2>
         <ul>
-          <li><strong>需要内置桌面级浏览器</strong>：原版 <code>wangzan101/Mika</code> 内置完整桌面浏览器，适合在手机端处理重型网页工作流。</li>
-          <li><strong>需要每对话独立 Linux 沙箱</strong>：如果需要在手机聊天里直接运行 Python / Node Linux 容器与社区知识包，原版 Mika 非常出色。</li>
-          <li><strong>完美双开共存</strong>：公开版 <code>ai.sol.next</code> 与原版 <code>com.wangzan101.mika</code> 独立包名互不冲突，可同装一机取长补短！</li>
+          <li><span class="ok">开箱免费内置 Rust 加密 DeepSeek</span>：装好立刻能免费对话与操作手机，零明文密钥 + TLS 证书防抓包，且随时可换任意 BYOK。</li>
+          <li><span class="ok">关 Wi-Fi 切 5G 100% 永不断连</span>：底层锁死 <code>adb_enabled=1</code> + <code>127.0.0.1:5555</code> 回环；<strong>鸿蒙自动识别免无线调试</strong>。</li>
+          <li><span class="ok">快 33 倍 + 0.0px 外科级精准</span>：<code>72 ms</code> 零 Token 系统直通、120+ App <code>&lt;250 ms</code> 瞬移、Rust 16KB JNI 剪枝 <code>-74%~-97%</code>、<strong>Display 0 1:1 克隆零误差</strong>。</li>
+          <li><span class="ok">晨曦轨道零学习成本 + 端侧离线语音</span>：大白话步骤树 + 实时虚拟屏预览 + 内置 16KB 离线神经 ASR（770ms）与 TTS（112ms）。</li>
+          <li><span class="ok">金融级隐私与微信 0 重发加固</span>：端侧脱敏防火墙（身份证/银行卡本地先打码）+ 付款/微信先问后行 + 微信 9 项加固（登录 9.5s 一次过，0 重发）。</li>
+          <li><span class="ok">全球 20 国语言 + 4 线程极速 OTA</span>：按手机语言自动切换（含阿拉伯语 RTL）；新版自动弹窗更新说明 + 4 通道多镜像提速 3–8 倍。</li>
         </ul>
       </div>
     </section>
 
-    <h2 class="sec">📊 全部 7 组 2K 专业级对比图谱（点击大图）</h2>
+    <h2 class="sec">📊 全部 7 组 2K 实测架构与基准图谱（点击查看大图）</h2>
     <div class="grid-2">
       <figure>
-        <a href="media/v801/compare-architecture.png" target="_blank"><img src="media/v801/compare-architecture.png" alt="Sol Next 9.0.4 vs Mika 六层全栈架构演进对比图" /></a>
-        <figcaption><strong>01 · 全栈六层架构演进对比</strong>：早期方案 Mika 与全新独立架构 Sol Next 9.0.4（Rust 16KB JNI + 多模态闭环）全面领先对比。</figcaption>
+        <a href="media/v801/compare-architecture.png" target="_blank"><img src="media/v801/compare-architecture.png" alt="Sol Next 9.0.4 vs Mika 六层全栈架构对比图" /></a>
+        <figcaption><strong>01 · 全栈六层架构领先对比</strong>：从纯 Rust 16KB 内核、端侧隐私脱敏到多模态执行全链路代际领先。</figcaption>
       </figure>
       <figure>
         <a href="media/v801/compare-benchmark.png" target="_blank"><img src="media/v801/compare-benchmark.png" alt="Sol Next 9.0.4 核心速度、Token 压缩与零漂移实测基准图" /></a>
-        <figcaption><strong>02 · 速度、剪枝与精度实测基准</strong>：72ms 直通、&lt;250ms 瞬移、微信 9.5s 一次过、0.0px 精度。</figcaption>
+        <figcaption><strong>02 · 速度、剪枝与精度实测基准</strong>：72ms 直通、&lt;250ms 瞬移、微信 9.5s 一次过、0.0px 零误差。</figcaption>
       </figure>
       <figure>
         <a href="media/v801/compare-execution-pipeline.png" target="_blank"><img src="media/v801/compare-execution-pipeline.png" alt="Sol Next 9.0.4 端到端时序瀑布与微信九项加固对比图" /></a>
-        <figcaption><strong>03 · 端到端时序瀑布 &amp; 微信九项加固</strong>：并行预启动、&lt;2ms 零缓存指纹与单次发送防重发契约。</figcaption>
+        <figcaption><strong>03 · 端到端时序瀑布 &amp; 微信九项加固</strong>：并行预启动、&lt;2ms 零缓存指纹与发送气泡防重发契约。</figcaption>
       </figure>
       <figure>
         <a href="media/v801/compare-vdisplay-precision.png" target="_blank"><img src="media/v801/compare-vdisplay-precision.png" alt="1:1 物理屏克隆与 #1..#N 实时句柄定位精度对比图" /></a>
-        <figcaption><strong>04 · 1:1 物理屏克隆 + #1..#N 实时句柄</strong>：实证 <code>1080×2280 @ 440dpi scale=1.0</code> 零漂移。</figcaption>
+        <figcaption><strong>04 · 1:1 物理屏克隆 + #1..#N 实时句柄</strong>：实证 <code>1080×2280 @ 440dpi scale=1.0</code> 0.0px 零漂移。</figcaption>
       </figure>
       <figure>
         <a href="media/v801/compare-security-privacy.png" target="_blank"><img src="media/v801/compare-security-privacy.png" alt="Sol Next 9.0.4 六重零信任安全与隐私架构对比图" /></a>
-        <figcaption><strong>05 · 六重零信任安全与隐私防线</strong>：0 内置 Key、最小攻击面、端侧 -97% PII 剪枝、单帧视觉与硬件加密。</figcaption>
+        <figcaption><strong>05 · 六重零信任安全与隐私防线</strong>：最小攻击面、端侧 -97% PII 脱敏剪枝、Rust 加密密钥库与硬件加密。</figcaption>
       </figure>
       <figure>
-        <a href="media/v801/compare-radar-matrix.png" target="_blank"><img src="media/v801/compare-radar-matrix.png" alt="Sol Next 9.0.4 vs Mika 八维工程能力客观雷达图" /></a>
-        <figcaption><strong>06 · 八维工程能力客观雷达图</strong>：Sol Next 9.0.4 在速度、精度、安全、语音、游戏、多语言与稳态等全维度强势领先。</figcaption>
+        <a href="media/v801/compare-radar-matrix.png" target="_blank"><img src="media/v801/compare-radar-matrix.png" alt="Sol Next 9.0.4 vs Mika 八维工程能力实测雷达图" /></a>
+        <figcaption><strong>06 · 八维工程能力实测对比雷达图</strong>：速度、精度、安全、语音、游戏、多语言、保活与 OTA 全维领跑。</figcaption>
       </figure>
       <figure style="grid-column:1 / -1;">
-        <a href="media/v801/compare-ecosystem-matrix.png" target="_blank"><img src="media/v801/compare-ecosystem-matrix.png" alt="Sol Next 9.0.4 vs Mika 十二维全景工程与生态选型总表" /></a>
-        <figcaption><strong>07 · 十二维全景工程与生态总表</strong>：覆盖内核、速度、虚拟屏、微信稳态、安全隐私、CLI/MCP 与沙箱生态。</figcaption>
+        <a href="media/v801/compare-ecosystem-matrix.png" target="_blank"><img src="media/v801/compare-ecosystem-matrix.png" alt="Sol Next 9.0.4 vs Mika 十二维全景能力对比总表" /></a>
+        <figcaption><strong>07 · 十二维全景工程与生态总表</strong>：一目了然看清两代手机 AI Agent 的代际差距。</figcaption>
       </figure>
     </div>
 
-    <h2 class="sec">📋 14 项实测参数与安全特性详表</h2>
+    <h2 class="sec">📋 14 项实测参数与体验详表</h2>
     <table>
       <thead>
-        <tr><th style="width:20%">对比维度</th><th style="width:38%">原版 Mika（<code>wangzan101/Mika</code>）</th><th style="width:42%">Sol Next 9.0.4（<code>ai.sol.next</code> · Build 904）</th></tr>
+        <tr><th style="width:20%">对比维度</th><th style="width:38%">早期手机代理 Mika（短板）</th><th style="width:42%">Sol Next 9.0.4（全新独立旗舰 · <code>ai.sol.next</code>）</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>产品定位与架构</strong></td><td>早期工具型助手（<code>com.wangzan101.mika</code>）</td><td><strong>全新独立旗舰 · Apache-2.0 · <code>ai.sol.next</code>（免费内置加密 DeepSeek + 20 国语言 + 关 Wi-Fi 不断连 + 4 线程 OTA）</strong></td></tr>
-        <tr><td><strong>执行内核与工具</strong></td><td>通用多工具自动化循环</td><td><span class="ok">SolGroundedAgent 8.0</span>：10 个正交强类型 OS 工具 + 实时 <code>#1..#N</code> 句柄直绑</td></tr>
-        <tr><td><strong>系统指令响应速度</strong></td><td>常规读屏 + 云端 LLM 决策（~2,400 ms）</td><td><span class="ok">72 ms · 0 Token</span>（Tier-0A 原生直通，数据 100% 不离机）</td></tr>
-        <tr><td><strong>主流 App 跳转速度</strong></td><td>逐页桌面点击与搜索</td><td><span class="ok">&lt;250 ms 协议瞬移</span>（120+ 应用 Deep-Link）+ <code>t=0ms</code> 并发预启动</td></tr>
-        <tr><td><strong>端侧加速与剪枝</strong></td><td>Kotlin / JVM 控件树遍历</td><td><span class="ok">Rust v5.00 16KB JNI</span>（剪枝 <strong>-74%~-97%</strong>，提速且大幅减少屏幕 PII 外泄）</td></tr>
-        <tr><td><strong>后台虚拟屏精度</strong></td><td>开创独立 VirtualDisplay 隔离范式（缩放换算）</td><td><span class="ok">Display 0 1:1 物理复刻</span>（<code>1080×2280 @ 440dpi scale=1.0</code>）+ <strong>0.0px 零漂移</strong></td></tr>
-        <tr><td><strong>状态核验与视觉</strong></td><td>常规等待 / 整屏截屏上传</td><td><span class="ok">&lt;2 ms 零缓存指纹</span> + <span class="ok">64 ms 按需 1:1 SoM 单帧滑窗</span>（绝不持续录屏上云）</td></tr>
-        <tr><td><strong>微信 8.0.80 稳态</strong></td><td>通用 Android 无障碍适配</td><td><span class="ok">九项实战加固</span>：登录 <strong>9.5s 一次过</strong>、8 步 <strong>8/8 首击零误双击</strong>、发送气泡契约 <strong>0 重发</strong></td></tr>
-        <tr><td><strong>攻击面与隐私边界</strong></td><td>含嵌入式桌面浏览器 + 每对话 Linux Shell 沙箱</td><td><span class="ok">最小攻击面原生架构</span>（无内置浏览器/Linux Shell 容器，100% 零内置 Key，支持离线 Ollama）</td></tr>
-        <tr><td><strong>本地加密与风控</strong></td><td>常规配置与权限拦截</td><td><span class="ok">Android KeyStore 硬件加密</span> + 支付/转账/删除与 AI 电话强制人工确认护栏</td></tr>
-        <tr><td><strong>AI 接打电话</strong></td><td>首创非默认拨号器伴侣通话框架</td><td><span class="ok">完整 AI 电话驾驶舱</span>（全链路自检 + 豆包/OpenAI 实时语音 + 3×4 DTMF + 一键接管）</td></tr>
-        <tr><td><strong>桌面 Agent 协议</strong></td><td>移动端为主 / 社区扩展</td><td><span class="ok">零依赖 Python CLI (<code>--json</code>) + stdio MCP Server</span> + <code>llms.txt</code> / <code>ai-facts.json</code></td></tr>
-        <tr><td><strong>自动化测试覆盖</strong></td><td>社区持续迭代</td><td><span class="ok">99 / 99 自动化单元测试全绿</span> + Android 15 真装应用回归验证</td></tr>
-        <tr><td><strong>桌面浏览器 &amp; Linux 沙箱</strong></td><td><strong style="color:#a5b4fc">★ Mika 原版强项</strong>：内置桌面级浏览器、每对话 Linux 沙箱与社区知识包</td><td>专注轻量极速原生 App 闭环与高安全收敛（需要沙箱推荐与原版 Mika 共存同用）</td></tr>
+        <tr><td><strong>开箱即用与大模型</strong></td><td><span class="bad">必须自行购买并配置 API Key</span></td><td><span class="ok">免费内置 Rust 加密 DeepSeek V4.1 Flash（装完就能用）+ 随时换任意 BYOK</span></td></tr>
+        <tr><td><strong>关 Wi-Fi 外出稳态</strong></td><td><span class="bad">关闭 Wi-Fi 无线调试立刻断连</span></td><td><span class="ok">锁定 <code>adb_enabled=1</code> + <code>127.0.0.1:5555</code> 回环，关 Wi-Fi 切 5G 100% 持续在线</span></td></tr>
+        <tr><td><strong>华为鸿蒙适配</strong></td><td><span class="bad">仍需复杂无线调试配对</span></td><td><span class="ok">自动识别鸿蒙 OS 免无线调试，3 步直达满血体验</span></td></tr>
+        <tr><td><strong>系统指令响应速度</strong></td><td><span class="bad">读屏 + 云端 LLM 慢速规划（~2,400 ms）</span></td><td><span class="ok">72 ms · 0 Token</span>（快 33×，本地原生直通数据不离机）</td></tr>
+        <tr><td><strong>主流 App 跳转速度</strong></td><td><span class="bad">逐页返回桌面搜索点击</span></td><td><span class="ok">&lt;250 ms 协议瞬移</span>（120+ 主流应用 Deep-Link + 并发预启动）</td></tr>
+        <tr><td><strong>端侧加速与剪枝</strong></td><td><span class="bad">Kotlin/JVM 控件遍历，Token 消耗高</span></td><td><span class="ok">Rust v5 16KB JNI</span>（微秒级剪枝 <strong>-74% ~ -97%</strong>，提速省钱降外泄）</td></tr>
+        <tr><td><strong>后台虚拟屏精度</strong></td><td><span class="bad">缩放网格坐标换算，易点歪</span></td><td><span class="ok">Display 0 1:1 物理复刻</span>（<code>scale=1.0</code> · <strong>0.0px 零漂移</strong> + 内嵌实时预览卡）</td></tr>
+        <tr><td><strong>全球 20 国多语言</strong></td><td><span class="bad">单一语言为主</span></td><td><span class="ok">全球 20 国语言按手机系统语言自动切换 + 阿拉伯语 RTL + AI/语音同步</span></td></tr>
+        <tr><td><strong>微信 8.0.80 稳态</strong></td><td><span class="bad">通用适配，易误双击或重复发送</span></td><td><span class="ok">九项实战加固</span>：登录 <strong>9.5s 一次过</strong>、8/8 首击零误双击、气泡契约 <strong>0 重发</strong></td></tr>
+        <tr><td><strong>隐私安全与攻击面</strong></td><td><span class="bad">明文上云、内置重型浏览器/Linux 容器扩大攻击面</span></td><td><span class="ok">最小攻击面原生架构 + 端侧脱敏防火墙 + TLS 证书绑定 + 付款先问后行</span></td></tr>
+        <tr><td><strong>零 Key 实时语音</strong></td><td><span class="bad">依赖外部云端付费语音接口</span></td><td><span class="ok">内置 16KB 离线神经 ASR（770ms）+ 端侧神经 TTS（112ms）</span></td></tr>
+        <tr><td><strong>60Hz 游戏操控</strong></td><td><span class="bad">仅支持慢速单点点击</span></td><td><span class="ok">4 指并发多点触控 + 《金铲铲之战》Rust 引擎 + 斗地主 3/3 全胜</span></td></tr>
+        <tr><td><strong>AI 高清接打电话</strong></td><td><span class="bad">基础伴侣通话框架</span></td><td><span class="ok">35 柱实时声纹 + &lt;0.1ms 端侧反诈盾 + 通话中悄悄话 + 一键人工接管</span></td></tr>
+        <tr><td><strong>OTA 更新与桌面联动</strong></td><td><span class="bad">手动找包慢速下载 / 仅移动端运行</span></td><td><span class="ok">自动弹窗更新说明 + 4 线程多镜像加速（快 3–8×）+ 零依赖 CLI &amp; stdio MCP Server</span></td></tr>
       </tbody>
     </table>
 

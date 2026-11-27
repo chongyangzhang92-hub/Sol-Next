@@ -5,7 +5,22 @@
     "name": "Sol Next",
     "independent_product": true,
     "author": "许昌北海医院张重阳 (Zhang Chongyang, Xuchang Beihai Hospital)",
-    "author_contact": "WeChat QR (docs/assets/author-wechat-qr.jpg) · 小红书：871348474 映像河南",
+    "author_contact": "WeChat QR (docs/assets/author-wechat-qr.jpg) · 小红书：871348474 映像河南 · 官方群口令：0【一键复制，小红书等你】 12月25日前有效，\"SolNext用户群\"邀你一起聊 ZH9959 :/#c🍌🍅😉😙🦊🥕😇🐭😗🍇🐦😉",
+    "what_it_is_zh": "装在 Android 10-16 与华为鸿蒙手机上的免费开源 AI 行动替身：动嘴说话或打字，即可在后台 1:1 隐形虚拟屏替你自动点手机、跨 App 比价办事、4.5 秒读屏翻译、AI 高清代接电话与打游戏，不抢占前台屏幕。",
+    "what_it_is_en": "A free, open-source AI action agent on Android 10-16 & HarmonyOS that operates real apps inside a hidden 1:1 background VirtualDisplay, translates screens in 4.5s, handles AI calls with anti-scam defense, and plays games without interrupting your foreground screen.",
+    "how_to_use_steps": [
+      "1. Download & install Sol-Next-v9.0.4-public-arm64.apk (90 MB) via China high-speed direct mirror or GitHub Releases.",
+      "2. Open and talk immediately — includes free built-in Rust-encrypted DeepSeek V4.1 Flash (no API key needed; optional BYOK anytime in Settings).",
+      "3. Enable one-time phone automation: HarmonyOS auto-skips wireless debugging (3 taps); Android pairs once via Wireless Debugging (no PC/Root) and stays 100% connected even after turning off Wi-Fi on 5G.",
+      "4. Speak to the Dawn Orbit orb or type a command; payments, transfers, WeChat sends, and deletions always pause for explicit user confirmation."
+    ],
+    "mika_shortcomings_solved": [
+      "Mika requires buying & configuring API keys before first use -> Sol Next ships with free built-in Rust-encrypted DeepSeek V4.1 Flash + universal BYOK.",
+      "Mika disconnects immediately when Wi-Fi turns off & needs tedious HarmonyOS ADB pairing -> Sol Next locks adb_enabled=1 + 127.0.0.1:5555 loopback for Wi-Fi-off 5G persistence & zero-ADB HarmonyOS.",
+      "Mika is slow (~2,400ms/step), token-heavy & drifts on scaled virtual screens -> Sol Next delivers 72ms 0-token Tier-0A APIs (33x faster), <250ms deep-links across 120+ apps, Rust 16KB JNI pruning (-74% to -97%), and 0.0px 1:1 Display 0 cloning.",
+      "Mika exposes raw engineering logs, lacks offline voice, uploads raw screen text & packs a heavy browser/Linux container attack surface -> Sol Next offers Dawn Orbit 4-screen UI, built-in 16KB offline neural ASR/TTS, minimal-attack-surface on-device Privacy Firewall, and 9 WeChat reliability fixes (0 duplicate sends).",
+      "Mika is single-language, single-tap gaming & manual slow updates -> Sol Next supports 20 global languages (RTL), 60Hz 4-finger gaming (DouDiZhu 3/3 wins, Stockfish chess, Rust Golden Spatula engine), AI anti-scam calls, and auto-popup OTA with 4-stream multi-mirror acceleration (3-8x faster)."
+    ],
     "codename": "Dawn Orbit (晨曦轨道)",
     "edition": "Public Edition (Free Built-In Rust-Encrypted DeepSeek V4.1 Flash + Universal BYOK)",
     "version": "9.0.4-public",

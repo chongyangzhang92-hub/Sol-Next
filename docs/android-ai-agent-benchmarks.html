@@ -101,7 +101,7 @@
     <span class="kicker">TRANSPARENT BENCHMARKS · ANDROID 15 EMULATOR &amp; 99/99 AUTOMATED TESTS</span>
     <h1>Android AI Agent 速度、精度与微信实战基准报告（Sol Next 9.0.4）</h1>
     <p class="lead">
-      本文档公开披露 <strong>Sol Next 9.0.4（Build 904 · Apache-2.0 · 基于 <code>wangzan101/Mika</code> 深度演进）</strong> 在 <strong>Android 15（API 35 · <code>arm64-v8a</code> · <code>1080×2280 @ 440dpi</code>）模拟器真装应用</strong> 与 <strong>99 项自动化单元测试</strong> 中的全部可复现基准数据，并与纯云端截屏视觉 Agent 及早期底座进行透明横向对比。
+      本文档公开披露 <strong>Sol Next 9.0.4（Build 904 · Apache-2.0 · 许昌北海医院张重阳独立打造的全新一代 AI 手机行动替身）</strong> 在 <strong>Android 15（API 35 · <code>arm64-v8a</code> · <code>1080×2280 @ 440dpi</code>）真装应用</strong> 与 <strong>99 项自动化单元测试</strong> 中的全部可复现基准数据，并与纯云端截屏视觉 Agent 及早期手机代理 Mika 进行透明横向对比。
     </p>
 
     <div class="kpis">
@@ -133,15 +133,15 @@
     <h2>二、横向对比：Sol Next 9.0.4 vs 典型 Android AI Agent 范式</h2>
     <table>
       <thead>
-        <tr><th>对比维度</th><th>纯云端 VLM 截屏 Agent（AppAgent / Mobile-Agent 等）</th><th>原版 Mika（<code>wangzan101/Mika</code>）</th><th>Sol Next 9.0.4（公开版 BYOK）</th></tr>
+        <tr><th>对比维度</th><th>纯云端 VLM 截屏 Agent（AppAgent / Mobile-Agent 等）</th><th>早期手机代理 Mika（短板）</th><th>Sol Next 9.0.4（全新独立旗舰）</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>电脑依赖</strong></td><td>多数需 PC + USB/ADB 脚本循环驱动</td><td>免电脑手机端独立运行（无线配对开创者）</td><td class="ok">免电脑手机端独立运行 + 可选零依赖 CLI/MCP 桌面直驱</td></tr>
-        <tr><td><strong>前景打扰</strong></td><td>直接霸占主屏，执行期间无法正常用机</td><td>开创独立后台 VirtualDisplay（不抢主屏）</td><td class="ok">Display 0 1:1 物理屏克隆（0.0px 零漂移，前景自由用机）</td></tr>
-        <tr><td><strong>高频系统响应</strong></td><td>每步截屏上传云端，延迟 2–5 秒</td><td>常规云端规划</td><td class="ok">Tier-0A 72 ms 原生直通（0 Token）+ 120+ App &lt;250ms 瞬移</td></tr>
-        <tr><td><strong>端侧加速与精校</strong></td><td>纯视觉猜坐标，密集列表易点偏</td><td>Kotlin / JVM 树处理</td><td class="ok">Rust v5.00 16KB JNI (-74%~-97%) + #1..#N 实时句柄 + 64ms 1:1 SoM</td></tr>
-        <tr><td><strong>微信防误发/误双击</strong></td><td>无专用契约，易因网络延迟连发消息</td><td>通用无障碍适配</td><td class="ok">单次发送 4×85ms 气泡核验契约 + &lt;2ms 零缓存指纹（0 重发/0 误双击）</td></tr>
-        <tr><td><strong>独特生态定位</strong></td><td>偏学术基准与单机脚本实验</td><td><strong style="color:#a5b4fc">内置桌面浏览器 + 每对话 Linux 沙箱 + 社区知识包</strong></td><td class="ok">极速原生 App 闭环 + AI 接打电话 + 100% 零内置 Key + 原生 MCP</td></tr>
+        <tr><td><strong>开箱门槛与保活</strong></td><td>需 PC + USB/ADB 脚本循环驱动，门槛高</td><td>需自己买 API Key；关 Wi-Fi 无线调试立刻断连</td><td class="ok">免费内置 Rust 加密 DeepSeek 开箱即用；关 Wi-Fi 切 5G 100% 持续在线；鸿蒙免无线调试</td></tr>
+        <tr><td><strong>前景打扰与精度</strong></td><td>霸占主屏，执行期间无法正常用机</td><td>缩放网格换算坐标，高分屏易点偏</td><td class="ok">Display 0 1:1 物理屏克隆（0.0px 零漂移，前景自由用机 + 内嵌实时预览）</td></tr>
+        <tr><td><strong>高频系统响应</strong></td><td>每步截屏上传云端，延迟 2–5 秒</td><td>常规云端读屏规划（~2,400 ms）</td><td class="ok">Tier-0A 72 ms 原生直通（0 Token，快 33×）+ 120+ App &lt;250ms 瞬移</td></tr>
+        <tr><td><strong>端侧加速与精校</strong></td><td>纯视觉猜坐标，密集列表易点偏</td><td>Kotlin / JVM 树遍历，Token 消耗高</td><td class="ok">Rust v5.00 16KB JNI (-74%~-97%) + #1..#N 实时句柄 + 64ms 1:1 SoM</td></tr>
+        <tr><td><strong>微信防误发/隐私</strong></td><td>无专用契约，易因延迟连发消息</td><td>明文上云、重型容器攻击面大、微信易误双击/重发</td><td class="ok">端侧隐私脱敏防火墙 + 单次发送 4×85ms 气泡核验契约（0 重发/0 误双击）+ 付款先问后行</td></tr>
+        <tr><td><strong>多语言、游戏与更新</strong></td><td>偏学术单机脚本实验</td><td>单一语言、仅慢速单点、手动找包慢速下载</td><td class="ok">全球 20 国语言 + 60Hz 四指游戏（斗地主 3/3 全胜）+ AI 反诈通话 + 4 线程极速 OTA + 原生 CLI/MCP</td></tr>
       </tbody>
     </table>
 

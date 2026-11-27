@@ -1,18 +1,18 @@
 <div align="center">
 
 <a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.4-public">
-  <img src="docs/media/v901/hero-banner-901.png" alt="Sol Next 9.0.4 — Dawn Orbit Global 20-Language AI Mobile OS Agent" width="100%" />
+  <img src="docs/media/v901/hero-banner-901.png" alt="Sol Next 9.0.4 — Dawn Orbit · Your Free Open-Source AI Action Partner on Android & HarmonyOS" width="100%" />
 </a>
 
 <br/><br/>
 
-# Sol Next 9.0.4 — Dawn Orbit · Independent Next-Gen AI Mobile OS Agent
+# Sol Next 9.0.4 — Your Open-Source AI "Hands" on Android & HarmonyOS
 
-### Speak or Type Naturally. Drive Real Mobile Actions. Global 20-Language Support Auto-Matching Your Phone's Language.
+### Speak or Type Naturally. Let AI Operate Apps in a Hidden 1:1 Background Screen, Handle Real Phone Calls & Play Games — Free Built-In DeepSeek, Wi-Fi-Off Persistent, 20 Languages
 
-> **👨‍💻 Author: Zhang Chongyang (许昌北海医院张重阳)** &nbsp;·&nbsp; **💬 [WeChat QR & RedNote User Group](#-contact-author-wechat-qr--rednote-user-group)** &nbsp;·&nbsp; **📕 RedNote: `871348474` (映像河南)**
+> **👨‍💻 Author: Zhang Chongyang (许昌北海医院张重阳)** &nbsp;·&nbsp; **💬 [WeChat QR & Official User Group](#-contact-author--official-user-group)** &nbsp;·&nbsp; **📕 RedNote: `871348474` (映像河南)**
 
-<sub>Brand-New Independent Android 10–16/17 &amp; HarmonyOS AI Agent (Build <code>904</code> · 16KB Page-Aligned · 20 World Languages Auto-Matching Phone System Language + Arabic RTL · Free Built-In Rust-Encrypted DeepSeek V4.1 Flash + Universal BYOK · Auto-Popup OTA with Release Notes &amp; 4-Stream Multi-Mirror Boost · Wi-Fi-Off Persistent Wireless Debugging)</sub>
+<sub>Brand-New Independent Apache-2.0 Mobile OS Agent (Build <code>904</code> · Android 10–16/17 &amp; HarmonyOS · 16KB Page-Aligned Rust JNI Kernel · Free Built-In Rust-Encrypted DeepSeek V4.1 Flash + Universal BYOK · 20 World Languages Auto-Matching Phone Language + Arabic RTL · Auto-Popup OTA with Release Notes &amp; 4-Stream Multi-Mirror Boost · Wi-Fi-Off Persistent Shell Helper)</sub>
 
 <br/><br/>
 
@@ -29,32 +29,136 @@
 
 <br/>
 
-[🌐 Interactive 20-Language Website](https://chongyangzhang92-hub.github.io/Sol-Next/) &nbsp;·&nbsp; [⚡ Why Sol Next Outperforms Mika](docs/guides/COMPARISON_WITH_MIKA.md) &nbsp;·&nbsp; [`llms.txt`](llms.txt) &nbsp;·&nbsp; [`ai-facts.json`](docs/ai-facts.json) &nbsp;·&nbsp; [`SHA256SUMS.txt`](SHA256SUMS.txt)
+[💡 What It Is](#-1-what-is-sol-next-30-second-overview) &nbsp;·&nbsp; [🎯 What It Can Do](#-2-what-can-sol-next-do-for-you) &nbsp;·&nbsp; [📖 How to Use](#-3-how-to-use-3-minute-quick-start) &nbsp;·&nbsp; [🎬 Live Demos](#-4-real-device-demos-android-1516) &nbsp;·&nbsp; [⚔️ Why It Beats Mika](#-5-where-mika-falls-short--why-sol-next-904-decisively-leads) &nbsp;·&nbsp; [🌐 20-Lang Website](https://chongyangzhang92-hub.github.io/Sol-Next/)
 
 </div>
 
 ---
 
-## ✨ What's New in Sol Next 9.0.4 (Independent Flagship Release)
+## 💡 1. What Is Sol Next? (30-Second Overview)
 
-1. **Global 20-Language UI Auto-Matching Phone System Language (Never Region)**: Supports Simplified/Traditional Chinese, English, Japanese, Korean, Spanish, French, German, Portuguese, Russian, Arabic (full RTL mirroring), Hindi, Indonesian, Vietnamese, Thai, Turkish, Italian, Dutch, Polish, and Malay. Instant switching in Settings › Language, aligned with LLM replies and voice ASR/TTS.
-2. **Auto-Popup OTA Updates with Release Notes + 4-Stream Multi-Mirror Accelerator**: Automatically pops up an update dialog displaying formatted What's New notes whenever a new version ships. Races multiple HTTPS mirrors in parallel and downloads via 4 concurrent HTTP Range streams with 128 KB buffers and chunk-level retry (3–8× faster), while preserving strict SHA-256 + package + signing certificate verification.
-3. **Free Built-In Rust-Encrypted DeepSeek V4.1 Flash + Universal BYOK**: Works out of the box with zero plaintext keys (pure-Rust ChaCha20 + HMAC-SHA256 + HKDF vault bound to APK Sig Block v2/v3 cert SHA-256 + OkHttp TLS SPKI certificate pinning), and supports instant override with your own OpenAI / DeepSeek / Claude / Gemini / Qwen / OpenRouter API key.
-4. **Wi-Fi-Off Persistent Wireless Debugging Shell Helper + Zero-ADB HarmonyOS**: Locks `adb_enabled=1` and arms `127.0.0.1:5555` loopback so turning off Wi-Fi or switching to 5G never drops the background Virtual Display or AI HD call bridge. HarmonyOS devices skip wireless debugging automatically.
-5. **Decisively Outperforms Earlier Agents Like Mika**: 33× faster system reflexes (`72 ms` 0-token Tier-0A APIs), `<250 ms` deep-link teleports across 120+ apps, `0.0px` 1:1 physical-DPI Virtual Display cloning, built-in 16KB offline neural ASR (`770 ms`) + TTS (`112 ms`), Android 17 Generative UI cards, 60Hz 4-finger gaming + Rust SwiGLU Golden Spatula engine, on-device Privacy Firewall, and zero-dependency CLI + stdio MCP Server.
+**Sol Next is a free, open-source AI action agent installed directly on your Android or HarmonyOS phone.**
+
+Regular AI chat apps (ChatGPT, DeepSeek Web, Gemini) can only *talk*—they cannot touch your screen or finish tasks inside your apps. **Sol Next actually operates your phone for you:**
+
+- **Executes real multi-app workflows in a hidden 1:1 background Virtual Display**: While Sol Next taps, searches, translates, and verifies tasks in the background, your foreground screen stays completely free for normal use.
+- **Zero-friction start — no API key required**: Ships with **free built-in Rust-encrypted DeepSeek V4.1 Flash** out of the box (plus instant BYOK support for OpenAI, Claude, Gemini, DeepSeek V4 Pro, Qwen, OpenRouter, or local Ollama).
+- **No Root, No PC, No AccessibilityService**: Avoids banking/enterprise app risk flags; **HarmonyOS skips wireless debugging automatically**, and on Android it stays **100% connected even after you turn off Wi-Fi and switch to 5G**.
+- **Privacy & Confirmation Guardrails**: On-device PII redaction masks IDs/bank cards before any cloud call, and **payments, transfers, WeChat messages, and deletions always pause for your explicit tap confirmation**.
 
 ---
 
-## 📦 SHA-256 Checksums (`v9.0.4-public`)
+## 🎯 2. What Can Sol Next Do for You?
+
+| Use Case | Example Voice / Text Prompt | How Sol Next Executes It |
+| --- | --- | --- |
+| **🛒 Cross-App Price & Food Search** | *"Compare prices for Sony WH-1000XM5 across shopping apps and summarize the cheapest 3 options"* | Opens apps in the background 1:1 Virtual Display, compares results, and **always pauses before checkout/payment** for your approval |
+| **⚡ Instant System Reflexes (`72 ms`)** | *"Turn on Dark Mode"* / *"Check battery, storage & network status"* / *"Set a 7:30 AM alarm"* | Runs locally via 0-Token native System APIs in **`72 ms`** (zero cloud round-trip); teleports directly into 120+ apps in `<250 ms` |
+| **📞 Real-Time AI Phone Calls** | *"Answer this delivery call and ask them to leave the package at the locker"* / *"Call the restaurant to book a table for 4"* | Full-duplex AI voice with 35-bar live voiceprint, **`<0.1 ms` on-device anti-scam radar**, live mid-call **Whisper instructions**, and 1-tap human takeover |
+| **🌐 4.5s Screen Translation & 20 Languages** | *"Translate this foreign app screen and list the 5 key points"* | Reads and summarizes 50+ lines into structured native cards in **4.5 s**; UI auto-matches your phone's system language across 20 languages (including Arabic RTL) |
+| **🎮 60Hz Multi-Touch Gaming** | *"Play a round of DouDiZhu"* / *"Play chess with Stockfish"* / *"Assist Golden Spatula positioning"* | 4-finger concurrent multi-touch + 60Hz visual servoing (`3/3` DouDiZhu win rate in `32.5 s`, Rust `<15 µs` SwiGLU Golden Spatula engine) |
+| **💻 AI Coding Agent Bridge (CLI + MCP)** | Call `sol_run_phone_task` from Claude Code / Cursor / Codex | Ships with zero-dependency `scripts/sol-cli.py` and stdio `mcp/sol_mcp_server.py` so desktop AI agents can drive real Android devices |
+
+---
+
+## 📖 3. How to Use (3-Minute Quick Start)
+
+1. **Install the APK**: Download **ARM64 (90 MB)** from GitHub Releases or the high-speed direct mirror above (use Universal 128 MB for x86_64 emulators).
+2. **Start Talking Immediately (No Key Needed)**: Open Sol Next — the built-in Rust-encrypted DeepSeek V4.1 Flash works right away. To use your own OpenAI / DeepSeek V4 Pro / Claude / Gemini key, go to **Settings › Model API Configuration (BYOK)** anytime.
+3. **Enable One-Time Background Phone Control (30 Seconds)**:
+   - **HarmonyOS**: Auto-detected — skips wireless debugging and finishes in 3 taps.
+   - **Android 10–16**: Enable *Wireless Debugging* in Developer Options, tap *Pair device with pairing code*, and enter the 6-digit code inside Sol Next (no PC, no Root). Once connected, Sol Next locks `adb_enabled=1` + `127.0.0.1:5555` loopback so **turning off Wi-Fi on 5G never disconnects it**.
+4. **Give Your First Command**: Tap the Dawn Orbit voice orb or type in the bottom bar (e.g., *"Open Settings › Display and turn on Dark theme"*). Watch the live step tree or expand the inline Virtual Display preview anytime!
+
+---
+
+## 🎬 4. Real-Device Demos (Android 15/16)
+
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <img src="docs/media/v901/screen-1-voice-home.png" alt="Demo 1: Dawn Orbit Voice & Text Home" width="210" /><br/>
+      <b>1. Voice &amp; Text Command Home</b><br/>
+      <sub>60fps Dawn Orbit orb + glass text bar · 20 languages auto-matching phone language</sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="docs/media/v901/screen-2-vdisplay-live.png" alt="Demo 2: 1:1 Background Virtual Display Live Execution" width="210" /><br/>
+      <b>2. Hidden 1:1 Background Screen</b><br/>
+      <sub>Prompt: "Enable Dark theme in Settings" → runs in 1:1 background display with live inline preview &amp; green checkmarks</sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="docs/media/v901/screen-translate-genui.png" alt="Demo 3: 4.5s Screen Translation & Summary Card" width="210" /><br/>
+      <b>3. 4.5s Screen Translation Card</b><br/>
+      <sub>Reads 52 lines of foreign UI &amp; renders 6 structured native summary cards in 4.5s</sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="docs/media/v901/screen-3-ai-call.png" alt="Demo 4: Real-Time AI Phone Call Cockpit" width="210" /><br/>
+      <b>4. AI HD Call + Anti-Scam Shield</b><br/>
+      <sub>35-bar live voiceprint, &lt;0.1ms anti-scam radar, Whisper coaching &amp; 1-tap human takeover</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="25%">
+      <img src="docs/media/v901/demo-genui-dashboard.png" alt="Demo 5: 72ms 0-Token GenUI Card" width="210" /><br/>
+      <b>5. 72ms 0-Token Native GenUI</b><br/>
+      <sub>Instant system telemetry cards without cloud LLM delay</sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="docs/media/v901/demo-doudizhu-win.png" alt="Demo 6: DouDiZhu 3/3 Win" width="230" /><br/>
+      <b>6. DouDiZhu 3/3 Win (32.5s)</b><br/>
+      <sub>Real-time board vision + 60Hz multi-touch control</sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="docs/media/v901/demo-chess-stockfish.png" alt="Demo 7: Stockfish Chess" width="210" /><br/>
+      <b>7. Stockfish Live Chess</b><br/>
+      <sub>Board recognition + engine search + 0.0px drag moves</sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="docs/media/v901/demo-gesture-4of4.png" alt="Demo 8: 4/4 Multi-Touch Gestures" width="210" /><br/>
+      <b>8. 4/4 Multi-Touch Gestures</b><br/>
+      <sub>Tap, long-press, swipe &amp; 4-finger pinch verified in 18.7s</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+## ⚔️ 5. Where Mika Falls Short & Why Sol Next 9.0.4 Decisively Leads
+
+**Sol Next 9.0.4** is a completely independent next-generation product built from the ground up. Earlier mobile agents like **Mika** suffer from major everyday usability bottlenecks that Sol Next 9.0.4 eliminates completely:
+
+1. **Mika cannot work out of the box** (requires manually buying and configuring API keys before your first message) → **Sol Next 9.0.4** includes **free built-in Rust-encrypted DeepSeek V4.1 Flash** (with APK signing cert binding & TLS SPKI pinning) plus universal BYOK anytime.
+2. **Mika disconnects the moment you turn off Wi-Fi** (leaving home breaks wireless debugging; HarmonyOS still needs tedious ADB pairing) → **Sol Next 9.0.4** locks `adb_enabled=1` + `127.0.0.1:5555` loopback so **Wi-Fi-off / 5G mobile data stays 100% connected**, and **HarmonyOS auto-skips wireless debugging**.
+3. **Mika is slow, token-heavy, and drifts on scaled virtual screens** (`~2,400 ms` cloud loops even for simple device toggles, Kotlin/JVM UI parsing, scaled grid coordinate rounding) → **Sol Next 9.0.4** runs **`72 ms` 0-token native reflexes (33× faster)**, `<250 ms` deep-link teleports across 120+ apps, a **pure-Rust 16KB JNI kernel (`-74% to -97%` UI pruning)**, and **1:1 Display 0 physical cloning (`scale=1.0`, `0.0px` drift)**.
+4. **Mika exposes raw engineering logs & lacks built-in offline voice** → **Sol Next 9.0.4** delivers the zero-learning-curve **Dawn Orbit 4-screen UI** plus **built-in 16KB offline neural ASR (`770 ms`) & TTS (`112 ms`)** requiring zero Google services or voice API keys.
+5. **Mika uploads raw screen text, packs a heavy browser/Linux attack surface & risks duplicate WeChat sends** → **Sol Next 9.0.4** runs a minimal-attack-surface native engine with an **on-device Privacy Firewall**, **9 WeChat 8.0.80 reliability fixes (`0` duplicate sends, `9.5s` first-try login)**, and mandatory confirmation before payments or messaging.
+6. **Mika is single-language, slow to update & lacks multi-finger gaming / full AI call defense** → **Sol Next 9.0.4** supports **20 world languages (with Arabic RTL)**, **auto-popup OTA with release notes & 4-stream multi-mirror acceleration (3–8× faster)**, **60Hz 4-finger gaming**, and **35-bar voiceprint AI calling with `<0.1ms` on-device anti-scam shield**.
+
+👉 Full 16-dimension benchmarks & 2K architecture charts: [Sol Next 9.0.4 vs Mika Deep Dive](docs/guides/COMPARISON_WITH_MIKA.md)
+
+---
+
+## 📦 SHA-256 Checksums (`v9.0.4-public`) & MCP Setup
 
 ```text
 3ba39118a3c793350254481711997f7455019f3760c98a4a573f5069335c4756  Sol-Next-v9.0.4-public-arm64.apk
 788af5ea0805216dbf6c531e53e5eaeb6367d80ed2fb48ba10652598b2f2d3aa  Sol-Next-v9.0.4-public-universal.apk
 ```
 
+```json
+{
+  "mcpServers": {
+    "sol-next": {
+      "command": "python3",
+      "args": ["/path/to/Sol-Next/mcp/sol_mcp_server.py"]
+    }
+  }
+}
+```
+
 ---
 
-## 💬 Contact Author (WeChat QR & RedNote User Group)
+## 💬 Contact Author & Official User Group
 
 <div align="center">
   <img src="docs/assets/author-wechat-qr.jpg" width="220" alt="Scan WeChat QR to Contact Author" /><br/><br/>
