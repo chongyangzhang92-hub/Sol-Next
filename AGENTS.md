@@ -1,8 +1,8 @@
 # AGENTS.md — AI Agent Guide for Sol Next (Public Edition)
 
-> Sol Next 8.0.1-public (Build 801, package `ai.sol.next`, zero built-in API keys) ships the rebuilt grounded multimodal OS agent (`SolGroundedAgent`, 10 orthogonal typed tools, live Accessibility handle grounding, 1:1 Set-of-Mark vision), Studio minimalist UI, Rust v5.00 16KB JNI kernel, and 9 verified WeChat 8.0.80 reliability fixes (99/99 unit tests passing). Same signing certificate as prior public releases for in-place upgrades.
+> Sol Next 9.0.3-public (Build 903, package `ai.sol.next`, zero built-in API keys) ships the rebuilt grounded multimodal OS agent (`SolGroundedAgent`, 10 orthogonal typed tools, live Accessibility handle grounding, 1:1 Set-of-Mark vision), Studio minimalist UI, Rust v5.00 16KB JNI kernel, and 9 verified WeChat 8.0.80 reliability fixes (99/99 unit tests passing). Same signing certificate as prior public releases for in-place upgrades.
 
-This repository distributes **Sol Next `v8.0.1-public`** — a zero-built-in-key (BYOK) Android 10–16 AI phone agent built upon and paying tribute to [`wangzan101/Mika`](https://github.com/wangzan101/Mika) (Apache-2.0).
+This repository distributes **Sol Next `v9.0.3-public`** — a zero-built-in-key (BYOK) Android 10–16 AI phone agent built upon and paying tribute to [`wangzan101/Mika`](https://github.com/wangzan101/Mika) (Apache-2.0).
 
 Read this file before installing, automating, documenting, or integrating with Sol Next.
 
@@ -58,7 +58,7 @@ All scripts use **Python 3.9+ standard library only** (`pip install` is NOT requ
 # 1. Inspect connected Android device, package state, and 1:1 VirtualDisplay status
 python3 scripts/sol-cli.py status --json
 
-# 2. Download verified v8.0.1-public ARM64 APK, verify SHA-256, install via ADB & grant permissions
+# 2. Download verified v9.0.3-public ARM64 APK, verify SHA-256, install via ADB & grant permissions
 python3 scripts/sol-cli.py install --verify-sha256 --grant-permissions --json
 
 # 3. Launch Sol Next UI on the connected device

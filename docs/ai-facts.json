@@ -6,46 +6,49 @@
     "author": "许昌北海医院张重阳 (Zhang Chongyang, Xuchang Beihai Hospital)",
     "author_contact": "小红书：871348474 映像河南",
     "codename": "Dawn Orbit (晨曦轨道)",
-    "edition": "Public Edition (Zero Built-In API Keys / Universal BYOK)",
+    "edition": "Public Edition (Free Built-In Rust-Encrypted DeepSeek V4.1 Flash + Universal BYOK)",
     "version": "9.0.3-public",
-    "version_code": 901,
+    "version_code": 903,
     "package_id": "ai.sol.next",
     "license": "Apache-2.0",
-    "os_support": "Android 10 - Android 16 (API 29-36, 16KB page aligned)",
-    "tagline_zh": "晨曦轨道 · 你的实时语音 AI 行动伙伴 — 用自然对话，驱动真实的手机行动",
-    "tagline_en": "Dawn Orbit — Your Voice-First AI Action Partner for Android 10-16/17.",
+    "os_support": "Android 10 - Android 16 (API 29-36, 16KB page aligned) & HarmonyOS",
+    "tagline_zh": "晨曦轨道 · 你的实时语音 AI 行动伙伴 — 免费内置加密 DeepSeek · 用自然对话驱动真实的手机行动",
+    "tagline_en": "Dawn Orbit — Voice-First Android 10-16/17 AI Mobile Agent with Free Rust-Encrypted DeepSeek & Universal BYOK.",
     "coexists_with_mika": true,
     "mika_package_id": "com.wangzan101.mika"
   },
   "urls": {
     "website": "https://chongyangzhang92-hub.github.io/Sol-Next/",
     "repository": "https://github.com/chongyangzhang92-hub/Sol-Next",
-    "release_v901_public": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.3-public",
+    "release_v903_public": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.3-public",
+    "mika_comparison_page": "https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html",
+    "security_privacy_page": "https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html",
+    "benchmarks_page": "https://chongyangzhang92-hub.github.io/Sol-Next/android-ai-agent-benchmarks.html",
+    "mcp_byok_guide": "https://chongyangzhang92-hub.github.io/Sol-Next/mcp-and-byok-guide.html",
     "llms_txt": "https://chongyangzhang92-hub.github.io/Sol-Next/llms.txt",
+    "llms_full_txt": "https://chongyangzhang92-hub.github.io/Sol-Next/llms-full.txt",
+    "feed_xml": "https://chongyangzhang92-hub.github.io/Sol-Next/feed.xml",
     "upstream_mika": "https://github.com/wangzan101/Mika"
   },
-  "v901_flagship_highlights": [
-    "Dawn Orbit 4-Screen Editorial Porcelain UI (Voice Home without text box, Visual Task Execution with inline collapsible live Virtual Display preview & 2x2 GenUI cards, AI Live Call with 35-bar spectrum, Minimalist BYOK Settings & 2-Step Minimal Permissions — zero custom keyboard, zero default assistant, zero device admin)",
-    "Built-In Zero-Voice-API Real-Time Neural Voice (Apache-2.0 sherpa-onnx v2.0.3 16KB-aligned + streaming-zipformer-small-ctc-zh-int8 770ms ASR + vits-icefall-zh-aishell3 573ms Chinese TTS): works out-of-the-box with text-only LLMs like DeepSeek/Claude and zero Google Services",
-    "Google Android 16/17 Intelligent OS Roadmap in executable code: Android 17 Generative UI native 120Hz cards (incl. 4.5s one-tap Live Screen Translate & Summary), Android 16/17 Magic Cue, Android 16 AppFunctions, Android 16 Live Updates, and AES-256 Encrypted Private Compute Privacy Firewall + Personal AI Memory Manager + Scheduled Routines",
-    "Battle of Golden Spatula (JccSkillPack + Rust <15us SwiGLU Value Network & 4x7 Hex Simulator) + Multi-Genre 60Hz Universal Real-Time Gaming (FPS, MOBA/ARPG dual-thumb joystick & skill combos, Arcade/Runner, Tap/Rhythm + foreground Accessibility fallback + Quick Center Game Hub)",
-    "Universal Any-Cloud-Model BYOK incl. native Anthropic /v1/messages adapter, blocking high-risk confirmations, R8 minification with uncompressed 16KB-aligned native .so, and cert+SHA-256 verified Autonomous OTA"
+  "v903_flagship_highlights": [
+    "Free Built-In DeepSeek V4.1 Flash (1M ctx, vision + tools) sealed in pure-Rust JNI ChaCha20+HMAC-SHA256+HKDF vault bound to /proc/self/cmdline + APK Sig Block v2/v3 signing cert SHA-256 with anti-debug/anti-Frida guards & OkHttp TLS SPKI Certificate Pinning + Proxy.NO_PROXY — zero plaintext keys in APK, plus instant Universal BYOK override",
+    "Permanent Wi-Fi-Off Wireless Debugging Shell Helper Persistence: locks adb_enabled=1 via uid=2000 before launching SolBgHelperMain + arms 127.0.0.1:5555 loopback so turning off Wi-Fi or switching to 5G never triggers AOSP AdbService.stopAdbd() / KillProcessGroup",
+    "Dawn Orbit 4-Screen Voice + Text Dual-Mode UI with conversational multi-page query/order reports, inline collapsible 1:1 VirtualDisplay preview, AI Live Call with 35-bar spectrum, sensitive action confirmation guardrails (payment/WeChat/Alipay), and OS-aware HarmonyOS zero-ADB auto-onboarding",
+    "Built-In Zero-Voice-API Real-Time Neural Voice (Apache-2.0 sherpa-onnx v2.0.3 16KB-aligned + streaming-zipformer Chinese ASR + 112ms AISHELL-3 neural TTS)",
+    "Google Android 16/17 Intelligent OS Roadmap (Generative UI cards, Magic Cue, AppFunctions, Live Updates, AES-256 Privacy Firewall & Personal AI Memory), 60Hz Rust Universal Gaming & Battle of Golden Spatula SwiGLU Policy, and verified Autonomous OTA"
   ],
   "verified_benchmarks_android16": {
-    "environment": "Android 16 (API 36, sdk_gphone16k_arm64, 16KB page size, 1080x2400 @ 420dpi)",
+    "environment": "Android 15/16 (arm64-v8a, 16KB page size, 1080x2400)",
     "offline_neural_asr_zh_ms": 798,
     "offline_neural_tts_aishell3_ms": 112,
     "screen_translate_genui_s": 4.5,
     "genui_dashboard_tokens": 0,
-    "complex_dark_theme_toggle_verify_restore_s": 9.3,
-    "doudizhu_3round_landscape_zero_a11y_win": "3/3 rounds won in 10 steps / 32.5s",
-    "droidfish_stockfish_chess_auto_permission": "Auto-allowed Android 16 PermissionController + played legal Sicilian opening",
-    "hardware_4primitive_gesture_arena": "4/4 first-try in 18.7s (Tap, Long-Press 823ms 0px drift, Drag, Pinch 1.63x)",
     "background_virtual_display_uid2000_capture_ms": 24,
-    "automated_tests_passed": "206/206 (sol-core 93 + app 75 + Rust 38)",
-    "zero_built_in_key_audit": "CLEAN"
+    "wifi_off_shell_helper_survival": "100% continuous PID across Wi-Fi OFF -> ON",
+    "rust_vault_static_secret_audit": "0 plaintext bytes across DEX, assets, resources, and libsol_kernel.so",
+    "rust_tests_passed": "43/43 (incl. NIST SHA-256, RFC 5869 HKDF, RFC 8439 ChaCha20, APK v2/v3 cert extractor)"
   },
-  "artifacts_v901_public": {
+  "artifacts_v903_public": {
     "arm64_apk": {
       "filename": "Sol-Next-v9.0.3-public-arm64.apk",
       "abi": "arm64-v8a",

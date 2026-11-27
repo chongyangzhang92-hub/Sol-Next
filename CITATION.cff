@@ -1,30 +1,29 @@
 cff-version: 1.2.0
-title: "Sol Next 8.0.1: Grounded Multimodal Android OS Agent (Zero-Key BYOK, Built Upon Mika)"
+title: "Sol Next 9.0.3: Dawn Orbit Voice-First Multimodal Android OS Agent (Free Encrypted DeepSeek + Universal BYOK, Built Upon Mika)"
 message: "If you reference Sol Next in research, benchmarks, or open-source AI agent directories, please cite it using this metadata and also credit wangzan101/Mika."
 type: software
 authors:
   - alias: chongyangzhang92-hub
-    name-particle: ""
+    affiliation: "许昌北海医院 (Xuchang Beihai Hospital)"
     family-names: Zhang
     given-names: Chongyang
 repository-code: "https://github.com/chongyangzhang92-hub/Sol-Next"
 url: "https://chongyangzhang92-hub.github.io/Sol-Next/"
 abstract: >-
-  Sol Next 8.0.1 (ai.sol.next, Build 801) is an open-source, zero-built-in-key (BYOK)
-  grounded multimodal Android 10-16 OS agent built upon and paying tribute to
-  wangzan101/Mika (Apache-2.0). It combines 72ms Tier-0A zero-token native System APIs,
-  120+ app deep-link teleports (<250ms), 10 orthogonal typed OS tools (SolGroundedAgent)
-  with live #1..#N Accessibility handles and <2ms zero-cache state fingerprinting,
-  on-demand 64ms 1:1 Set-of-Mark vision, a Rust v5.00 16KB page-aligned JNI kernel
-  (-74% to -97% UI tree pruning for on-device PII minimization), verified 1:1 physical
-  Display 0 background VirtualDisplay cloning (0.0px drift), 9 WeChat 8.0.80 hardening
-  fixes (9.5s first-try login, 8/8 first-try, zero duplicate sends), Android KeyStore
-  hardware encryption, carrier-grade AI calling, and zero-dependency CLI (--json) +
-  stdio MCP Server integration.
+  Sol Next 9.0.3 (Dawn Orbit, ai.sol.next, Build 903) is an open-source voice+text
+  multimodal Android 10-16/17 & HarmonyOS AI mobile agent built upon and paying tribute
+  to wangzan101/Mika (Apache-2.0). It features free built-in DeepSeek V4.1 Flash sealed
+  inside a pure-Rust JNI ChaCha20+HMAC-SHA256+HKDF vault bound to APK Sig Block v2/v3
+  cert SHA-256 with TLS SPKI pinning and universal BYOK override, Wi-Fi-off persistent
+  Wireless Debugging Shell Helper, built-in 16KB offline neural Chinese ASR & 112ms TTS,
+  72ms Tier-0A native System APIs, 120+ app deep-link teleports, 1:1 physical-DPI
+  background VirtualDisplay, Android 17 Generative UI cards, carrier-grade AI calling,
+  and zero-dependency CLI (--json) + stdio MCP Server integration.
 keywords:
   - android-ai-agent
   - mobile-gui-agent
   - multimodal-os-agent
+  - deepseek
   - phone-use
   - mika-alternative
   - mika-fork
@@ -36,8 +35,8 @@ keywords:
   - mcp-server
   - llms-txt
 license: Apache-2.0
-version: "8.0.1-public"
-date-released: "2026-11-26"
+version: "9.0.3-public"
+date-released: "2026-11-27"
 references:
   - type: software
     title: "Mika"
