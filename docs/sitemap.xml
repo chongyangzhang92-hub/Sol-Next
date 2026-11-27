@@ -9,16 +9,16 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://chongyangzhang92-hub.github.io/Sol-Next/media/v901/hero-banner-901.png</image:loc>
-      <image:title>Sol Next 9.0.3 — 晨曦轨道 Dawn Orbit AI Mobile Agent (Free Encrypted DeepSeek + BYOK)</image:title>
+      <image:title>Sol Next 9.0.4 — 晨曦轨道 Dawn Orbit AI Mobile Agent (Free Encrypted DeepSeek + BYOK)</image:title>
     </image:image>
     <image:image>
       <image:loc>https://chongyangzhang92-hub.github.io/Sol-Next/media/v901/screen-1-voice-home.png</image:loc>
-      <image:title>Sol Next 9.0.3 Dawn Orbit Voice &amp; Text Home Screen</image:title>
+      <image:title>Sol Next 9.0.4 Dawn Orbit Voice &amp; Text Home Screen</image:title>
     </image:image>
     <video:video>
       <video:thumbnail_loc>https://chongyangzhang92-hub.github.io/Sol-Next/media/v901/hero-banner-901.png</video:thumbnail_loc>
-      <video:title>Sol Next 9.0.3 — Live 1080p Android 15/16 Demo (72ms Reflex, 1:1 VirtualDisplay, Dawn Orbit UI)</video:title>
-      <video:description>Real Android screen recording of Sol Next 9.0.3 executing 72ms Tier-0A native reflexes, 1:1 physical-DPI background VirtualDisplay Set-of-Mark closed-loop control, AI phone calling, free Rust-encrypted DeepSeek V4.1 Flash, and universal BYOK.</video:description>
+      <video:title>Sol Next 9.0.4 — Live 1080p Android 15/16 Demo (72ms Reflex, 1:1 VirtualDisplay, Dawn Orbit UI)</video:title>
+      <video:description>Real Android screen recording of Sol Next 9.0.4 executing 72ms Tier-0A native reflexes, 1:1 physical-DPI background VirtualDisplay Set-of-Mark closed-loop control, AI phone calling, free Rust-encrypted DeepSeek V4.1 Flash, and universal BYOK.</video:description>
       <video:content_loc>https://chongyangzhang92-hub.github.io/Sol-Next/media/sol-next-demo.mp4</video:content_loc>
       <video:duration>33</video:duration>
     </video:video>
@@ -30,11 +30,11 @@
     <priority>0.98</priority>
     <image:image>
       <image:loc>https://chongyangzhang92-hub.github.io/Sol-Next/media/compare-ecosystem-matrix.png</image:loc>
-      <image:title>Sol Next 9.0.3 vs Mika 12-Dimension Engineering Scorecard</image:title>
+      <image:title>Sol Next 9.0.4 vs Mika 12-Dimension Engineering Scorecard</image:title>
     </image:image>
     <image:image>
       <image:loc>https://chongyangzhang92-hub.github.io/Sol-Next/media/compare-execution-pipeline.png</image:loc>
-      <image:title>Sol Next 9.0.3 Dual-Track Latency Waterfall and WeChat Hardening</image:title>
+      <image:title>Sol Next 9.0.4 Dual-Track Latency Waterfall and WeChat Hardening</image:title>
     </image:image>
   </url>
   <url>
@@ -44,7 +44,7 @@
     <priority>0.95</priority>
     <image:image>
       <image:loc>https://chongyangzhang92-hub.github.io/Sol-Next/media/compare-security-privacy.png</image:loc>
-      <image:title>Sol Next 9.0.3 Rust JNI Encrypted Key Vault &amp; Zero-Trust Privacy Architecture</image:title>
+      <image:title>Sol Next 9.0.4 Rust JNI Encrypted Key Vault &amp; Zero-Trust Privacy Architecture</image:title>
     </image:image>
   </url>
   <url>
@@ -54,7 +54,7 @@
     <priority>0.95</priority>
     <image:image>
       <image:loc>https://chongyangzhang92-hub.github.io/Sol-Next/media/compare-benchmark.png</image:loc>
-      <image:title>Sol Next 9.0.3 Verified Android 15/16 Speed and Precision Benchmarks</image:title>
+      <image:title>Sol Next 9.0.4 Verified Android 15/16 Speed and Precision Benchmarks</image:title>
     </image:image>
   </url>
   <url>
@@ -64,7 +64,7 @@
     <priority>0.92</priority>
     <image:image>
       <image:loc>https://chongyangzhang92-hub.github.io/Sol-Next/media/screen-public-byok.png</image:loc>
-      <image:title>Sol Next 9.0.3 Free Built-In DeepSeek, BYOK Setup and MCP Server Integration</image:title>
+      <image:title>Sol Next 9.0.4 Free Built-In DeepSeek, BYOK Setup and MCP Server Integration</image:title>
     </image:image>
   </url>
   <url>

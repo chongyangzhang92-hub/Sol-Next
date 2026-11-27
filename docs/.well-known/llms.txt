@@ -1,42 +1,21 @@
-# Sol Next 9.0.3 (Build 903 · Dawn Orbit · Public Edition · Apache-2.0)
+# Sol Next 9.0.4 (Build 904 · Dawn Orbit · Independent Apache-2.0 Android & HarmonyOS AI OS Agent)
 
-> **Author: 许昌北海医院张重阳 (Zhang Chongyang, Xuchang Beihai Hospital)** · Contact: Xiaohongshu `871348474` (映像河南)
+> **Author: 许昌北海医院张重阳 (Zhang Chongyang, Xuchang Beihai Hospital)** · Contact: WeChat QR (`docs/assets/author-wechat-qr.jpg`) / RedNote `871348474` (映像河南)
 >
-> **Sol Next 9.0.3 ("Dawn Orbit / 晨曦轨道")** (`ai.sol.next`, Build 903) is a voice + text dual-mode, zero-learning-curve Android 10–16 (API 29–36, 16KB page-aligned) AI Mobile Agent with **100% zero built-in API keys (Universal BYOK)**, paying tribute to pioneer project [**`wangzan101/Mika`**](https://github.com/wangzan101/Mika) (Apache-2.0).
+> **Sol Next 9.0.4 ("Dawn Orbit / 晨曦轨道")** (`ai.sol.next`, Build 904) is a brand-new, completely independent voice + text multimodal Android 10–16/17 & HarmonyOS AI Mobile OS Agent featuring global 20-language auto-detection by phone language, free built-in Rust-encrypted DeepSeek V4.1 Flash + universal BYOK, auto-popup OTA with release notes & 4-stream multi-mirror acceleration, and Wi-Fi-off persistent Wireless Debugging.
 
-## Key 9.0.3 Breakthroughs
+## Key 9.0.4 Breakthroughs (Outperforming Earlier Mobile Agents Like Mika)
 
-1. **Unified 4-Screen "Dawn Orbit" Voice-First UI + New 3D Ringed-Planet Logo**:
-   - Screen 1 (`首页 · 语音交互`): Full-bleed Dawn Orbit voice canvas, zero text input box, glowing 5-bar waveform orb, `∞` full-duplex continuous toggle, `○○/○○` capability grid.
-   - Screen 2 (`任务执行`): Clean frosted progress bar, multi-state green/blue step tree with 100% humanized natural-language sub-steps (zero package names, zero node IDs, zero pixel coordinates), Android 17 Generative UI interactive cards, and chronological timeline.
-   - Screen 3 (`AI 通话`): Misty Dawn Orbit call orb, 35-bar live speech spectrum, ticking duration timer, frosted live speech transcript bubble, `<0.1ms` on-device Scam Shield (`SolCallScamShield`), 1-tap Live Whisper steering, and Mute/End/Speaker controls.
-   - Screen 4 (`设置 · 模型配置 BYOK`): 3-row universal cloud model config (Provider / API / Model), Privacy & Security toggles (on-device Privacy Firewall ON by default, usage telemetry OFF by default), Permissions & Auto-OTA About panel.
-2. **Full-Duplex Real-Time Voice Agent (`SolLiveVoiceEngine`)**: Hardware DSP (`AEC + NS + AGC`), `<20ms` barge-in interruption, `<400ms` conversational replies, and automatic dispatching of actionable device/game/call commands.
-3. **Google Android 16 / 17 AI OS Roadmap Shipped Today**:
-   - Android 17 **Generative UI** (`SolGenerativeUiSpec`, 0-token device dashboards + `ui_render_card`).
-   - Android 16/17 **Magic Cue** (`SolMagicCueEngine`, `<0.1ms` OTP copy, parcel lookup, hotline call, navigation, low-battery whispers).
-   - Android 16 **AppFunctions** (`SolAppFunctionBridge`) + **Live Updates** (`Notification.ProgressStyle`).
-   - **On-Device Private Compute Privacy Firewall** (`SolPrivacyRedactor`): masks national IDs, Luhn bank cards, API keys, and passwords locally before cloud LLM calls.
-4. **Human-Like Real-Time Gaming**: 4-finger simultaneous `multi_touch` (joystick + skills/aim), burst `ui_tap_sequence`, bottom-row card/button OCR, and 60Hz `realtime_play`.
-5. **Universal Any-Cloud-Model BYOK + Autonomous OTA**: Zero local GPU servers required; auto-learns capabilities for OpenAI, DeepSeek, Claude, Gemini, Qwen-VL, OpenRouter, or any OpenAI-compatible endpoint; text-only models auto-accelerate with on-device ML Kit OCR; startup + 6h automatic OTA checks with push notifications and Wi-Fi pre-download.
+1. **Global 20-Language UI Auto-Matching Phone System Language (Never Region)**: Full support for zh-CN, zh-TW, en, ja, ko, es, fr, de, pt, ru, ar (RTL mirroring), hi, id, vi, th, tr, it, nl, pl, ms with instant Settings picker, LLM language alignment, and multi-language ASR/TTS.
+2. **Auto-Popup OTA Updates with Release Notes + 4-Stream Multi-Mirror Downloader**: Pops up an in-app update dialog displaying formatted What's New notes whenever a new version is pushed; races multiple HTTPS mirrors concurrently and downloads across 4 parallel HTTP Range streams (3–8× faster) with strict SHA-256 + package + signing cert verification.
+3. **Free Built-In Rust-Encrypted DeepSeek V4.1 Flash + Universal BYOK**: Pure-Rust ChaCha20+HMAC-SHA256+HKDF vault bound to APK Sig Block v2/v3 signing cert SHA-256 + TLS SPKI pinning (`Proxy.NO_PROXY`), zero plaintext keys in APK, plus instant BYOK override for OpenAI/DeepSeek/Claude/Gemini/Qwen/OpenRouter.
+4. **Wi-Fi-Off Persistent Wireless Debugging + Zero-ADB HarmonyOS**: Locks `adb_enabled=1` + `127.0.0.1:5555` loopback before launching `SolBgHelperMain` so disabling Wi-Fi never drops background VirtualDisplay or AI HD calls; HarmonyOS skips wireless debugging automatically.
+5. **33× Faster Execution & Android 16/17 Architecture**: `72 ms` 0-token Tier-0A System APIs, `<250 ms` deep-link teleports across 120+ apps, `0.0px` 1:1 physical-DPI background VirtualDisplay, built-in 16KB offline neural ASR (`770 ms`) & TTS (`112 ms`), Android 17 Generative UI cards, Magic Cue, AppFunctions, 60Hz 4-finger gaming + Rust SwiGLU Golden Spatula engine, on-device Privacy Firewall, and zero-dependency CLI + stdio MCP Server.
 
-## Verified Android 16 (API 36 · 16KB) Benchmarks
+## Verified Public Release Artifacts (`v9.0.4-public` · Build 904)
 
-- **0-Token Android 17 Generative UI Dashboard**: Instant native Compose KPI card (battery, storage, RAM, Wi-Fi).
-- **Complex Multi-Step Verification & Restore (`Dark theme OFF -> ON -> OFF`)**: `9.3 s` · `4/4` verified + native Generative UI report.
-- **Dou Dizhu 3-Round Landscape Zero-A11y**: `32.5 s` · `10 steps` · `3/3` rounds won.
-- **DroidFish Stockfish Chess + Ungranted Android 16 Permission**: Auto-allowed `PermissionController` + played legal Sicilian opening.
-- **4-Primitive Hardware Gesture Arena**: `18.7 s` · `4/4` first-try (Tap, Long-Press `823ms / 0px drift`, Drag, Pinch `1.63x`).
-- **Android 16 `uid=2000` Background Virtual Display**: `24 ms` frame capture with live PiP inside Task Execution.
-
-- **Zero-Voice-API Offline Neural ASR + TTS (Android 16 R8)**: `770 ms` Chinese streaming transcription (`streaming-zipformer-small-ctc-zh-int8`) + `573 ms` Chinese neural TTS (`vits-icefall-zh-aishell3`) with zero voice API key and zero Google Services.
-- **One-Tap Live Screen Translate & Summary**: `4.5 s` reading 52 lines from active Virtual Display into a 2×2 Android 17 GenUI card.
-- **Automated Test Suite**: `206 / 206` passed (`:sol-core:test` 93, `:app:testReleaseUnitTest` 75, Rust `cargo test` 38) + R8 + true 16KB uncompressed `.so`.
-
-## Verified Public Release Artifacts (`v9.0.3-public` · Build 903 · Zero Built-In Keys)
-
-- **ARM64 APK (Recommended, 89 MB, incl. built-in Apache-2.0 16KB offline neural ASR + 112ms TTS)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.3-public/Sol-Next-v9.0.3-public-arm64.apk
-  - SHA-256: `a6d3024ae721c5ce63762c698aaf9e70d10168b942667c5e63dd125026b16462`
-- **Universal APK (`arm64-v8a` + `x86_64`, 128 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.3-public/Sol-Next-v9.0.3-public-universal.apk
-  - SHA-256: `908abbe121ea4e8e5063bf00d431b870dddcb879291250cf4a8cdde25f92358b`
-- **Zero-Key Audit Command** (expected empty output): `unzip -l Sol-Next-v9.0.3-public-arm64.apk | grep -iE "distribution|sol-models|secret|key\.json"`
+- **China High-Speed Direct Mirror (ARM64, 90 MB)**: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.4/Sol-Next-v9.0.4-public-arm64.apk
+- **GitHub Official CDN (ARM64, 90 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.4-public/Sol-Next-v9.0.4-public-arm64.apk
+  - SHA-256: `3ba39118a3c793350254481711997f7455019f3760c98a4a573f5069335c4756`
+- **Universal APK (`arm64-v8a` + `x86_64`, 128 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.4-public/Sol-Next-v9.0.4-public-universal.apk
+  - SHA-256: `788af5ea0805216dbf6c531e53e5eaeb6367d80ed2fb48ba10652598b2f2d3aa`

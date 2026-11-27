@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Sol Next 9.0.3 — 晨曦轨道 · Voice-First Android 10–16/17 AI Mobile Agent</title>
-  <subtitle>Open-source Android 10–16/17 &amp; HarmonyOS AI Mobile Agent by 许昌北海医院张重阳 (built upon wangzan101/Mika): free built-in Rust JNI encrypted DeepSeek V4.1 Flash + universal BYOK, Wi-Fi-off persistent Wireless Debugging Shell Helper, Dawn Orbit 4-screen voice+text UI, offline 16KB neural ASR/TTS, 1:1 VirtualDisplay, AI phone calls, and stdio MCP Server.</subtitle>
+  <title>Sol Next 9.0.4 — 晨曦轨道 · Independent Global 20-Language Android &amp; HarmonyOS AI OS Agent</title>
+  <subtitle>Brand-new independent open-source Android 10–16/17 &amp; HarmonyOS AI Mobile OS Agent by 许昌北海医院张重阳: 20 world languages auto-matching phone language, auto-popup OTA with release notes &amp; 4-stream multi-mirror accelerator, free built-in Rust JNI encrypted DeepSeek V4.1 Flash + universal BYOK, Wi-Fi-off persistent Wireless Debugging, and China direct high-speed mirrors.</subtitle>
   <link href="https://chongyangzhang92-hub.github.io/Sol-Next/" rel="alternate" type="text/html" />
   <link href="https://chongyangzhang92-hub.github.io/Sol-Next/feed.xml" rel="self" type="application/atom+xml" />
   <id>https://chongyangzhang92-hub.github.io/Sol-Next/</id>
-  <updated>2026-11-27T13:30:00+08:00</updated>
+  <updated>2026-11-27T14:20:00+08:00</updated>
   <author>
     <name>许昌北海医院张重阳 (chongyangzhang92-hub)</name>
     <uri>https://github.com/chongyangzhang92-hub</uri>
   </author>
+  <entry>
+    <title>Sol Next v9.0.4 Public (Build 904) — 全球 20 国语言自动切换 + OTA 弹窗版本说明与 4 线程极速加速 + 微信扫码联系作者 + 国内高速镜像</title>
+    <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.4-public" rel="alternate" type="text/html" />
+    <id>tag:github.com,2026-11-27:chongyangzhang92-hub/Sol-Next/v9.0.4-public</id>
+    <published>2026-11-27T14:20:00+08:00</published>
+    <updated>2026-11-27T14:20:00+08:00</updated>
+    <summary type="text">Sol Next v9.0.4 Public (Build 904, package ai.sol.next) delivers global 20-language UI strictly following phone system language (including Arabic RTL), auto-popup OTA version update dialog with formatted release notes, 4-stream parallel HTTP Range + multi-mirror racing download accelerator (with strict SHA-256 and cert verification), built-in author WeChat QR contact card, China direct high-speed download mirrors, and 20-language GitHub homepage &amp; website.</summary>
+  </entry>
   <entry>
     <title>Sol Next v9.0.3 Public (Build 903) — 免费内置原生加密 DeepSeek V4.1 Flash + 关 Wi-Fi 无线调试不断连</title>
     <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.3-public" rel="alternate" type="text/html" />
     <id>tag:github.com,2026-11-27:chongyangzhang92-hub/Sol-Next/v9.0.3-public</id>
     <published>2026-11-27T13:10:00+08:00</published>
     <updated>2026-11-27T13:30:00+08:00</updated>
-    <summary type="text">Sol Next v9.0.3 Public (Build 903, package ai.sol.next) introduces free built-in DeepSeek V4.1 Flash protected by a pure-Rust JNI ChaCha20+HMAC-SHA256+HKDF encrypted vault bound to APK Sig Block v2/v3 signing cert SHA-256 and procfs identity (zero plaintext keys in APK, OkHttp TLS SPKI certificate pinning + Proxy.NO_PROXY, anti-debug/anti-Frida guards, optional universal BYOK), plus permanent Wi-Fi-off Wireless Debugging Shell Helper persistence (auto-arming adb_enabled=1 + 127.0.0.1:5555 loopback before helper launch).</summary>
-  </entry>
-  <entry>
-    <title>Sol Next v9.0.2 Public (Build 902) — 多页查询对话式总结报告 + 首页作者联系方式 + OTA 版本修复</title>
-    <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.2-public" rel="alternate" type="text/html" />
-    <id>tag:github.com,2026-11-27:chongyangzhang92-hub/Sol-Next/v9.0.2-public</id>
-    <published>2026-11-27T12:08:00+08:00</published>
-    <updated>2026-11-27T12:08:00+08:00</updated>
-    <summary type="text">Added conversational multi-page order/bill query summarization reports with 28-screen findings ledger and 1-tap resume, fixed About OTA version status display, and placed author contact info directly on the Dawn Orbit Home screen.</summary>
-  </entry>
-  <entry>
-    <title>Sol Next 9.0.3 vs Mika (wangzan101/Mika) — Full 14-Dimension Technical Comparison &amp; Selection Guide</title>
-    <link href="https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html" rel="alternate" type="text/html" />
-    <id>tag:github.com,2026-11-27:chongyangzhang92-hub/Sol-Next/mika-vs-sol-next</id>
-    <published>2026-11-26T17:30:00+08:00</published>
-    <updated>2026-11-27T13:30:00+08:00</updated>
-    <summary type="text">Objective engineering comparison between pioneer wangzan101/Mika and Sol Next 9.0.3 across 6 2K comparison charts and 14 measured dimensions, explaining when to choose Sol Next 9.0.3, when to choose original Mika, and how both coexist side-by-side on the same Android phone.</summary>
+    <summary type="text">Introduced free built-in DeepSeek V4.1 Flash sealed in pure-Rust JNI ChaCha20+HMAC-SHA256+HKDF vault with APK cert binding and TLS SPKI pinning, plus permanent Wi-Fi-off Wireless Debugging Shell Helper persistence.</summary>
   </entry>
 </feed>

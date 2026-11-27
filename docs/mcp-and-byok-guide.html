@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sol Next 9.0.3 MCP Server、CLI 与 30 秒零密钥 BYOK 开发者指南</title>
-  <meta name="description" content="如何在 30 秒内为 Sol Next 9.0.3 公开版配置 DeepSeek / OpenAI / OpenRouter / 通义千问 / Ollama 自有 Key (BYOK)，并通过零依赖 Python CLI (--json) 与原生 stdio MCP Server 让 Claude Code、Cursor、Antigravity 直接安全操控真实 Android 手机。" />
+  <title>Sol Next 9.0.4 MCP Server、CLI 与 30 秒零密钥 BYOK 开发者指南</title>
+  <meta name="description" content="如何在 30 秒内为 Sol Next 9.0.4 公开版配置 DeepSeek / OpenAI / OpenRouter / 通义千问 / Ollama 自有 Key (BYOK)，并通过零依赖 Python CLI (--json) 与原生 stdio MCP Server 让 Claude Code、Cursor、Antigravity 直接安全操控真实 Android 手机。" />
   <meta name="keywords" content="Android MCP Server, Claude Code Android Control, Cursor MCP Android, Sol Next CLI, BYOK Android AI Agent, DeepSeek Android Agent, OpenAI Android Automation, Zero API Key APK Audit" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#05070c" />
@@ -12,8 +12,8 @@
   <link rel="alternate" type="text/plain" title="LLMs.txt" href="https://chongyangzhang92-hub.github.io/Sol-Next/llms.txt" />
   <link rel="alternate" type="application/json" title="AI Facts JSON" href="https://chongyangzhang92-hub.github.io/Sol-Next/ai-facts.json" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Control Android via MCP Server & Zero-Key BYOK — Sol Next 9.0.3 Developer Guide" />
-  <meta property="og:description" content="Connect Claude Code, Cursor, or any MCP client to your real Android 10-16 smartphone with Sol Next 9.0.3's zero-dependency CLI and stdio MCP Server." />
+  <meta property="og:title" content="Control Android via MCP Server & Zero-Key BYOK — Sol Next 9.0.4 Developer Guide" />
+  <meta property="og:description" content="Connect Claude Code, Cursor, or any MCP client to your real Android 10-16 smartphone with Sol Next 9.0.4's zero-dependency CLI and stdio MCP Server." />
   <meta property="og:url" content="https://chongyangzhang92-hub.github.io/Sol-Next/mcp-and-byok-guide.html" />
   <meta property="og:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/v801/screen-public-byok.png" />
   <script type="application/ld+json">
@@ -22,14 +22,14 @@
     "@graph": [
       {
         "@type": "HowTo",
-        "name": "Set Up Sol Next 9.0.3 Zero-Key BYOK & Connect MCP Server to Control Android",
-        "description": "Install verified Sol Next 9.0.3 Public Edition APK (ai.sol.next), configure your own API key (DeepSeek, OpenAI, OpenRouter, Qwen, or Ollama), and attach the native stdio MCP Server to Claude Code or Cursor.",
+        "name": "Set Up Sol Next 9.0.4 Zero-Key BYOK & Connect MCP Server to Control Android",
+        "description": "Install verified Sol Next 9.0.4 Public Edition APK (ai.sol.next), configure your own API key (DeepSeek, OpenAI, OpenRouter, Qwen, or Ollama), and attach the native stdio MCP Server to Claude Code or Cursor.",
         "totalTime": "PT2M",
         "step": [
           {
             "@type": "HowToStep",
             "name": "Download & Verify Zero-Key Public APK",
-            "text": "Download Sol-Next-v9.0.3-public-arm64.apk (SHA-256: b6fc90c79fc4d927549c17414244ab6e276b1002da7fbf3b98451ce7c779c3cb) and optionally verify zero embedded secrets with unzip -l Sol-Next-v9.0.3-public-arm64.apk | grep sol-models."
+            "text": "Download Sol-Next-v9.0.4-public-arm64.apk (SHA-256: b6fc90c79fc4d927549c17414244ab6e276b1002da7fbf3b98451ce7c779c3cb) and optionally verify zero embedded secrets with unzip -l Sol-Next-v9.0.4-public-arm64.apk | grep sol-models."
           },
           {
             "@type": "HowToStep",
@@ -73,7 +73,7 @@
 <body>
   <div class="wrap">
     <nav>
-      <a class="brand" href="./">✦ Sol Next 9.0.3</a>
+      <a class="brand" href="./">✦ Sol Next 9.0.4</a>
       <div class="nav-links">
         <a href="./">产品官网</a>
         <a href="./mika-vs-sol-next.html">Sol Next vs Mika</a>
@@ -83,14 +83,14 @@
     </nav>
 
     <span class="kicker">DEVELOPER &amp; AGENT-READY GUIDE · MCP SERVER · CLI · ZERO-KEY BYOK</span>
-    <h1>Sol Next 9.0.3：30 秒零密钥 BYOK 配置与桌面 MCP Server 接入指南</h1>
+    <h1>Sol Next 9.0.4：30 秒零密钥 BYOK 配置与桌面 MCP Server 接入指南</h1>
     <p class="lead">
-      <strong>Sol Next 9.0.3 公开版（<code>ai.sol.next</code> · Build 903）</strong>坚持 100% 零内置 API Key，同时原生附带零依赖 Python 3.9+ CLI（<code>--json</code>）与标准 <strong>stdio MCP Server</strong>，让 Claude Code、Cursor、Antigravity 等桌面 AI 助手直接、安全地驱动你的 Android 10–16 手机（支持 1:1 后台虚拟屏）。
+      <strong>Sol Next 9.0.4 公开版（<code>ai.sol.next</code> · Build 904）</strong>坚持 100% 零内置 API Key，同时原生附带零依赖 Python 3.9+ CLI（<code>--json</code>）与标准 <strong>stdio MCP Server</strong>，让 Claude Code、Cursor、Antigravity 等桌面 AI 助手直接、安全地驱动你的 Android 10–16 手机（支持 1:1 后台虚拟屏）。
     </p>
 
     <h2>一、30 秒 BYOK 配置与密码学零密钥自审计</h2>
     <div class="card">
-      <p><strong>公开版验证信息（<code>v9.0.3-public</code> · Build 903）</strong>：</p>
+      <p><strong>公开版验证信息（<code>v9.0.4-public</code> · Build 904）</strong>：</p>
       <pre># ARM64 推荐版 (33.6 MB) SHA-256:
 b6fc90c79fc4d927549c17414244ab6e276b1002da7fbf3b98451ce7c779c3cb
 
@@ -98,18 +98,18 @@ b6fc90c79fc4d927549c17414244ab6e276b1002da7fbf3b98451ce7c779c3cb
 7969661db1f9682012a144b79cd744c702238a4aa0b21aaf3e10f7ee679bf046
 
 # 一行命令验证公开版 APK 内含 0 个内置模型密钥文件（预期输出为空）：
-unzip -l Sol-Next-v9.0.3-public-arm64.apk | grep sol-models</pre>
+unzip -l Sol-Next-v9.0.4-public-arm64.apk | grep sol-models</pre>
       <p style="color:#94a3b8;margin-top:8px">支持任意 OpenAI Chat Completions 兼容接口：<strong>DeepSeek、OpenAI、OpenRouter、通义千问 (Qwen)、硅基流动 (SiliconFlow) 以及本地部署的 Ollama / vLLM</strong>；AI 实时语音电话支持豆包 Seeduplex 3.0 与 OpenAI Realtime BYOK。</p>
     </div>
 
     <div class="grid-2">
       <div class="shot">
-        <img src="media/v801/screen-public-welcome.png" alt="Sol Next 9.0.3 公开版欢迎引导页" />
+        <img src="media/v801/screen-public-welcome.png" alt="Sol Next 9.0.4 公开版欢迎引导页" />
         <p><strong>Step 1 · 零内置 Key 公开版首次引导</strong>（独立包名 <code>ai.sol.next</code>，可与原版 Mika 同机共存）</p>
       </div>
       <div class="shot">
-        <img src="media/v801/screen-public-byok.png" alt="Sol Next 9.0.3 设备页展开 BYOK 自定义模型接口" />
-        <p><strong>Step 2 · 30 秒填入自有 Key 并一键测试连通</strong>（<code>Build 903</code> · <code>v500</code> 内核 · <code>120+</code> 直达应用）</p>
+        <img src="media/v801/screen-public-byok.png" alt="Sol Next 9.0.4 设备页展开 BYOK 自定义模型接口" />
+        <p><strong>Step 2 · 30 秒填入自有 Key 并一键测试连通</strong>（<code>Build 904</code> · <code>v500</code> 内核 · <code>120+</code> 直达应用）</p>
       </div>
     </div>
 
@@ -145,7 +145,7 @@ python3 scripts/sol-cli.py run --intent "打开系统设置并查看电池与存
     </div>
 
     <footer>
-      <span>Sol Next 9.0.3 (Build 903) · Apache-2.0 · Built upon <a href="https://github.com/wangzan101/Mika">wangzan101/Mika</a></span>
+      <span>Sol Next 9.0.4 (Build 904) · Apache-2.0 · Independent Product by Zhang Chongyang (许昌北海医院张重阳)</span>
       <span><a href="./">产品官网</a> · <a href="./mika-vs-sol-next.html">Mika 对比页</a> · <a href="./android-ai-agent-benchmarks.html">实测基准</a></span>
     </footer>
   </div>

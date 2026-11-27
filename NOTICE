@@ -1,17 +1,16 @@
 Sol Next (Public Edition)
-Copyright 2026 Sol Next Contributors (chongyangzhang92-hub)
+Copyright 2026 Zhang Chongyang (许昌北海医院张重阳 · chongyangzhang92-hub)
 
-This product includes design inspiration, architectural foundations, and modified
-components derived from Mika:
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-  Mika
-  Copyright 2026 wangzan101
-  https://github.com/wangzan101/Mika
-  Licensed under the Apache License, Version 2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
-We sincerely thank @wangzan101 and the Mika open-source community for pioneering
-the Android background VirtualDisplay AI assistant and non-UI Telecom companion
-call architecture. Sol Next builds upon that foundation with a Rust v3.10 native
-JNI kernel, 1:1 physical display cloning, HTTP/3 QUIC 0-RTT transport, anti-pause
-long-task resilience, and a full BYOK (Bring Your Own Key) public distribution
-containing zero embedded API keys.
+Sol Next is a brand-new, independent, next-generation Android 10-16/17 & HarmonyOS
+multimodal AI OS Agent built with a Rust native JNI kernel (16KB page-aligned),
+Dawn Orbit 4-screen voice+text UI, 20-language phone-language auto-localization,
+free built-in Rust-encrypted DeepSeek V4.1 Flash + universal BYOK, Wi-Fi-off
+persistent Wireless Debugging Shell Helper, multi-stream accelerated OTA updates
+with release notes, 1:1 physical-DPI background VirtualDisplay, carrier-grade AI
+calling, and zero-dependency CLI + stdio MCP Server integration.

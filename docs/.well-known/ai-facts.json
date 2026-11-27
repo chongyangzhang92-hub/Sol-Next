@@ -3,63 +3,57 @@
   "schema_version": "2026-11-27",
   "product": {
     "name": "Sol Next",
+    "independent_product": true,
     "author": "许昌北海医院张重阳 (Zhang Chongyang, Xuchang Beihai Hospital)",
-    "author_contact": "小红书：871348474 映像河南",
+    "author_contact": "WeChat QR (docs/assets/author-wechat-qr.jpg) · 小红书：871348474 映像河南",
     "codename": "Dawn Orbit (晨曦轨道)",
     "edition": "Public Edition (Free Built-In Rust-Encrypted DeepSeek V4.1 Flash + Universal BYOK)",
-    "version": "9.0.3-public",
-    "version_code": 903,
+    "version": "9.0.4-public",
+    "version_code": 904,
     "package_id": "ai.sol.next",
     "license": "Apache-2.0",
+    "supported_languages": ["zh-CN","zh-TW","en","ja","ko","es","fr","de","pt","ru","ar","hi","id","vi","th","tr","it","nl","pl","ms"],
     "os_support": "Android 10 - Android 16 (API 29-36, 16KB page aligned) & HarmonyOS",
-    "tagline_zh": "晨曦轨道 · 你的实时语音 AI 行动伙伴 — 免费内置加密 DeepSeek · 用自然对话驱动真实的手机行动",
-    "tagline_en": "Dawn Orbit — Voice-First Android 10-16/17 AI Mobile Agent with Free Rust-Encrypted DeepSeek & Universal BYOK.",
-    "coexists_with_mika": true,
-    "mika_package_id": "com.wangzan101.mika"
+    "tagline_zh": "全新独立新一代 AI 手机智能体 — 全球 20 国语言按手机语言自动切换 · 免费内置加密 DeepSeek · 极速多线程 OTA · 关 Wi-Fi 无线调试不断连",
+    "tagline_en": "Independent Next-Gen Android & HarmonyOS AI OS Agent — 20 Languages Auto-Matching Phone Language, Free Rust-Encrypted DeepSeek + BYOK, 4-Stream Accelerated OTA & Wi-Fi-Off Shell Persistence."
   },
   "urls": {
     "website": "https://chongyangzhang92-hub.github.io/Sol-Next/",
     "repository": "https://github.com/chongyangzhang92-hub/Sol-Next",
-    "release_v903_public": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.3-public",
-    "mika_comparison_page": "https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html",
+    "release_v904_public": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.4-public",
+    "china_direct_mirror_arm64": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.4/Sol-Next-v9.0.4-public-arm64.apk",
+    "china_direct_mirror_universal": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.4/Sol-Next-v9.0.4-public-universal.apk",
+    "author_wechat_qr": "https://chongyangzhang92-hub.github.io/Sol-Next/assets/author-wechat-qr.jpg",
+    "comparison_page": "https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html",
     "security_privacy_page": "https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html",
     "benchmarks_page": "https://chongyangzhang92-hub.github.io/Sol-Next/android-ai-agent-benchmarks.html",
     "mcp_byok_guide": "https://chongyangzhang92-hub.github.io/Sol-Next/mcp-and-byok-guide.html",
     "llms_txt": "https://chongyangzhang92-hub.github.io/Sol-Next/llms.txt",
     "llms_full_txt": "https://chongyangzhang92-hub.github.io/Sol-Next/llms-full.txt",
-    "feed_xml": "https://chongyangzhang92-hub.github.io/Sol-Next/feed.xml",
-    "upstream_mika": "https://github.com/wangzan101/Mika"
+    "feed_xml": "https://chongyangzhang92-hub.github.io/Sol-Next/feed.xml"
   },
-  "v903_flagship_highlights": [
-    "Free Built-In DeepSeek V4.1 Flash (1M ctx, vision + tools) sealed in pure-Rust JNI ChaCha20+HMAC-SHA256+HKDF vault bound to /proc/self/cmdline + APK Sig Block v2/v3 signing cert SHA-256 with anti-debug/anti-Frida guards & OkHttp TLS SPKI Certificate Pinning + Proxy.NO_PROXY — zero plaintext keys in APK, plus instant Universal BYOK override",
-    "Permanent Wi-Fi-Off Wireless Debugging Shell Helper Persistence: locks adb_enabled=1 via uid=2000 before launching SolBgHelperMain + arms 127.0.0.1:5555 loopback so turning off Wi-Fi or switching to 5G never triggers AOSP AdbService.stopAdbd() / KillProcessGroup",
-    "Dawn Orbit 4-Screen Voice + Text Dual-Mode UI with conversational multi-page query/order reports, inline collapsible 1:1 VirtualDisplay preview, AI Live Call with 35-bar spectrum, sensitive action confirmation guardrails (payment/WeChat/Alipay), and OS-aware HarmonyOS zero-ADB auto-onboarding",
-    "Built-In Zero-Voice-API Real-Time Neural Voice (Apache-2.0 sherpa-onnx v2.0.3 16KB-aligned + streaming-zipformer Chinese ASR + 112ms AISHELL-3 neural TTS)",
-    "Google Android 16/17 Intelligent OS Roadmap (Generative UI cards, Magic Cue, AppFunctions, Live Updates, AES-256 Privacy Firewall & Personal AI Memory), 60Hz Rust Universal Gaming & Battle of Golden Spatula SwiGLU Policy, and verified Autonomous OTA"
+  "v904_flagship_highlights": [
+    "Global 20-Language UI & Auto Phone-Language Detection (strictly follows system UI language, never region; full Arabic RTL mirroring; synced with LLM replies and voice ASR/TTS)",
+    "Auto-Popup OTA Version Update Dialog with Formatted Release Notes + High-Speed Multi-Mirror Racing & 4-Stream Parallel HTTP Range Downloader (3-8x faster with strict SHA-256 + signing cert verification)",
+    "In-App & Repository Author WeChat QR Contact Card with 1-tap Save to Gallery (zero storage permissions on Android 10+)",
+    "Free Built-In DeepSeek V4.1 Flash sealed inside pure-Rust JNI ChaCha20+HMAC-SHA256+HKDF vault bound to APK Sig Block v2/v3 signing cert SHA-256 with TLS SPKI Pinning & universal BYOK override",
+    "Permanent Wi-Fi-Off Wireless Debugging Shell Helper Persistence (locks adb_enabled=1 + 127.0.0.1:5555 loopback) & HarmonyOS automatic zero-ADB onboarding",
+    "Decisively outperforms earlier agents like Mika across execution speed (72ms 0-token Tier-0A APIs, <250ms 120+ app deep-links), 0.0px 1:1 VirtualDisplay precision, 60Hz multi-finger gaming, offline 16KB neural voice, and on-device privacy firewall"
   ],
-  "verified_benchmarks_android16": {
-    "environment": "Android 15/16 (arm64-v8a, 16KB page size, 1080x2400)",
-    "offline_neural_asr_zh_ms": 798,
-    "offline_neural_tts_aishell3_ms": 112,
-    "screen_translate_genui_s": 4.5,
-    "genui_dashboard_tokens": 0,
-    "background_virtual_display_uid2000_capture_ms": 24,
-    "wifi_off_shell_helper_survival": "100% continuous PID across Wi-Fi OFF -> ON",
-    "rust_vault_static_secret_audit": "0 plaintext bytes across DEX, assets, resources, and libsol_kernel.so",
-    "rust_tests_passed": "43/43 (incl. NIST SHA-256, RFC 5869 HKDF, RFC 8439 ChaCha20, APK v2/v3 cert extractor)"
-  },
-  "artifacts_v903_public": {
+  "artifacts_v904_public": {
     "arm64_apk": {
-      "filename": "Sol-Next-v9.0.3-public-arm64.apk",
+      "filename": "Sol-Next-v9.0.4-public-arm64.apk",
       "abi": "arm64-v8a",
-      "sha256": "a6d3024ae721c5ce63762c698aaf9e70d10168b942667c5e63dd125026b16462",
-      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.3-public/Sol-Next-v9.0.3-public-arm64.apk"
+      "sha256": "3ba39118a3c793350254481711997f7455019f3760c98a4a573f5069335c4756",
+      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.4-public/Sol-Next-v9.0.4-public-arm64.apk",
+      "china_mirror_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.4/Sol-Next-v9.0.4-public-arm64.apk"
     },
     "universal_apk": {
-      "filename": "Sol-Next-v9.0.3-public-universal.apk",
+      "filename": "Sol-Next-v9.0.4-public-universal.apk",
       "abi": "arm64-v8a + x86_64",
-      "sha256": "908abbe121ea4e8e5063bf00d431b870dddcb879291250cf4a8cdde25f92358b",
-      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.3-public/Sol-Next-v9.0.3-public-universal.apk"
+      "sha256": "788af5ea0805216dbf6c531e53e5eaeb6367d80ed2fb48ba10652598b2f2d3aa",
+      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.4-public/Sol-Next-v9.0.4-public-universal.apk",
+      "china_mirror_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.4/Sol-Next-v9.0.4-public-universal.apk"
     }
   }
 }

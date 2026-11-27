@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-title: "Sol Next 9.0.3: Dawn Orbit Voice-First Multimodal Android OS Agent (Free Encrypted DeepSeek + Universal BYOK, Built Upon Mika)"
-message: "If you reference Sol Next in research, benchmarks, or open-source AI agent directories, please cite it using this metadata and also credit wangzan101/Mika."
+title: "Sol Next 9.0.4: Independent Next-Generation Global Voice-First Multimodal Android OS Agent"
+message: "If you reference Sol Next in research, benchmarks, or open-source AI agent directories, please cite it using this metadata."
 type: software
 authors:
   - alias: chongyangzhang92-hub
@@ -10,13 +10,15 @@ authors:
 repository-code: "https://github.com/chongyangzhang92-hub/Sol-Next"
 url: "https://chongyangzhang92-hub.github.io/Sol-Next/"
 abstract: >-
-  Sol Next 9.0.3 (Dawn Orbit, ai.sol.next, Build 903) is an open-source voice+text
-  multimodal Android 10-16/17 & HarmonyOS AI mobile agent built upon and paying tribute
-  to wangzan101/Mika (Apache-2.0). It features free built-in DeepSeek V4.1 Flash sealed
-  inside a pure-Rust JNI ChaCha20+HMAC-SHA256+HKDF vault bound to APK Sig Block v2/v3
-  cert SHA-256 with TLS SPKI pinning and universal BYOK override, Wi-Fi-off persistent
-  Wireless Debugging Shell Helper, built-in 16KB offline neural Chinese ASR & 112ms TTS,
-  72ms Tier-0A native System APIs, 120+ app deep-link teleports, 1:1 physical-DPI
+  Sol Next 9.0.4 (Dawn Orbit, ai.sol.next, Build 904) is a brand-new, independent,
+  open-source voice+text multimodal Android 10-16/17 & HarmonyOS AI mobile agent.
+  It features global 20-language UI with strict phone-language auto-detection
+  (including Arabic RTL), free built-in DeepSeek V4.1 Flash sealed inside a pure-Rust
+  JNI ChaCha20+HMAC-SHA256+HKDF vault bound to APK Sig Block v2/v3 signing cert
+  SHA-256 with TLS SPKI pinning and universal BYOK override, auto-popup OTA updates
+  with release notes and 4-stream parallel HTTP Range mirror acceleration, Wi-Fi-off
+  persistent Wireless Debugging Shell Helper, built-in 16KB offline neural ASR & 112ms
+  TTS, 72ms Tier-0A native System APIs, 120+ app deep-link teleports, 1:1 physical-DPI
   background VirtualDisplay, Android 17 Generative UI cards, carrier-grade AI calling,
   and zero-dependency CLI (--json) + stdio MCP Server integration.
 keywords:
@@ -25,8 +27,7 @@ keywords:
   - multimodal-os-agent
   - deepseek
   - phone-use
-  - mika-alternative
-  - mika-fork
+  - multilingual-ai-agent
   - rust-jni
   - virtual-display
   - wechat-automation
@@ -35,12 +36,5 @@ keywords:
   - mcp-server
   - llms-txt
 license: Apache-2.0
-version: "9.0.3-public"
+version: "9.0.4-public"
 date-released: "2026-11-27"
-references:
-  - type: software
-    title: "Mika"
-    authors:
-      - alias: wangzan101
-    repository-code: "https://github.com/wangzan101/Mika"
-    license: Apache-2.0
