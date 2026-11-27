@@ -1,10 +1,10 @@
-# Sol Next 9.0.5 — What It Is, What It Does, How to Use, Live Demos & Why It Beats Mika
+# Sol Next 9.0.6 — What It Is, What It Does, How to Use, Live Demos & Why It Beats Mika
 
 > **Author: 许昌北海医院张重阳 (Zhang Chongyang)** · WeChat QR: `docs/assets/author-wechat-qr.jpg` · RedNote: `871348474` (映像河南)
 > **Official RedNote User Group「SolNext用户群」**: `0【一键复制，小红书等你】 12月25日前有效，"SolNext用户群"邀你一起聊 ZH9959 :/#c🍌🍅😉😙🦊🥕😇🐭😗🍇🐦😉`
 
 ## 1. What Is Sol Next?
-**Sol Next (`ai.sol.next`, v9.0.5, Apache-2.0)** is a brand-new, independent, free open-source **AI action agent installed directly on Android 10–16/17 and HarmonyOS phones**. Unlike text-only chatbots (ChatGPT, DeepSeek Web), Sol Next actually operates real apps on your phone inside a **hidden 1:1 background Virtual Display** while leaving your foreground screen completely free.
+**Sol Next (`ai.sol.next`, v9.0.6, Apache-2.0)** is a brand-new, independent, free open-source **AI action agent installed directly on Android 10–16/17 and HarmonyOS phones**. Unlike text-only chatbots (ChatGPT, DeepSeek Web), Sol Next actually operates real apps on your phone inside a **hidden 1:1 background Virtual Display** while leaving your foreground screen completely free.
 
 ## 2. What Can Sol Next Do?
 - **Cross-App Price Comparison & Daily Tasks**: Opens shopping/food/travel apps in the background, compares results, and pauses for user confirmation before any payment or WeChat send.
@@ -15,12 +15,12 @@
 - **Desktop AI Bridge (CLI + MCP Server)**: Zero-dependency Python CLI (`scripts/sol-cli.py`) and stdio MCP Server (`mcp/sol_mcp_server.py`) for Claude Code, Cursor, and Codex.
 
 ## 3. How to Use (3-Minute Quick Start)
-1. Download `Sol-Next-v9.0.5-public-arm64.apk` (90 MB) from the China high-speed direct mirror or GitHub Releases.
+1. Download `Sol-Next-v9.0.6-public-arm64.apk` (90 MB) from the China high-speed direct mirror or GitHub Releases.
 2. Open and talk immediately — ships with **free built-in Rust-encrypted DeepSeek V4.1 Flash** (no API key needed; optional BYOK anytime in Settings).
 3. Enable one-time background phone control: **HarmonyOS skips wireless debugging automatically** (3 taps); Android pairs once via Wireless Debugging (no PC, no Root) and stays **100% connected even after turning off Wi-Fi on 5G**.
 4. Tap the Dawn Orbit voice orb or type your command; expand the inline Virtual Display preview anytime.
 
-## 4. Where Mika Falls Short & Why Sol Next 9.0.5 Decisively Leads
+## 4. Where Mika Falls Short & Why Sol Next 9.0.6 Decisively Leads
 1. **Mika cannot work out of the box** (requires buying API keys first) → **Sol Next** includes free Rust-encrypted DeepSeek V4.1 Flash (+ TLS SPKI pinning) + universal BYOK.
 2. **Mika disconnects when Wi-Fi turns off** & needs tedious HarmonyOS ADB pairing → **Sol Next** locks `adb_enabled=1` + `127.0.0.1:5555` loopback for Wi-Fi-off 5G persistence & zero-ADB HarmonyOS.
 3. **Mika is slow (~2,400ms/step), token-heavy & drifts on scaled virtual screens** → **Sol Next** runs `72ms` 0-token reflexes (33× faster), `<250ms` deep-links, Rust 16KB JNI pruning (`-74% to -97%`), and `0.0px` 1:1 physical Display 0 cloning.
@@ -28,9 +28,9 @@
 5. **Mika uploads raw screen text, packs a heavy browser/Linux container attack surface & risks duplicate WeChat sends** → **Sol Next** provides an on-device Privacy Firewall, 9 WeChat reliability fixes (`0` duplicate sends), and mandatory confirmation before payments/messaging.
 6. **Mika is single-language, single-tap gaming & manual slow downloads** → **Sol Next** delivers 20 world languages (RTL), 60Hz 4-finger gaming, AI anti-scam calling, and auto-popup OTA with 4-stream multi-mirror acceleration (3–8× faster).
 
-## 5. Verified Downloads (`v9.0.5-public`)
-- **China High-Speed Direct Mirror (ARM64, 90 MB)**: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.5/Sol-Next-v9.0.5-public-arm64.apk
-- **GitHub Official Release (ARM64, 90 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.5-public/Sol-Next-v9.0.5-public-arm64.apk
-  - SHA-256: `c23f878d17294b47f1448a025b5190e2d1db032fb5fdb99ee386b0f994362963`
-- **Universal APK (`arm64-v8a` + `x86_64`, 128 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.5-public/Sol-Next-v9.0.5-public-universal.apk
-  - SHA-256: `a79baff6b0aa0cf84df57ec788752a45e19e30b8f6984deb3d6e036132faee50`
+## 5. Verified Downloads (`v9.0.6-public`)
+- **China High-Speed Direct Mirror (ARM64, 90 MB)**: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.6/Sol-Next-v9.0.6-public-arm64.apk
+- **GitHub Official Release (ARM64, 90 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.6-public/Sol-Next-v9.0.6-public-arm64.apk
+  - SHA-256: `d0528b91ad6b8ebd2322590c3ff88eba95685aaaec73628c2e46aabea137bf6b`
+- **Universal APK (`arm64-v8a` + `x86_64`, 128 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.6-public/Sol-Next-v9.0.6-public-universal.apk
+  - SHA-256: `e7736a5ddc9398b4b9f69b8e6044559b677be43fcd58652f7da88b009821a0f2`
