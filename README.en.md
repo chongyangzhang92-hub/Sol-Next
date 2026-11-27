@@ -10,7 +10,7 @@
 
 ### Speak or Type Naturally. Drive Real Mobile Actions. Global 20-Language Support Auto-Matching Your Phone's Language.
 
-> **👨‍💻 Author: Zhang Chongyang (许昌北海医院张重阳)** &nbsp;·&nbsp; **💬 [Scan WeChat QR to Contact Author](#-contact-author-wechat-qr--rednote)** &nbsp;·&nbsp; **📕 RedNote: `871348474` (映像河南)**
+> **👨‍💻 Author: Zhang Chongyang (许昌北海医院张重阳)** &nbsp;·&nbsp; **💬 [WeChat QR & RedNote User Group](#-contact-author-wechat-qr--rednote-user-group)** &nbsp;·&nbsp; **📕 RedNote: `871348474` (映像河南)**
 
 <sub>Brand-New Independent Android 10–16/17 &amp; HarmonyOS AI Agent (Build <code>904</code> · 16KB Page-Aligned · 20 World Languages Auto-Matching Phone System Language + Arabic RTL · Free Built-In Rust-Encrypted DeepSeek V4.1 Flash + Universal BYOK · Auto-Popup OTA with Release Notes &amp; 4-Stream Multi-Mirror Boost · Wi-Fi-Off Persistent Wireless Debugging)</sub>
 
@@ -54,10 +54,17 @@
 
 ---
 
-## 💬 Contact Author (WeChat QR & RedNote)
+## 💬 Contact Author (WeChat QR & RedNote User Group)
 
 <div align="center">
   <img src="docs/assets/author-wechat-qr.jpg" width="220" alt="Scan WeChat QR to Contact Author" /><br/><br/>
   <b>Scan with WeChat to connect directly with the author</b><br/>
   <b>Author: Zhang Chongyang (许昌北海医院张重阳)</b> · RedNote (Xiaohongshu): <code>871348474</code>
 </div>
+
+### 📕 Join the Official RedNote (Xiaohongshu) "SolNext用户群" User Group
+Copy the full invite code below and open RedNote (Xiaohongshu) to join (valid through Dec 25):
+
+```text
+0【一键复制，小红书等你】 12月25日前有效，"SolNext用户群"邀你一起聊 ZH9959 :/#c🍌🍅😉😙🦊🥕😇🐭😗🍇🐦😉
+```

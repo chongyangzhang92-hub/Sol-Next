@@ -10,7 +10,7 @@
 
 ### 用自然对话与文字，驱动真实的手机行动 · 全球 20 国语言按手机系统语言自动切换 · 开箱免费内置加密 DeepSeek
 
-> **👨‍💻 作者：许昌北海医院张重阳** &nbsp;·&nbsp; **💬 [微信扫码联系作者](#-联系作者微信扫码--小红书)** &nbsp;·&nbsp; **📕 小红书：`871348474`（映像河南）**
+> **👨‍💻 作者：许昌北海医院张重阳** &nbsp;·&nbsp; **💬 [微信扫码联系作者 / 进小红书「SolNext用户群」](#-联系作者微信扫码--小红书用户群)** &nbsp;·&nbsp; **📕 小红书：`871348474`（映像河南）**
 
 <sub>全新独立产品 <code>v9.0.4</code>（Build <code>904</code> · Android 10–16 / 16KB 页对齐 · 自动识别鸿蒙系统免无线调试 · 全球 20 国语言按手机语言自动切换（含阿拉伯语 RTL）· 免费内置 Rust 原生加密 DeepSeek V4.1 Flash + 任意模型 BYOK · OTA 新版自动弹窗说明 + 4 线程多镜像极速加速 · 关闭 Wi-Fi 无线调试持续在线）</sub>
 
@@ -160,7 +160,7 @@ unzip -l Sol-Next-v9.0.4-public-arm64.apk | grep -iE "distribution|sol-models|se
 
 ---
 
-## 💬 联系作者（微信扫码 / 小红书）
+## 💬 联系作者（微信扫码 / 小红书用户群）
 
 <div align="center">
   <img src="docs/assets/author-wechat-qr.jpg" width="220" alt="微信扫码联系作者 · 许昌北海医院张重阳" /><br/><br/>
@@ -168,3 +168,9 @@ unzip -l Sol-Next-v9.0.4-public-arm64.apk | grep -iE "distribution|sol-models|se
   <b>作者：许昌北海医院张重阳</b> &nbsp;·&nbsp; 📕 小红书：<code>871348474</code>（映像河南）<br/>
   <sub>Apache-2.0 Open Source · 全新独立新一代 Android &amp; 鸿蒙 AI 手机智能体</sub>
 </div>
+
+### 📕 一键加入小红书「SolNext用户群」（复制整段口令后打开小红书即可进群）
+
+```text
+0【一键复制，小红书等你】 12月25日前有效，"SolNext用户群"邀你一起聊 ZH9959 :/#c🍌🍅😉😙🦊🥕😇🐭😗🍇🐦😉
+```

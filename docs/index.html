@@ -123,6 +123,20 @@
     .contact-info h3 { font-size: 20px; margin-bottom: 8px; }
     .contact-info p { color: var(--ink2); font-size: 14.5px; margin-bottom: 10px; }
     .pill-tag { display: inline-block; padding: 5px 12px; border-radius: 999px; background: var(--blue-soft); color: var(--blue); font-size: 13px; font-weight: 600; }
+    .group-box {
+      margin-top: 14px; padding: 12px 14px; border-radius: 14px; background: #fff7ed;
+      border: 1px solid #fed7aa; font-size: 13px; color: #7c2d12;
+    }
+    .group-code {
+      margin: 6px 0 8px; padding: 8px 10px; border-radius: 10px; background: #fff;
+      border: 1px dashed #fb923c; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12.5px; word-break: break-all; color: var(--ink); user-select: all;
+    }
+    .copy-btn {
+      display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px;
+      border: none; background: #ea580c; color: #fff; font-size: 12.5px; font-weight: 600; cursor: pointer;
+    }
+    .copy-btn:hover { background: #c2410c; }
     footer { text-align: center; margin-top: 52px; color: var(--ink2); font-size: 13.5px; }
     footer a { color: var(--blue); text-decoration: none; }
   </style>
@@ -229,6 +243,11 @@
         <h3 data-i18n="contact_title">微信扫码联系作者</h3>
         <p data-i18n="contact_desc">使用微信扫描左侧二维码，即可直接添加作者好友，获取最新动态、反馈建议或进行技术交流。</p>
         <div class="pill-tag" data-i18n="contact_pill">作者：许昌北海医院张重阳 · 小红书：871348474（映像河南）</div>
+        <div class="group-box">
+          <strong data-i18n="group_title">📕 一键加入小红书「SolNext用户群」（复制口令后打开小红书）</strong>
+          <div id="xhs-group-code" class="group-code">0【一键复制，小红书等你】 12月25日前有效，"SolNext用户群"邀你一起聊 ZH9959 :/#c🍌🍅😉😙🦊🥕😇🐭😗🍇🐦😉</div>
+          <button type="button" id="copy-xhs-btn" class="copy-btn" data-i18n="group_copy">📋 一键复制小红书群口令</button>
+        </div>
       </div>
     </section>
 
@@ -350,6 +369,18 @@
     const initial = new URLSearchParams(location.search).get("lang") || detectBrowserLang();
     applyLang(initial);
     document.getElementById("lang-switcher").addEventListener("change", (e) => applyLang(e.target.value));
+    const copyBtn = document.getElementById("copy-xhs-btn");
+    if (copyBtn) {
+      copyBtn.addEventListener("click", () => {
+        const text = document.getElementById("xhs-group-code").textContent;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(() => {
+            copyBtn.textContent = "✅ 已复制！打开小红书即可进群";
+            setTimeout(() => { copyBtn.textContent = "📋 一键复制小红书群口令"; }, 2600);
+          });
+        }
+      });
+    }
   </script>
 </body>
 </html>
