@@ -1,12 +1,12 @@
 <div align="center">
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.1-public">
-  <img src="docs/media/v901/hero-banner-901.png" alt="Sol Next 9.0.1 — Dawn Orbit Voice-First AI Mobile Agent" width="100%" />
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.2-public">
+  <img src="docs/media/v901/hero-banner-901.png" alt="Sol Next 9.0.2 — Dawn Orbit Voice-First AI Mobile Agent" width="100%" />
 </a>
 
 <br/><br/>
 
-# Sol Next 9.0.1 — Dawn Orbit · Your AI Action Partner
+# Sol Next 9.0.2 — Dawn Orbit · Your AI Action Partner
 
 ### Speak or Type Naturally. Drive Real Mobile Actions. Built for the Android 16/17 Intelligent OS Era.
 
@@ -16,11 +16,11 @@
 
 <br/><br/>
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20Download%20v9.0.1%20Public%20APK-ARM64%20(Zero%20Key)-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="Download ARM64 APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.2-public/Sol-Next-v9.0.2-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20Download%20v9.0.2%20Public%20APK-ARM64%20(Zero%20Key)-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="Download ARM64 APK" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20Universal%20APK-ARM64%20%2B%20x86__64-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Download Universal APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.2-public/Sol-Next-v9.0.2-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20Universal%20APK-ARM64%20%2B%20x86__64-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Download Universal APK" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.1-public"><img src="https://img.shields.io/badge/📋%20Release%20Notes-v9.0.1--public-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Release Notes" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.2-public"><img src="https://img.shields.io/badge/📋%20Release%20Notes-v9.0.2--public-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Release Notes" /></a>
 
 <br/><br/>
 
@@ -30,9 +30,9 @@
 
 ---
 
-## ✨ What Makes Sol Next 9.0.1 a Generational Leap
+## ✨ What Makes Sol Next 9.0.2 a Generational Leap
 
-Sol Next 9.0.1 reinvents the mobile AI agent from the ground up with **zero learning curve**: no cramped text input box on the home screen, no cryptic developer logs, and zero self-hosted local server dependencies. Speak naturally, watch clean human-readable progress & native Android 17 Generative UI cards unfold, and let Sol Next execute across apps, games, and live phone calls.
+Sol Next 9.0.2 reinvents the mobile AI agent from the ground up with **zero learning curve**: no cramped text input box on the home screen, no cryptic developer logs, and zero self-hosted local server dependencies. Speak naturally, watch clean human-readable progress & native Android 17 Generative UI cards unfold, and let Sol Next execute across apps, games, and live phone calls.
 
 ### 1. The Unified 4-Screen "Dawn Orbit" Experience (Live Android 16 Captures)
 
@@ -97,9 +97,9 @@ Sol Next 9.0.1 reinvents the mobile AI agent from the ground up with **zero lear
 
 ---
 
-## 📦 SHA-256 Checksums (`v9.0.1-public`)
+## 📦 SHA-256 Checksums (`v9.0.2-public`)
 
 ```text
-33bea509d0ffb4da9c6cbfeb2aba2708ed91b3deecfb29fdebb5376618c4df5e  Sol-Next-v9.0.1-public-arm64.apk
-1e2c641f8ffe4f2708243f89d732cc6aa06079877eecde11991e178496b07880  Sol-Next-v9.0.1-public-universal.apk
+33bea509d0ffb4da9c6cbfeb2aba2708ed91b3deecfb29fdebb5376618c4df5e  Sol-Next-v9.0.2-public-arm64.apk
+1e2c641f8ffe4f2708243f89d732cc6aa06079877eecde11991e178496b07880  Sol-Next-v9.0.2-public-universal.apk
 ```

@@ -7,7 +7,7 @@
     "author_contact": "小红书：871348474 映像河南",
     "codename": "Dawn Orbit (晨曦轨道)",
     "edition": "Public Edition (Zero Built-In API Keys / Universal BYOK)",
-    "version": "9.0.1-public",
+    "version": "9.0.2-public",
     "version_code": 901,
     "package_id": "ai.sol.next",
     "license": "Apache-2.0",
@@ -20,7 +20,7 @@
   "urls": {
     "website": "https://chongyangzhang92-hub.github.io/Sol-Next/",
     "repository": "https://github.com/chongyangzhang92-hub/Sol-Next",
-    "release_v901_public": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.1-public",
+    "release_v901_public": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.2-public",
     "llms_txt": "https://chongyangzhang92-hub.github.io/Sol-Next/llms.txt",
     "upstream_mika": "https://github.com/wangzan101/Mika"
   },
@@ -47,16 +47,16 @@
   },
   "artifacts_v901_public": {
     "arm64_apk": {
-      "filename": "Sol-Next-v9.0.1-public-arm64.apk",
+      "filename": "Sol-Next-v9.0.2-public-arm64.apk",
       "abi": "arm64-v8a",
-      "sha256": "21eb129cb01658fe765489ae3d73af4c4b1a0e572dea934eab5e2040a86e78fc",
-      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-arm64.apk"
+      "sha256": "f17fb2091ead8e33adaa69d3b071f2d7a6d09b51c758f3996c389298b1851932",
+      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.2-public/Sol-Next-v9.0.2-public-arm64.apk"
     },
     "universal_apk": {
-      "filename": "Sol-Next-v9.0.1-public-universal.apk",
+      "filename": "Sol-Next-v9.0.2-public-universal.apk",
       "abi": "arm64-v8a + x86_64",
-      "sha256": "b792f5ddc63d07d4e92c8f2d6f095ed31f8efddc279a1d813b3c7d8e29a82a0a",
-      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.1-public/Sol-Next-v9.0.1-public-universal.apk"
+      "sha256": "c7fb75796ac169e9ac3a5dcca7667fd6afac6ef63879a01da806a974da3ef795",
+      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.2-public/Sol-Next-v9.0.2-public-universal.apk"
     }
   }
 }
