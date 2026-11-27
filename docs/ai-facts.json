@@ -49,13 +49,13 @@
     "arm64_apk": {
       "filename": "Sol-Next-v9.0.2-public-arm64.apk",
       "abi": "arm64-v8a",
-      "sha256": "f17fb2091ead8e33adaa69d3b071f2d7a6d09b51c758f3996c389298b1851932",
+      "sha256": "ee3a0fb931703d168fe93d4d8ea7dbc113b325d65d4bcdc67af8e925ce10d00f",
       "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.2-public/Sol-Next-v9.0.2-public-arm64.apk"
     },
     "universal_apk": {
       "filename": "Sol-Next-v9.0.2-public-universal.apk",
       "abi": "arm64-v8a + x86_64",
-      "sha256": "c7fb75796ac169e9ac3a5dcca7667fd6afac6ef63879a01da806a974da3ef795",
+      "sha256": "d0f7e126b23d25db5232191e15b1a01a7180c9eca1d4661f7ee424d9391c43cf",
       "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.2-public/Sol-Next-v9.0.2-public-universal.apk"
     }
   }

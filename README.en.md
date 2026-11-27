@@ -10,9 +10,9 @@
 
 ### Speak or Type Naturally. Drive Real Mobile Actions. Built for the Android 16/17 Intelligent OS Era.
 
-> **👨‍💻 Author: 许昌北海医院张重阳 (Zhang Chongyang, Xuchang Beihai Hospital)** &nbsp;·&nbsp; **📕 Xiaohongshu (RedNote): `871348474` (映像河南)**
+> **👨‍💻 Author: 许昌北海医院张重阳 (Zhang Chongyang, Xuchang Beihai Hospital)** &nbsp;·&nbsp; **📕 Contact Author: Follow Xiaohongshu (RedNote) `871348474` (映像河南)**
 
-<sub>Next-Generation Voice + Text Android 10–16 OS Agent (Build <code>901</code> · 16KB Page-Aligned · Auto-Detects HarmonyOS to Skip Wireless Debugging · Keep-Screen-On &amp; Touch Guard · Sensitive Payment/WeChat Confirmation Gate · 100% Zero Built-In Keys / Universal BYOK · Tribute to <code>wangzan101/Mika</code>)</sub>
+<sub>Next-Generation Voice + Text Android 10–16 OS Agent (Build <code>902</code> · 16KB Page-Aligned · Auto-Detects HarmonyOS to Skip Wireless Debugging · Keep-Screen-On &amp; Touch Guard · Sensitive Payment/WeChat Confirmation Gate · 100% Zero Built-In Keys / Universal BYOK · Tribute to <code>wangzan101/Mika</code>)</sub>
 
 <br/><br/>
 

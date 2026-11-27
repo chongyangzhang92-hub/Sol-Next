@@ -10,9 +10,9 @@
 
 ### 用自然对话与文字，驱动真实的手机行动 · 率先落地 Android 16/17 智能 OS 架构
 
-> **👨‍💻 作者：许昌北海医院张重阳** &nbsp;·&nbsp; **📕 联系作者：关注小红书 `871348474`（映像河南）**
+> **👨‍💻 作者：许昌北海医院张重阳** &nbsp;·&nbsp; **📕 关注小红书：`871348474` 映像河南 就可以联系作者**
 
-<sub>全新 <code>9.0.2</code> 跨代架构（Build <code>901</code> · Android 10–16 / 16KB 页对齐 · 自动识别鸿蒙系统免无线调试 · 100% 零内置密钥 / 任意云端模型 BYOK · 致敬先驱 <code>wangzan101/Mika</code>）</sub>
+<sub>全新 <code>9.0.2</code> 跨代架构（Build <code>902</code> · Android 10–16 / 16KB 页对齐 · 自动识别鸿蒙系统免无线调试 · 100% 零内置密钥 / 任意云端模型 BYOK · 致敬先驱 <code>wangzan101/Mika</code>）</sub>
 
 <br/><br/>
 
@@ -32,7 +32,7 @@
 
 ![Author](https://img.shields.io/badge/作者-许昌北海医院张重阳-D9A441?style=flat-square)
 ![Xiaohongshu](https://img.shields.io/badge/小红书-871348474%20映像河南-FF2442?style=flat-square)
-![Version 9.0.2](https://img.shields.io/badge/Release-v9.0.2--public%20(Build%20901)-3E78E0?style=flat-square)
+![Version 9.0.2](https://img.shields.io/badge/Release-v9.0.2--public%20(Build%20902)-3E78E0?style=flat-square)
 ![Voice And Text](https://img.shields.io/badge/交互范式-全双工实时语音%20%2B%20晨曦文字输入-0ea5e9?style=flat-square)
 ![Execution Guard](https://img.shields.io/badge/执行护栏-任务常亮屏%20·%20防误触%20·%20付款%2F微信先问后行-10b981?style=flat-square)
 ![Android 16/17](https://img.shields.io/badge/Android%2016%2F17-GenUI%20·%20Magic%20Cue%20·%20AppFunctions-10b981?style=flat-square)
@@ -233,8 +233,8 @@ Sol Next 衷心致敬开源先驱 [wangzan101/Mika](https://github.com/wangzan10
 3. **SHA-256 校验与零内置密钥审计**：
 
 ```text
-f17fb2091ead8e33adaa69d3b071f2d7a6d09b51c758f3996c389298b1851932  Sol-Next-v9.0.2-public-arm64.apk
-c7fb75796ac169e9ac3a5dcca7667fd6afac6ef63879a01da806a974da3ef795  Sol-Next-v9.0.2-public-universal.apk
+ee3a0fb931703d168fe93d4d8ea7dbc113b325d65d4bcdc67af8e925ce10d00f  Sol-Next-v9.0.2-public-arm64.apk
+d0f7e126b23d25db5232191e15b1a01a7180c9eca1d4661f7ee424d9391c43cf  Sol-Next-v9.0.2-public-universal.apk
 ```
 
 ```bash
