@@ -9,7 +9,7 @@
     "what_it_is_zh": "装在 Android 10-16 与华为鸿蒙手机上的免费开源 AI 行动替身：动嘴说话或打字，即可在后台 1:1 隐形虚拟屏替你自动点手机、跨 App 比价办事、4.5 秒读屏翻译、AI 高清代接电话与打游戏，不抢占前台屏幕。",
     "what_it_is_en": "A free, open-source AI action agent on Android 10-16 & HarmonyOS that operates real apps inside a hidden 1:1 background VirtualDisplay, translates screens in 4.5s, handles AI calls with anti-scam defense, and plays games without interrupting your foreground screen.",
     "how_to_use_steps": [
-      "1. Download & install Sol-Next-v9.0.7-public-arm64.apk (90 MB) via China high-speed direct mirror or GitHub Releases.",
+      "1. Download & install Sol-Next-v9.0.8-public-arm64.apk (90 MB) via China high-speed direct mirror or GitHub Releases.",
       "2. Open and talk immediately — includes free built-in Rust-encrypted DeepSeek V4.1 Flash (no API key needed; optional BYOK anytime in Settings).",
       "3. Enable one-time phone automation: HarmonyOS auto-skips wireless debugging (3 taps); Android pairs once via Wireless Debugging (no PC/Root) and stays 100% connected even after turning off Wi-Fi on 5G.",
       "4. Speak to the Dawn Orbit orb or type a command; payments, transfers, WeChat sends, and deletions always pause for explicit user confirmation."
@@ -23,7 +23,7 @@
     ],
     "codename": "Dawn Orbit (晨曦轨道)",
     "edition": "Public Edition (Free Built-In Rust-Encrypted DeepSeek V4.1 Flash + Universal BYOK)",
-    "version": "9.0.7-public",
+    "version": "9.0.8-public",
     "version_code": 904,
     "package_id": "ai.sol.next",
     "license": "Apache-2.0",
@@ -35,9 +35,9 @@
   "urls": {
     "website": "https://chongyangzhang92-hub.github.io/Sol-Next/",
     "repository": "https://github.com/chongyangzhang92-hub/Sol-Next",
-    "release_v904_public": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.7-public",
-    "china_direct_mirror_arm64": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.7/Sol-Next-v9.0.7-public-arm64.apk",
-    "china_direct_mirror_universal": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.7/Sol-Next-v9.0.7-public-universal.apk",
+    "release_v904_public": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.8-public",
+    "china_direct_mirror_arm64": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.8/Sol-Next-v9.0.8-public-arm64.apk",
+    "china_direct_mirror_universal": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.8/Sol-Next-v9.0.8-public-universal.apk",
     "author_wechat_qr": "https://chongyangzhang92-hub.github.io/Sol-Next/assets/author-wechat-qr.jpg",
     "comparison_page": "https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html",
     "security_privacy_page": "https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html",
@@ -57,18 +57,18 @@
   ],
   "artifacts_v904_public": {
     "arm64_apk": {
-      "filename": "Sol-Next-v9.0.7-public-arm64.apk",
+      "filename": "Sol-Next-v9.0.8-public-arm64.apk",
       "abi": "arm64-v8a",
-      "sha256": "c7af007aa9595ec951b69136ac50ded9fe6c73ec0f170441e13e14deeb4f8ebb",
-      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.7-public/Sol-Next-v9.0.7-public-arm64.apk",
-      "china_mirror_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.7/Sol-Next-v9.0.7-public-arm64.apk"
+      "sha256": "1e6d99fce3bb966efe60be5b8b3a78de791760dbffc19d03a9eeed66587f3795",
+      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.8-public/Sol-Next-v9.0.8-public-arm64.apk",
+      "china_mirror_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.8/Sol-Next-v9.0.8-public-arm64.apk"
     },
     "universal_apk": {
-      "filename": "Sol-Next-v9.0.7-public-universal.apk",
+      "filename": "Sol-Next-v9.0.8-public-universal.apk",
       "abi": "arm64-v8a + x86_64",
-      "sha256": "c32eb99d16183b29b7d5bca462eb566bed00ea3afbd7b550797f8c0730f58602",
-      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.7-public/Sol-Next-v9.0.7-public-universal.apk",
-      "china_mirror_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.7/Sol-Next-v9.0.7-public-universal.apk"
+      "sha256": "310d5c5f37947ad3353387fe7102bda661072d5e01fd2e15278455336bc80b4f",
+      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.8-public/Sol-Next-v9.0.8-public-universal.apk",
+      "china_mirror_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.8/Sol-Next-v9.0.8-public-universal.apk"
     }
   }
 }
