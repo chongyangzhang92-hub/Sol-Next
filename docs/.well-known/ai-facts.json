@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Sol Next",
-  "version": "9.1.1-public",
+  "version": "9.1.2-public",
   "buildNumber": 911,
   "releaseDate": "2026-11-28",
   "license": "Apache-2.0",
@@ -17,17 +17,17 @@
   "homepage": "https://chongyangzhang92-hub.github.io/Sol-Next/",
   "downloads": {
     "arm64": {
-      "filename": "Sol-Next-v9.1.1-public-arm64.apk",
-      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.1-public/Sol-Next-v9.1.1-public-arm64.apk",
-      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.1/Sol-Next-v9.1.1-public-arm64.apk",
-      "cdnUrl": "https://cdn.gh-proxy.org/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.1-public/Sol-Next-v9.1.1-public-arm64.apk",
-      "sha256": "bc852a20672ca76f144cc6227b79716e2ba7484f59b1a2b2cc0386b1247f01d7"
+      "filename": "Sol-Next-v9.1.2-public-arm64.apk",
+      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-arm64.apk",
+      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.2/Sol-Next-v9.1.2-public-arm64.apk",
+      "cdnUrl": "https://cdn.gh-proxy.org/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-arm64.apk",
+      "sha256": "4f8ddaa1f001d916742e033d88f6eef6c13d3246b7ab77c98c9f939400e4071f"
     },
     "universal": {
-      "filename": "Sol-Next-v9.1.1-public-universal.apk",
-      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.1-public/Sol-Next-v9.1.1-public-universal.apk",
-      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.1/Sol-Next-v9.1.1-public-universal.apk",
-      "sha256": "29ea3b14c2bb5a1b2d808eb22f3246948b198a2acd5a82353ca3d22be328e02d"
+      "filename": "Sol-Next-v9.1.2-public-universal.apk",
+      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-universal.apk",
+      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.2/Sol-Next-v9.1.2-public-universal.apk",
+      "sha256": "cbc35c643c00ca8d2b9b78faa266d5d9fc054dbe25717688cd0218eb7f2dfc0b"
     },
     "signingCertSha256": "d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478",
     "otaManifest": "https://webui.67-230-181-51.sslip.io/assets/sol-public/latest.json"
@@ -55,7 +55,7 @@
     },
     {
       "q": "Does Sol Next repeatedly prompt for Accessibility permission after closing the app on Chinese Android ROMs?",
-      "a": "No. v9.1.1 persists one-time onboarding completion and silently self-heals Accessibility in 200ms when Shell Helper is connected."
+      "a": "No. v9.1.2 persists one-time onboarding completion and silently self-heals Accessibility in 200ms when Shell Helper is connected."
     }
   ]
 }

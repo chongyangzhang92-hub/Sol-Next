@@ -1,12 +1,12 @@
 <div align="center">
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.1-public">
-  <img src="../media/v911/hero-banner-v911.png" alt="Sol Next 9.1.1 — Native Material 3 · 당신의 AI 액션 파트너" width="100%" />
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.2-public">
+  <img src="../media/v911/hero-banner-v911.png" alt="Sol Next 9.1.2 — Native Material 3 · 당신의 AI 액션 파트너" width="100%" />
 </a>
 
 <br/><br/>
 
-# Sol Next 9.1.1 — Native Material 3 · 당신의 AI 액션 파트너
+# Sol Next 9.1.2 — Native Material 3 · 당신의 AI 액션 파트너
 
 ### 자연스러운 음성과 텍스트로 스마트폰을 직접 제어 · 전 세계 20개 언어 지원 (휴대폰 언어 자동 연동)
 
@@ -14,11 +14,11 @@
 
 <br/>
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.1-public/Sol-Next-v9.1.1-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20ARM64%20APK-v9.1.1-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="v9.1.1 공개판 APK 다운로드 (ARM64 · 무료 내장 DeepSeek)" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20ARM64%20APK-v9.1.2-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="v9.1.2 공개판 APK 다운로드 (ARM64 · 무료 내장 DeepSeek)" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.1-public/Sol-Next-v9.1.1-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20Universal%20APK-ARM64%20%2B%20x86__64-10b981?style=for-the-badge&logo=android&logoColor=white" alt="유니버설 APK 다운로드 (ARM64 + x86_64)" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20Universal%20APK-ARM64%20%2B%20x86__64-10b981?style=for-the-badge&logo=android&logoColor=white" alt="유니버설 APK 다운로드 (ARM64 + x86_64)" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.1-public"><img src="https://img.shields.io/badge/📋%20Release-v9.1.1-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="v9.1.1 릴리즈 노트 & SHA-256" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.2-public"><img src="https://img.shields.io/badge/📋%20Release-v9.1.2-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="v9.1.2 릴리즈 노트 & SHA-256" /></a>
 
 <br/><br/>
 
@@ -30,7 +30,7 @@
 
 <div>
 
-## ✨ v9.1.1 주요 업데이트
+## ✨ v9.1.2 주요 업데이트
 
 - **전 세계 20개 언어 지원 & 휴대폰 언어 자동 감지**: 지역이 아닌 휴대폰 시스템 언어에 따라 자동 전환되며(한국어, 영어, 중국어, 일본어, 아랍어 RTL 등), 설정에서 즉시 변경할 수 있습니다.
 - **OTA 업데이트 자동 팝업 + 버전 설명 + 멀티스트림 고속 다운로드**: 새 버전 배포 시 앱 내 업데이트 팝업과 변경 내역을 자동 표시하며, 미러 자동 경합 + 4채널 HTTP Range 병렬 다운로드(SHA-256 및 서명 검증 유지)로 속도를 대폭 개선했습니다.
@@ -46,7 +46,7 @@
 
 <p align="center">
   <img src="../assets/author-wechat-qr.jpg" width="220" alt="WeChat QR · Author Contact" /><br/>
-  <sub><b>Sol Next 9.1.1</b> · Apache-2.0 · <a href="https://chongyangzhang92-hub.github.io/Sol-Next/">Official Multi-Language Website</a> · <a href="../../SHA256SUMS.txt">SHA256SUMS.txt</a></sub>
+  <sub><b>Sol Next 9.1.2</b> · Apache-2.0 · <a href="https://chongyangzhang92-hub.github.io/Sol-Next/">Official Multi-Language Website</a> · <a href="../../SHA256SUMS.txt">SHA256SUMS.txt</a></sub>
 </p>
 
 </div>

@@ -11,9 +11,9 @@
     <uri>https://github.com/chongyangzhang92-hub</uri>
   </author>
   <entry>
-    <title>Sol Next v9.1.1-public (Build 911) — Material 3 Dual-Mode, On-Device 4-Stage Realtime Voice, Built-In Brave Search &amp; Hands-Free Notification Readout</title>
-    <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.1-public"/>
-    <id>https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.1-public</id>
+    <title>Sol Next v9.1.2-public (Build 912) — Material 3 Dual-Mode, On-Device 4-Stage Realtime Voice, Built-In Brave Search &amp; Hands-Free Notification Readout</title>
+    <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.2-public"/>
+    <id>https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.2-public</id>
     <updated>2026-11-28T00:45:00Z</updated>
     <summary>Full native Material 3 Light/Dark dual-mode UI (Chat | Task), built-in DeepSeek Flash &amp; Brave Search real-time web grounding, bundled 4-stage on-device realtime neural voice (GTCRN + Silero VAD v5 + Zipformer-CTC + AISHELL-3 VITS) for Live Voice &amp; AI Phone Calls, hands-free driving Notification Voice Readout with Audio Ducking &amp; OTP redaction, universal free login, Subscription OAuth model login, and OEM Accessibility self-healing.</summary>
   </entry>

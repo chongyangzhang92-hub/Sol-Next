@@ -1,28 +1,28 @@
 <div align="center">
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.1-public">
-  <img src="docs/media/v911/hero-banner-v911.png" alt="Sol Next 9.1.1 — 装在手机上的开源免费 AI 行动助理：原生 Material 3 双模式 · 四级端侧实时语音 · 内置 DeepSeek & Brave 搜索 · 后台独立虚拟屏" width="100%" />
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.2-public">
+  <img src="docs/media/v911/hero-banner-v911.png" alt="Sol Next 9.1.2 — 装在手机上的开源免费 AI 行动助理：原生 Material 3 双模式 · 四级端侧实时语音 · 内置 DeepSeek & Brave 搜索 · 后台独立虚拟屏" width="100%" />
 </a>
 
 <br/><br/>
 
-# Sol Next 9.1.1 — 装在手机上的开源免费 AI 助手与「自主行动替身」
+# Sol Next 9.1.2 — 装在手机上的开源免费 AI 助手与「自主行动替身」
 
 ### 极简 Material 3「对话 | 任务」双模式 · 内置免费 DeepSeek Flash & Brave 联网搜索 · 四级端侧实时语音免配 API · 后台独立虚拟屏替你办事 · 开车免看屏通知语音朗读
 
 > **👨‍💻 作者：许昌北海医院张重阳** &nbsp;·&nbsp; **💬 [微信扫码联系作者 / 加入官方交流群](#-联系作者与官方交流群)** &nbsp;·&nbsp; **📕 小红书：`871348474`（映像河南）**
 
-<sub>全新 <code>v9.1.1</code>（Build <code>911</code> · Apache-2.0 开源 · 支持 Android 10–16 与 HarmonyOS · 100% 原生 Material 3 浅色 / 深色 120Hz 自适应界面 · Rust 硬件级加密内置 DeepSeek Flash + Brave 实时联网搜索 · 四级端侧神经语音零配置即用 · 20 国语言自动适配）</sub>
+<sub>全新 <code>v9.1.2</code>（Build <code>911</code> · Apache-2.0 开源 · 支持 Android 10–16 与 HarmonyOS · 100% 原生 Material 3 浅色 / 深色 120Hz 自适应界面 · Rust 硬件级加密内置 DeepSeek Flash + Brave 实时联网搜索 · 四级端侧神经语音零配置即用 · 20 国语言自动适配）</sub>
 
 <br/><br/>
 
-<a href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.1/Sol-Next-v9.1.1-public-arm64.apk"><img src="https://img.shields.io/badge/🇨🇳%20国内高速直连-ARM64%20免梯子下载-10b981?style=for-the-badge&logo=android&logoColor=white" alt="国内高速直连下载 Sol Next v9.1.1 ARM64" /></a>
+<a href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.2/Sol-Next-v9.1.2-public-arm64.apk"><img src="https://img.shields.io/badge/🇨🇳%20国内高速直连-ARM64%20免梯子下载-10b981?style=for-the-badge&logo=android&logoColor=white" alt="国内高速直连下载 Sol Next v9.1.2 ARM64" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.1-public/Sol-Next-v9.1.1-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20GitHub%20官方%20v9.1.1-ARM64%20(93%20MB)-1A73E8?style=for-the-badge&logo=github&logoColor=white" alt="GitHub 下载 Sol Next v9.1.1 ARM64" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20GitHub%20官方%20v9.1.2-ARM64%20(93%20MB)-1A73E8?style=for-the-badge&logo=github&logoColor=white" alt="GitHub 下载 Sol Next v9.1.2 ARM64" /></a>
 &nbsp;
-<a href="https://cdn.gh-proxy.org/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.1-public/Sol-Next-v9.1.1-public-arm64.apk"><img src="https://img.shields.io/badge/⚡%20全球%20CDN%20加速-ARM64%20直链-f59e0b?style=for-the-badge&logo=cloudflare&logoColor=white" alt="CDN 加速下载 Sol Next v9.1.1 ARM64" /></a>
+<a href="https://cdn.gh-proxy.org/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-arm64.apk"><img src="https://img.shields.io/badge/⚡%20全球%20CDN%20加速-ARM64%20直链-f59e0b?style=for-the-badge&logo=cloudflare&logoColor=white" alt="CDN 加速下载 Sol Next v9.1.2 ARM64" /></a>
 &nbsp;
-<a href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.1/Sol-Next-v9.1.1-public-universal.apk"><img src="https://img.shields.io/badge/📦%20全架构通用版-Universal%20(131%20MB)-6366f1?style=for-the-badge&logo=android&logoColor=white" alt="下载 Sol Next v9.1.1 全架构通用版" /></a>
+<a href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.2/Sol-Next-v9.1.2-public-universal.apk"><img src="https://img.shields.io/badge/📦%20全架构通用版-Universal%20(131%20MB)-6366f1?style=for-the-badge&logo=android&logoColor=white" alt="下载 Sol Next v9.1.2 全架构通用版" /></a>
 
 <br/><br/>
 
@@ -30,11 +30,11 @@
 
 <br/>
 
-[✨ v9.1.1 新特性](#-v911-重磅升级一览) &nbsp;·&nbsp; [📱 真机界面实拍](#-真机界面实拍浅色--深色全屏原生-material-3) &nbsp;·&nbsp; [🧠 6 大核心能力](#-sol-next-的-6-大核心能力) &nbsp;·&nbsp; [⚡ 3 分钟上手](#-3-分钟快速上手指南) &nbsp;·&nbsp; [🔒 安全与架构](#-安全加密与技术架构) &nbsp;·&nbsp; [❓ 常见问题 FAQ](#-常见问题-faq) &nbsp;·&nbsp; [🌐 官网](https://chongyangzhang92-hub.github.io/Sol-Next/)
+[✨ v9.1.2 新特性](#-v911-重磅升级一览) &nbsp;·&nbsp; [📱 真机界面实拍](#-真机界面实拍浅色--深色全屏原生-material-3) &nbsp;·&nbsp; [🧠 6 大核心能力](#-sol-next-的-6-大核心能力) &nbsp;·&nbsp; [⚡ 3 分钟上手](#-3-分钟快速上手指南) &nbsp;·&nbsp; [🔒 安全与架构](#-安全加密与技术架构) &nbsp;·&nbsp; [❓ 常见问题 FAQ](#-常见问题-faq) &nbsp;·&nbsp; [🌐 官网](https://chongyangzhang92-hub.github.io/Sol-Next/)
 
 <br/>
 
-![Version 9.1.1](https://img.shields.io/badge/Release-v9.1.1--public%20(Build%20911)-1A73E8?style=flat-square)
+![Version 9.1.2](https://img.shields.io/badge/Release-v9.1.2--public%20(Build%20911)-1A73E8?style=flat-square)
 ![Built-in DeepSeek + Brave](https://img.shields.io/badge/开箱免费-DeepSeek%20Flash%20%2B%20Brave%20实时搜索-10b981?style=flat-square)
 ![On-Device Voice](https://img.shields.io/badge/四级端侧语音-GTCRN%20%2B%20Silero%20%2B%20Zipformer%20%2B%20VITS-6366f1?style=flat-square)
 ![Android 10-16](https://img.shields.io/badge/平台支持-Android%2010--16%20%26%20HarmonyOS-0ea5e9?style=flat-square)
@@ -57,9 +57,9 @@
 
 ---
 
-## ✨ v9.1.1 重磅升级一览
+## ✨ v9.1.2 重磅升级一览
 
-| 模块 | v9.1.1 全新升级内容 |
+| 模块 | v9.1.2 全新升级内容 |
 | :--- | :--- |
 | 🎨 **全新 Material 3 流体双模式架构** | 全站 100% 原生 Android Material 3 极简设计（浅色 `#FFFFFF` / 深色 `#0E0F11` 自适应），底部「**对话 \| 任务**」悬浮胶囊无缝切换，配天蓝 / 靛紫呼吸光晕与 120Hz 高刷动效；覆盖首页、抽屉、设置、智能体、已保存信息、已安排任务、扩展工具、权限中心、AI 电话与全部弹窗。 |
 | 🧠 **免费福利模型 + 订阅 OAuth 自由切换** | 左上角单行模型下拉菜单支持零重启热切：`DeepSeek Flash`（免费福利内置、默认最低思考等级极速响应）、`DeepSeek Pro`（深度思考）、自定义 **API Key** 与 **订阅账号 OAuth 登录**（支持 OpenRouter OAuth 2.0 PKCE 一键网页回调、GitHub Models、DeepSeek、硅基流动、OpenAI、Anthropic 等）。 |
@@ -77,19 +77,19 @@
 <table>
   <tr>
     <td align="center" width="25%">
-      <img src="docs/media/v911/01-home-light.png" alt="Sol Next v9.1.1 浅色极简主页" width="200"/><br/>
+      <img src="docs/media/v911/01-home-light.png" alt="Sol Next v9.1.2 浅色极简主页" width="200"/><br/>
       <b>极简浅色主页</b><br/><sub>对话 | 任务 双模式胶囊</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/media/v911/02-home-dark-markdown.png" alt="Sol Next v9.1.1 深色模式 Markdown 渲染" width="200"/><br/>
+      <img src="docs/media/v911/02-home-dark-markdown.png" alt="Sol Next v9.1.2 深色模式 Markdown 渲染" width="200"/><br/>
       <b>深色模式 & 富文本对话</b><br/><sub>#0E0F11 纯黑自适应护眼</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/media/v911/03-task-virtual-screen.png" alt="Sol Next v9.1.1 任务模式后台独立虚拟屏" width="200"/><br/>
+      <img src="docs/media/v911/03-task-virtual-screen.png" alt="Sol Next v9.1.2 任务模式后台独立虚拟屏" width="200"/><br/>
       <b>任务模式 · 后台独立虚拟屏</b><br/><sub>副屏自主执行 · 主屏不收键盘</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/media/v911/06-live-realtime-voice.png" alt="Sol Next v9.1.1 全屏端侧 Live 实时语音" width="200"/><br/>
+      <img src="docs/media/v911/06-live-realtime-voice.png" alt="Sol Next v9.1.2 全屏端侧 Live 实时语音" width="200"/><br/>
       <b>Live 实时语音（端侧免配）</b><br/><sub>GTCRN + Silero + Zipformer + VITS</sub>
     </td>
   </tr>
@@ -178,8 +178,8 @@ APK 原生打包 4 个 Apache-2.0 端侧 ONNX 模型与 `libsherpa-onnx-jni.so`�
 ## ⚡ 3 分钟快速上手指南
 
 1. **下载安装 APK**
-   - 现代主流安卓 / 鸿蒙手机优先下载 **`Sol-Next-v9.1.1-public-arm64.apk`**（93 MB，16KB 页对齐适配 Android 15/16）。
-   - 如设备为 x86_64 模拟器或特殊架构，下载 **`Sol-Next-v9.1.1-public-universal.apk`**（131 MB）。
+   - 现代主流安卓 / 鸿蒙手机优先下载 **`Sol-Next-v9.1.2-public-arm64.apk`**（93 MB，16KB 页对齐适配 Android 15/16）。
+   - 如设备为 x86_64 模拟器或特殊架构，下载 **`Sol-Next-v9.1.2-public-universal.apk`**（131 MB）。
 2. **首次权限引导（仅需一次，绝不反复弹窗）**
    - 按引导授予麦克风、通知与通话权限，以及辅助操控（无障碍）权限；点击底部「开始使用」或「先进入首页」即刻进入主界面。
    - **针对小米 HyperOS / OPPO ColorOS / vivo OriginOS / 华为鸿蒙用户**：已彻底优化系统后台清理无障碍后的体验，**退出 App 重新打开绝不会再把你拦在无障碍引导页**；配对一次无线调试后 Shell 助手还可在 200ms 内静默自愈无障碍。
@@ -201,15 +201,15 @@ APK 原生打包 4 个 Apache-2.0 端侧 ONNX 模型与 `libsherpa-onnx-jni.so`�
 | **敏感操作人工二次确认** | 涉及支付、转账、微信发送、系统关键设置修改默认触发原生 Material 3 确认弹窗，用户拥有最终决定权。 |
 | **Android 15/16 现代规范** | 全部 `.so` 动态库（Rust 内核 + Sherpa-ONNX）严格满足 **16KB 内存页对齐**，支持 120Hz 高刷新率与 ADPF 性能调度。 |
 
-### 官方发布校验值（v9.1.1-public · Build 911）
+### 官方发布校验值（v9.1.2-public · Build 912）
 
 ```text
 签名证书 SHA-256 (兼容全部历史版本覆盖升级):
 d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478
 
 APK 文件 SHA-256:
-bc852a20672ca76f144cc6227b79716e2ba7484f59b1a2b2cc0386b1247f01d7  Sol-Next-v9.1.1-public-arm64.apk
-29ea3b14c2bb5a1b2d808eb22f3246948b198a2acd5a82353ca3d22be328e02d  Sol-Next-v9.1.1-public-universal.apk
+4f8ddaa1f001d916742e033d88f6eef6c13d3246b7ab77c98c9f939400e4071f  Sol-Next-v9.1.2-public-arm64.apk
+cbc35c643c00ca8d2b9b78faa266d5d9fc054dbe25717688cd0218eb7f2dfc0b  Sol-Next-v9.1.2-public-universal.apk
 ```
 
 ---
@@ -222,8 +222,8 @@ bc852a20672ca76f144cc6227b79716e2ba7484f59b1a2b2cc0386b1247f01d7  Sol-Next-v9.1.
 </details>
 
 <details>
-<summary><b>Q2: 为什么有些国产手机（小米/OPPO/vivo/华为）退出 App 后容易把无障碍关掉？v9.1.1 怎么解决的？</b></summary>
-<p>部分国产 ROM 在划掉后台卡片时会主动回收无障碍服务。Sol Next v9.1.1 做了双重优化：① 完成首次权限引导后状态持久化，下次打开直接进入主界面，<b>绝不再反复弹窗拦截提示开启无障碍</b>；② 在「权限与无线调试」配对无线调试后，Shell 助手会在恢复前台时于 200ms 内静默自愈无障碍服务；同时建议授予「忽略电池优化」进一步提高后台保活稳定性。</p>
+<summary><b>Q2: 为什么有些国产手机（小米/OPPO/vivo/华为）退出 App 后容易把无障碍关掉？v9.1.2 怎么解决的？</b></summary>
+<p>部分国产 ROM 在划掉后台卡片时会主动回收无障碍服务。Sol Next v9.1.2 做了双重优化：① 完成首次权限引导后状态持久化，下次打开直接进入主界面，<b>绝不再反复弹窗拦截提示开启无障碍</b>；② 在「权限与无线调试」配对无线调试后，Shell 助手会在恢复前台时于 200ms 内静默自愈无障碍服务；同时建议授予「忽略电池优化」进一步提高后台保活稳定性。</p>
 </details>
 
 <details>

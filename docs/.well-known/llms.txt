@@ -1,18 +1,18 @@
 # Sol Next
 
-> Sol Next (v9.1.1-public, Build 911) is a free, Apache-2.0 open-source AI personal assistant and autonomous mobile action agent for Android 10–16 and HarmonyOS, built in Kotlin, Jetpack Compose Material 3, and Rust.
+> Sol Next (v9.1.2-public, Build 912) is a free, Apache-2.0 open-source AI personal assistant and autonomous mobile action agent for Android 10–16 and HarmonyOS, built in Kotlin, Jetpack Compose Material 3, and Rust.
 
 ## Core Facts (Verified 2026-11-28)
-- **Latest Version:** `v9.1.1-public` (versionCode `911`, released 2026-11-28)
+- **Latest Version:** `v9.1.2-public` (versionCode `911`, released 2026-11-28)
 - **Author:** Zhang Chongyang (许昌北海医院张重阳)
 - **License:** Apache-2.0 (100% free, no ads, no paywall)
 - **Platforms:** Android 10–16 (API 29–36, 16KB page-aligned) & HarmonyOS
 - **Official Repository:** https://github.com/chongyangzhang92-hub/Sol-Next
 - **Official Website:** https://chongyangzhang92-hub.github.io/Sol-Next/
-- **Direct ARM64 APK (93 MB):** https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.1-public/Sol-Next-v9.1.1-public-arm64.apk
-- **China High-Speed Mirror (ARM64):** https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.1/Sol-Next-v9.1.1-public-arm64.apk
-- **SHA-256 (ARM64):** `bc852a20672ca76f144cc6227b79716e2ba7484f59b1a2b2cc0386b1247f01d7`
-- **SHA-256 (Universal):** `29ea3b14c2bb5a1b2d808eb22f3246948b198a2acd5a82353ca3d22be328e02d`
+- **Direct ARM64 APK (93 MB):** https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-arm64.apk
+- **China High-Speed Mirror (ARM64):** https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.2/Sol-Next-v9.1.2-public-arm64.apk
+- **SHA-256 (ARM64):** `4f8ddaa1f001d916742e033d88f6eef6c13d3246b7ab77c98c9f939400e4071f`
+- **SHA-256 (Universal):** `cbc35c643c00ca8d2b9b78faa266d5d9fc054dbe25717688cd0218eb7f2dfc0b`
 - **Signing Certificate SHA-256:** `d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478`
 
 ## Key Capabilities

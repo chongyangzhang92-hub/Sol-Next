@@ -20,7 +20,7 @@
    ```bash
    python3 scripts/sol-cli.py install --verify-sha256 --grant-permissions --json
    ```
-   - ARM64 预期 SHA-256：`bc852a20672ca76f144cc6227b79716e2ba7484f59b1a2b2cc0386b1247f01d7`
+   - ARM64 预期 SHA-256：`4f8ddaa1f001d916742e033d88f6eef6c13d3246b7ab77c98c9f939400e4071f`
    - 安装包名：`ai.sol.next`（公开版不含任何内置模型 Key）
 
 3. **启动 `uid=2000` 1:1 后台虚拟屏助手**
