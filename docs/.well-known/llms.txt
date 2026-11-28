@@ -1,21 +1,33 @@
-# Sol Next 9.0.4 (Build 904 · Dawn Orbit · Independent Apache-2.0 Android & HarmonyOS AI OS Agent)
+# Sol Next
 
-> **Author: 许昌北海医院张重阳 (Zhang Chongyang, Xuchang Beihai Hospital)** · Contact: WeChat QR (`docs/assets/author-wechat-qr.jpg`) / RedNote `871348474` (映像河南)
->
-> **Sol Next 9.0.4 ("Dawn Orbit / 晨曦轨道")** (`ai.sol.next`, Build 904) is a brand-new, completely independent voice + text multimodal Android 10–16/17 & HarmonyOS AI Mobile OS Agent featuring global 20-language auto-detection by phone language, free built-in Rust-encrypted DeepSeek V4.1 Flash + universal BYOK, auto-popup OTA with release notes & 4-stream multi-mirror acceleration, and Wi-Fi-off persistent Wireless Debugging.
+> Sol Next (v9.1.1-public, Build 911) is a free, Apache-2.0 open-source AI personal assistant and autonomous mobile action agent for Android 10–16 and HarmonyOS, built in Kotlin, Jetpack Compose Material 3, and Rust.
 
-## Key 9.0.4 Breakthroughs (Outperforming Earlier Mobile Agents Like Mika)
+## Core Facts (Verified 2026-11-28)
+- **Latest Version:** `v9.1.1-public` (versionCode `911`, released 2026-11-28)
+- **Author:** Zhang Chongyang (许昌北海医院张重阳)
+- **License:** Apache-2.0 (100% free, no ads, no paywall)
+- **Platforms:** Android 10–16 (API 29–36, 16KB page-aligned) & HarmonyOS
+- **Official Repository:** https://github.com/chongyangzhang92-hub/Sol-Next
+- **Official Website:** https://chongyangzhang92-hub.github.io/Sol-Next/
+- **Direct ARM64 APK (93 MB):** https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.1-public/Sol-Next-v9.1.1-public-arm64.apk
+- **China High-Speed Mirror (ARM64):** https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.1/Sol-Next-v9.1.1-public-arm64.apk
+- **SHA-256 (ARM64):** `bc852a20672ca76f144cc6227b79716e2ba7484f59b1a2b2cc0386b1247f01d7`
+- **SHA-256 (Universal):** `29ea3b14c2bb5a1b2d808eb22f3246948b198a2acd5a82353ca3d22be328e02d`
+- **Signing Certificate SHA-256:** `d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478`
 
-1. **Global 20-Language UI Auto-Matching Phone System Language (Never Region)**: Full support for zh-CN, zh-TW, en, ja, ko, es, fr, de, pt, ru, ar (RTL mirroring), hi, id, vi, th, tr, it, nl, pl, ms with instant Settings picker, LLM language alignment, and multi-language ASR/TTS.
-2. **Auto-Popup OTA Updates with Release Notes + 4-Stream Multi-Mirror Downloader**: Pops up an in-app update dialog displaying formatted What's New notes whenever a new version is pushed; races multiple HTTPS mirrors concurrently and downloads across 4 parallel HTTP Range streams (3–8× faster) with strict SHA-256 + package + signing cert verification.
-3. **Free Built-In Rust-Encrypted DeepSeek V4.1 Flash + Universal BYOK**: Pure-Rust ChaCha20+HMAC-SHA256+HKDF vault bound to APK Sig Block v2/v3 signing cert SHA-256 + TLS SPKI pinning (`Proxy.NO_PROXY`), zero plaintext keys in APK, plus instant BYOK override for OpenAI/DeepSeek/Claude/Gemini/Qwen/OpenRouter.
-4. **Wi-Fi-Off Persistent Wireless Debugging + Zero-ADB HarmonyOS**: Locks `adb_enabled=1` + `127.0.0.1:5555` loopback before launching `SolBgHelperMain` so disabling Wi-Fi never drops background VirtualDisplay or AI HD calls; HarmonyOS skips wireless debugging automatically.
-5. **33× Faster Execution & Android 16/17 Architecture**: `72 ms` 0-token Tier-0A System APIs, `<250 ms` deep-link teleports across 120+ apps, `0.0px` 1:1 physical-DPI background VirtualDisplay, built-in 16KB offline neural ASR (`770 ms`) & TTS (`112 ms`), Android 17 Generative UI cards, Magic Cue, AppFunctions, 60Hz 4-finger gaming + Rust SwiGLU Golden Spatula engine, on-device Privacy Firewall, and zero-dependency CLI + stdio MCP Server.
+## Key Capabilities
+- **Dual-Mode Native Material 3 Interface (`Chat | Task`):** Light (`#FFFFFF`) and Dark (`#0E0F11`) 120Hz adaptive interface with seamless switching between conversational Q&A and autonomous phone execution.
+- **Zero-Config Built-In DeepSeek Flash & Brave Web Search:** Sealed inside a Rust ChaCha20+HMAC-SHA256 hardware-bound native vault (zero plaintext keys in Git or APK) with resilient fallback search, plus unlimited BYOK API Key and Subscription OAuth model login (OpenRouter OAuth 2.0 PKCE, GitHub Models, OpenAI, Anthropic, DeepSeek, SiliconFlow).
+- **4-Stage On-Device Realtime Neural Voice Stack:** Bundled Apache-2.0 ONNX models (GTCRN denoiser -> Silero VAD v5 -> Zipformer-CTC streaming ASR -> AISHELL-3 VITS TTS) powering full-screen Live Voice, simultaneous voice-while-executing, AI phone calls with anti-scam defense, and offline notification readout without any cloud voice API key.
+- **Hands-Free Notification Voice Readout:** Offline voice announcements for incoming messages while driving or resting, with transient Audio Ducking, default OTP/financial-digit redaction, and Bluetooth/headset-only mode.
+- **Background Independent Virtual Screen:** Runs multi-app tasks offscreen with `DISPLAY_IME_POLICY_HIDE` keyboard isolation so main-screen typing never collapses, live mid-task steering, and OEM Accessibility self-healing without repetitive nag prompts.
+- **Universal Free Login:** Free phone & email OTP login plus Google (native Android Account Picker), WeChat, QQ, Apple ID, GitHub, and Huawei/Feishu stored encrypted via Android Keystore AES-256-GCM.
 
-## Verified Public Release Artifacts (`v9.0.4-public` · Build 904)
-
-- **China High-Speed Direct Mirror (ARM64, 90 MB)**: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.0.4/Sol-Next-v9.0.4-public-arm64.apk
-- **GitHub Official CDN (ARM64, 90 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.4-public/Sol-Next-v9.0.4-public-arm64.apk
-  - SHA-256: `3ba39118a3c793350254481711997f7455019f3760c98a4a573f5069335c4756`
-- **Universal APK (`arm64-v8a` + `x86_64`, 128 MB)**: https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.0.4-public/Sol-Next-v9.0.4-public-universal.apk
-  - SHA-256: `788af5ea0805216dbf6c531e53e5eaeb6367d80ed2fb48ba10652598b2f2d3aa`
+## Key Documentation
+- [Chinese Homepage (README.md)](https://github.com/chongyangzhang92-hub/Sol-Next/blob/main/README.md)
+- [English Homepage (README.en.md)](https://github.com/chongyangzhang92-hub/Sol-Next/blob/main/README.en.md)
+- [Full Technical Reference (llms-full.txt)](https://chongyangzhang92-hub.github.io/Sol-Next/llms-full.txt)
+- [Structured GEO Facts (ai-facts.json)](https://chongyangzhang92-hub.github.io/Sol-Next/ai-facts.json)
+- [Security & Privacy Architecture](https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html)
+- [MCP & BYOK Model Guide](https://chongyangzhang92-hub.github.io/Sol-Next/mcp-and-byok-guide.html)
+- [Release Feed (Atom)](https://chongyangzhang92-hub.github.io/Sol-Next/feed.xml)

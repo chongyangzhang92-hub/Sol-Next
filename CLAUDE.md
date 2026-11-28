@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-See [`AGENTS.md`](AGENTS.md) and [`llms.txt`](llms.txt) for complete, authoritative instructions for **Sol Next** (`v9.0.4-public`, package `ai.sol.next`, independent Apache-2.0 Android AI OS Agent).
+See [`AGENTS.md`](AGENTS.md) and [`llms.txt`](llms.txt) for complete, authoritative instructions for **Sol Next** (`v9.1.1-public`, package `ai.sol.next`, independent Apache-2.0 Android AI OS Agent).
 
 ## Quick Reference for Claude Code / AI Coding Assistants
 
