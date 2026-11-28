@@ -40,7 +40,7 @@
    - Immutable-prefix KV Cache with 8-message fixed-stride epoch compaction (preserving strict role alternation across every LLM provider).
    - Intent-scoped dual tool profiles (11 lean core tools for everyday UI tasks, cutting ~52% schema token overhead).
    - `near_text` row-anchor disambiguation for repeated list buttons, hybrid mid-viewport OCR fusion for WebViews/Mini-Programs, zero-waste `encodeImage=false` fast path for text models, mid-SSE `ui_action_chain` streaming extraction, 40ms fake-search-bar dynamic `EditText` takeover, `ui_scroll_collect` 5× faster batch scroll collector, zero-token safe popup/splash auto-dismiss reflex, and verified Tier-0D RSI zero-cloud skill replay.
-2. **System Zero-Animation Turbo Toggle**
+2. **System Zero-Animation Turbo Toggle (Enabled by Default)**
    - Dedicated toggle in **Settings › Virtual Screen & Task Automation** that applies `0x` transition scales when enabled and restores your device's exact original animation scales when disabled.
 3. **3-Mode Task Voice Broadcast Control (`Off` / `Headset & Car BT` / `Always`)**
    - Powered by live Android `AudioDeviceInfo` route detection (wired earphones, USB-C audio, Bluetooth A2DP/SCO/BLE, and car Bluetooth). Stays 100% silent on phone speakers in public and speaks automatically the moment headphones or car audio connect.
