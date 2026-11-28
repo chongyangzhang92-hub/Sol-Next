@@ -1,0 +1,27 @@
+[package]
+name = "sol-next-tools"
+version = "9.3.1"
+edition = "2024"
+license = "Apache-2.0"
+description = "Sol Next Public Edition — Zero-dependency Rust 2024 non-interactive CLI (sol-cli) and stdio MCP Server (sol-mcp) for Android 10–16 & HarmonyOS."
+repository = "https://github.com/chongyangzhang92-hub/Sol-Next"
+
+[lib]
+name = "sol_next_tools"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sol-cli"
+path = "src/bin/sol_cli.rs"
+
+[[bin]]
+name = "sol-mcp"
+path = "src/bin/sol_mcp.rs"
+
+[dependencies]
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+strip = true

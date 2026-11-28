@@ -1,0 +1,5 @@
+# Ensure GitHub Linguist accurately reflects Sol Next's zero-Python Rust 2024 codebase
+docs/** linguist-documentation
+*.md linguist-documentation
+*.html linguist-documentation
+*.rs linguist-detectable=true

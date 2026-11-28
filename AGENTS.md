@@ -33,10 +33,12 @@ Sol-Next/
 ├── SHA256SUMS.txt                     # Authoritative SHA-256 checksums for Public APKs
 ├── README.md / README.en.md           # Chinese & English product launch pages
 ├── LICENSE / NOTICE                   # Apache-2.0 license + Mika attribution
-├── scripts/
-│   └── sol-cli.py                     # Zero-dependency non-interactive CLI (--json)
-├── mcp/
-│   └── sol_mcp_server.py              # Zero-dependency stdio MCP Server (JSON-RPC 2.0)
+├── Cargo.toml                         # Zero-dependency Rust 2024 CLI & MCP crate
+├── src/
+│   ├── lib.rs                         # Core ADB, FIPS 180-4 SHA-256, JSON & MCP engine
+│   └── bin/
+│       ├── sol_cli.rs                 # Non-interactive Rust CLI (--json)
+│       └── sol_mcp.rs                 # In-process stdio MCP Server (JSON-RPC 2.0)
 └── docs/
     ├── index.html                     # Live GitHub Pages product landing page
     ├── llms.txt / llms-full.txt       # Web-served copies for AI search crawlers
@@ -52,26 +54,29 @@ Sol-Next/
 
 ## 3. Standard Non-Interactive Commands (Zero Prompts, `--json` Output)
 
-All scripts use **Python 3.9+ standard library only** (`pip install` is NOT required) and NEVER block on `input()`.
+All tools are written in **zero-dependency Rust 2024** (zero external crates, zero Python) and NEVER block on interactive prompts.
 
 ```bash
+# Build native release binaries once (compiles offline in < 1s)
+cargo build --release --bins
+
 # 1. Inspect connected Android device, package state, and 1:1 VirtualDisplay status
-python3 scripts/sol-cli.py status --json
+./target/release/sol-cli status --json
 
 # 2. Download verified v9.3.1-public ARM64 APK, verify SHA-256, install via ADB & grant permissions
-python3 scripts/sol-cli.py install --verify-sha256 --grant-permissions --json
+./target/release/sol-cli install --verify-sha256 --grant-permissions --json
 
 # 3. Launch Sol Next UI on the connected device
-python3 scripts/sol-cli.py launch --tab control --json
+./target/release/sol-cli launch --tab control --json
 
 # 4. Activate the uid=2000 1:1 Background VirtualDisplay shell helper (over USB/wireless ADB)
-python3 scripts/sol-cli.py start-helper --json
+./target/release/sol-cli start-helper --json
 
 # 5. Dispatch a natural-language task directly to Sol Next
-python3 scripts/sol-cli.py run --intent "打开系统设置并查看电池电量" --json
+./target/release/sol-cli run --intent "打开系统设置并查看电池电量" --json
 
 # 6. Verify 1:1 VirtualDisplay resolution & DPI match Display 0
-python3 scripts/sol-cli.py verify-vdisplay --json
+./target/release/sol-cli verify-vdisplay --json
 ```
 
 Pass `--serial <device-serial>` whenever multiple ADB devices are connected.
@@ -100,9 +105,10 @@ adb shell am start -n ai.sol.next/ai.sol.next.canvas.SolCanvasActivity \
 
 ## 5. MCP Integration (Model Context Protocol)
 
-Start the zero-dependency stdio MCP server:
+Build and start the zero-dependency Rust 2024 stdio MCP server:
 ```bash
-python3 mcp/sol_mcp_server.py
+cargo build --release --bin sol-mcp
+./target/release/sol-mcp
 ```
 
 Or add to Claude Desktop / Cursor / Claude Code / Codex / Antigravity config:
@@ -110,8 +116,8 @@ Or add to Claude Desktop / Cursor / Claude Code / Codex / Antigravity config:
 {
   "mcpServers": {
     "sol-next": {
-      "command": "python3",
-      "args": ["/ABS/PATH/TO/Sol-Next/mcp/sol_mcp_server.py"]
+      "command": "/ABS/PATH/TO/Sol-Next/target/release/sol-mcp",
+      "args": []
     }
   }
 }
@@ -130,5 +136,5 @@ Exposed MCP tools:
 1. **NEVER commit real API keys, tokens, private IPs, or personal OTA endpoints** into this public repository.
 2. **NEVER remove or dilute Apache-2.0 attribution** to `wangzan101/Mika` in `LICENSE`, `NOTICE`, or README files.
 3. **Always verify APK SHA-256** against `SHA256SUMS.txt` before installing on a user's device.
-4. **Never add interactive `input()` prompts** to `scripts/sol-cli.py` or `mcp/sol_mcp_server.py`.
+4. **Never add interactive stdin prompts** to `src/bin/sol_cli.rs` or `src/bin/sol_mcp.rs`.
 5. Keep `llms.txt`, `llms-full.txt`, and `docs/llms*.txt` synchronized whenever release versions, checksums, or CLI flags change.

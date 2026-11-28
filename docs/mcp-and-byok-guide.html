@@ -39,7 +39,7 @@
           {
             "@type": "HowToStep",
             "name": "Connect Native Stdio MCP Server or Non-Interactive CLI",
-            "text": "Add mcp/sol_mcp_server.py to your MCP client config or run python3 scripts/sol-cli.py run --intent \"...\" --json."
+            "text": "Build with cargo build --release --bins, add target/release/sol-mcp to your MCP client config, or run ./target/release/sol-cli run --intent \"...\" --json."
           }
         ]
       }
@@ -85,7 +85,7 @@
     <span class="kicker">DEVELOPER &amp; AGENT-READY GUIDE · MCP SERVER · CLI · ZERO-KEY BYOK</span>
     <h1>Sol Next 9.3.1：30 秒零密钥 BYOK 配置与桌面 MCP Server 接入指南</h1>
     <p class="lead">
-      <strong>Sol Next 9.3.1 公开版（<code>ai.sol.next</code> · Build 931）</strong>坚持 100% 零内置 API Key，同时原生附带零依赖 Python 3.9+ CLI（<code>--json</code>）与标准 <strong>stdio MCP Server</strong>，让 Claude Code、Cursor、Antigravity 等桌面 AI 助手直接、安全地驱动你的 Android 10–16 手机（支持 1:1 后台虚拟屏）。
+      <strong>Sol Next 9.3.1 公开版（<code>ai.sol.next</code> · Build 931）</strong>坚持 100% 零明文密钥与零 Python，原生附带零依赖 <strong>Rust 2024 CLI（<code>sol-cli --json</code>）</strong>与进程内 <strong>stdio MCP Server（<code>sol-mcp</code>）</strong>，让 Claude Code、Cursor、Antigravity 等桌面 AI 助手直接、安全地驱动你的 Android 10–16 手机（支持 1:1 后台虚拟屏）。
     </p>
 
     <h2>一、30 秒 BYOK 配置与密码学零密钥自审计</h2>
@@ -113,31 +113,32 @@ unzip -l Sol-Next-v9.3.1-public-arm64.apk | grep sol-models</pre>
       </div>
     </div>
 
-    <h2>二、零依赖 Python CLI（<code>--json</code> 确定性输出）</h2>
+    <h2>二、零依赖 Rust 2024 CLI（<code>sol-cli --json</code> 确定性输出）</h2>
     <div class="card">
       <pre>git clone https://github.com/chongyangzhang92-hub/Sol-Next.git
 cd Sol-Next
+cargo build --release --bins
 
 # 1. 检测设备连接、Sol Next 版本与 1:1 VirtualDisplay 状态
-python3 scripts/sol-cli.py status --json
+./target/release/sol-cli status --json
 
 # 2. 自动下载校验 SHA-256、安装公开版 APK 并授予运行时权限
-python3 scripts/sol-cli.py install --verify-sha256 --grant-permissions --json
+./target/release/sol-cli install --verify-sha256 --grant-permissions --json
 
 # 3. 通过 ADB 启动 uid=2000 1:1 后台虚拟屏助手
-python3 scripts/sol-cli.py start-helper --json
+./target/release/sol-cli start-helper --json
 
 # 4. 下发自然语言指令驱动真机多模态闭环执行
-python3 scripts/sol-cli.py run --intent "打开系统设置并查看电池与存储状态" --json</pre>
+./target/release/sol-cli run --intent "打开系统设置并查看电池与存储状态" --json</pre>
     </div>
 
-    <h2>三、原生 stdio MCP Server（Claude Code / Cursor / Antigravity）</h2>
+    <h2>三、原生 Rust 2024 stdio MCP Server（Claude Code / Cursor / Antigravity）</h2>
     <div class="card">
       <pre>{
   "mcpServers": {
     "sol-next": {
-      "command": "python3",
-      "args": ["/absolute/path/to/Sol-Next/mcp/sol_mcp_server.py"]
+      "command": "/absolute/path/to/Sol-Next/target/release/sol-mcp",
+      "args": []
     }
   }
 }</pre>

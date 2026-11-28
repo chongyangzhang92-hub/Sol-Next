@@ -5,12 +5,12 @@ See [`AGENTS.md`](AGENTS.md) and [`llms.txt`](llms.txt) for complete, authoritat
 ## Quick Reference for Claude Code / AI Coding Assistants
 
 - **Goal**: Install, verify, or automate **Sol Next Public Edition** (`ai.sol.next`, free built-in Rust-encrypted DeepSeek V4.1 Flash + universal BYOK) on an ADB-connected Android 10–16 or HarmonyOS device.
-- **Zero-dependency CLI** (always prefer `--json`, never interactive):
-  - Check device: `python3 scripts/sol-cli.py status --json`
-  - Install verified APK: `python3 scripts/sol-cli.py install --verify-sha256 --grant-permissions --json`
-  - Start 1:1 VirtualDisplay helper: `python3 scripts/sol-cli.py start-helper --json`
-  - Run phone task: `python3 scripts/sol-cli.py run --intent "<task>" --json`
-- **MCP Server**: `python3 mcp/sol_mcp_server.py` (stdlib-only stdio JSON-RPC 2.0).
+- **Zero-dependency Rust 2024 CLI** (always prefer `--json`, never interactive; build once with `cargo build --release --bins`):
+  - Check device: `./target/release/sol-cli status --json`
+  - Install verified APK: `./target/release/sol-cli install --verify-sha256 --grant-permissions --json`
+  - Start 1:1 VirtualDisplay helper: `./target/release/sol-cli start-helper --json`
+  - Run phone task: `./target/release/sol-cli run --intent "<task>" --json`
+- **MCP Server**: `./target/release/sol-mcp` (zero-dependency Rust 2024 stdio JSON-RPC 2.0).
 - **Hard Guardrails**:
   - Never hardcode or commit plaintext API keys, secrets, or private server URLs.
   - Package ID is `ai.sol.next`.
