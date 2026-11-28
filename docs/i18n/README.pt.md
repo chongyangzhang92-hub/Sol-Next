@@ -1,12 +1,12 @@
 <div align="center">
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.2.0-public">
-  <img src="../media/v911/hero-banner-v911.png" alt="Sol Next 9.2.0 — Native Material 3 · Seu Parceiro de Ação com IA" width="100%" />
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.3.0-public">
+  <img src="../media/v911/hero-banner-v911.png" alt="Sol Next 9.3.0 — Native Material 3 · Seu Parceiro de Ação com IA" width="100%" />
 </a>
 
 <br/><br/>
 
-# Sol Next 9.2.0 — Native Material 3 · Seu Parceiro de Ação com IA
+# Sol Next 9.3.0 — Native Material 3 · Seu Parceiro de Ação com IA
 
 ### Fale ou digite para automatizar seu Android · 20 idiomas (detecção automática pelo idioma do celular)
 
@@ -14,11 +14,11 @@
 
 <br/>
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20ARM64%20APK-v9.2.0-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="Baixar APK Público v9.2.0 (ARM64 · DeepSeek Grátis)" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20ARM64%20APK-v9.3.0-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="Baixar APK Público v9.3.0 (ARM64 · DeepSeek Grátis)" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20Universal%20APK-ARM64%20%2B%20x86__64-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Baixar APK Universal (ARM64 + x86_64)" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20Universal%20APK-ARM64%20%2B%20x86__64-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Baixar APK Universal (ARM64 + x86_64)" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.2.0-public"><img src="https://img.shields.io/badge/📋%20Release-v9.2.0-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Notas da versão v9.2.0 e SHA-256" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.3.0-public"><img src="https://img.shields.io/badge/📋%20Release-v9.3.0-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Notas da versão v9.3.0 e SHA-256" /></a>
 
 <br/><br/>
 
@@ -30,7 +30,7 @@
 
 <div>
 
-## ✨ Novidades na v9.2.0
+## ✨ Novidades na v9.3.0
 
 - **20 idiomas globais + detecção pelo idioma do telefone**: Segue estritamente o idioma do sistema (nunca a região) com troca instantânea em Configurações.
 - **Popup automático de atualização OTA + Notas de versão + Download acelerado**: Abre um diálogo com o que há de novo e acelera o download com múltiplos espelhos + 4 fluxos HTTP Range paralelos (validação SHA-256 e assinatura).
@@ -46,7 +46,7 @@ Escaneie o código QR do WeChat abaixo para falar diretamente com o autor (RedNo
 
 <p align="center">
   <img src="../assets/author-wechat-qr.jpg" width="220" alt="WeChat QR · Author Contact" /><br/>
-  <sub><b>Sol Next 9.2.0</b> · Apache-2.0 · <a href="https://chongyangzhang92-hub.github.io/Sol-Next/">Official Multi-Language Website</a> · <a href="../../SHA256SUMS.txt">SHA256SUMS.txt</a></sub>
+  <sub><b>Sol Next 9.3.0</b> · Apache-2.0 · <a href="https://chongyangzhang92-hub.github.io/Sol-Next/">Official Multi-Language Website</a> · <a href="../../SHA256SUMS.txt">SHA256SUMS.txt</a></sub>
 </p>
 
 </div>

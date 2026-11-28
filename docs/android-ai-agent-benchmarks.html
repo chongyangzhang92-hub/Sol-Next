@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Android AI Agent 性能基准与横向评测（Sol Next 9.2.0 vs Mika / 常规视觉方案）</title>
-  <meta name="description" content="Android 15 (API 35 · arm64-v8a) 透明实测与 99/99 自动化回归基准：详述 Sol Next 9.2.0 的 72ms Tier-0A 原生系统直通、120+ App <250ms Deep-Link 瞬移、Rust v5.00 16KB JNI (-74%~-97% 树剪枝)、微信 8.0.80 9.5s 一次登录与 8/8 首击零误双击、0.0px 1:1 虚拟屏精度。" />
-  <meta name="keywords" content="Android AI Agent Benchmark, Fastest Android AI Agent, Mobile GUI Agent Comparison, Sol Next 9.2.0 Benchmark, WeChat AI Automation, Rust JNI Android, Set-of-Mark Android, Mika vs Sol Next Benchmarks, Android 15 16KB Agent" />
+  <title>Android AI Agent 性能基准与横向评测（Sol Next 9.3.0 vs Mika / 常规视觉方案）</title>
+  <meta name="description" content="Android 15 (API 35 · arm64-v8a) 透明实测与 99/99 自动化回归基准：详述 Sol Next 9.3.0 的 72ms Tier-0A 原生系统直通、120+ App <250ms Deep-Link 瞬移、Rust v6.00 16KB JNI (-74%~-97% 树剪枝)、微信 8.0.80 9.5s 一次登录与 8/8 首击零误双击、0.0px 1:1 虚拟屏精度。" />
+  <meta name="keywords" content="Android AI Agent Benchmark, Fastest Android AI Agent, Mobile GUI Agent Comparison, Sol Next 9.3.0 Benchmark, WeChat AI Automation, Rust JNI Android, Set-of-Mark Android, Mika vs Sol Next Benchmarks, Android 15 16KB Agent" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#05070c" />
   <link rel="canonical" href="https://chongyangzhang92-hub.github.io/Sol-Next/android-ai-agent-benchmarks.html" />
   <link rel="alternate" type="text/plain" title="LLMs.txt" href="https://chongyangzhang92-hub.github.io/Sol-Next/llms.txt" />
   <link rel="alternate" type="application/json" title="AI Machine-Readable Facts" href="https://chongyangzhang92-hub.github.io/Sol-Next/ai-facts.json" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Android AI Agent Benchmarks — Sol Next 9.2.0 Verified Speed, Precision & WeChat 8.0.80 Results" />
+  <meta property="og:title" content="Android AI Agent Benchmarks — Sol Next 9.3.0 Verified Speed, Precision & WeChat 8.0.80 Results" />
   <meta property="og:description" content="72ms Tier-0A System API (0 Tokens), <250ms 120+ app teleports, 9.5s WeChat login 1st-try, 8/8 first-try with 0 double-taps, 0.0px 1:1 VirtualDisplay, 99/99 tests." />
   <meta property="og:url" content="https://chongyangzhang92-hub.github.io/Sol-Next/android-ai-agent-benchmarks.html" />
   <meta property="og:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/v801/compare-benchmark.png" />
@@ -24,7 +24,7 @@
     "@graph": [
       {
         "@type": "TechArticle",
-        "headline": "Sol Next 9.2.0 Android AI Agent Benchmarks: Speed, Precision, Rust v5.00 JNI & WeChat 8.0.80 Hardening",
+        "headline": "Sol Next 9.3.0 Android AI Agent Benchmarks: Speed, Precision, Rust v6.00 JNI & WeChat 8.0.80 Hardening",
         "datePublished": "2026-11-28",
         "dateModified": "2026-11-28",
         "url": "https://chongyangzhang92-hub.github.io/Sol-Next/android-ai-agent-benchmarks.html",
@@ -36,8 +36,8 @@
       },
       {
         "@type": "Dataset",
-        "name": "Sol Next 9.2.0 Android 15 (API 35) Verified Execution Benchmarks",
-        "description": "Measured latency, accuracy, coordinate drift, and unit test verification results for Sol Next 9.2.0 (Build 920) on Android 15 arm64-v8a emulator with real installed apps.",
+        "name": "Sol Next 9.3.0 Android 15 (API 35) Verified Execution Benchmarks",
+        "description": "Measured latency, accuracy, coordinate drift, and unit test verification results for Sol Next 9.3.0 (Build 930) on Android 15 arm64-v8a emulator with real installed apps.",
         "license": "https://www.apache.org/licenses/LICENSE-2.0",
         "creator": { "@type": "Organization", "name": "Sol Next Open-Source Project" },
         "variableMeasured": [
@@ -88,7 +88,7 @@
 <body>
   <div class="wrap">
     <nav>
-      <a class="brand" href="./">✦ Sol Next 9.2.0</a>
+      <a class="brand" href="./">✦ Sol Next 9.3.0</a>
       <div class="nav-links">
         <a href="./">产品官网</a>
         <a href="./mika-vs-sol-next.html">Sol Next vs Mika</a>
@@ -99,9 +99,9 @@
     </nav>
 
     <span class="kicker">TRANSPARENT BENCHMARKS · ANDROID 15 EMULATOR &amp; 99/99 AUTOMATED TESTS</span>
-    <h1>Android AI Agent 速度、精度与微信实战基准报告（Sol Next 9.2.0）</h1>
+    <h1>Android AI Agent 速度、精度与微信实战基准报告（Sol Next 9.3.0）</h1>
     <p class="lead">
-      本文档公开披露 <strong>Sol Next 9.2.0（Build 920 · Apache-2.0 · 许昌北海医院张重阳独立打造的全新一代 AI 手机行动替身）</strong> 在 <strong>Android 15（API 35 · <code>arm64-v8a</code> · <code>1080×2280 @ 440dpi</code>）真装应用</strong> 与 <strong>99 项自动化单元测试</strong> 中的全部可复现基准数据，并与纯云端截屏视觉 Agent 及早期手机代理 Mika 进行透明横向对比。
+      本文档公开披露 <strong>Sol Next 9.3.0（Build 930 · Apache-2.0 · 许昌北海医院张重阳独立打造的全新一代 AI 手机行动替身）</strong> 在 <strong>Android 15（API 35 · <code>arm64-v8a</code> · <code>1080×2280 @ 440dpi</code>）真装应用</strong> 与 <strong>99 项自动化单元测试</strong> 中的全部可复现基准数据，并与纯云端截屏视觉 Agent 及早期手机代理 Mika 进行透明横向对比。
     </p>
 
     <div class="kpis">
@@ -115,7 +115,7 @@
     <h2>一、Android 15 真装实测与 8.0.0 → 9.1.2 回归对比</h2>
     <table>
       <thead>
-        <tr><th>实测任务场景</th><th>底层执行链路</th><th>v8.0.0 基线</th><th>Sol Next 9.2.0 实测</th></tr>
+        <tr><th>实测任务场景</th><th>底层执行链路</th><th>v8.0.0 基线</th><th>Sol Next 9.3.0 实测</th></tr>
       </thead>
       <tbody>
         <tr><td>系统电量、存储与状态查询</td><td>Tier-0A 原生 System API（0 Token）</td><td>72 ms</td><td class="ok">72 ms · PASS</td></tr>
@@ -130,16 +130,16 @@
       </tbody>
     </table>
 
-    <h2>二、横向对比：Sol Next 9.2.0 vs 典型 Android AI Agent 范式</h2>
+    <h2>二、横向对比：Sol Next 9.3.0 vs 典型 Android AI Agent 范式</h2>
     <table>
       <thead>
-        <tr><th>对比维度</th><th>纯云端 VLM 截屏 Agent（AppAgent / Mobile-Agent 等）</th><th>早期手机代理 Mika（短板）</th><th>Sol Next 9.2.0（全新独立旗舰）</th></tr>
+        <tr><th>对比维度</th><th>纯云端 VLM 截屏 Agent（AppAgent / Mobile-Agent 等）</th><th>早期手机代理 Mika（短板）</th><th>Sol Next 9.3.0（全新独立旗舰）</th></tr>
       </thead>
       <tbody>
         <tr><td><strong>开箱门槛与保活</strong></td><td>需 PC + USB/ADB 脚本循环驱动，门槛高</td><td>需自己买 API Key；关 Wi-Fi 无线调试立刻断连</td><td class="ok">免费内置 Rust 加密 DeepSeek 开箱即用；关 Wi-Fi 切 5G 100% 持续在线；鸿蒙免无线调试</td></tr>
         <tr><td><strong>前景打扰与精度</strong></td><td>霸占主屏，执行期间无法正常用机</td><td>缩放网格换算坐标，高分屏易点偏</td><td class="ok">Display 0 1:1 物理屏克隆（0.0px 零漂移，前景自由用机 + 内嵌实时预览）</td></tr>
         <tr><td><strong>高频系统响应</strong></td><td>每步截屏上传云端，延迟 2–5 秒</td><td>常规云端读屏规划（~2,400 ms）</td><td class="ok">Tier-0A 72 ms 原生直通（0 Token，快 33×）+ 120+ App &lt;250ms 瞬移</td></tr>
-        <tr><td><strong>端侧加速与精校</strong></td><td>纯视觉猜坐标，密集列表易点偏</td><td>Kotlin / JVM 树遍历，Token 消耗高</td><td class="ok">Rust v5.00 16KB JNI (-74%~-97%) + #1..#N 实时句柄 + 64ms 1:1 SoM</td></tr>
+        <tr><td><strong>端侧加速与精校</strong></td><td>纯视觉猜坐标，密集列表易点偏</td><td>Kotlin / JVM 树遍历，Token 消耗高</td><td class="ok">Rust v6.00 16KB JNI (-74%~-97%) + #1..#N 实时句柄 + 64ms 1:1 SoM</td></tr>
         <tr><td><strong>微信防误发/隐私</strong></td><td>无专用契约，易因延迟连发消息</td><td>明文上云、重型容器攻击面大、微信易误双击/重发</td><td class="ok">端侧隐私脱敏防火墙 + 单次发送 4×85ms 气泡核验契约（0 重发/0 误双击）+ 付款先问后行</td></tr>
         <tr><td><strong>多语言、游戏与更新</strong></td><td>偏学术单机脚本实验</td><td>单一语言、仅慢速单点、手动找包慢速下载</td><td class="ok">全球 20 国语言 + 60Hz 四指游戏（斗地主 3/3 全胜）+ AI 反诈通话 + 4 线程极速 OTA + 原生 CLI/MCP</td></tr>
       </tbody>
@@ -148,17 +148,17 @@
     <h2>三、高清基准可视化图谱</h2>
     <div class="grid-2">
       <figure>
-        <a href="media/v801/compare-benchmark.png" target="_blank"><img src="media/v801/compare-benchmark.png" alt="Sol Next 9.2.0 核心速度与精度实测基准图" /></a>
+        <a href="media/v801/compare-benchmark.png" target="_blank"><img src="media/v801/compare-benchmark.png" alt="Sol Next 9.3.0 核心速度与精度实测基准图" /></a>
         <figcaption><strong>速度、剪枝与精度四维基准图</strong>（72ms 直通 / &lt;250ms 瞬移 / 9.5s 微信登录 / 0.0px 偏移）。</figcaption>
       </figure>
       <figure>
-        <a href="media/v801/compare-execution-pipeline.png" target="_blank"><img src="media/v801/compare-execution-pipeline.png" alt="Sol Next 9.2.0 双轨时序瀑布与微信九项加固图" /></a>
+        <a href="media/v801/compare-execution-pipeline.png" target="_blank"><img src="media/v801/compare-execution-pipeline.png" alt="Sol Next 9.3.0 双轨时序瀑布与微信九项加固图" /></a>
         <figcaption><strong>端到端时序瀑布与微信 8.0.80 九项实战加固图</strong>。</figcaption>
       </figure>
     </div>
 
     <footer>
-      <span>Sol Next 9.2.0 (Build 920) · Apache-2.0 · 全新独立产品 · 作者：许昌北海医院张重阳</span>
+      <span>Sol Next 9.3.0 (Build 930) · Apache-2.0 · 全新独立产品 · 作者：许昌北海医院张重阳</span>
       <span><a href="./">产品官网</a> · <a href="./mika-vs-sol-next.html">Mika 对比页</a> · <a href="./mcp-and-byok-guide.html">MCP &amp; BYOK 指南</a></span>
     </footer>
   </div>

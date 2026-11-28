@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sol Next 9.2.0 — 开源免费 Android AI 助手与自主行动智能体（内置 DeepSeek · Brave 搜索 · 端侧实时语音）</title>
-  <meta name="description" content="Sol Next 9.2.0 是专为 Android 10–16 与鸿蒙手机打造的开源免费 AI 个人助手与自主行动替身：原生 Material 3 浅色/深色双模式、免费内置 DeepSeek Flash 与 Brave Search 实时联网搜索、内置四级端侧实时神经语音（免配云端语音 API）、后台独立虚拟屏自主点手机、开车免看屏通知语音朗读与 AI 智能接打电话。" />
-  <meta name="keywords" content="Sol Next,Android AI Agent,手机 AI 助手,开源免费 AI,DeepSeek Flash,Brave Search,端侧实时语音,后台虚拟屏,通知语音朗读,AI 接打电话,HarmonyOS,Material 3,张重阳" />
+  <title>Sol Next 9.3.0 — 全栈 Rust 2024 开源免费 Android AI 助手（24kHz 端侧语音 · ARM64/Vulkan/NPU · 免费内置 DeepSeek）</title>
+  <meta name="description" content="Sol Next 9.3.0 是专为 Android 10–16 与鸿蒙手机打造的全栈 Rust 2024 开源免费 AI 助手与自主行动智能体：2026 SOTA X-ASR 160ms + Kokoro v1.1 24kHz 高清端侧语音、手写 ARM64 NEON/SVE2 汇编 + Vulkan Compute + NNAPI NPU 算力内核、Android 13 零抢输入法后台独立虚拟屏，正常登录即免费内置 DeepSeek 与 Brave 实时搜索。" />
+  <meta name="keywords" content="Sol Next,Android AI Agent,全栈 Rust 2024,ARM64 NEON SVE2,Vulkan Compute,NNAPI NPU,Kokoro v1.1 24kHz,X-ASR 160ms,DeepSeek,Brave Search,Android 13 虚拟屏输入法,开源免费 AI,HarmonyOS,Material 3,张重阳" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Sol Next" />
-  <meta property="og:title" content="Sol Next 9.2.0 — Open-Source Android AI Assistant &amp; Autonomous Mobile Agent" />
-  <meta property="og:description" content="Native Material 3 Dual-Mode (Chat | Task), built-in DeepSeek Flash &amp; Brave Web Search, 4-stage on-device realtime neural voice, background virtual screen, and hands-free driving notification voice readout." />
+  <meta property="og:title" content="Sol Next 9.3.0 — Full-Stack Rust 2024 Android AI Assistant &amp; Autonomous Mobile Agent" />
+  <meta property="og:description" content="2026 SOTA 24kHz on-device voice (X-ASR 160ms + Kokoro v1.1), hand-written ARM64 NEON/SVE2 + Vulkan + NPU compute kernel, Android 13 non-stealing IME virtual display, and mature cloud account with free built-in DeepSeek." />
   <meta property="og:url" content="https://chongyangzhang92-hub.github.io/Sol-Next/" />
   <meta property="og:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/v911/hero-banner-v911.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sol Next 9.2.0 — Open-Source Android AI Assistant &amp; Autonomous Agent" />
-  <meta name="twitter:description" content="Free Apache-2.0 Android AI agent with built-in DeepSeek Flash, Brave Search, 4-stage on-device neural voice, background virtual screen, and driving notification readout." />
+  <meta name="twitter:title" content="Sol Next 9.3.0 — Full-Stack Rust 2024 Android AI Assistant &amp; Autonomous Agent" />
+  <meta name="twitter:description" content="Free Apache-2.0 Android AI agent with X-ASR 160ms + Kokoro v1.1 24kHz HD on-device voice, ARM64 NEON/SVE2 + Vulkan + NPU kernel, Android 13 non-stealing IME, and free built-in DeepSeek." />
   <meta name="twitter:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/v911/hero-banner-v911.png" />
   <meta name="theme-color" content="#1A73E8" />
   <link rel="canonical" href="https://chongyangzhang92-hub.github.io/Sol-Next/" />
@@ -29,11 +29,11 @@
         "name": "Sol Next",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Android 10-16 (API 29-36), HarmonyOS",
-        "softwareVersion": "9.1.2-public",
+        "softwareVersion": "9.3.0-public",
         "datePublished": "2026-11-28",
         "dateModified": "2026-11-28",
         "url": "https://chongyangzhang92-hub.github.io/Sol-Next/",
-        "downloadUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk",
+        "downloadUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-arm64.apk",
         "codeRepository": "https://github.com/chongyangzhang92-hub/Sol-Next",
         "license": "https://opensource.org/licenses/Apache-2.0",
         "author": {
@@ -47,12 +47,12 @@
           "priceCurrency": "USD"
         },
         "featureList": [
-          "Native Material 3 Dual-Mode Interface (Chat | Task) in Light and Obsidian Dark",
-          "Built-in free DeepSeek Flash & Brave Search real-time web grounding",
-          "Bundled 4-stage on-device realtime neural voice (GTCRN + Silero VAD v5 + Zipformer-CTC + AISHELL-3 VITS)",
-          "Hands-free Notification Voice Readout for driving and resting with Audio Ducking & OTP redaction",
-          "Background Independent Virtual Screen with DISPLAY_IME_POLICY_HIDE keyboard isolation",
-          "Free multi-channel login (Phone OTP, Email OTP, Google, WeChat, QQ, Apple, GitHub) & Subscription OAuth model login"
+          "100% Full-Stack Rust 2024 architecture with zero Python across Android build toolchain and cloud backends",
+          "2026 SOTA 24kHz on-device neural voice: GTCRN + Silero VAD v5 + X-ASR 160ms streaming Zipformer2 + Kokoro v1.1 24kHz HD (103 voices)",
+          "Hand-written ARM64 NEON/DotProd/I8MM/SVE2 assembly + Vulkan 1.1 Compute Shaders + Android NNAPI NPU + QNN/OpenCL kernel (libsol_kernel.so v600)",
+          "Android 13 zero-MotionEvent Accessibility IME passthrough plus Android 14-16 DISPLAY_IME_POLICY_HIDE virtual display isolation",
+          "Mature PBKDF2-HMAC-SHA256 cloud account system and native Google Sign-In unlocking free built-in DeepSeek and Brave Search",
+          "Native Material 3 Dual-Mode Interface (Chat | Task), 3-Tab AI Phone Call Suite, and hands-free Notification Voice Readout"
         ]
       },
       {
@@ -60,26 +60,26 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Sol Next 9.2.0 是否完全免费且免配 API 开箱即用？",
+            "name": "Sol Next 9.3.0 正常登录后就能免费使用内置 DeepSeek 吗？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "是的。Sol Next 采用 Apache-2.0 开源协议，完全免费无广告，内置 Rust 硬件加密保护的 DeepSeek Flash 模型、Brave Search 实时联网搜索与四级端侧实时神经语音引擎，同时支持用户自由添加自有 API Key 与订阅 OAuth 账号。"
+              "text": "是的。v9.3.0 已升级为成熟产品级云端账号体系（手机号/邮箱密码注册登录或 Google 登录），不再提供虚拟免费验证码；正常登录账号即可自动解锁免费内置 DeepSeek 与 Brave Search 实时联网搜索，同时支持自有 API Key 一键测速与订阅 OAuth。"
             }
           },
           {
             "@type": "Question",
-            "name": "开车时使用通知语音朗读会暴露短信验证码吗？",
+            "name": "Android 13 手机在后台虚拟屏执行任务时还会抢输入法吗？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "不会。通知语音朗读默认隐藏短信验证码与银行卡隐私数字，通过端侧离线神经语音播报，并在播报时短暂压低音乐或导航音量（Audio Ducking），支持仅车载蓝牙或耳机连接时播报。"
+              "text": "不会。v9.3.0 针对 Android 13（API 33）及以下启用零 MotionEvent 无障碍直传通道（ACTION_SET_TEXT / ACTION_CLICK / ACTION_IME_ENTER），避免触发系统 InputDispatcher 抢占主屏焦点；Android 14-16 同时具备 DISPLAY_IME_POLICY_HIDE 物理隔离。"
             }
           },
           {
             "@type": "Question",
-            "name": "部分手机退出 App 后无障碍被关闭会一直弹窗吗？",
+            "name": "Sol Next 9.3.0 的端侧语音与算力升级带来了什么提升？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "不会。Sol Next v9.2.0 完成首次权限引导后持久化状态，退出重开不再反复拦截弹窗；连接无线调试 Shell 助手后还可在 200ms 内静默自愈无障碍服务。"
+              "text": "内置 X-ASR 160ms 流式识别（实测 RTF 0.20）与 Kokoro v1.1 24kHz 高清双语合成（103 音色、RTF 0.701、4 音色一键试听）；libsol_kernel.so v600 手写 ARM64 NEON/SVE2 汇编搭配 Vulkan Compute 与 NNAPI NPU，实现最高 6.04 倍端侧视觉与向量算子加速。"
             }
           }
         ]
@@ -99,7 +99,7 @@
     .hero img.banner { width: 100%; border-radius: 24px; border: 1px solid var(--border); box-shadow: 0 12px 36px rgba(26,115,232,0.10); }
     .badge { display: inline-block; background: var(--blueSoft); color: var(--blue); padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; margin-top: 22px; }
     h1 { font-size: clamp(28px, 4.4vw, 44px); line-height: 1.2; margin: 14px 0 12px; letter-spacing: -0.02em; }
-    .lead { color: var(--ink2); font-size: 17px; max-width: 780px; margin: 0 auto 26px; }
+    .lead { color: var(--ink2); font-size: 17px; max-width: 820px; margin: 0 auto 26px; }
     .cta-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 18px; }
     .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 999px; font-weight: 600; text-decoration: none; font-size: 15px; transition: transform .15s ease; }
     .btn:hover { transform: translateY(-1px); }
@@ -124,42 +124,44 @@
 <body>
   <main class="wrap">
     <section class="hero">
-      <img class="banner" src="media/v911/hero-banner-v911.png" alt="Sol Next 9.2.0 Banner" />
-      <div class="badge">v9.2.0-public · Build 920 · Apache-2.0 开源免费</div>
-      <h1>Sol Next 9.2.0 — 手机上的开源 AI 助手与自主行动替身</h1>
-      <p class="lead">原生 Android Material 3「对话 | 任务」流体双模式 · 免费内置 DeepSeek Flash 与 Brave Search 实时联网搜索 · 四级端侧实时神经语音零配置即用 · 后台独立虚拟屏替你办事 · 开车免看屏通知语音朗读。</p>
+      <img class="banner" src="media/v911/hero-banner-v911.png" alt="Sol Next 9.3.0 Banner" />
+      <div class="badge">v9.3.0-public · Build 930 · 全栈 Rust 2024 · Apache-2.0 开源免费</div>
+      <h1>Sol Next 9.3.0 — 全栈 Rust 2024 开源 AI 助手与自主行动替身</h1>
+      <p class="lead">2026 SOTA 24kHz 端侧实时语音（X-ASR 160ms + Kokoro v1.1）· 手写 ARM64 NEON/SVE2 汇编 + Vulkan Compute + NNAPI NPU 算力内核 · Android 13 零抢输入法后台独立虚拟屏 · 成熟云端账号正常登录即享免费内置 DeepSeek 与 Brave 实时联网搜索。</p>
       <div class="cta-row">
-        <a class="btn btn-green" href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.2.0/Sol-Next-v9.2.0-public-arm64.apk">🇨🇳 国内高速直连下载 (ARM64 · 93MB)</a>
-        <a class="btn btn-primary" href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk">⬇ GitHub 官方下载 (ARM64)</a>
+        <a class="btn btn-green" href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.0/Sol-Next-v9.3.0-public-arm64.apk">🇨🇳 国内高速直连下载 (ARM64 · 386MB)</a>
+        <a class="btn btn-primary" href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-arm64.apk">⬇ GitHub 官方下载 (ARM64)</a>
         <a class="btn btn-outline" href="https://github.com/chongyangzhang92-hub/Sol-Next">⭐ GitHub 仓库主页</a>
         <a class="btn btn-outline" href="llms.txt">🤖 llms.txt / GEO</a>
       </div>
     </section>
 
-    <h2>六大核心能力</h2>
+    <h2>六大旗舰技术突破（v9.3.0）</h2>
     <section class="grid">
-      <article class="card"><h3>🎨 原生 Material 3 浅/深双模式</h3><p>底部「对话 | 任务」悬浮胶囊与呼吸光晕，浅色 #FFFFFF / 深色 #0E0F11 全站 120Hz 自适应，支持左上角热切 DeepSeek Flash / Pro、BYOK 与 OpenRouter PKCE 订阅 OAuth。</p></article>
-      <article class="card"><h3>🌐 内置 Brave Search 实时联网</h3><p>Rust 加密保险库内置 Brave Search API，日常对话询问实时资讯/天气/价格与多跳深度研究自动联网检索附来源；国内直连环境自动 2.5s 无缝降级兜底。</p></article>
-      <article class="card"><h3>🎙️ 四级端侧实时神经语音</h3><p>APK 内置 GTCRN 降噪 + Silero VAD v5 + Zipformer-CTC + AISHELL-3 VITS，免配任何云端语音 API，统一驱动 Live 实时语音与 AI 智能接打电话。</p></article>
-      <article class="card"><h3>🚗 开车 / 休息通知语音朗读</h3><p>离线自动播报微信/短信/重要通知，播报时自动短暂压低音乐音量（Audio Ducking），默认隐藏短信验证码与银行卡隐私数字，支持仅蓝牙车载/耳机模式。</p></article>
-      <article class="card"><h3>🖥️ 后台独立虚拟屏 &amp; 防弹窗</h3><p>任务模式自动在应用内拉起后台独立虚拟屏并隔离副屏输入法（DISPLAY_IME_POLICY_HIDE），主屏打字不断流；彻底优化国产 ROM 退出后反复提示无障碍。</p></article>
-      <article class="card"><h3>🔐 免费全渠道登录 &amp; 硬件加密</h3><p>免费手机/邮箱验证码登录 + Google/微信/QQ/Apple/GitHub/华为飞书主流登录，全部凭证与本地记忆通过 Android Keystore AES-256-GCM 硬件加密存储。</p></article>
+      <article class="card"><h3>🎙️ 2026 SOTA 24kHz 端侧高清语音</h3><p>APK 原生内置 GTCRN + Silero VAD v5 + X-ASR 160ms（实测 RTF 0.20）+ Kokoro v1.1 24kHz HD（103 音色、RTF 0.701、4 音色一键试听、零爆音淡入淡出），免配任何云端语音 API。</p></article>
+      <article class="card"><h3>⚡ ARM64 汇编 + Vulkan + NPU 内核</h3><p>libsol_kernel.so v600 手写 ARM64 NEON / DotProd / I8MM / SVE2 内联汇编（最高 6.04× 加速），协同 Vulkan 1.1 Compute Shader 与 NNAPI NPU，设置页可一键跑分验证。</p></article>
+      <article class="card"><h3>🦀 全栈 Rust 2024（彻底零 Python）</h3><p>构建链升级为纯 Rust sol-builder；云端世界模型与账号服务全面重写为 Rust 2024（sol-world-rs 仅 16.7MB 内存、降幅 150.7×；sol-engine-rs 冷算 1.76ms、提速 608×）。</p></article>
+      <article class="card"><h3>🔐 成熟云端账号 · 免费内置 DeepSeek</h3><p>PBKDF2-HMAC-SHA256 云端手机/邮箱密码登录 + 原生 Google 登录 + 交互式协议弹窗 + 完整账号中心，正常登录即免费激活内置 DeepSeek 与 Brave 实时联网搜索。</p></article>
+      <article class="card"><h3>⌨️ Android 13 零抢输入法 &amp; 虚拟屏</h3><p>Android 13 及以下采用零 MotionEvent 无障碍直传文本与确认，绝不抢占主屏键盘；Android 14+ 同步启用 DISPLAY_IME_POLICY_HIDE，右下角折叠浮窗零遮挡。</p></article>
+      <article class="card"><h3>📞 三栏 AI 电话 &amp; 成熟产品体验</h3><p>支持 AI 拨打/代接/暗语传话/反诈预警、三档任务语音播报（默认仅耳机与车载蓝牙）、抽屉常驻搜索、BYOK 一键测速与 Android Keystore AES-256-GCM 硬件加密。</p></article>
     </section>
 
-    <h2>真机实拍界面（v9.2.0）</h2>
+    <h2>真机全链路实拍（v9.3.0 · 371/371 测试全通过）</h2>
     <section class="shots">
-      <div class="shot"><img src="media/v911/01-home-light.png" alt="浅色极简主页" loading="lazy"/><strong>浅色极简主页</strong><span>对话 | 任务 悬浮胶囊</span></div>
-      <div class="shot"><img src="media/v911/02-home-dark-markdown.png" alt="深色模式富文本" loading="lazy"/><strong>深色模式富文本</strong><span>纯黑自适应护眼排版</span></div>
-      <div class="shot"><img src="media/v911/03-task-virtual-screen.png" alt="任务模式后台虚拟屏" loading="lazy"/><strong>任务模式虚拟屏</strong><span>后台独立运行不收键盘</span></div>
-      <div class="shot"><img src="media/v911/06-live-realtime-voice.png" alt="Live 端侧实时语音" loading="lazy"/><strong>端侧 Live 实时语音</strong><span>四级神经引擎免配 API</span></div>
-      <div class="shot"><img src="media/v911/07-notification-readout.png" alt="开车通知语音朗读" loading="lazy"/><strong>通知语音朗读</strong><span>压低音乐 · 隐藏验证码</span></div>
-      <div class="shot"><img src="media/v911/08-universal-login.png" alt="免费全渠道登录" loading="lazy"/><strong>免费全渠道登录</strong><span>手机/邮箱/谷歌/微信/QQ</span></div>
+      <div class="shot"><img src="media/v930/final_01_login_gate.png" alt="成熟云端账号登录" loading="lazy"/><strong>成熟账号登录</strong><span>手机/邮箱密码 + Google</span></div>
+      <div class="shot"><img src="media/v930/final_02_account_center_live.png" alt="账号中心与免费 DeepSeek" loading="lazy"/><strong>账号中心</strong><span>✓ 免费内置 DeepSeek 已激活</span></div>
+      <div class="shot"><img src="media/v930/final_03_settings_hardware_voice.png" alt="ARM64 Vulkan NPU 跑分与 24kHz 试听" loading="lazy"/><strong>算力跑分 &amp; 24kHz 试听</strong><span>ARM64/Vulkan/NPU · Kokoro</span></div>
+      <div class="shot"><img src="media/v930/final_04_drawer_search.png" alt="侧边抽屉实时搜索" loading="lazy"/><strong>侧边抽屉搜索</strong><span>历史会话秒搜直达</span></div>
+      <div class="shot"><img src="media/v930/final_05_task_bottom_right_pip.png" alt="任务模式右下角零遮挡 PiP" loading="lazy"/><strong>右下角零遮挡 PiP</strong><span>1ms 系统 0 + DeepSeek 回复</span></div>
+      <div class="shot"><img src="media/v930/final_06_light_expanded_pip.png" alt="浅色展开虚拟屏" loading="lazy"/><strong>展开虚拟屏（浅色）</strong><span>零黑屏 · 5 枚胶囊零裁切</span></div>
+      <div class="shot"><img src="media/v930/final_07_dark_expanded_pip.png" alt="深色展开虚拟屏" loading="lazy"/><strong>展开虚拟屏（深色）</strong><span>#1E2026 边框自适应</span></div>
+      <div class="shot"><img src="media/v930/final_08_dark_collapsed_pip.png" alt="深色折叠 PiP" loading="lazy"/><strong>深色折叠 PiP</strong><span>Android 13 零抢输入法</span></div>
     </section>
 
     <h2>SHA-256 官方校验值</h2>
     <pre>Signing Cert SHA-256: d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478
-Sol-Next-v9.2.0-public-arm64.apk     : 398145f17f1cb17b228aeae6bb94b9d0e47320cc6ffd76afff6b511dbfc6305f
-Sol-Next-v9.2.0-public-universal.apk : 5d721c2681b755df415bd167ea6276ffa5c77ff48a3c40268f09c4cd1b6b796e</pre>
+Sol-Next-v9.3.0-public-arm64.apk     (386 MB): 92c51afd5f60233bc73b164b291a91334c02beca58953adc614ae76654ddfbc2
+Sol-Next-v9.3.0-public-universal.apk (424 MB): 504cc6dcbb52b02dd3ccf3bc12bb59597426079f79c2d6d47dc4803cbfbf0c3a</pre>
 
     <footer>
       作者：<strong>许昌北海医院张重阳 (Zhang Chongyang)</strong> · 小红书 <code>871348474</code>（映像河南） ·

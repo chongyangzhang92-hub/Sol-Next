@@ -1,88 +1,84 @@
 <div align="center">
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.2.0-public">
-  <img src="docs/media/v911/hero-banner-v911.png" alt="Sol Next 9.2.0 — Open-Source Android & HarmonyOS AI Assistant and Autonomous Action Agent" width="100%" />
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.3.0-public">
+  <img src="docs/media/v911/hero-banner-v911.png" alt="Sol Next 9.3.0 — Full-Stack Rust 2024 · SOTA 24kHz On-Device Voice · ARM64 NEON/SVE2/Vulkan/NPU · Android 13 Non-Stealing IME · Built-In Free DeepSeek" width="100%" />
 </a>
 
 <br/><br/>
 
-# Sol Next 9.2.0 — Open-Source Android AI Assistant & Autonomous Action Agent
+# Sol Next 9.3.0 — Open-Source Android AI Assistant & Autonomous Action Agent
 
-### 12-Upgrade Precision Execution Kernel · System Zero-Animation Toggle · Headset/Car-Bluetooth Task Voice Gating · Zero-Lag `TextFieldState` IME · Full 3-Tab AI Phone Call Suite · Real Photo/Document/Agent/Memory Loop
+### Full-Stack Rust 2024 (Zero Python) · 2026 SOTA 24kHz On-Device Voice (X-ASR 160ms + Kokoro v1.1) · Hand-Written ARM64 Assembly / Vulkan / NPU Kernel · Android 13 Zero-Focus-Steal IME · Mature Cloud Auth with Free Built-In DeepSeek
 
 > **Author:** Zhang Chongyang (许昌北海医院张重阳) &nbsp;·&nbsp; **🇨🇳 [中文主页](README.md)** &nbsp;·&nbsp; **🌐 [Official Website](https://chongyangzhang92-hub.github.io/Sol-Next/)** &nbsp;·&nbsp; **🤖 [llms.txt](llms.txt)**
 
-<sub>Release <code>v9.2.0-public</code> (Build <code>920</code> · Apache-2.0 · Android 10–16 &amp; HarmonyOS · Native Material 3 Light &amp; Dark 120Hz · Rust ChaCha20+HMAC-SHA256 Hardware-Bound Vault · 16KB Page-Aligned Native Libraries · 20 Auto-Localized Languages)</sub>
+<sub>Release <code>v9.3.0-public</code> (Build <code>930</code> · Apache-2.0 · Android 10–16 &amp; HarmonyOS · Native Material 3 Light &amp; Dark 120Hz · Full-Stack Rust 2024 · Hardware-Bound Vault · 16KB Page-Aligned Native Libraries · 20 Auto-Localized Languages)</sub>
 
 <br/><br/>
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20Download%20v9.2.0-ARM64%20APK%20(93%20MB)-1A73E8?style=for-the-badge&logo=android&logoColor=white" alt="Download Sol Next v9.2.0 ARM64 APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20Download%20v9.3.0-ARM64%20APK%20(386%20MB)-1A73E8?style=for-the-badge&logo=android&logoColor=white" alt="Download Sol Next v9.3.0 ARM64 APK" /></a>
 &nbsp;
-<a href="https://cdn.gh-proxy.org/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk"><img src="https://img.shields.io/badge/⚡%20Global%20CDN%20Mirror-ARM64%20Fast%20Link-10b981?style=for-the-badge&logo=cloudflare&logoColor=white" alt="CDN Mirror Download" /></a>
+<a href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.0/Sol-Next-v9.3.0-public-arm64.apk"><img src="https://img.shields.io/badge/⚡%20High--Speed%20Mirror-ARM64%20Direct-10b981?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Direct Mirror Download" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-universal.apk"><img src="https://img.shields.io/badge/📦%20Universal%20APK-ARM64%20%2B%20x86__64%20(132%20MB)-6366f1?style=for-the-badge&logo=android&logoColor=white" alt="Download Universal APK" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-universal.apk"><img src="https://img.shields.io/badge/📦%20Universal%20APK-ARM64%20%2B%20x86__64%20(424%20MB)-6366f1?style=for-the-badge&logo=android&logoColor=white" alt="Download Universal APK" /></a>
 
 <br/><br/>
 
-![Release v9.2.0](https://img.shields.io/badge/Release-v9.2.0--public%20(Build%20920)-1A73E8?style=flat-square)
-![Built-In DeepSeek + Brave](https://img.shields.io/badge/Zero--Config-DeepSeek%20Flash%20%2B%20Brave%20Search-10b981?style=flat-square)
-![On-Device Neural Voice](https://img.shields.io/badge/On--Device%20Voice-GTCRN%20%2B%20Silero%20%2B%20Zipformer%20%2B%20VITS-6366f1?style=flat-square)
-![Android 10-16](https://img.shields.io/badge/Platform-Android%2010--16%20%26%20HarmonyOS-0ea5e9?style=flat-square)
+![Release v9.3.0](https://img.shields.io/badge/Release-v9.3.0--public%20(Build%20930)-1A73E8?style=flat-square)
+![Full-Stack Rust 2024](https://img.shields.io/badge/Architecture-Full--Stack%20Rust%202024%20(Zero%20Python)-ef4444?style=flat-square)
+![SOTA 24kHz Voice](https://img.shields.io/badge/On--Device%20Voice-X--ASR%20160ms%20%2B%20Kokoro%20v1.1%2024kHz-6366f1?style=flat-square)
+![ARM64 Vulkan NPU](https://img.shields.io/badge/Compute%20Kernel-ARM64%20NEON%2FSVE2%20%2B%20Vulkan%20%2B%20NPU-f59e0b?style=flat-square)
 ![License](https://img.shields.io/badge/License-Apache--2.0-3b82f6?style=flat-square)
 
 </div>
 
 ---
 
-## What's New in Sol Next `v9.2.0` (Build 920)
+## What's New in Sol Next `v9.3.0` (Build 930)
 
-1. **12-Upgrade Apex Execution Kernel (Speed, Precision & Reliability)**
-   - Immutable-prefix KV Cache with 8-message fixed-stride epoch compaction (preserving strict role alternation across every LLM provider).
-   - Intent-scoped dual tool profiles (11 lean core tools for everyday UI tasks, cutting ~52% schema token overhead).
-   - `near_text` row-anchor disambiguation for repeated list buttons, hybrid mid-viewport OCR fusion for WebViews/Mini-Programs, zero-waste `encodeImage=false` fast path for text models, mid-SSE `ui_action_chain` streaming extraction, 40ms fake-search-bar dynamic `EditText` takeover, `ui_scroll_collect` 5× faster batch scroll collector, zero-token safe popup/splash auto-dismiss reflex, and verified Tier-0D RSI zero-cloud skill replay.
-2. **System Zero-Animation Turbo Toggle (Enabled by Default)**
-   - Dedicated toggle in **Settings › Virtual Screen & Task Automation** that applies `0x` transition scales when enabled and restores your device's exact original animation scales when disabled.
-3. **3-Mode Task Voice Broadcast Control (`Off` / `Headset & Car BT` / `Always`)**
-   - Powered by live Android `AudioDeviceInfo` route detection (wired earphones, USB-C audio, Bluetooth A2DP/SCO/BLE, and car Bluetooth). Stays 100% silent on phone speakers in public and speaks automatically the moment headphones or car audio connect.
-4. **Zero-Lag IME & Typing Adaptation Overhaul**
-   - Composer rebuilt on Compose `TextFieldState` (`PartialGapBuffer`, zero parent recomposition on every keystroke), leaf-isolated 30fps virtual-display frame flow, 95ms GPU-composited buffered Markdown crossfade, automatic IME dismissal on Drawer/`+` sheet open, IME-aware PiP auto-tucking so the Send button is never obstructed, and automation `clearFirst` + 420ms clipboard auto-restore.
-5. **Complete 3-Tab AI Phone Call Suite (`Dial & Control` | `Auto-Answer` | `History`)**
-   - Live timer, anti-fraud alert banner, live bidirectional transcript, silent mid-call **Live Whisper** steering, collapsible DTMF keypad, Mute/Speaker/Takeover/Hangup, native Android Contact Picker, Dual-SIM selector, 4 outbound & 4 incoming persona presets, pause/resume controls, VIP bypass numbers, and searchable call history with AI summaries and 1-tap redial.
-6. **Real End-to-End Agents, Memory & Multimodal Attachments**
-   - Specialist Agent instructions and encrypted Saved Memory inject directly into both Chat and Task system prompts (isolated cleanly from raw `userIntent`), with `@` quick-mention picker, removable composer chips, native Gallery photo picking (on-device ML Kit OCR + JPEG Base64), and document import.
+1. **2026 SOTA 24kHz On-Device Neural Voice (Bundled, Zero Cloud Voice API)**
+   - **X-ASR 160ms Streaming Zipformer2 Transducer** (bilingual ZH+EN with automatic punctuation, measured `RTF = 0.20` on Android 15 ARM64) paired with **Kokoro v1.1 24kHz HD** (103 voices, 24kHz studio-grade audio, measured `RTF = 0.701` on ONNX XNNPACK, double-buffered prefetch, 3ms anti-pop envelope, zero mixed-language OOV skips), plus Silero VAD v5 (`<100ms` barge-in) and GTCRN denoiser. Includes 4 curated voices with 1-tap preview in Settings & Live Voice.
+2. **Hand-Written ARM64 Assembly + Vulkan Compute + NPU Kernel (`libsol_kernel.so v600`)**
+   - Hand-written **ARM64 NEON (`ld4`/`uabd`/`rshrn`/`fmla`), DotProd (`sdot`), I8MM (`smmla`), and SVE2 (`ld4b`/`whilelt`)** inline assembly delivering verified speedups (`3.50×` frameStats, `2.80×` frameDiff, `4.80×` resizeCrop, `1.82×` q8Gemv, `6.04×` cosineF32), paired with 3 `spirv-val`-verified **Vulkan 1.1 Compute Shaders**, **Android NNAPI NPU** graph execution, and Qualcomm QNN HTP / OpenCL capability probing — plus a live 1-tap hardware benchmark in Settings.
+3. **100% Full-Stack Rust 2024 — Zero Python**
+   - Native Android build tooling rewritten in zero-dependency Rust 2024 (`rust/sol-builder`, zero `.py` files in app source); cloud world-model & auth service rewritten in Rust 2024 (`sol-world-rs`: **`16.7 MB` RSS** vs 2.46 GiB Python — `150.7×` smaller, `/health` `0.082ms` p50) and strategy engine (`sol-engine-rs`: **`3.66 MB` RSS**, **`1.76ms`** cold search — `608×` faster).
+4. **Mature Cloud Account System & Free Built-In DeepSeek**
+   - Retired legacy dummy OTP flows; shipped real cloud Phone/Email + Password registration & login (PBKDF2-HMAC-SHA256 200k iterations + 16-byte salt), live password strength meter, interactive Terms & Privacy dialogs, native Google Sign-In, and a complete Account Center (nickname edit, password change, cloud logout, account deletion). Every signed-in account automatically unlocks **free built-in DeepSeek** + **Brave Search**.
+5. **Android 13 Non-Stealing Virtual Display IME & Flagship UX Polish**
+   - Android 13 (`SDK_INT <= 33`) uses direct zero-MotionEvent Accessibility text injection (`ACTION_SET_TEXT` / `ACTION_CLICK` / `ACTION_IME_ENTER`) so background virtual-display tasks never steal Display 0 IME focus; Android 14–16 additionally enforces `DISPLAY_IME_POLICY_HIDE`. Zero black screen on virtual display, `#1E2026` dark bezel, 5 unclipped dock chips, bottom-right collapsed PiP with zero reply occlusion, always-visible Drawer search, BYOK 1-tap connection probe, and **371/371 tests passing**.
 
 ---
 
-## Real Device Screenshots (`v9.2.0`)
+## Real Device Screenshots (`v9.3.0`)
 
 <div align="center">
 <table>
   <tr>
-    <td align="center" width="25%"><img src="docs/media/v920/01-home-light.png" alt="Sol Next Light Home" width="200"/><br/><b>Native Material 3 Home</b></td>
-    <td align="center" width="25%"><img src="docs/media/v920/02-at-mention.png" alt="Quick @ Agent Mention" width="200"/><br/><b>`@` Quick Agent Mention</b></td>
-    <td align="center" width="25%"><img src="docs/media/v920/03-agent-bound-live.png" alt="1ms System-0 & DeepSeek Live" width="200"/><br/><b>1ms System-0 & Live Chat</b></td>
-    <td align="center" width="25%"><img src="docs/media/v920/10-plus-attachments.png" alt="Photo & Document Attachments" width="200"/><br/><b>Photo & File Attachments</b></td>
+    <td align="center" width="25%"><img src="docs/media/v930/final_01_login_gate.png" alt="Sol Next v9.3.0 Login Gate" width="200"/><br/><b>Mature Cloud Login Gate</b></td>
+    <td align="center" width="25%"><img src="docs/media/v930/final_02_account_center_live.png" alt="Account Center Free DeepSeek Active" width="200"/><br/><b>Account Center · Free DeepSeek</b></td>
+    <td align="center" width="25%"><img src="docs/media/v930/final_03_settings_hardware_voice.png" alt="ARM64 Vulkan NPU Benchmark and Kokoro Voice" width="200"/><br/><b>Hardware Benchmark &amp; 24kHz Voice</b></td>
+    <td align="center" width="25%"><img src="docs/media/v930/final_04_drawer_search.png" alt="Drawer Live Search" width="200"/><br/><b>Drawer Real-Time Search</b></td>
   </tr>
   <tr>
-    <td align="center" width="25%"><img src="docs/media/v920/04-zero-anim-voice-mode.png" alt="Zero-Animation & 3-Mode Task Voice" width="200"/><br/><b>Zero-Anim & Voice Gating</b></td>
-    <td align="center" width="25%"><img src="docs/media/v920/05-ai-call-dial.png" alt="AI Phone Call Dial & Cockpit" width="200"/><br/><b>AI Call · Dial & Cockpit</b></td>
-    <td align="center" width="25%"><img src="docs/media/v920/06-ai-call-answer.png" alt="AI Phone Call Auto-Answer" width="200"/><br/><b>AI Call · Auto-Answer</b></td>
-    <td align="center" width="25%"><img src="docs/media/v920/07-saved-memory.png" alt="Saved Memory & Prompt Sync" width="200"/><br/><b>Encrypted Saved Memory</b></td>
+    <td align="center" width="25%"><img src="docs/media/v930/final_05_task_bottom_right_pip.png" alt="Task Mode Bottom-Right PiP" width="200"/><br/><b>Bottom-Right PiP · Zero Occlusion</b></td>
+    <td align="center" width="25%"><img src="docs/media/v930/final_06_light_expanded_pip.png" alt="Light Expanded Virtual Display" width="200"/><br/><b>Expanded Virtual Display (Light)</b></td>
+    <td align="center" width="25%"><img src="docs/media/v930/final_07_dark_expanded_pip.png" alt="Dark Expanded Virtual Display" width="200"/><br/><b>Expanded Virtual Display (Dark)</b></td>
+    <td align="center" width="25%"><img src="docs/media/v930/final_08_dark_collapsed_pip.png" alt="Dark Collapsed PiP" width="200"/><br/><b>Obsidian Dark · Android 13 Safe IME</b></td>
   </tr>
 </table>
 </div>
 
 ---
 
-## Download & Verification (`v9.2.0-public` · Build `920`)
+## Download & Verification (`v9.3.0-public` · Build `930`)
 
 | Artifact | Target Devices | Size | SHA-256 |
 | :--- | :--- | :---: | :--- |
-| [`Sol-Next-v9.2.0-public-arm64.apk`](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk) | Modern Android 10–16 & HarmonyOS phones (Recommended) | 93 MB | `398145f17f1cb17b228aeae6bb94b9d0e47320cc6ffd76afff6b511dbfc6305f` |
-| [`Sol-Next-v9.2.0-public-universal.apk`](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-universal.apk) | ARM64 + x86_64 devices & Android emulators | 132 MB | `5d721c2681b755df415bd167ea6276ffa5c77ff48a3c40268f09c4cd1b6b796e` |
+| [`Sol-Next-v9.3.0-public-arm64.apk`](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-arm64.apk) | Modern Android 10–16 & HarmonyOS phones (Recommended) | 386 MB | `92c51afd5f60233bc73b164b291a91334c02beca58953adc614ae76654ddfbc2` |
+| [`Sol-Next-v9.3.0-public-universal.apk`](https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-universal.apk) | ARM64 + x86_64 devices & Android emulators | 424 MB | `504cc6dcbb52b02dd3ccf3bc12bb59597426079f79c2d6d47dc4803cbfbf0c3a` |
 
 - **Signing Certificate SHA-256 (in-place upgrade compatible across all releases):** `d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478`
-- **Security Guarantee:** Zero plaintext API keys in Git, DEX, or APK assets; 16KB page-aligned native libraries; Android Keystore AES-256-GCM local encryption; Apache-2.0 License.
+- **Security Guarantee:** Zero plaintext API keys in Git, DEX, or APK assets; 16KB page-aligned native libraries; PBKDF2-HMAC-SHA256 cloud auth + Android Keystore AES-256-GCM local encryption; Apache-2.0 License.
 
 ---
 

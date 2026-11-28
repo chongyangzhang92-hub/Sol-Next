@@ -1,44 +1,42 @@
-# Sol Next — Full Technical & Product Reference (v9.2.0-public, Build 920)
+# Sol Next — Full Technical & Product Reference (v9.3.0-public, Build 930)
 
 ## 1. Executive Summary
-Sol Next is an open-source (Apache-2.0), zero-cost Android & HarmonyOS AI personal assistant and autonomous mobile phone agent created by Zhang Chongyang (许昌北海医院张重阳). Unlike web wrappers or chat-only assistants, Sol Next combines:
+Sol Next is an open-source (Apache-2.0), zero-cost Android & HarmonyOS AI personal assistant and autonomous mobile phone agent created by Zhang Chongyang (许昌北海医院张重阳). Built on a **100% zero-Python Full-Stack Rust 2024** foundation, Sol Next v9.3.0 combines:
 1. A pure native Jetpack Compose Material 3 dual-mode experience (`Chat` + `Task`) with Light (`#FFFFFF`) and Obsidian Dark (`#0E0F11`) themes at up to 120Hz.
-2. Zero-config built-in DeepSeek Flash (default low thinking effort for ultra-fast responses, switchable to DeepSeek Pro high effort or custom API Key / Subscription OAuth models).
-3. Built-in real-time Brave Search REST API (encrypted in the native Rust vault with automatic CN Bing fallback for mainland China without VPN) powering both everyday chat grounding and multi-hop Deep Research.
-4. A bundled 4-stage on-device realtime neural voice system (GTCRN denoiser -> Silero VAD v5 -> Zipformer-CTC ASR -> AISHELL-3 VITS TTS) requiring zero external cloud voice API keys.
-5. Hands-free offline Notification Voice Readout for driving and resting with Audio Ducking and automatic OTP/financial number redaction.
-6. A background independent 1:1 Virtual Display with `DISPLAY_IME_POLICY_HIDE` keyboard isolation, live mid-task steering, precision click grounding, and OEM Accessibility self-healing.
+2. Mature cloud account authentication (PBKDF2-HMAC-SHA256 200k-iteration phone/email + password & native Google Sign-In) that automatically unlocks **free built-in DeepSeek** and **Brave Search** real-time web grounding, alongside 1-tap BYOK connection testing and OpenRouter PKCE OAuth.
+3. **2026 SOTA 24kHz On-Device Neural Voice** bundled uncompressed inside the APK (GTCRN denoiser -> Silero VAD v5 -> X-ASR 160ms streaming Zipformer2 Transducer -> Kokoro v1.1 24kHz HD 103-voice bilingual TTS) with zero cloud voice API keys required.
+4. **Extreme On-Device Compute Kernel (`libsol_kernel.so v600`)**: hand-written ARM64 NEON, DotProd (`sdot`), I8MM (`smmla`), and SVE2 inline assembly + 3 `spirv-val`-verified Vulkan 1.1 Compute Shaders + Android NNAPI NPU graph execution + Qualcomm QNN HTP / OpenCL probe.
+5. **Background Independent 1:1 Virtual Display** with **Android 13 zero-MotionEvent Accessibility IME passthrough** (avoiding `InputDispatcher` keyboard focus-steal) and **Android 14–16 `DISPLAY_IME_POLICY_HIDE`**, bottom-right collapsed PiP with zero reply occlusion, and 3-tab AI Phone Call Suite.
 
 ## 2. Architecture Breakdown
 
-### 2.1 Dual-Mode Execution (`Chat | Task`)
-- **Chat Mode (`对话`)**: Pure conversational Q&A, structured Markdown writing, code analysis, multi-hop Deep Research, and automatic real-time Brave web grounding. Zero screen-overlay interference.
-- **Task Mode (`任务`)**: Keeps the exact clean conversational UI while pulling up Sol Next's in-app Background Independent Virtual Display (`SolDualDisplayDriver` + `SolBgShellService`). Uses `DISPLAY_IME_POLICY_HIDE (2)` so secondary-display input boxes never collapse the user's keyboard on Display 0. Supports live in-loop steering (`steerCurrent`), simultaneous voice steering, 30-step collapsible execution audit logs, and sensitive-operation confirmation dialogs (payments, WeChat sends, system settings).
-
-### 2.2 Built-In 4-Stage On-Device Neural Voice Pipeline
-Bundled directly inside `assets/sol_neural_voice/` and `lib/arm64-v8a/libsherpa-onnx-jni.so`:
-- Stage 1: `denoiser/gtcrn_simple.onnx` (535 KB) — real-time neural speech enhancement and road/wind noise suppression.
+### 2.1 2026 SOTA 24kHz On-Device Neural Voice Pipeline
+Bundled directly inside `assets/sol_neural_voice/` (mmap zero-copy `noCompress`) and `lib/arm64-v8a/libsherpa-onnx-jni.so`:
+- Stage 1: `denoiser/gtcrn_simple.onnx` (535 KB) — real-time neural speech enhancement and wind/road noise suppression.
 - Stage 2: `vad/silero_vad_v5.onnx` (2.31 MB) — `<100ms` Voice Activity Detection and instant barge-in interruption.
-- Stage 3: `asr/model.int8.onnx` (26.3 MB) — Zipformer-CTC quantized streaming bilingual speech recognition.
-- Stage 4: `tts/model.onnx` (30.5 MB) — AISHELL-3 VITS offline neural text-to-speech synthesis.
-Powers: Full-screen Live Voice, Simultaneous Voice Bar, AI Phone Calls (dialing, auto-answering, real-time anti-scam alerts, 1-tap human takeover), and Hands-Free Notification Readout.
+- Stage 3: `asr/` — **X-ASR 160ms Streaming Zipformer2 Transducer** (161 MB, bilingual ZH+EN with punctuation, live Android 15 ARM64 `RTF = 0.20`).
+- Stage 4: `tts/` — **Kokoro v1.1 24kHz HD** (200 MB, 103 voices, 24kHz studio-grade audio, ONNX XNNPACK `RTF = 0.701`, double-buffered prefetch, 3ms anti-pop fade, 4 curated voices with 1-tap preview).
 
-### 2.3 Model Management, Subscription OAuth & BYOK
-- Built-in defaults: `DeepSeek Flash` (low thinking effort) and `DeepSeek Pro` (high thinking effort), dynamically applied on every request with zero app restart.
-- Subscription OAuth: Real OpenRouter OAuth 2.0 PKCE (`S256`) with automatic `solnext://auth/model-openrouter` deep-link callback, plus GitHub Models/Copilot, OpenAI, Anthropic, Google, DeepSeek, and SiliconFlow presets.
-- All user-supplied API keys and OAuth tokens are encrypted at rest via Android Keystore AES-256-GCM.
+### 2.2 ARM64 Assembly + Vulkan Compute + NPU Kernel (`libsol_kernel.so v600`)
+- 16KB page-aligned Rust 2024 JNI library (`arm64-v8a` & `x86_64`) compiled by zero-dependency `rust/sol-builder`.
+- Hand-written ARM64 inline assembly verified on Android 15 ARM64: `frameStats` (`3.50×`), `frameDiff` (`2.80×`), `resizeCrop` (`4.80×`), `q8Gemv` (`1.82×`), `cosineF32` (`6.04×`).
+- 3 `spirv-val`-verified Vulkan 1.1 Compute Shaders (`frame_stats`, `frame_diff`, `resize_crop`), Android NNAPI NPU runtime graph execution, and QNN HTP / OpenCL hardware detection, benchmarkable live inside **Settings**.
 
-### 2.4 Security & Cryptographic Verification
-- **Rust 2024 Native Kernel (`libsol_kernel.so`)**: 16KB page-aligned for Android 15/16. Uses ChaCha20 + Encrypt-then-MAC HMAC-SHA256 + HKDF-SHA256 to seal built-in credentials bound to package name (`ai.sol.next`) and APK Signature Scheme v2/v3 certificate SHA-256 (`d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478`), with procfs anti-debug/anti-Frida checks. Zero plaintext keys in Git or APK.
-- **Privacy Firewall**: Automatic on-device redaction of ID numbers, bank cards, and secrets prior to cloud LLM transmission.
-- **OEM Accessibility Optimization**: Persists one-time onboarding completion so MIUI/HyperOS, ColorOS, OriginOS, and HarmonyOS users are never stuck in repetitive Accessibility re-prompt loops after swiping away the app; automatically self-heals Accessibility in 200ms when Shell Helper is connected.
+### 2.3 Full-Stack Rust 2024 Backends (Zero Python)
+- `sol-world-rs` (`tokio` + `axum 0.8` + `rusqlite` WAL): `16.7 MB` RSS (`150.7×` reduction vs legacy Python), `/health` `0.082ms` p50, hosting the 8-endpoint PBKDF2-HMAC-SHA256 cloud account center, zero-copy `206` Range OTA, and JEPA/MCTS/OmniHub endpoints.
+- `sol-engine-rs` (`x86-64-v3` static-pie musl ELF): `3.66 MB` RSS, `1.76ms` cold search (`608×` faster), `8–10µs` hot LRU.
 
-## 3. Official Downloads & Checksums (v9.2.0-public)
-- Release Page: https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.2.0-public
-- ARM64 APK (93 MB): https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk
-  - China Direct Mirror: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.2.0/Sol-Next-v9.2.0-public-arm64.apk
-  - SHA-256: `398145f17f1cb17b228aeae6bb94b9d0e47320cc6ffd76afff6b511dbfc6305f`
-- Universal APK (131 MB): https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-universal.apk
-  - China Direct Mirror: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.2.0/Sol-Next-v9.2.0-public-universal.apk
-  - SHA-256: `5d721c2681b755df415bd167ea6276ffa5c77ff48a3c40268f09c4cd1b6b796e`
+### 2.4 Security, Virtual Display & Cryptographic Verification
+- **Rust Sealed Vault**: ChaCha20 + Encrypt-then-MAC HMAC-SHA256 + HKDF-SHA256 bound to package `ai.sol.next` and APK v2/v3 cert SHA-256 (`d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478`). Zero plaintext keys in Git or APK.
+- **Android 13 Zero-MotionEvent IME Isolation**: On `SDK_INT <= 33`, virtual-display input bypasses `InputDispatcher` via direct Accessibility `ACTION_SET_TEXT` / `ACTION_CLICK` / `ACTION_IME_ENTER`, preventing main-screen IME collapse.
+- **Quality Gate**: 371/371 automated tests passing (`sol-core` + `app` + `sol-kernel` + `sol-builder`), `:app:lintVitalRelease` clean, 16KB page-aligned.
+
+## 3. Official Downloads & Checksums (v9.3.0-public)
+- Release Page: https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.3.0-public
+- ARM64 APK (386 MB / 404,410,759 bytes): https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-arm64.apk
+  - China Direct Mirror: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.0/Sol-Next-v9.3.0-public-arm64.apk
+  - SHA-256: `92c51afd5f60233bc73b164b291a91334c02beca58953adc614ae76654ddfbc2`
+- Universal APK (424 MB / 444,992,739 bytes): https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-universal.apk
+  - China Direct Mirror: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.0/Sol-Next-v9.3.0-public-universal.apk
+  - SHA-256: `504cc6dcbb52b02dd3ccf3bc12bb59597426079f79c2d6d47dc4803cbfbf0c3a`
 - Public OTA Manifest: https://webui.67-230-181-51.sslip.io/assets/sol-public/latest.json

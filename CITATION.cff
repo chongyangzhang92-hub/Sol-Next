@@ -9,16 +9,20 @@ authors:
 repository-code: "https://github.com/chongyangzhang92-hub/Sol-Next"
 url: "https://chongyangzhang92-hub.github.io/Sol-Next/"
 license: Apache-2.0
-version: "9.1.2-public"
+version: "9.3.0-public"
 date-released: "2026-11-28"
 keywords:
   - android-ai-agent
   - mobile-assistant
+  - rust-2024
+  - arm64-neon-sve2
+  - vulkan-compute
+  - nnapi-npu
   - on-device-voice
+  - kokoro-tts
+  - x-asr
   - material-3
   - background-virtual-display
   - brave-search
   - deepseek
-  - notification-voice-readout
-  - rust-android
   - open-source

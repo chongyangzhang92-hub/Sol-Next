@@ -1,28 +1,30 @@
 <div align="center">
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.2.0-public">
-  <img src="docs/media/v911/hero-banner-v911.png" alt="Sol Next 9.2.0 — 开源免费 Android / 鸿蒙原生 AI 行动助理：极致精准执行内核 · 三档任务语音播报 · 零卡顿输入法 · 三栏 AI 智能电话 · 后台独立虚拟屏" width="100%" />
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.3.0-public">
+  <img src="docs/media/v911/hero-banner-v911.png" alt="Sol Next 9.3.0 — 全栈 Rust 2024 · 2026 SOTA 24kHz 端侧语音 · ARM64 NEON/SVE2/Vulkan/NPU · Android 13 零抢输入法 · 登录免费内置 DeepSeek" width="100%" />
 </a>
 
 <br/><br/>
 
-# Sol Next 9.2.0 — 装在手机上的开源免费 AI 助手与「自主行动替身」
+# Sol Next 9.3.0 — 装在手机上的开源免费 AI 助手与「自主行动替身」
 
-### 12 项极致精准执行内核升级 · 系统零动画开关 · 仅耳机/车载蓝牙任务播报 · Compose `TextFieldState` 零卡顿输入 · 全功能三栏 AI 智能电话 · 真实相册/文档/智能体/记忆闭环
+### 全栈 Rust 2024（零 Python）· 2026 SOTA 24kHz 端侧语音（X-ASR 160ms + Kokoro v1.1）· ARM64 汇编 / Vulkan / NPU 直调 · Android 13 零抢输入法 · 成熟云端账号免费内置 DeepSeek
 
 > **👨‍💻 作者：许昌北海医院张重阳** &nbsp;·&nbsp; **💬 [微信扫码联系作者 / 加入官方交流群](#-联系作者与官方交流群)** &nbsp;·&nbsp; **📕 小红书：`871348474`（映像河南）**
 
-<sub>全新 <code>v9.2.0</code>（Build <code>920</code> · Apache-2.0 开源 · 支持 Android 10–16 与 HarmonyOS · 原生 Material 3 浅色 / 深色 120Hz 自适应 · Rust 硬件加密内置 DeepSeek Flash + Brave 实时联网搜索 · 四级端侧神经语音零配置即用 · 20 国语言自动适配）</sub>
+<sub>全新 <code>v9.3.0</code>（Build <code>930</code> · Apache-2.0 开源 · 支持 Android 10–16 与 HarmonyOS · 原生 Material 3 浅色 / 深色 120Hz 自适应 · 全栈 Rust 2024 内核与云端 · 登录即解锁免费内置 DeepSeek + Brave 实时联网搜索 · 24kHz 高清端侧离线语音开箱即用 · 20 国语言自动适配）</sub>
 
 <br/><br/>
 
-<a href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.2.0/Sol-Next-v9.2.0-public-arm64.apk"><img src="https://img.shields.io/badge/🇨🇳%20国内高速直连-v9.2.0%20ARM64%20免梯子下载-10b981?style=for-the-badge&logo=android&logoColor=white" alt="国内高速直连下载 Sol Next v9.2.0 ARM64" /></a>
+<a href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.0/Sol-Next-v9.3.0-public-arm64.apk"><img src="https://img.shields.io/badge/🇨🇳%20国内高速直连-v9.3.0%20ARM64%20(386%20MB)-10b981?style=for-the-badge&logo=android&logoColor=white" alt="国内高速直连下载 Sol Next v9.3.0 ARM64" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20GitHub%20官方%20v9.2.0-ARM64%20(93%20MB)-1A73E8?style=for-the-badge&logo=github&logoColor=white" alt="GitHub 下载 Sol Next v9.2.0 ARM64" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20GitHub%20官方%20v9.3.0-ARM64%20(386%20MB)-1A73E8?style=for-the-badge&logo=github&logoColor=white" alt="GitHub 下载 Sol Next v9.3.0 ARM64" /></a>
 &nbsp;
-<a href="https://cdn.gh-proxy.org/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk"><img src="https://img.shields.io/badge/⚡%20全球%20CDN%20加速-ARM64%20直链-f59e0b?style=for-the-badge&logo=cloudflare&logoColor=white" alt="CDN 加速下载 Sol Next v9.2.0 ARM64" /></a>
+<a href="https://cdn.gh-proxy.org/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-arm64.apk"><img src="https://img.shields.io/badge/⚡%20全球%20CDN%20加速-ARM64%20直链-f59e0b?style=for-the-badge&logo=cloudflare&logoColor=white" alt="CDN 加速下载 Sol Next v9.3.0 ARM64" /></a>
 &nbsp;
-<a href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.2.0/Sol-Next-v9.2.0-public-universal.apk"><img src="https://img.shields.io/badge/📦%20全架构通用版-Universal%20(132%20MB)-6366f1?style=for-the-badge&logo=android&logoColor=white" alt="下载 Sol Next v9.2.0 全架构通用版" /></a>
+<a href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.0/Sol-Next-v9.3.0-public-universal.apk"><img src="https://img.shields.io/badge/📦%20全架构通用版-Universal%20(424%20MB)-6366f1?style=for-the-badge&logo=android&logoColor=white" alt="下载 Sol Next v9.3.0 全架构通用版" /></a>
+
+<sub>注：安装包已内置 2026 SOTA 端侧离线高清语音模型（X-ASR 160ms 161 MB + Kokoro v1.1 24kHz HD 200 MB，零拷贝 mmap 直读），无需额外下载语音资源或配置云端语音 API。</sub>
 
 <br/><br/>
 
@@ -30,15 +32,15 @@
 
 <br/>
 
-[✨ v9.2.0 重磅升级](#-v920-重磅升级一览极致执行内核与用户反馈全面落地) &nbsp;·&nbsp; [📱 v9.2.0 真机实拍](#-v920-真机界面实拍全流程实测验证) &nbsp;·&nbsp; [⚡ 执行内核 12 项升级](#-极致执行内核-12-项底层突破速度--精度--稳定性) &nbsp;·&nbsp; [🧠 6 大核心能力](#-sol-next-的-6-大核心能力) &nbsp;·&nbsp; [🔒 安全与校验](#-安全加密与官方校验值) &nbsp;·&nbsp; [❓ FAQ](#-常见问题-faq) &nbsp;·&nbsp; [🌐 官网](https://chongyangzhang92-hub.github.io/Sol-Next/)
+[✨ v9.3.0 旗舰架构跃升](#-v930-旗舰架构跃升全栈-rust-2024--sota-24khz-语音--arm64vulkannpu) &nbsp;·&nbsp; [📱 v9.3.0 真机实拍](#-v930-真机界面实拍371371-测试与实机全链路验证) &nbsp;·&nbsp; [⚡ 底层算力实测](#-arm64-汇编--vulkan--npu-与全栈-rust-2024-实测数据) &nbsp;·&nbsp; [🧠 6 大核心能力](#-sol-next-的-6-大核心能力) &nbsp;·&nbsp; [🔒 安全与校验](#-安全加密与官方校验值) &nbsp;·&nbsp; [❓ FAQ](#-常见问题-faq) &nbsp;·&nbsp; [🌐 官网](https://chongyangzhang92-hub.github.io/Sol-Next/)
 
 <br/>
 
-![Version 9.2.0](https://img.shields.io/badge/Release-v9.2.0--public%20(Build%20920)-1A73E8?style=flat-square)
-![Built-in DeepSeek + Brave](https://img.shields.io/badge/开箱免费-DeepSeek%20Flash%20%2B%20Brave%20实时搜索-10b981?style=flat-square)
-![On-Device Voice](https://img.shields.io/badge/四级端侧语音-GTCRN%20%2B%20Silero%20%2B%20Zipformer%20%2B%20VITS-6366f1?style=flat-square)
-![Android 10-16](https://img.shields.io/badge/平台支持-Android%2010--16%20%26%20HarmonyOS-0ea5e9?style=flat-square)
-![16KB Aligned](https://img.shields.io/badge/Android%2016-16KB%20页对齐%20·%20Rust%20内核-f59e0b?style=flat-square)
+![Version 9.3.0](https://img.shields.io/badge/Release-v9.3.0--public%20(Build%20930)-1A73E8?style=flat-square)
+![Full-Stack Rust 2024](https://img.shields.io/badge/架构-全栈%20Rust%202024%20(零%20Python)-ef4444?style=flat-square)
+![SOTA 24kHz Voice](https://img.shields.io/badge/端侧语音-X--ASR%20160ms%20%2B%20Kokoro%20v1.1%2024kHz-6366f1?style=flat-square)
+![ARM64 Vulkan NPU](https://img.shields.io/badge/端侧算力-ARM64%20NEON%2FSVE2%20%2B%20Vulkan%20%2B%20NPU-f59e0b?style=flat-square)
+![Free DeepSeek](https://img.shields.io/badge/登录免费内置-DeepSeek%20%2B%20Brave%20实时搜索-10b981?style=flat-square)
 ![License](https://img.shields.io/badge/License-Apache--2.0-3b82f6?style=flat-square)
 
 </div>
@@ -47,94 +49,93 @@
 
 ## 💡 30 秒看懂 Sol Next 是什么？
 
-**Sol Next** 是一款专为 Android 10–16 与鸿蒙（HarmonyOS）手机打造的**开源、免费、开箱即用的原生 AI 个人助手与自主操作手机智能体（Mobile AI Agent）**。
+**Sol Next** 是一款专为 Android 10–16 与鸿蒙（HarmonyOS）手机打造的**开源、免费、全栈 Rust 2024 驱动的原生 AI 个人助手与自主操作手机智能体（Mobile AI Agent）**。
 
-与只能“聊天给文字建议”的普通 AI App 不同，Sol Next 将**丝滑原生 Material 3 对话体验**、**内置免费 DeepSeek Flash & Brave 实时联网搜索**、**四级端侧神经实时语音**、**全功能 AI 智能接打电话**与**后台独立虚拟屏手机操控能力**融为一体：
+与只能“聊天给文字建议”的普通 AI App 不同，Sol Next 将**丝滑原生 Material 3 对话体验**、**登录即享免费内置 DeepSeek & Brave 实时联网搜索**、**2026 SOTA 24kHz 端侧高清神经语音**、**ARM64 汇编 / Vulkan / NPU 端侧视觉算力**、**全功能 AI 智能接打电话**与**后台独立虚拟屏手机操控能力**融为一体：
 
-- **日常问答 & 多模态深度理解（对话模式）**：免费内置 **DeepSeek Flash**（支持一键切换 `DeepSeek Pro` 深度思考或自有 API Key / 订阅 OAuth）与 **Brave Search 实时联网搜索**；支持直接发**相册图片（内置端侧 ML Kit 中文 OCR）**、**导入文档代码**、输入 `@` 呼出专属智能体，并结合你的本地加密记忆给出个性化高质量回答。
-- **真正帮你动手操作手机（任务模式）**：轻点底部「**任务**」，在**后台独立虚拟屏**里跨 App 替你办事（查订单、比价、点外卖、发消息、整理日程、定时自动化），主屏正常使用不打断、不抢键盘；高风险支付与微信操作严格触发二次确认护盾。
-- **全场景端侧实时语音（免配任何云端语音 API）**：安装包原生集成 GTCRN 降噪 + Silero VAD v5 + Zipformer-CTC 识别 + AISHELL-3 VITS 语音合成，统一驱动**全屏 Live 实时语音**、**三栏 AI 智能接打电话**与**开车/休息免看屏通知语音朗读**。
+- **日常问答 & 多模态深度理解（对话模式）**：正常登录账号即免费解锁内置 **DeepSeek**（支持一键切换 `DeepSeek Pro` 深度思考、自有 API Key 1 键连通测速或订阅 OAuth）与 **Brave Search 实时联网搜索**；支持直接发**相册图片（端侧 ML Kit OCR）**、**导入文档代码**、输入 `@` 呼出专属智能体，并结合你的本地 AES-256 加密记忆与侧边栏实时历史搜索提供个性化高质量回答。
+- **真正帮你动手操作手机（任务模式）**：轻点底部「**任务**」，在**后台独立虚拟屏**里跨 App 替你办事（查订单、比价、点外卖、发消息、整理日程、定时自动化），主屏正常使用不打断；**Android 13 专属零 MotionEvent 无障碍直传文本与确认，彻底告别副屏抢占主屏输入法**；高风险支付与微信操作严格触发二次确认护盾。
+- **2026 SOTA 端侧 24kHz 高清语音（免配任何云端语音 API）**：安装包原生内置 **GTCRN 降噪 + Silero VAD v5 + X-ASR 160ms 中英流式标点识别 + Kokoro v1.1 24kHz 高清双语合成（103 音色 · 4 精选音色 1 键试听）**，统一驱动**全屏 Live 实时语音**、**三栏 AI 智能接打电话**与**开车/休息免看屏通知语音朗读**。
 
 ---
 
-## ✨ v9.2.0 重磅升级一览（极致执行内核与用户反馈全面落地）
+## ✨ v9.3.0 旗舰架构跃升（全栈 Rust 2024 · SOTA 24kHz 语音 · ARM64/Vulkan/NPU）
 
-| 升级维度 | v9.2.0 (Build 920) 全新落地内容 |
+| 升级维度 | v9.3.0 (Build 930) 旗舰架构落地内容 |
 | :--- | :--- |
-| 🚀 **极致执行内核 12 项底层跃升** | 不可变前缀 KV Cache + 8 消息定步长纪元压缩、意图分档精简 11 工具集、`near_text` 同行锚点零误触消歧、混合中屏小程序/WebView OCR 自动融合、纯文本模型零编码加速、假搜索框 40ms 动态接管、`ui_scroll_collect` 批量滚动采集（提速 5 倍）、0-Token 开屏广告/弹窗自清反射与 RSI 零云端技能复放。 |
-| 🔇 **任务执行自动语音播报三档精细控制** | 彻底响应用户反馈：在设置页新增 **「关闭」 / 「仅耳机/车载」（默认） / 「始终开启」** 三档开关，基于 Android `AudioDeviceInfo` 实时检测有线、USB-C、蓝牙耳机与车载蓝牙；**公共场所手机外放 100% 静音，连上耳机或车载蓝牙自动开启播报**。 |
-| ⚡ **系统零动画极速模式（默认开启 · 支持开关）** | 在「设置 › 虚拟屏与任务自动化」新增**系统零动画极速模式**开关：**默认开启**，连接无线调试后自动写 `0x` 跨页极速提速；如需保留原机动画，随时一键关闭即可自动还原手机原始过渡与窗口动画缩放。 |
-| ⌨️ **根治输入法适配 Bug 与打字卡顿** | 全面迁移至 Jetpack Compose `TextFieldState`（`PartialGapBuffer` 零父级重组）+ 叶组件隔离 30fps 虚拟屏帧流 + 95ms GPU 缓冲交叉淡入流式排版；打开抽屉自动收起键盘、弹出软键盘时折叠态虚拟屏浮窗自动避让发送按钮、修复自动化 `clearFirst` 并实现剪贴板粘贴后 420ms 自动恢复原剪贴板内容。 |
-| 📞 **AI 智能电话全面升级三栏实战工作台** | 彻底告别简陋界面！全新 **「拨打与操控」｜「来电代接」｜「记录」** 三栏架构：实时计时器、反诈预警横幅、双向转写、通话中**静默暗语传话**、可折叠 DTMF 按键、静音/免提/AI 接管/真人接管、通讯录选联系人、双卡选卡、4 套拨打预设、4 套来电人设（外卖快递/推销拒接/开会转告/全能秘书）、暂停 30 分/2 小时、VIP 直通与完整通话摘要/回拨管理。 |
-| 🧩 **全部子模块真实闭环，绝不浮于表面** | **专属智能体**指令真实注入对话与任务系统提示词（支持 `@` / `＠` 中英文快捷切换、输入框内可关闭芯片、查看与编辑自定义智能体）；**已保存的信息**支持全文搜索、点击直接编辑并实时同步推理；`+` 面板真实接入**相册图片（ML Kit OCR + JPEG）**与**文档导入**；**扩展与工具**实时呈现各模块运行状态。 |
-| 🔐 **两步强制安全启用闭环** | 严格执行「**① 免费账号登录 → ② 开启必选系统权限 → ③ 解锁完整工作区**」安全引导，登录凭证与本地记忆均经 Android Keystore AES-256-GCM 硬件加密保存。 |
+| 🎙️ **2026 SOTA 端侧 24kHz 高清实时语音** | 全面换代为 **X-ASR 160ms Streaming Zipformer2 Transducer**（中英混合 + 自动标点，实机实测 `RTF = 0.20`）+ **Kokoro v1.1 24kHz HD**（103 音色、24kHz 高清采样、实测 `RTF = 0.701`、双缓冲预取零句间停顿、3ms 防爆音淡入淡出、中英混排零漏字），支持设置页与 Live 语音 4 音色一键试听。 |
+| ⚡ **ARM64 手写汇编 + Vulkan + NPU 算力内核 `v600`** | `libsol_kernel.so v600` 新增手写 **ARM64 NEON (`ld4`/`uabd`/`rshrn`/`fmla`) + DotProd (`sdot`) + I8MM (`smmla`) + SVE2 (`ld4b`/`whilelt`)** 内联汇编、3 个 `spirv-val` 校验通过的 **Vulkan 1.1 Compute Shader**、**Android NNAPI NPU 图执行引擎**与 **高通 QNN HTP / OpenCL 探针**；设置页可一键运行端侧硬件加速实测跑分。 |
+| 🦀 **全栈 Rust 2024，彻底弃用 Python** | 构建工具链重写为零依赖 Rust 2024 **`rust/sol-builder`**（仓库 **0 个 Python 文件**）；云端世界模型与账号服务全面重写为 Rust 2024 **`sol-world-rs`**（内存从 2.46 GiB 降至 **16.7 MB**，降幅 `150.7×`，`/health` `0.082ms` p50）与 **`sol-engine-rs`**（**3.66 MB** RSS，冷启动策略推演 `1.76ms`，提速 `608×`）。 |
+| 🔐 **成熟云端账号体系 · 登录免费内置 DeepSeek** | 彻底移除虚拟“免费验证码”，上线完整云端**手机号/邮箱 + 密码注册登录**（Rust 2024 PBKDF2-HMAC-SHA256 20 万轮加盐哈希）+ 密码强度实时校验 + 可交互《用户服务协议》与《隐私政策》弹窗 + 原生 Google 登录；新增成熟**账号中心**（昵称修改、密码修改、云端登出、永久注销），**正常登录即免费激活内置 DeepSeek**。 |
+| ⌨️ **Android 13 虚拟屏零抢输入法 + PiP 旗舰打磨** | Android 13（API 33）以下启用**零 MotionEvent 无障碍直传通道**（`ACTION_SET_TEXT` / `ACTION_CLICK` / `ACTION_IME_ENTER` 绕开系统 `InputDispatcher` 抢焦），Android 14+ 叠加 `DISPLAY_IME_POLICY_HIDE` 物理隔离；虚拟屏彻底消除黑屏、深色 `#1E2026` 精致边框、5 枚操控胶囊零裁切、折叠态固定右下角零遮挡对话。 |
+| 💎 **成熟产品级交互与稳定性（371/371 测试全绿）** | 设置中心重构为 5 大清晰分区（含硬件内核跑分 & 语音试听）、侧边抽屉常驻实时搜索、BYOK 一键测试连接与清晰耗时反馈、全部破坏性操作二次确认护盾；`sol-core` + `app` + `sol-kernel` + `sol-builder` 共 **371/371 项测试全通过**，零崩溃、16KB 页对齐。 |
 
 ---
 
-## 📱 v9.2.0 真机界面实拍（全流程实测验证）
+## 📱 v9.3.0 真机界面实拍（371/371 测试与实机全链路验证）
 
 <div align="center">
 <table>
   <tr>
     <td align="center" width="25%">
-      <img src="docs/media/v920/01-home-light.png" alt="Sol Next v9.2.0 浅色极简主页" width="200"/><br/>
-      <b>极简原生 Material 3 主页</b><br/><sub>对话 | 任务 双模式 + 快捷推荐</sub>
+      <img src="docs/media/v930/final_01_login_gate.png" alt="Sol Next v9.3.0 成熟云端账号登录页" width="200"/><br/>
+      <b>成熟账号登录 · 免费 DeepSeek</b><br/><sub>手机号/邮箱密码 + Google + 协议</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/media/v920/02-at-mention.png" alt="输入 @ 实时唤出智能体快捷条" width="200"/><br/>
-      <b>`@` 快捷呼出专属智能体</b><br/><sub>TextFieldState 零卡顿输入</sub>
+      <img src="docs/media/v930/final_02_account_center_live.png" alt="Sol Next v9.3.0 账号中心与免费 DeepSeek 激活状态" width="200"/><br/>
+      <b>账号中心（云端实连）</b><br/><sub>✓ 免费内置 DeepSeek 已激活</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/media/v920/03-agent-bound-live.png" alt="1ms 系统 0 执行与内置 DeepSeek 实时回复" width="200"/><br/>
-      <b>1ms 系统 0 + DeepSeek 实测</b><br/><sub>工作助理绑定 · 外放静音零误触</sub>
+      <img src="docs/media/v930/final_03_settings_hardware_voice.png" alt="Sol Next v9.3.0 设置页 ARM64/Vulkan/NPU 跑分与 Kokoro 音色试听" width="200"/><br/>
+      <b>硬件加速跑分 & 24kHz 试听</b><br/><sub>ARM64/Vulkan/NPU · 4 音色切换</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/media/v920/10-plus-attachments.png" alt="+ 面板相册图片与导入文件" width="200"/><br/>
-      <b>相册图片 / 文档真实接入</b><br/><sub>端侧 ML Kit OCR + 多模态理解</sub>
+      <img src="docs/media/v930/final_04_drawer_search.png" alt="Sol Next v9.3.0 侧边抽屉常驻实时搜索" width="200"/><br/>
+      <b>侧边抽屉实时搜索</b><br/><sub>历史会话秒搜 · 模块直达</sub>
     </td>
   </tr>
   <tr>
     <td align="center" width="25%">
-      <img src="docs/media/v920/04-zero-anim-voice-mode.png" alt="系统零动画开关与三档任务语音播报" width="200"/><br/>
-      <b>零动画开关 & 三档任务播报</b><br/><sub>关闭 / 仅耳机车载 / 始终开启</sub>
+      <img src="docs/media/v930/final_05_task_bottom_right_pip.png" alt="Sol Next v9.3.0 任务模式右下角折叠虚拟屏零遮挡" width="200"/><br/>
+      <b>任务模式 · 右下角零遮挡 PiP</b><br/><sub>1ms 系统 0 + DeepSeek 实时回复</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/media/v920/05-ai-call-dial.png" alt="AI 智能电话三栏工作台拨打与操控" width="200"/><br/>
-      <b>AI 智能电话 · 拨打与操控</b><br/><sub>选联系人 · 场景预设 · 暗语传话</sub>
+      <img src="docs/media/v930/final_06_light_expanded_pip.png" alt="Sol Next v9.3.0 浅色展开虚拟屏零黑屏" width="200"/><br/>
+      <b>展开虚拟屏（浅色零黑屏）</b><br/><sub>5 枚操控胶囊完整无裁切</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/media/v920/06-ai-call-answer.png" alt="AI 智能电话来电代接策略中心" width="200"/><br/>
-      <b>AI 智能电话 · 来电代接</b><br/><sub>4 套代接人设 · 暂停与 VIP 直通</sub>
+      <img src="docs/media/v930/final_07_dark_expanded_pip.png" alt="Sol Next v9.3.0 深色展开虚拟屏" width="200"/><br/>
+      <b>深色展开虚拟屏</b><br/><sub>#1E2026 精致边框 · 零闪屏</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/media/v920/07-saved-memory.png" alt="已保存的信息搜索编辑与提示词实时同步" width="200"/><br/>
-      <b>已保存的信息（实时同步）</b><br/><sub>搜索 · 编辑 · AES-256 加密记忆</sub>
+      <img src="docs/media/v930/final_08_dark_collapsed_pip.png" alt="Sol Next v9.3.0 深色右下角折叠虚拟屏" width="200"/><br/>
+      <b>深色折叠 PiP（自适应护眼）</b><br/><sub>Android 13 零抢主屏输入法</sub>
     </td>
   </tr>
 </table>
 </div>
 
 <details>
-<summary>📸 展开查看深色模式、全屏端侧 Live 语音、模型下拉与侧边导航抽屉实拍</summary>
+<summary>📸 展开查看 AI 智能电话三栏工作台、@ 智能体、相册多模态与 Live 端侧语音实拍</summary>
 <br/>
 <div align="center">
 <table>
   <tr>
     <td align="center" width="25%">
-      <img src="docs/media/v920/09-drawer-clean.png" alt="侧边导航抽屉自动收起软键盘" width="200"/><br/>
-      <b>侧边导航抽屉</b><br/><sub>展开自动收起输入法</sub>
+      <img src="docs/media/v920/05-ai-call-dial.png" alt="AI 智能电话三栏工作台拨打与操控" width="200"/><br/>
+      <b>AI 智能电话 · 拨打与操控</b><br/><sub>选联系人 · 暗语传话 · DTMF</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/media/v920/08-settings-m3.png" alt="设置中心单行原生 Material 3" width="200"/><br/>
-      <b>设置中心</b><br/><sub>零动画与语音状态一目了然</sub>
+      <img src="docs/media/v920/06-ai-call-answer.png" alt="AI 智能电话来电代接策略中心" width="200"/><br/>
+      <b>AI 智能电话 · 来电代接</b><br/><sub>4 套代接人设 · VIP 直通</sub>
     </td>
     <td align="center" width="25%">
-      <img src="docs/media/v911/02-home-dark-markdown.png" alt="深色模式自适应渲染" width="200"/><br/>
-      <b>深色模式自适应</b><br/><sub>#0E0F11 纯黑护眼排版</sub>
+      <img src="docs/media/v920/07-saved-memory.png" alt="已保存的信息搜索编辑与提示词实时同步" width="200"/><br/>
+      <b>已保存的信息</b><br/><sub>搜索 · 编辑 · AES-256 加密</sub>
     </td>
     <td align="center" width="25%">
       <img src="docs/media/v911/06-live-realtime-voice.png" alt="全屏端侧 Live 实时语音" width="200"/><br/>
-      <b>全屏端侧 Live 语音</b><br/><sub>免配云端语音 API 即开即聊</sub>
+      <b>全屏端侧 Live 语音</b><br/><sub>X-ASR 160ms + Kokoro 24kHz</sub>
     </td>
   </tr>
 </table>
@@ -143,33 +144,31 @@
 
 ---
 
-## ⚡ 极致执行内核 12 项底层突破（速度 · 精度 · 稳定性）
+## ⚡ ARM64 汇编 / Vulkan / NPU 与全栈 Rust 2024 实测数据
 
-| # | 优化机制 | 解决的核心痛点 | 实测收益 |
-| :---: | :--- | :--- | :--- |
-| **1** | **不可变前缀 KV Cache + 8 消息定步长纪元压缩** | 旧版每步改写历史头导致云端前缀缓存全失效 | 长链路任务前缀缓存命中率大幅跃升，首字响应显著提速 |
-| **2** | **意图驱动双工具集分档（11 核心 vs 扩展）** | 每次任务都传 25+ 工具 Schema 浪费 Token 且易选错工具 | 常规操作精简 ~52% 工具 Schema 长度，工具调用更准更快 |
-| **3** | **`near_text` 同行锚点消歧** | 电商/设置列表多个同名「加入购物车」「开启」按钮易误点首项 | 结合同行商品/标题坐标精准锁定目标行，零误点 |
-| **4** | **混合中屏稀疏 OCR 融合** | 小程序/WebView 仅顶栏底栏有节点、中屏空白导致传统无障碍失明 | 自动检测中屏稀疏并运行端侧 ML Kit OCR 补全交互点 |
-| **5** | **纯文本模型 `encodeImage = false` 零浪费通道** | 纯文本模型不吃图却仍支付红框重绘与 JPEG/Base64 编码耗时 | 省去冗余绘图与编码开销，同时保留端侧 OCR 文本增强 |
-| **6** | **流式 `ui_action_chain` 增量步骤抽取** | 多步连招需等整包 JSON 吐完才能感知进度 | SSE 流中实时解析 `"op"` 步态，规划状态即时反馈 |
-| **7** | **假搜索框 40ms 动态 `EditText` 接管** | 淘宝/美团点击假搜索框跳转新页出现新输入框时旧句柄死等超时 | 40ms 内自动捕获新页 `EditText` 句柄并无缝写入 |
-| **8** | **`ui_scroll_collect` 批量滚动采集** | 统计订单/账单/长聊天记录每翻 1 屏调 1 次大模型耗时极长 | 1 轮连翻 1~6 屏本地去重汇总，命中终止词自动停，提速 5 倍 |
-| **9** | **任务途中 0-Token 安全弹窗自清反射** | 跨页突现开屏广告、推广弹窗、系统权限框白耗大模型轮次 | `<200ms` 零云端自清，严格排除含支付/登录/删除字样界面 |
-| **10** | **Tier 0D 验证式 RSI 零云端技能复放** | 高频固定多步操作每次都重新走云端规划 | 熟练纯 UI 技能直接零云端复放，每步均强制过敏感防护 |
-| **11** | **去除冗余前台等待** | 虚拟屏与 Deep-Link 已稳态却重复等待 300~520ms | 单步跨页响应再压减数百毫秒 |
-| **12** | **进入任务模式通道预热** | 用户切入任务页开始打字期间连接冷启动 | 切入即异步预热 TLS 1.3 与 KV Cache，发送即达 |
+以下数据均在 **Android 15 ARM64 真机内核 (`libsol_kernel.so v600`)** 与 **生产节点 Rust 2024 后端**实测采集：
+
+| 算子 / 引擎 | 实现路径 | 实测加速 / 性能指标 |
+| :--- | :--- | :--- |
+| **屏幕帧亮度与特征统计 (`frameStats`)** | 手写 ARM64 NEON `ld4` + `uaddlv` 汇编 | **`3.50×`** 提速（对比标量路径） |
+| **实时双帧变化率检测 (`frameDiff`)** | 手写 ARM64 NEON `uabd` + `uaddlv` 汇编 | **`2.80×`** 提速（虚拟屏零抖动帧差） |
+| **视觉截图缩放裁剪 (`resizeCrop`)** | 手写 ARM64 NEON `rshrn` 双线性汇编 / Vulkan Compute | **`4.80×`** 提速（`0.65ms` 完成 1080p 缩放） |
+| **INT8 量化矩阵向量乘 (`q8Gemv`)** | ARM64 `sdot` (DotProd) / `smmla` (I8MM) / SVE2 | **`1.82×`** 提速（端侧语义向量计算） |
+| **语义余弦相似度 (`cosineF32`)** | 手写 ARM64 NEON 4 路展开 `fmla` 汇编 | **`6.04×`** 提速（本地路由毫秒命中） |
+| **端侧 ASR + 24kHz HD TTS 闭环** | X-ASR 160ms + Kokoro v1.1 (ONNX XNNPACK) | ASR **`RTF 0.20`** · TTS 24kHz **`RTF 0.701`** · 0 漏字 |
+| **云端世界模型 & 账号中心 (`sol-world-rs`)** | Rust 2024 `tokio` + `axum 0.8` + `rusqlite` WAL | **`16.7 MB` RSS**（对比旧 Python 2.46 GiB 降 **`150.7×`**）· `/health` **`0.082ms`** |
+| **高频决策引擎 (`sol-engine-rs`)** | Rust 2024 static-pie `x86-64-v3` musl ELF | **`3.66 MB` RSS** · 冷算 **`1.76ms`**（提速 **`608×`**）· 热缓存 **`8–10µs`** |
 
 ---
 
 ## 🧠 Sol Next 的 6 大核心能力
 
-1. **对话与任务双模式 (`对话 | 任务`)**：日常问答、多模态看图读文档、Brave 实时联网调研与后台独立虚拟屏自主操作无缝融合；系统提示词与用户输入严格隔离，专属智能体与长期记忆绝不干扰 1ms 系统 0 通道与敏感防护。
-2. **四级端侧实时神经语音（免配任何云端语音 API）**：原生集成 **GTCRN 降噪 (535 KB) → Silero VAD v5 (`<100ms` 打断, 2.3 MB) → Zipformer-CTC 识别 (26.3 MB) → AISHELL-3 VITS 语音合成 (30.5 MB)**，驱动全屏 Live 语音、AI 电话与通知语音朗读。
-3. **AI 智能电话三栏工作台**：支持通讯录选号、双卡选卡、场景预设、来电自动代接人设、暂停/恢复、VIP 白名单直通、反诈护盾、实时双向转写、通话中暗语传话、DTMF 按键与 AI 摘要归档。
-4. **开车 / 休息通知语音朗读 & 三档任务播报**：通知朗读支持 Audio Ducking 压低音乐与自动隐藏短信验证码；任务执行自动播报支持「关闭 / 仅耳机·车载蓝牙 / 始终开启」，兼顾公共场所安静与开车解放双手。
-5. **免费内置模型 + Brave 联网搜索 + 订阅 OAuth / BYOK 无限扩展**：开箱即用免费内置 DeepSeek Flash 与 Brave Search，支持零重启热切换 DeepSeek Pro、OpenRouter PKCE OAuth、GitHub Models、OpenAI、Anthropic、硅基流动等任意模型。
-6. **永久本地 AES-256 记忆库 · 智能体 · 每日定时自动化 · 报告库导出**：支持搜索编辑已保存信息、`@` 一键调用智能体、自然语言定时任务，以及 Markdown / HTML / TXT 导出与飞书/企微直推。
+1. **对话与任务双模式 (`对话 | 任务`)**：日常问答、多模态看图读文档、Brave 实时联网调研与后台独立虚拟屏自主操作无缝融合；内置 12 项极致执行内核优化（不可变前缀 KV Cache、`near_text` 同行锚点消歧、中屏稀疏 OCR 融合、`ui_scroll_collect` 5 倍速批量采集、0-Token 开屏弹窗自清、1ms 系统 0 直读与默认开启的系统零动画极速模式）。
+2. **2026 SOTA 端侧 24kHz 实时神经语音（免配任何云端语音 API）**：原生集成 **GTCRN 降噪 → Silero VAD v5 (`<100ms` 打断) → X-ASR 160ms 中英标点流式识别 → Kokoro v1.1 24kHz 高清双语合成（103 音色）**，驱动全屏 Live 语音、AI 电话、通知朗读与三档任务语音播报（关闭 / 仅耳机与车载蓝牙[默认] / 始终开启）。
+3. **ARM64 汇编 / Vulkan / NPU 端侧极限算力 (`libsol_kernel.so v600`)**：硬件级图像帧差、缩放裁剪、语义向量检索与神经网络加速，发热更低、响应更快，并在设置页内置一键算力基准实测。
+4. **AI 智能电话三栏工作台**：支持通讯录选号、双卡选卡、场景预设、来电自动代接人设、暂停/恢复、VIP 白名单直通、反诈护盾、实时双向转写、通话中暗语传话、DTMF 按键与 AI 摘要归档。
+5. **成熟云端账号免费内置 DeepSeek + Brave 搜索 + BYOK / OAuth 无限扩展**：注册或登录账号即免费解锁内置 DeepSeek 与 Brave Search，支持零重启热切换 DeepSeek Pro、OpenRouter PKCE OAuth、GitHub Models、OpenAI、Anthropic、硅基流动等任意模型并提供 1 键连通测速。
+6. **永久本地 AES-256 记忆库 · 智能体 · 定时自动化 · 报告导出**：支持抽屉历史会话实时搜索、`@` 一键调用自定义智能体、自然语言定时任务，以及 Markdown / HTML / TXT 导出与飞书/企微直推。
 
 ---
 
@@ -177,20 +176,20 @@
 
 | 安全与工程维度 | 实现方案 |
 | :--- | :--- |
-| **Rust 2024 原生加密保险库 (`libsol_kernel.so`)** | ChaCha20 + Encrypt-then-MAC HMAC-SHA256 + HKDF-SHA256 构建期封箱，运行时校验包名、APK v2/v3 证书 SHA-256 及反调试，公开 APK 中 **0 明文密钥**。 |
-| **Android Keystore AES-256-GCM 本地加密** | 用户自有 API Key、OAuth 令牌、账号凭证与个人记忆 100% 本地硬件加密保存。 |
-| **端侧隐私脱敏防火墙 & 高危二次确认** | 发往云端前自动脱敏身份证、银行卡与密码；支付、转账、微信发送等高危操作强制触发确认护盾。 |
+| **Rust 2024 原生加密保险库 (`libsol_kernel.so v600`)** | ChaCha20 + Encrypt-then-MAC HMAC-SHA256 + HKDF-SHA256 构建期由纯 Rust `sol-builder` 封箱，运行时校验包名、APK v2/v3 证书 SHA-256 及反调试，公开 APK 中 **0 明文密钥**。 |
+| **云端 PBKDF2-HMAC-SHA256 + 本地 AES-256-GCM** | 账号密码采用 200,000 轮 PBKDF2-HMAC-SHA256 + 16 字节随机盐；自有 API Key、OAuth 令牌与本地记忆 100% 经 Android Keystore AES-256-GCM 硬件加密保存。 |
+| **端侧隐私脱敏防火墙 & 高危二次确认** | 发往云端前自动脱敏身份证、银行卡与密码；支付、转账、微信发送与账号注销等高危操作强制触发确认护盾。 |
 | **Android 15/16 16KB 页对齐** | 全部 `.so` 动态库（Rust 内核 + Sherpa-ONNX）严格满足 Android 15/16 **16KB 内存页对齐**规范。 |
 
-### 官方发布校验值（`v9.2.0-public` · Build `920`）
+### 官方发布校验值（`v9.3.0-public` · Build `930`）
 
 ```text
 签名证书 SHA-256 (兼容全部历史版本覆盖升级):
 d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478
 
 APK 文件 SHA-256:
-398145f17f1cb17b228aeae6bb94b9d0e47320cc6ffd76afff6b511dbfc6305f  Sol-Next-v9.2.0-public-arm64.apk
-5d721c2681b755df415bd167ea6276ffa5c77ff48a3c40268f09c4cd1b6b796e  Sol-Next-v9.2.0-public-universal.apk
+92c51afd5f60233bc73b164b291a91334c02beca58953adc614ae76654ddfbc2  Sol-Next-v9.3.0-public-arm64.apk       (404,410,759 bytes · 386 MB)
+504cc6dcbb52b02dd3ccf3bc12bb59597426079f79c2d6d47dc4803cbfbf0c3a  Sol-Next-v9.3.0-public-universal.apk   (444,992,739 bytes · 424 MB)
 ```
 
 ---
@@ -198,28 +197,28 @@ APK 文件 SHA-256:
 ## ❓ 常见问题 FAQ
 
 <details>
-<summary><b>Q1: 执行任务时不想手机外放自动播报语音怎么办？</b></summary>
-<p>v9.2.0 默认将任务执行语音播报设为「<b>仅耳机/车载蓝牙</b>」——日常手机外放时完全保持静音，插上有线耳机或连接蓝牙耳机/车载蓝牙后自动开启播报。你也可以在「设置 › 虚拟屏与任务自动化」或「端侧实时语音与 AI 电话」中一键切换为「<b>关闭</b>」或「<b>始终开启</b>」。</p>
+<summary><b>Q1: 为什么 v9.3.0 安装包体积升级到约 386 MB？</b></summary>
+<p>v9.3.0 将端侧离线语音引擎全面换代为 2026 SOTA 的 <b>X-ASR 160ms 中英标点流式模型（161 MB）</b> 与 <b>Kokoro v1.1 24kHz 高清 103 音色语音模型（200 MB）</b>，并以非压缩 mmap 零拷贝方式内置在 APK 中——首次安装即可秒开广播级 24kHz 端侧实时语音，彻底告别此前机械音与漏字，且全程零云端语音费用。</p>
 </details>
 
 <details>
-<summary><b>Q2: 我不想让 App 修改手机的系统过渡动画可以关掉吗？</b></summary>
-<p>可以。前往「设置 › 虚拟屏与任务自动化」，直接关闭「<b>系统零动画极速模式</b>」即可立即恢复你手机原本的系统动画缩放比例（开启则享受 0x 跨页极速体验）。</p>
+<summary><b>Q2: 登录需要收费或验证码吗？如何获得免费 DeepSeek？</b></summary>
+<p>完全免费！v9.3.0 已升级为成熟产品级云端账号系统（手机号/邮箱 + 密码注册登录，或 Google 一键登录，不再提供虚拟免费验证码）。只要完成正常登录，即可自动解锁<b>免费内置 DeepSeek</b> 与 <b>Brave Search 实时联网搜索</b>，在「账号中心」可随时看到 <code>✓ 免费内置 DeepSeek 已激活</code>。</p>
 </details>
 
 <details>
-<summary><b>Q3: Sol Next 完全免费吗？需要自己买 API Key 或配置语音服务吗？</b></summary>
-<p>完全免费、Apache-2.0 开源、无广告无订阅墙。安装包内置免费 <b>DeepSeek Flash</b>、<b>Brave Search 实时联网搜索</b>及<b>四级端侧神经语音引擎</b>，完成登录与权限设置即可开箱使用；也支持随时添加自有 API Key 或订阅 OAuth 模型。</p>
+<summary><b>Q3: Android 13 手机在后台虚拟屏执行任务时还会抢输入法吗？</b></summary>
+<p>不会！v9.3.0 专门针对 Android 13（API 33）及以下机型实现了<b>零 MotionEvent 无障碍直传通道</b>（直接通过 <code>ACTION_SET_TEXT</code> / <code>ACTION_CLICK</code> / <code>ACTION_IME_ENTER</code> 写入并确认，避免触发系统 <code>InputDispatcher</code> 抢占主屏焦点与键盘）；Android 14–16 机型同时享有系统级 <code>DISPLAY_IME_POLICY_HIDE</code> 隔离。</p>
 </details>
 
 <details>
-<summary><b>Q4: 此前部分国产手机输入法打字卡顿或误收键盘的问题修复了吗？</b></summary>
-<p>v9.2.0 已彻底重构输入框为 Compose 原生 <code>TextFieldState</code>（<code>PartialGapBuffer</code> 零父级重组），将 30fps 虚拟屏帧流隔离至叶组件，加入键盘弹出自动隐藏折叠态浮窗防遮挡、打开抽屉自动收键盘，并修复了自动化剪贴板覆盖与 <code>clearFirst</code> 问题。</p>
+<summary><b>Q4: 执行任务时不想手机外放播报语音，或者想保留手机系统动画怎么办？</b></summary>
+<p>任务执行语音播报默认设为「<b>仅耳机/车载蓝牙</b>」——手机外放 100% 静音，连上耳机或车载蓝牙自动播报，随时可在设置切换为「关闭」或「始终开启」。「设置 › 虚拟屏与任务自动化」中的「<b>系统零动画极速模式</b>」同样支持一键关闭并自动恢复手机原始动画缩放。</p>
 </details>
 
 <details>
 <summary><b>Q5: 不配对无线调试也能用吗？</b></summary>
-<p>完全可以！不配对无线调试即可正常使用「对话模式（含相册/文档理解与 Brave 实时联网搜索）」、「Live 端侧实时语音」、「开车通知语音朗读」、「AI 智能电话」及基础无障碍任务执行；配对无线调试后进一步解锁 1:1 后台独立虚拟屏与系统零动画极速模式。</p>
+<p>完全可以！不配对无线调试即可正常使用「对话模式（含相册/文档理解与 Brave 实时联网搜索）」、「Live 24kHz 端侧实时语音」、「开车通知语音朗读」、「AI 智能电话」及基础无障碍任务执行；配对无线调试后进一步解锁 1:1 后台独立虚拟屏与系统零动画极速模式。</p>
 </details>
 
 ---
