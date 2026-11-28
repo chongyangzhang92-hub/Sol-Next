@@ -1,12 +1,12 @@
 <div align="center">
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.2-public">
-  <img src="../media/v911/hero-banner-v911.png" alt="Sol Next 9.1.2 — Native Material 3 · Trợ Lý Hành Động AI Của Bạn" width="100%" />
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.2.0-public">
+  <img src="../media/v911/hero-banner-v911.png" alt="Sol Next 9.2.0 — Native Material 3 · Trợ Lý Hành Động AI Của Bạn" width="100%" />
 </a>
 
 <br/><br/>
 
-# Sol Next 9.1.2 — Native Material 3 · Trợ Lý Hành Động AI Của Bạn
+# Sol Next 9.2.0 — Native Material 3 · Trợ Lý Hành Động AI Của Bạn
 
 ### Điều khiển Android bằng giọng nói & văn bản · Hỗ trợ 20 ngôn ngữ (tự động theo ngôn ngữ điện thoại)
 
@@ -14,11 +14,11 @@
 
 <br/>
 
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20ARM64%20APK-v9.1.2-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="Tải APK Công Khai v9.1.2 (ARM64 · DeepSeek Miễn Phí)" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk"><img src="https://img.shields.io/badge/⬇%20ARM64%20APK-v9.2.0-3E78E0?style=for-the-badge&logo=android&logoColor=white" alt="Tải APK Công Khai v9.2.0 (ARM64 · DeepSeek Miễn Phí)" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20Universal%20APK-ARM64%20%2B%20x86__64-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Tải APK Phổ Quát (ARM64 + x86_64)" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-universal.apk"><img src="https://img.shields.io/badge/⬇%20Universal%20APK-ARM64%20%2B%20x86__64-10b981?style=for-the-badge&logo=android&logoColor=white" alt="Tải APK Phổ Quát (ARM64 + x86_64)" /></a>
 &nbsp;
-<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.2-public"><img src="https://img.shields.io/badge/📋%20Release-v9.1.2-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Ghi chú phát hành v9.1.2 & SHA-256" /></a>
+<a href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.2.0-public"><img src="https://img.shields.io/badge/📋%20Release-v9.2.0-6366f1?style=for-the-badge&logo=github&logoColor=white" alt="Ghi chú phát hành v9.2.0 & SHA-256" /></a>
 
 <br/><br/>
 
@@ -30,7 +30,7 @@
 
 <div>
 
-## ✨ Điểm mới trên v9.1.2
+## ✨ Điểm mới trên v9.2.0
 
 - **20 ngôn ngữ toàn cầu + tự động theo ngôn ngữ điện thoại**: Chỉ dựa vào ngôn ngữ hệ thống (không theo khu vực), chuyển đổi tức thì trong Cài đặt.
 - **Popup cập nhật OTA tự động + Ghi chú phiên bản + Tăng tốc tải đa luồng**: Tự động hiện hộp thoại cập nhật kèm chi tiết phiên bản mới; tăng tốc bằng đua mirror + 4 luồng HTTP Range song song (kiểm tra chặt SHA-256 & chữ ký).
@@ -45,7 +45,7 @@ Quét mã QR WeChat bên dưới để liên hệ trực tiếp với tác giả
 
 <p align="center">
   <img src="../assets/author-wechat-qr.jpg" width="220" alt="WeChat QR · Author Contact" /><br/>
-  <sub><b>Sol Next 9.1.2</b> · Apache-2.0 · <a href="https://chongyangzhang92-hub.github.io/Sol-Next/">Official Multi-Language Website</a> · <a href="../../SHA256SUMS.txt">SHA256SUMS.txt</a></sub>
+  <sub><b>Sol Next 9.2.0</b> · Apache-2.0 · <a href="https://chongyangzhang92-hub.github.io/Sol-Next/">Official Multi-Language Website</a> · <a href="../../SHA256SUMS.txt">SHA256SUMS.txt</a></sub>
 </p>
 
 </div>

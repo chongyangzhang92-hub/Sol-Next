@@ -1,27 +1,26 @@
 # Sol Next
 
-> Sol Next (v9.1.2-public, Build 912) is a free, Apache-2.0 open-source AI personal assistant and autonomous mobile action agent for Android 10–16 and HarmonyOS, built in Kotlin, Jetpack Compose Material 3, and Rust.
+> Sol Next (v9.2.0-public, Build 920) is a free, Apache-2.0 open-source AI personal assistant and autonomous mobile action agent for Android 10–16 and HarmonyOS, built in Kotlin, Jetpack Compose Material 3, and Rust.
 
 ## Core Facts (Verified 2026-11-28)
-- **Latest Version:** `v9.1.2-public` (versionCode `911`, released 2026-11-28)
+- **Latest Version:** `v9.2.0-public` (versionCode `920`, released 2026-11-28)
 - **Author:** Zhang Chongyang (许昌北海医院张重阳)
 - **License:** Apache-2.0 (100% free, no ads, no paywall)
 - **Platforms:** Android 10–16 (API 29–36, 16KB page-aligned) & HarmonyOS
 - **Official Repository:** https://github.com/chongyangzhang92-hub/Sol-Next
 - **Official Website:** https://chongyangzhang92-hub.github.io/Sol-Next/
-- **Direct ARM64 APK (93 MB):** https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-arm64.apk
-- **China High-Speed Mirror (ARM64):** https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.2/Sol-Next-v9.1.2-public-arm64.apk
-- **SHA-256 (ARM64):** `4f8ddaa1f001d916742e033d88f6eef6c13d3246b7ab77c98c9f939400e4071f`
-- **SHA-256 (Universal):** `cbc35c643c00ca8d2b9b78faa266d5d9fc054dbe25717688cd0218eb7f2dfc0b`
+- **Direct ARM64 APK (93 MB):** https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk
+- **China High-Speed Mirror (ARM64):** https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.2.0/Sol-Next-v9.2.0-public-arm64.apk
+- **SHA-256 (ARM64):** `398145f17f1cb17b228aeae6bb94b9d0e47320cc6ffd76afff6b511dbfc6305f`
+- **SHA-256 (Universal):** `5d721c2681b755df415bd167ea6276ffa5c77ff48a3c40268f09c4cd1b6b796e`
 - **Signing Certificate SHA-256:** `d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478`
 
-## Key Capabilities
-- **Dual-Mode Native Material 3 Interface (`Chat | Task`):** Light (`#FFFFFF`) and Dark (`#0E0F11`) 120Hz adaptive interface with seamless switching between conversational Q&A and autonomous phone execution.
-- **Zero-Config Built-In DeepSeek Flash & Brave Web Search:** Sealed inside a Rust ChaCha20+HMAC-SHA256 hardware-bound native vault (zero plaintext keys in Git or APK) with resilient fallback search, plus unlimited BYOK API Key and Subscription OAuth model login (OpenRouter OAuth 2.0 PKCE, GitHub Models, OpenAI, Anthropic, DeepSeek, SiliconFlow).
-- **4-Stage On-Device Realtime Neural Voice Stack:** Bundled Apache-2.0 ONNX models (GTCRN denoiser -> Silero VAD v5 -> Zipformer-CTC streaming ASR -> AISHELL-3 VITS TTS) powering full-screen Live Voice, simultaneous voice-while-executing, AI phone calls with anti-scam defense, and offline notification readout without any cloud voice API key.
-- **Hands-Free Notification Voice Readout:** Offline voice announcements for incoming messages while driving or resting, with transient Audio Ducking, default OTP/financial-digit redaction, and Bluetooth/headset-only mode.
-- **Background Independent Virtual Screen:** Runs multi-app tasks offscreen with `DISPLAY_IME_POLICY_HIDE` keyboard isolation so main-screen typing never collapses, live mid-task steering, and OEM Accessibility self-healing without repetitive nag prompts.
-- **Universal Free Login:** Free phone & email OTP login plus Google (native Android Account Picker), WeChat, QQ, Apple ID, GitHub, and Huawei/Feishu stored encrypted via Android Keystore AES-256-GCM.
+## Key v9.2.0 Capabilities
+- **12-Upgrade Apex Execution Kernel:** Immutable-prefix KV Cache with 8-message fixed-stride epoch compaction, 11-tool lean core profile (~52% smaller schema), `near_text` row-anchor disambiguation, hybrid mid-viewport OCR fusion (WebViews/Mini-Programs), zero-waste text-model capture, mid-SSE `ui_action_chain` streaming, 40ms fake-search-bar takeover, 5× faster `ui_scroll_collect`, 0-token popup auto-dismiss reflex, and verified Tier-0D RSI skill replay.
+- **System Zero-Animation Toggle & 3-Mode Task Voice Gating:** Dedicated toggle to enable `0x` speed or restore original system animation scales; real-time Android `AudioDeviceInfo` route gating (`Off` / `Headset & Car BT` [default] / `Always`) keeps phone speakers silent in public and speaks automatically on headphones or car Bluetooth.
+- **Zero-Lag Compose `TextFieldState` Composer:** `PartialGapBuffer` zero-recomposition typing, leaf-isolated 30fps virtual-screen frames, 95ms GPU buffered Markdown crossfade, automatic IME dismissal on drawer open, IME-aware PiP auto-tucking, and 420ms automation clipboard auto-restore.
+- **Full 3-Tab AI Phone Call Suite:** Live timer, anti-fraud alerts, bidirectional transcript, silent Live Whisper steering, DTMF keypad, Contact Picker, Dual-SIM, 4 outbound & 4 incoming persona presets, pause/resume, VIP bypass, and searchable AI call summaries.
+- **End-to-End Agents, Memory & Multimodal Attachments:** `@` quick-mention specialist agents, searchable/editable AES-256 Saved Memory injected cleanly into system prompts, native Gallery Photo (on-device ML Kit Chinese OCR + JPEG Base64) and Document attachments, plus built-in DeepSeek Flash, Brave Search, and 4-stage on-device neural voice (GTCRN + Silero VAD v5 + Zipformer-CTC + AISHELL-3 VITS).
 
 ## Key Documentation
 - [Chinese Homepage (README.md)](https://github.com/chongyangzhang92-hub/Sol-Next/blob/main/README.md)

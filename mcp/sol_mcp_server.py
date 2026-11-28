@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
-SERVER_INFO = {"name": "sol-next-mcp", "version": "9.1.0-public"}
+SERVER_INFO = {"name": "sol-next-mcp", "version": "9.2.0-public"}
 PROTOCOL_VERSION = "2024-11-05"
 CLI_PATH = Path(__file__).resolve().parent.parent / "scripts" / "sol-cli.py"
 
@@ -31,7 +31,7 @@ TOOLS = [
     },
     {
         "name": "sol_install_public_apk",
-        "description": "Download the official Sol Next v9.1.0-public APK (free built-in Rust-encrypted DeepSeek + BYOK) from GitHub Releases or China direct mirror, verify SHA-256, install via ADB, and optionally grant runtime permissions.",
+        "description": "Download the official Sol Next v9.2.0-public APK (free built-in Rust-encrypted DeepSeek + BYOK) from GitHub Releases or China direct mirror, verify SHA-256, install via ADB, and optionally grant runtime permissions.",
         "inputSchema": {
             "type": "object",
             "properties": {

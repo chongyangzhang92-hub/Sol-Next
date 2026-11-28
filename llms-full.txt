@@ -1,4 +1,4 @@
-# Sol Next — Full Technical & Product Reference (v9.1.2-public, Build 912)
+# Sol Next — Full Technical & Product Reference (v9.2.0-public, Build 920)
 
 ## 1. Executive Summary
 Sol Next is an open-source (Apache-2.0), zero-cost Android & HarmonyOS AI personal assistant and autonomous mobile phone agent created by Zhang Chongyang (许昌北海医院张重阳). Unlike web wrappers or chat-only assistants, Sol Next combines:
@@ -33,12 +33,12 @@ Powers: Full-screen Live Voice, Simultaneous Voice Bar, AI Phone Calls (dialing,
 - **Privacy Firewall**: Automatic on-device redaction of ID numbers, bank cards, and secrets prior to cloud LLM transmission.
 - **OEM Accessibility Optimization**: Persists one-time onboarding completion so MIUI/HyperOS, ColorOS, OriginOS, and HarmonyOS users are never stuck in repetitive Accessibility re-prompt loops after swiping away the app; automatically self-heals Accessibility in 200ms when Shell Helper is connected.
 
-## 3. Official Downloads & Checksums (v9.1.2-public)
-- Release Page: https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.2-public
-- ARM64 APK (93 MB): https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-arm64.apk
-  - China Direct Mirror: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.2/Sol-Next-v9.1.2-public-arm64.apk
-  - SHA-256: `4f8ddaa1f001d916742e033d88f6eef6c13d3246b7ab77c98c9f939400e4071f`
-- Universal APK (131 MB): https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-universal.apk
-  - China Direct Mirror: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.2/Sol-Next-v9.1.2-public-universal.apk
-  - SHA-256: `cbc35c643c00ca8d2b9b78faa266d5d9fc054dbe25717688cd0218eb7f2dfc0b`
+## 3. Official Downloads & Checksums (v9.2.0-public)
+- Release Page: https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.2.0-public
+- ARM64 APK (93 MB): https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk
+  - China Direct Mirror: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.2.0/Sol-Next-v9.2.0-public-arm64.apk
+  - SHA-256: `398145f17f1cb17b228aeae6bb94b9d0e47320cc6ffd76afff6b511dbfc6305f`
+- Universal APK (131 MB): https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-universal.apk
+  - China Direct Mirror: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.2.0/Sol-Next-v9.2.0-public-universal.apk
+  - SHA-256: `5d721c2681b755df415bd167ea6276ffa5c77ff48a3c40268f09c4cd1b6b796e`
 - Public OTA Manifest: https://webui.67-230-181-51.sslip.io/assets/sol-public/latest.json

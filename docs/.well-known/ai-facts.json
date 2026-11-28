@@ -2,13 +2,22 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Sol Next",
-  "version": "9.1.2-public",
-  "buildNumber": 911,
+  "version": "9.2.0-public",
+  "buildNumber": 920,
   "releaseDate": "2026-11-28",
   "license": "Apache-2.0",
   "price": "0",
   "currency": "USD",
-  "operatingSystem": ["Android 10", "Android 11", "Android 12", "Android 13", "Android 14", "Android 15", "Android 16", "HarmonyOS"],
+  "operatingSystem": [
+    "Android 10",
+    "Android 11",
+    "Android 12",
+    "Android 13",
+    "Android 14",
+    "Android 15",
+    "Android 16",
+    "HarmonyOS"
+  ],
   "author": {
     "name": "Zhang Chongyang (许昌北海医院张重阳)",
     "url": "https://github.com/chongyangzhang92-hub"
@@ -17,45 +26,45 @@
   "homepage": "https://chongyangzhang92-hub.github.io/Sol-Next/",
   "downloads": {
     "arm64": {
-      "filename": "Sol-Next-v9.1.2-public-arm64.apk",
-      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-arm64.apk",
-      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.2/Sol-Next-v9.1.2-public-arm64.apk",
-      "cdnUrl": "https://cdn.gh-proxy.org/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-arm64.apk",
-      "sha256": "4f8ddaa1f001d916742e033d88f6eef6c13d3246b7ab77c98c9f939400e4071f"
+      "filename": "Sol-Next-v9.2.0-public-arm64.apk",
+      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk",
+      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.2.0/Sol-Next-v9.2.0-public-arm64.apk",
+      "cdnUrl": "https://cdn.gh-proxy.org/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-arm64.apk",
+      "sha256": "398145f17f1cb17b228aeae6bb94b9d0e47320cc6ffd76afff6b511dbfc6305f"
     },
     "universal": {
-      "filename": "Sol-Next-v9.1.2-public-universal.apk",
-      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.2-public/Sol-Next-v9.1.2-public-universal.apk",
-      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.2/Sol-Next-v9.1.2-public-universal.apk",
-      "sha256": "cbc35c643c00ca8d2b9b78faa266d5d9fc054dbe25717688cd0218eb7f2dfc0b"
+      "filename": "Sol-Next-v9.2.0-public-universal.apk",
+      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.2.0-public/Sol-Next-v9.2.0-public-universal.apk",
+      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.2.0/Sol-Next-v9.2.0-public-universal.apk",
+      "sha256": "5d721c2681b755df415bd167ea6276ffa5c77ff48a3c40268f09c4cd1b6b796e"
     },
     "signingCertSha256": "d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478",
     "otaManifest": "https://webui.67-230-181-51.sslip.io/assets/sol-public/latest.json"
   },
   "highlights": [
-    "100% Native Android Material 3 Dual-Mode UI (Chat | Task) in Light (#FFFFFF) and Obsidian Dark (#0E0F11) at 120Hz",
-    "Zero-config built-in DeepSeek Flash & Brave Search real-time web grounding sealed in Rust ChaCha20+HMAC-SHA256 vault",
-    "Bundled 4-stage on-device realtime neural voice stack (GTCRN + Silero VAD v5 + Zipformer-CTC + AISHELL-3 VITS) with zero cloud voice API needed",
-    "Hands-free Notification Voice Readout for driving and resting with Audio Ducking and automatic OTP/financial privacy redaction",
-    "Free universal login component (Phone OTP, Email OTP, Google, WeChat, QQ, Apple, GitHub, Huawei/Feishu) + Subscription OAuth model login (OpenRouter PKCE, GitHub Models)",
-    "Background Independent Virtual Screen with DISPLAY_IME_POLICY_HIDE keyboard isolation, live steering, and OEM Accessibility self-healing"
+    "12-upgrade Apex Execution Engine: immutable-prefix KV Cache with fixed-stride epoch compaction, 11-tool lean core profile, near_text row-anchor disambiguation, hybrid mid-viewport OCR fusion, 5x faster ui_scroll_collect batch collector, 40ms fake-search-bar takeover, 0-token popup reflex & verified Tier-0D RSI zero-cloud skill replay",
+    "Dedicated System Zero-Animation Turbo toggle in Settings that applies 0x scales on demand and restores original device animation scales when disabled",
+    "3-mode Task Voice Broadcast Control (Off / Headset & Car Bluetooth [Default] / Always) using real Android AudioDeviceInfo route detection — 100% silent on phone speaker in public, automatic hands-free voice when earphones or car audio connect",
+    "Zero-lag Jetpack Compose TextFieldState (PartialGapBuffer) composer with leaf-isolated 30fps virtual display frames, 95ms GPU buffered Markdown crossfade, automatic IME dismissal on drawer open, IME-aware PiP auto-tucking, and 420ms automation clipboard auto-restore",
+    "Full 3-tab AI Phone Call Suite (Dial & Cockpit | Auto-Answer Policy | Call History) with Contact Picker, Dual-SIM, Live Whisper steering, DTMF keypad, anti-fraud alerts, 4 outbound & 4 incoming presets, VIP bypass & AI call summaries",
+    "Real end-to-end Specialist Agents (@ quick-mention + removable chip + isolated system-prompt injection), searchable & editable AES-256 Saved Memory, native Gallery Photo (ML Kit Chinese OCR + JPEG) and Document attachments"
   ],
   "faq": [
     {
-      "q": "Is Sol Next free and open-source?",
-      "a": "Yes. Sol Next is Apache-2.0 open-source, completely free, and ships with built-in DeepSeek Flash, Brave Search, and 4-stage on-device neural voice out of the box."
+      "q": "Can I mute task execution voice announcements on the phone speaker while keeping hands-free audio in my car or headphones?",
+      "a": "Yes. Sol Next v9.2.0 defaults to Headset & Car Bluetooth mode (silent on speakers, auto-enabled on wired/USB/Bluetooth earphones and car audio) and lets you switch to Off or Always in Settings."
     },
     {
-      "q": "Does Sol Next require cloud voice API keys for Live Voice or AI Phone Calls?",
-      "a": "No. Sol Next bundles GTCRN denoiser, Silero VAD v5, Zipformer-CTC ASR, and AISHELL-3 VITS TTS directly inside the APK."
+      "q": "Can I toggle System Zero-Animation Turbo on or off?",
+      "a": "Yes. Settings > Virtual Screen & Task Automation provides a dedicated toggle that restores your phone's exact original window/transition/animator scales whenever disabled."
     },
     {
-      "q": "Can Sol Next read notifications aloud safely while driving?",
-      "a": "Yes. Notification Voice Readout uses offline on-device TTS with Audio Ducking, automatically redacts OTP verification codes and sensitive financial digits by default, and supports Bluetooth/headset-only mode."
+      "q": "Is Sol Next free and open-source with zero required API keys?",
+      "a": "Yes. Apache-2.0 open-source, free, and ships with Rust-vault-sealed DeepSeek Flash, Brave Search real-time web grounding, and a 4-stage on-device neural voice stack out of the box."
     },
     {
-      "q": "Does Sol Next repeatedly prompt for Accessibility permission after closing the app on Chinese Android ROMs?",
-      "a": "No. v9.1.2 persists one-time onboarding completion and silently self-heals Accessibility in 200ms when Shell Helper is connected."
+      "q": "Does Sol Next fix CJK IME typing lag and keyboard collisions on Android?",
+      "a": "Yes. v9.2.0 rebuilds the composer on Compose TextFieldState (PartialGapBuffer), isolates 30fps virtual screen frames to leaf composables, auto-dismisses the IME on drawer open, and auto-tucks the collapsed PiP while typing."
     }
   ]
 }

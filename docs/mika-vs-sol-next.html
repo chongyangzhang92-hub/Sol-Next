@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sol Next 9.1.2 vs Mika — 把 Mika 差在哪、Sol Next 强在哪彻底讲明白</title>
-  <meta name="description" content="Sol Next 9.1.2 vs Mika 全方位深度对比（7 张 2K 图谱 + 8 大真实短板拆解 + 16 项实测参数）：详解 Mika 需手动配 Key、关 Wi-Fi 断连、慢速费 Token、坐标漂移与隐私薄弱等短板，以及 Sol Next 9.1.2 如何用免费内置 Rust 加密 DeepSeek、关 Wi-Fi 保活、72ms 直通、0.0px 1:1 虚拟屏、20 国语言与 4 线程极速 OTA 全面超越。" />
+  <title>Sol Next 9.2.0 vs Mika — 把 Mika 差在哪、Sol Next 强在哪彻底讲明白</title>
+  <meta name="description" content="Sol Next 9.2.0 vs Mika 全方位深度对比（7 张 2K 图谱 + 8 大真实短板拆解 + 16 项实测参数）：详解 Mika 需手动配 Key、关 Wi-Fi 断连、慢速费 Token、坐标漂移与隐私薄弱等短板，以及 Sol Next 9.2.0 如何用免费内置 Rust 加密 DeepSeek、关 Wi-Fi 保活、72ms 直通、0.0px 1:1 虚拟屏、20 国语言与 4 线程极速 OTA 全面超越。" />
   <meta name="keywords" content="Mika vs Sol Next, Sol Next vs Mika, Mika 替代, Mika 缺点, Android AI Agent 对比, VirtualDisplay 1:1, 微信自动化 AI, Rust JNI Android Agent, DeepSeek Android AI, MCP Server Android" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#05070c" />
@@ -13,8 +13,8 @@
   <link rel="alternate" type="application/json" title="AI Facts JSON" href="https://chongyangzhang92-hub.github.io/Sol-Next/ai-facts.json" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Sol Next" />
-  <meta property="og:title" content="Sol Next 9.1.2 vs Mika — Where Mika Falls Short &amp; Why Sol Next Leads" />
-  <meta property="og:description" content="Complete 8-pain-point breakdown + 7 2K benchmark charts comparing Sol Next 9.1.2 against earlier mobile agent Mika." />
+  <meta property="og:title" content="Sol Next 9.2.0 vs Mika — Where Mika Falls Short &amp; Why Sol Next Leads" />
+  <meta property="og:description" content="Complete 8-pain-point breakdown + 7 2K benchmark charts comparing Sol Next 9.2.0 against earlier mobile agent Mika." />
   <meta property="og:url" content="https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html" />
   <meta property="og:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/v801/compare-ecosystem-matrix.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -25,7 +25,7 @@
     "@graph": [
       {
         "@type": "TechArticle",
-        "headline": "Sol Next 9.1.2 vs Mika: Where Mika Falls Short and Why Sol Next 9.1.2 Decisively Leads",
+        "headline": "Sol Next 9.2.0 vs Mika: Where Mika Falls Short and Why Sol Next 9.2.0 Decisively Leads",
         "datePublished": "2026-11-28",
         "dateModified": "2026-11-28",
         "url": "https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html"
@@ -35,10 +35,10 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Mika 到底差在哪？Sol Next 9.1.2 比 Mika 强在哪里？",
+            "name": "Mika 到底差在哪？Sol Next 9.2.0 比 Mika 强在哪里？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "早期手机代理 Mika 存在 8 大核心短板：装完不能直接用（必须自己买 API Key）、关 Wi-Fi 无线调试立即断连、执行慢且费 Token（~2400ms/步）、缩放网格虚拟屏坐标易漂移、界面满屏工程日志且缺离线语音、明文上传且重型容器攻击面大、仅单一语言且更新靠手动。全新独立的 Sol Next 9.1.2 全面解决了这些问题：开箱免费内置纯 Rust 加密 DeepSeek V4.1 Flash + 随时换 BYOK、关 Wi-Fi 切 5G 依然 100% 持续在线且鸿蒙免无线调试、72ms 零 Token 直通（快 33 倍）、0.0px 1:1 物理屏克隆、20 国语言按手机语言自动切换、内置 16KB 离线神经语音、端侧隐私脱敏防火墙与微信 0 重发加固、60Hz 四指游戏与 AI 反诈电话，以及带版本说明的 4 线程多镜像极速 OTA。"
+              "text": "早期手机代理 Mika 存在 8 大核心短板：装完不能直接用（必须自己买 API Key）、关 Wi-Fi 无线调试立即断连、执行慢且费 Token（~2400ms/步）、缩放网格虚拟屏坐标易漂移、界面满屏工程日志且缺离线语音、明文上传且重型容器攻击面大、仅单一语言且更新靠手动。全新独立的 Sol Next 9.2.0 全面解决了这些问题：开箱免费内置纯 Rust 加密 DeepSeek V4.1 Flash + 随时换 BYOK、关 Wi-Fi 切 5G 依然 100% 持续在线且鸿蒙免无线调试、72ms 零 Token 直通（快 33 倍）、0.0px 1:1 物理屏克隆、20 国语言按手机语言自动切换、内置 16KB 离线神经语音、端侧隐私脱敏防火墙与微信 0 重发加固、60Hz 四指游戏与 AI 反诈电话，以及带版本说明的 4 线程多镜像极速 OTA。"
             }
           }
         ]
@@ -90,7 +90,7 @@
 <body>
   <div class="wrap">
     <nav>
-      <a class="brand" href="./">✦ Sol Next 9.1.2</a>
+      <a class="brand" href="./">✦ Sol Next 9.2.0</a>
       <div class="nav-links">
         <a href="./">产品官网 &amp; 上手教程</a>
         <a href="./security-and-privacy.html">安全与隐私白皮书</a>
@@ -102,13 +102,13 @@
 
     <section class="hero">
       <span class="kicker">FULL COMPARISON · 8 大真实痛点拆解 · 7 张 2K 实测图谱 · SOL NEXT 9.1.2 vs MIKA</span>
-      <h1>讲明白：早期代理 Mika 到底差在哪？Sol Next 9.1.2 比它强在哪？</h1>
+      <h1>讲明白：早期代理 Mika 到底差在哪？Sol Next 9.2.0 比它强在哪？</h1>
       <p class="lead">
-        <strong>Sol Next 9.1.2（Build 912 · Apache-2.0 · 全新独立旗舰）</strong>是由许昌北海医院张重阳完全独立打造的新一代 Android &amp; 鸿蒙 AI 手机行动替身。相比早期工具型手机代理 Mika，Sol Next 9.1.2 彻底根治了普通人用 Mika 时最头疼的 <strong>8 大短板</strong>，在门槛、稳定度、速度、精度、隐私、多语言、游戏与 OTA 升级上实现跨代全面超越。
+        <strong>Sol Next 9.2.0（Build 920 · Apache-2.0 · 全新独立旗舰）</strong>是由许昌北海医院张重阳完全独立打造的新一代 Android &amp; 鸿蒙 AI 手机行动替身。相比早期工具型手机代理 Mika，Sol Next 9.2.0 彻底根治了普通人用 Mika 时最头疼的 <strong>8 大短板</strong>，在门槛、稳定度、速度、精度、隐私、多语言、游戏与 OTA 升级上实现跨代全面超越。
       </p>
       <div class="cta-row">
-        <a class="btn primary" href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.2/Sol-Next-v9.1.2-public-arm64.apk">🇨🇳 国内高速直连下载 Sol Next 9.1.2 (免费内置 DeepSeek)</a>
-        <a class="btn" href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.2-public">🌍 GitHub 官方 Release</a>
+        <a class="btn primary" href="https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.2.0/Sol-Next-v9.2.0-public-arm64.apk">🇨🇳 国内高速直连下载 Sol Next 9.2.0 (免费内置 DeepSeek)</a>
+        <a class="btn" href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.2.0-public">🌍 GitHub 官方 Release</a>
         <a class="btn" href="./">🌐 返回 20 语言官网 &amp; 演示案例</a>
       </div>
     </section>
@@ -126,7 +126,7 @@
         </ul>
       </div>
       <div class="card sol">
-        <h2>✅ Sol Next 9.1.2 的全面降维领先</h2>
+        <h2>✅ Sol Next 9.2.0 的全面降维领先</h2>
         <ul>
           <li><span class="ok">开箱免费内置 Rust 加密 DeepSeek</span>：装好立刻能免费对话与操作手机，零明文密钥 + TLS 证书防抓包，且随时可换任意 BYOK。</li>
           <li><span class="ok">关 Wi-Fi 切 5G 100% 永不断连</span>：底层锁死 <code>adb_enabled=1</code> + <code>127.0.0.1:5555</code> 回环；<strong>鸿蒙自动识别免无线调试</strong>。</li>
@@ -141,15 +141,15 @@
     <h2 class="sec">📊 全部 7 组 2K 实测架构与基准图谱（点击查看大图）</h2>
     <div class="grid-2">
       <figure>
-        <a href="media/v801/compare-architecture.png" target="_blank"><img src="media/v801/compare-architecture.png" alt="Sol Next 9.1.2 vs Mika 六层全栈架构对比图" /></a>
+        <a href="media/v801/compare-architecture.png" target="_blank"><img src="media/v801/compare-architecture.png" alt="Sol Next 9.2.0 vs Mika 六层全栈架构对比图" /></a>
         <figcaption><strong>01 · 全栈六层架构领先对比</strong>：从纯 Rust 16KB 内核、端侧隐私脱敏到多模态执行全链路代际领先。</figcaption>
       </figure>
       <figure>
-        <a href="media/v801/compare-benchmark.png" target="_blank"><img src="media/v801/compare-benchmark.png" alt="Sol Next 9.1.2 核心速度、Token 压缩与零漂移实测基准图" /></a>
+        <a href="media/v801/compare-benchmark.png" target="_blank"><img src="media/v801/compare-benchmark.png" alt="Sol Next 9.2.0 核心速度、Token 压缩与零漂移实测基准图" /></a>
         <figcaption><strong>02 · 速度、剪枝与精度实测基准</strong>：72ms 直通、&lt;250ms 瞬移、微信 9.5s 一次过、0.0px 零误差。</figcaption>
       </figure>
       <figure>
-        <a href="media/v801/compare-execution-pipeline.png" target="_blank"><img src="media/v801/compare-execution-pipeline.png" alt="Sol Next 9.1.2 端到端时序瀑布与微信九项加固对比图" /></a>
+        <a href="media/v801/compare-execution-pipeline.png" target="_blank"><img src="media/v801/compare-execution-pipeline.png" alt="Sol Next 9.2.0 端到端时序瀑布与微信九项加固对比图" /></a>
         <figcaption><strong>03 · 端到端时序瀑布 &amp; 微信九项加固</strong>：并行预启动、&lt;2ms 零缓存指纹与发送气泡防重发契约。</figcaption>
       </figure>
       <figure>
@@ -157,15 +157,15 @@
         <figcaption><strong>04 · 1:1 物理屏克隆 + #1..#N 实时句柄</strong>：实证 <code>1080×2280 @ 440dpi scale=1.0</code> 0.0px 零漂移。</figcaption>
       </figure>
       <figure>
-        <a href="media/v801/compare-security-privacy.png" target="_blank"><img src="media/v801/compare-security-privacy.png" alt="Sol Next 9.1.2 六重零信任安全与隐私架构对比图" /></a>
+        <a href="media/v801/compare-security-privacy.png" target="_blank"><img src="media/v801/compare-security-privacy.png" alt="Sol Next 9.2.0 六重零信任安全与隐私架构对比图" /></a>
         <figcaption><strong>05 · 六重零信任安全与隐私防线</strong>：最小攻击面、端侧 -97% PII 脱敏剪枝、Rust 加密密钥库与硬件加密。</figcaption>
       </figure>
       <figure>
-        <a href="media/v801/compare-radar-matrix.png" target="_blank"><img src="media/v801/compare-radar-matrix.png" alt="Sol Next 9.1.2 vs Mika 八维工程能力实测雷达图" /></a>
+        <a href="media/v801/compare-radar-matrix.png" target="_blank"><img src="media/v801/compare-radar-matrix.png" alt="Sol Next 9.2.0 vs Mika 八维工程能力实测雷达图" /></a>
         <figcaption><strong>06 · 八维工程能力实测对比雷达图</strong>：速度、精度、安全、语音、游戏、多语言、保活与 OTA 全维领跑。</figcaption>
       </figure>
       <figure style="grid-column:1 / -1;">
-        <a href="media/v801/compare-ecosystem-matrix.png" target="_blank"><img src="media/v801/compare-ecosystem-matrix.png" alt="Sol Next 9.1.2 vs Mika 十二维全景能力对比总表" /></a>
+        <a href="media/v801/compare-ecosystem-matrix.png" target="_blank"><img src="media/v801/compare-ecosystem-matrix.png" alt="Sol Next 9.2.0 vs Mika 十二维全景能力对比总表" /></a>
         <figcaption><strong>07 · 十二维全景工程与生态总表</strong>：一目了然看清两代手机 AI Agent 的代际差距。</figcaption>
       </figure>
     </div>
@@ -173,7 +173,7 @@
     <h2 class="sec">📋 14 项实测参数与体验详表</h2>
     <table>
       <thead>
-        <tr><th style="width:20%">对比维度</th><th style="width:38%">早期手机代理 Mika（短板）</th><th style="width:42%">Sol Next 9.1.2（全新独立旗舰 · <code>ai.sol.next</code>）</th></tr>
+        <tr><th style="width:20%">对比维度</th><th style="width:38%">早期手机代理 Mika（短板）</th><th style="width:42%">Sol Next 9.2.0（全新独立旗舰 · <code>ai.sol.next</code>）</th></tr>
       </thead>
       <tbody>
         <tr><td><strong>开箱即用与大模型</strong></td><td><span class="bad">必须自行购买并配置 API Key</span></td><td><span class="ok">免费内置 Rust 加密 DeepSeek V4.1 Flash（装完就能用）+ 随时换任意 BYOK</span></td></tr>
@@ -194,7 +194,7 @@
     </table>
 
     <footer>
-      <span>Sol Next 9.1.2 (Build 912) · Apache-2.0 · 全新独立产品 · 作者：许昌北海医院张重阳</span>
+      <span>Sol Next 9.2.0 (Build 920) · Apache-2.0 · 全新独立产品 · 作者：许昌北海医院张重阳</span>
       <span><a href="./">产品官网</a> · <a href="./security-and-privacy.html">安全白皮书</a> · <a href="./android-ai-agent-benchmarks.html">实测基准</a> · <a href="./mcp-and-byok-guide.html">MCP &amp; BYOK</a></span>
     </footer>
   </div>

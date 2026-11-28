@@ -1,8 +1,8 @@
 # AGENTS.md — AI Agent Guide for Sol Next (Public Edition)
 
-> Sol Next 9.1.2-public (Build 912, package `ai.sol.next`, zero built-in API keys) ships the rebuilt grounded multimodal OS agent (`SolGroundedAgent`, 10 orthogonal typed tools, live Accessibility handle grounding, 1:1 Set-of-Mark vision), Studio minimalist UI, Rust v5.00 16KB JNI kernel, and 9 verified WeChat 8.0.80 reliability fixes (99/99 unit tests passing). Same signing certificate as prior public releases for in-place upgrades.
+> Sol Next 9.2.0-public (Build 920, package `ai.sol.next`, zero built-in API keys) ships the rebuilt grounded multimodal OS agent (`SolGroundedAgent`, 10 orthogonal typed tools, live Accessibility handle grounding, 1:1 Set-of-Mark vision), Studio minimalist UI, Rust v5.00 16KB JNI kernel, and 9 verified WeChat 8.0.80 reliability fixes (99/99 unit tests passing). Same signing certificate as prior public releases for in-place upgrades.
 
-This repository distributes **Sol Next `v9.1.2-public`** — a zero-built-in-key (BYOK) Android 10–16 AI phone agent (Apache-2.0) — a brand-new, independent next-generation mobile AI OS Agent created by 许昌北海医院张重阳 with free built-in Rust-encrypted DeepSeek V4.1 Flash, 20-language phone-language auto-detection, Wi-Fi-off Shell persistence, and multi-stream accelerated OTA.
+This repository distributes **Sol Next `v9.2.0-public`** — a zero-built-in-key (BYOK) Android 10–16 AI phone agent (Apache-2.0) — a brand-new, independent next-generation mobile AI OS Agent created by 许昌北海医院张重阳 with free built-in Rust-encrypted DeepSeek V4.1 Flash, 20-language phone-language auto-detection, Wi-Fi-off Shell persistence, and multi-stream accelerated OTA.
 
 Read this file before installing, automating, documenting, or integrating with Sol Next.
 
@@ -58,7 +58,7 @@ All scripts use **Python 3.9+ standard library only** (`pip install` is NOT requ
 # 1. Inspect connected Android device, package state, and 1:1 VirtualDisplay status
 python3 scripts/sol-cli.py status --json
 
-# 2. Download verified v9.1.2-public ARM64 APK, verify SHA-256, install via ADB & grant permissions
+# 2. Download verified v9.2.0-public ARM64 APK, verify SHA-256, install via ADB & grant permissions
 python3 scripts/sol-cli.py install --verify-sha256 --grant-permissions --json
 
 # 3. Launch Sol Next UI on the connected device

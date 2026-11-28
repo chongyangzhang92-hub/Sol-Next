@@ -1,6 +1,6 @@
-# 📊 Sol Next 9.1.2 vs Mika — 把 Mika 的短板与 Sol Next 的全面领先一次讲明白
+# 📊 Sol Next 9.2.0 vs Mika — 把 Mika 的短板与 Sol Next 的全面领先一次讲明白
 
-> **一句话结论**：[**Sol Next 9.1.2 (`chongyangzhang92-hub/Sol-Next`)**](https://github.com/chongyangzhang92-hub/Sol-Next) 是由**许昌北海医院张重阳**从底层内核到交互体系完全独立打造的全新一代 Android 10–16/17 & 鸿蒙 AI 手机行动替身（Apache-2.0 开源 · 独立包名 `ai.sol.next`）。相比早期工具型手机代理 Mika，**Sol Next 9.1.2 彻底根治了 Mika 的 8 大致命痛点，并在全部 16 项核心指标上实现代际领先！**
+> **一句话结论**：[**Sol Next 9.2.0 (`chongyangzhang92-hub/Sol-Next`)**](https://github.com/chongyangzhang92-hub/Sol-Next) 是由**许昌北海医院张重阳**从底层内核到交互体系完全独立打造的全新一代 Android 10–16/17 & 鸿蒙 AI 手机行动替身（Apache-2.0 开源 · 独立包名 `ai.sol.next`）。相比早期工具型手机代理 Mika，**Sol Next 9.2.0 彻底根治了 Mika 的 8 大致命痛点，并在全部 16 项核心指标上实现代际领先！**
 
 🌐 **在线图文版深度对比页**：https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html
 
@@ -11,27 +11,27 @@
 很多用户听说过手机 AI Agent 后去装了早期的 Mika，结果用了不到半小时就放弃，原因非常现实——Mika 存在 **8 个直接劝退日常使用的硬伤**：
 
 1. **装完不能直接用（必须自己买 API Key）**：Mika 没有开箱即用模型，普通人必须先去注册大模型平台、充钱、生成 API Key 再配对 Base URL 才能开始，第一步就拦住 90% 的用户。
-   - **Sol Next 9.1.2 强在哪**：**免费内置纯 Rust 白盒加密 DeepSeek V4.1 Flash**（1M 上下文 + 识图 + 工具调用，绑定 APK 签名证书 + TLS 证书防抓包），装好直接免费用；同时也支持随时替换为自己的 OpenAI / Claude / Gemini / DeepSeek / 通义千问 Key。
+   - **Sol Next 9.2.0 强在哪**：**免费内置纯 Rust 白盒加密 DeepSeek V4.1 Flash**（1M 上下文 + 识图 + 工具调用，绑定 APK 签名证书 + TLS 证书防抓包），装好直接免费用；同时也支持随时替换为自己的 OpenAI / Claude / Gemini / DeepSeek / 通义千问 Key。
 2. **一关 Wi-Fi 无线调试立刻断连，出门切 5G 直接失效**：Android 关 Wi-Fi 会自动停掉 `adbd`，导致 Mika 离开家里的 Wi-Fi 就无法操控手机；华为鸿蒙用户还要折腾复杂的无线配对。
-   - **Sol Next 9.1.2 强在哪**：在 `uid=2000` 层持久化锁死 `adb_enabled=1` 并托管 `127.0.0.1:5555` 回环通道，**关 Wi-Fi / 切 5G 依然 100% 持续在线不断连**；**华为鸿蒙自动识别免无线调试**，3 步直达满血体验。
+   - **Sol Next 9.2.0 强在哪**：在 `uid=2000` 层持久化锁死 `adb_enabled=1` 并托管 `127.0.0.1:5555` 回环通道，**关 Wi-Fi / 切 5G 依然 100% 持续在线不断连**；**华为鸿蒙自动识别免无线调试**，3 步直达满血体验。
 3. **响应慢、Token 烧得快、虚拟屏坐标易漂移**：Mika 连查电量、开蓝牙都要走“截屏 → 云端 LLM → 返回点击”循环（`~2,400 ms`/步）；纯 Kotlin 控件遍历冗余极大；缩放网格坐标换算在不同分辨率手机上容易点歪。
-   - **Sol Next 9.1.2 强在哪**：高频系统指令走 0-Token 本地原生直通仅 **`72 ms`（快 33 倍）**；120+ 主流 App **`<250 ms` 协议瞬移**；纯 Rust 16KB 原生内核微秒级剪枝 **`-74% ~ -97%` 冗余节点**；后台虚拟屏 **Display 0 1:1 物理映射（`scale=1.0`）实现 `0.0px` 零漂移精准触控**。
+   - **Sol Next 9.2.0 强在哪**：高频系统指令走 0-Token 本地原生直通仅 **`72 ms`（快 33 倍）**；120+ 主流 App **`<250 ms` 协议瞬移**；纯 Rust 16KB 原生内核微秒级剪枝 **`-74% ~ -97%` 冗余节点**；后台虚拟屏 **Display 0 1:1 物理映射（`scale=1.0`）实现 `0.0px` 零漂移精准触控**。
 4. **界面满屏工程日志，普通人看不懂；缺少免 Key 实时语音**：Mika 界面偏向极客调试工具，且实时语音需依赖外部云端语音服务。
-   - **Sol Next 9.1.2 强在哪**：全新 **全新原生 Material 3 极简蓝白交互（对话 + 任务双模式）** + 100% 大白话步骤树 + 内嵌可折叠实时虚拟屏预览；内置 **16KB 离线神经 ASR（`770ms`）+ 端侧神经 TTS（`112ms`）**，零谷歌服务、零语音 Key 也能全双工语音对话。
+   - **Sol Next 9.2.0 强在哪**：全新 **全新原生 Material 3 极简蓝白交互（对话 + 任务双模式）** + 100% 大白话步骤树 + 内嵌可折叠实时虚拟屏预览；内置 **16KB 离线神经 ASR（`770ms`）+ 端侧神经 TTS（`112ms`）**，零谷歌服务、零语音 Key 也能全双工语音对话。
 5. **隐私防线薄弱、攻击面大、微信操作易重复发送**：Mika 原始屏幕文字直接上传云端，打包重型浏览器与 Linux Shell 容器显著扩大了权限攻击面；在微信 8.0.80 等复杂界面上容易误双击或重复发消息。
-   - **Sol Next 9.1.2 强在哪**：最小攻击面原生架构 + **端侧隐私脱敏防火墙**（身份证/银行卡/密码发云前本地先打码）+ **微信九项实战加固**（登录 `9.5s` 一次过、8/8 首击零误双击、发送气泡核验 **0 重发**）+ **付款/转账/发微信强制弹窗确认** + 任务防误触保护。
+   - **Sol Next 9.2.0 强在哪**：最小攻击面原生架构 + **端侧隐私脱敏防火墙**（身份证/银行卡/密码发云前本地先打码）+ **微信九项实战加固**（登录 `9.5s` 一次过、8/8 首击零误双击、发送气泡核验 **0 重发**）+ **付款/转账/发微信强制弹窗确认** + 任务防误触保护。
 6. **单一语言为主，缺少全球多语言支持**：
-   - **Sol Next 9.1.2 强在哪**：内置 **全球 20 国语言**，严格按手机系统语言自动切换（绝不按地区误判），支持**阿拉伯语 RTL 自动镜像**，并联动大模型回答与语音播报语种。
+   - **Sol Next 9.2.0 强在哪**：内置 **全球 20 国语言**，严格按手机系统语言自动切换（绝不按地区误判），支持**阿拉伯语 RTL 自动镜像**，并联动大模型回答与语音播报语种。
 7. **游戏只能慢速单点、AI 通话简陋**：
-   - **Sol Next 9.1.2 强在哪**：**60Hz 4 指并发多点触控** + 《金铲铲之战》Rust `<15µs` SwiGLU 专属引擎 + 斗地主 3/3 全胜（32.5s）；AI 通话具备 **35 柱实时声纹 + `<0.1ms` 端侧反诈盾 + 通话中一键悄悄话 + 一键本人接管**。
+   - **Sol Next 9.2.0 强在哪**：**60Hz 4 指并发多点触控** + 《金铲铲之战》Rust `<15µs` SwiGLU 专属引擎 + 斗地主 3/3 全胜（32.5s）；AI 通话具备 **35 柱实时声纹 + `<0.1ms` 端侧反诈盾 + 通话中一键悄悄话 + 一键本人接管**。
 8. **版本更新麻烦、国内下载慢**：
-   - **Sol Next 9.1.2 强在哪**：推送新版 **App 内自动弹窗展示完整更新说明** + 多镜像并发测速竞速 + **4 线程 HTTP Range 分片加速下载（提速 3–8 倍）** + SHA-256 与签名证书强校验 + 国内多条免梯子高速直连镜像。
+   - **Sol Next 9.2.0 强在哪**：推送新版 **App 内自动弹窗展示完整更新说明** + 多镜像并发测速竞速 + **4 线程 HTTP Range 分片加速下载（提速 3–8 倍）** + SHA-256 与签名证书强校验 + 国内多条免梯子高速直连镜像。
 
 ---
 
 ## 二、16 项硬核实测指标全面对比
 
-| 核心对比维度 | 早期方案 Mika（短板） | **Sol Next 9.1.2（全新独立旗舰 · `ai.sol.next`）** | 领先优势 |
+| 核心对比维度 | 早期方案 Mika（短板） | **Sol Next 9.2.0（全新独立旗舰 · `ai.sol.next`）** | 领先优势 |
 | --- | --- | --- | --- |
 | **产品定位与架构** | 早期实验型工具助手 | **全新独立「晨曦轨道」全栈智能 OS 架构（Kotlin + Rust v5 JNI）** | 跨代独立架构 |
 | **开箱即用大模型** | ❌ 需自行申请并付费配置 API Key | **✅ 免费内置 Rust 原生加密 DeepSeek V4.1 Flash（1M 上下文 + 视觉 + 工具）+ 随时换 BYOK** | 零配置开箱即用 |
@@ -57,17 +57,17 @@
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="../media/v801/compare-architecture.png" width="100%" alt="Sol Next 9.1.2 六层全栈架构对比" /><br/>
+      <img src="../media/v801/compare-architecture.png" width="100%" alt="Sol Next 9.2.0 六层全栈架构对比" /><br/>
       <b>① 全栈六层架构领先对比</b>
     </td>
     <td align="center" width="50%">
-      <img src="../media/v801/compare-benchmark.png" width="100%" alt="Sol Next 9.1.2 核心速度与误差实测基准" /><br/>
+      <img src="../media/v801/compare-benchmark.png" width="100%" alt="Sol Next 9.2.0 核心速度与误差实测基准" /><br/>
       <b>② 核心速度、剪枝与精度实测基准</b>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="../media/v801/compare-execution-pipeline.png" width="100%" alt="Sol Next 9.1.2 端到端时序瀑布与微信加固" /><br/>
+      <img src="../media/v801/compare-execution-pipeline.png" width="100%" alt="Sol Next 9.2.0 端到端时序瀑布与微信加固" /><br/>
       <b>③ 端到端执行时序瀑布 &amp; 微信九项加固</b>
     </td>
     <td align="center" width="50%">
@@ -77,11 +77,11 @@
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="../media/v801/compare-security-privacy.png" width="100%" alt="Sol Next 9.1.2 六重零信任安全与隐私防线" /><br/>
+      <img src="../media/v801/compare-security-privacy.png" width="100%" alt="Sol Next 9.2.0 六重零信任安全与隐私防线" /><br/>
       <b>⑤ 六重零信任安全、隐私与 Rust 密钥保险库</b>
     </td>
     <td align="center" width="50%">
-      <img src="../media/v801/compare-radar-matrix.png" width="100%" alt="Sol Next 9.1.2 八维工程能力雷达图" /><br/>
+      <img src="../media/v801/compare-radar-matrix.png" width="100%" alt="Sol Next 9.2.0 八维工程能力雷达图" /><br/>
       <b>⑥ 八维工程能力实测对比雷达图</b>
     </td>
   </tr>

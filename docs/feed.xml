@@ -5,16 +5,23 @@
   <link href="https://chongyangzhang92-hub.github.io/Sol-Next/feed.xml" rel="self"/>
   <link href="https://chongyangzhang92-hub.github.io/Sol-Next/"/>
   <id>https://chongyangzhang92-hub.github.io/Sol-Next/</id>
-  <updated>2026-11-28T00:45:00Z</updated>
+  <updated>2026-11-28T04:30:00Z</updated>
   <author>
     <name>Zhang Chongyang (许昌北海医院张重阳)</name>
     <uri>https://github.com/chongyangzhang92-hub</uri>
   </author>
   <entry>
-    <title>Sol Next v9.1.2-public (Build 912) — Material 3 Dual-Mode, On-Device 4-Stage Realtime Voice, Built-In Brave Search &amp; Hands-Free Notification Readout</title>
+    <title>Sol Next v9.2.0-public (Build 920) — 12-Upgrade Apex Execution Kernel, Zero-Anim Toggle, Headset/Car-BT Task Voice Gating, Zero-Lag TextFieldState IME &amp; 3-Tab AI Phone Call Suite</title>
+    <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.2.0-public"/>
+    <id>https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.2.0-public</id>
+    <updated>2026-11-28T04:30:00Z</updated>
+    <summary>Major v9.2.0 upgrade featuring 12 execution-engine improvements (immutable-prefix KV Cache, 11-tool lean core profile, near_text row-anchor disambiguation, hybrid mid-viewport OCR fusion, 5x faster ui_scroll_collect, 40ms fake-search-bar takeover, 0-token popup auto-dismiss, verified Tier-0D RSI replay), dedicated System Zero-Animation toggle, 3-mode Task Voice Broadcast Control (Off / Headset &amp; Car BT / Always), Compose TextFieldState zero-lag IME with IME-aware PiP auto-tucking, complete 3-tab AI Phone Call Suite, and real Photo/Document/Agent/Memory end-to-end integration.</summary>
+  </entry>
+  <entry>
+    <title>Sol Next v9.1.2-public (Build 912) — Material 3 Dual-Mode, Mandatory 2-Stage Onboarding, Built-In Brave Search &amp; On-Device 4-Stage Realtime Voice</title>
     <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.2-public"/>
     <id>https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.2-public</id>
     <updated>2026-11-28T00:45:00Z</updated>
-    <summary>Full native Material 3 Light/Dark dual-mode UI (Chat | Task), built-in DeepSeek Flash &amp; Brave Search real-time web grounding, bundled 4-stage on-device realtime neural voice (GTCRN + Silero VAD v5 + Zipformer-CTC + AISHELL-3 VITS) for Live Voice &amp; AI Phone Calls, hands-free driving Notification Voice Readout with Audio Ducking &amp; OTP redaction, universal free login, Subscription OAuth model login, and OEM Accessibility self-healing.</summary>
+    <summary>Full native Material 3 Light/Dark dual-mode UI (Chat | Task), mandatory 2-stage login and system permission setup gate, built-in DeepSeek Flash &amp; Brave Search, bundled 4-stage on-device neural voice, and hands-free Notification Voice Readout.</summary>
   </entry>
 </feed>
