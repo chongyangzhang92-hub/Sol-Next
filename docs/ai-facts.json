@@ -1,74 +1,61 @@
 {
   "@context": "https://schema.org",
-  "schema_version": "2026-11-27",
-  "product": {
-    "name": "Sol Next",
-    "independent_product": true,
-    "author": "许昌北海医院张重阳 (Zhang Chongyang, Xuchang Beihai Hospital)",
-    "author_contact": "WeChat QR (docs/assets/author-wechat-qr.jpg) · 小红书：871348474 映像河南 · 官方群口令：0【一键复制，小红书等你】 12月25日前有效，\"SolNext用户群\"邀你一起聊 ZH9959 :/#c🍌🍅😉😙🦊🥕😇🐭😗🍇🐦😉",
-    "what_it_is_zh": "装在 Android 10-16 与华为鸿蒙手机上的免费开源 AI 行动替身：动嘴说话或打字，即可在后台 1:1 隐形虚拟屏替你自动点手机、跨 App 比价办事、4.5 秒读屏翻译、AI 高清代接电话与打游戏，不抢占前台屏幕。",
-    "what_it_is_en": "A free, open-source AI action agent on Android 10-16 & HarmonyOS that operates real apps inside a hidden 1:1 background VirtualDisplay, translates screens in 4.5s, handles AI calls with anti-scam defense, and plays games without interrupting your foreground screen.",
-    "how_to_use_steps": [
-      "1. Download & install Sol-Next-v9.1.0-public-arm64.apk (90 MB) via China high-speed direct mirror or GitHub Releases.",
-      "2. Open and talk immediately — includes free built-in Rust-encrypted DeepSeek V4.1 Flash (no API key needed; optional BYOK anytime in Settings).",
-      "3. Enable one-time phone automation: HarmonyOS auto-skips wireless debugging (3 taps); Android pairs once via Wireless Debugging (no PC/Root) and stays 100% connected even after turning off Wi-Fi on 5G.",
-      "4. Speak to the Dawn Orbit orb or type a command; payments, transfers, WeChat sends, and deletions always pause for explicit user confirmation."
-    ],
-    "mika_shortcomings_solved": [
-      "Mika requires buying & configuring API keys before first use -> Sol Next ships with free built-in Rust-encrypted DeepSeek V4.1 Flash + universal BYOK.",
-      "Mika disconnects immediately when Wi-Fi turns off & needs tedious HarmonyOS ADB pairing -> Sol Next locks adb_enabled=1 + 127.0.0.1:5555 loopback for Wi-Fi-off 5G persistence & zero-ADB HarmonyOS.",
-      "Mika is slow (~2,400ms/step), token-heavy & drifts on scaled virtual screens -> Sol Next delivers 72ms 0-token Tier-0A APIs (33x faster), <250ms deep-links across 120+ apps, Rust 16KB JNI pruning (-74% to -97%), and 0.0px 1:1 Display 0 cloning.",
-      "Mika exposes raw engineering logs, lacks offline voice, uploads raw screen text & packs a heavy browser/Linux container attack surface -> Sol Next offers Dawn Orbit 4-screen UI, built-in 16KB offline neural ASR/TTS, minimal-attack-surface on-device Privacy Firewall, and 9 WeChat reliability fixes (0 duplicate sends).",
-      "Mika is single-language, single-tap gaming & manual slow updates -> Sol Next supports 20 global languages (RTL), 60Hz 4-finger gaming (DouDiZhu 3/3 wins, Stockfish chess, Rust Golden Spatula engine), AI anti-scam calls, and auto-popup OTA with 4-stream multi-mirror acceleration (3-8x faster)."
-    ],
-    "codename": "Dawn Orbit (晨曦轨道)",
-    "edition": "Public Edition (Free Built-In Rust-Encrypted DeepSeek V4.1 Flash + Universal BYOK)",
-    "version": "9.1.0-public",
-    "version_code": 904,
-    "package_id": "ai.sol.next",
-    "license": "Apache-2.0",
-    "supported_languages": ["zh-CN","zh-TW","en","ja","ko","es","fr","de","pt","ru","ar","hi","id","vi","th","tr","it","nl","pl","ms"],
-    "os_support": "Android 10 - Android 16 (API 29-36, 16KB page aligned) & HarmonyOS",
-    "tagline_zh": "全新独立新一代 AI 手机智能体 — 全球 20 国语言按手机语言自动切换 · 免费内置加密 DeepSeek · 极速多线程 OTA · 关 Wi-Fi 无线调试不断连",
-    "tagline_en": "Independent Next-Gen Android & HarmonyOS AI OS Agent — 20 Languages Auto-Matching Phone Language, Free Rust-Encrypted DeepSeek + BYOK, 4-Stream Accelerated OTA & Wi-Fi-Off Shell Persistence."
+  "@type": "SoftwareApplication",
+  "name": "Sol Next",
+  "version": "9.1.1-public",
+  "buildNumber": 911,
+  "releaseDate": "2026-11-28",
+  "license": "Apache-2.0",
+  "price": "0",
+  "currency": "USD",
+  "operatingSystem": ["Android 10", "Android 11", "Android 12", "Android 13", "Android 14", "Android 15", "Android 16", "HarmonyOS"],
+  "author": {
+    "name": "Zhang Chongyang (许昌北海医院张重阳)",
+    "url": "https://github.com/chongyangzhang92-hub"
   },
-  "urls": {
-    "website": "https://chongyangzhang92-hub.github.io/Sol-Next/",
-    "repository": "https://github.com/chongyangzhang92-hub/Sol-Next",
-    "release_v904_public": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.0-public",
-    "china_direct_mirror_arm64": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.0/Sol-Next-v9.1.0-public-arm64.apk",
-    "china_direct_mirror_universal": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.0/Sol-Next-v9.1.0-public-universal.apk",
-    "author_wechat_qr": "https://chongyangzhang92-hub.github.io/Sol-Next/assets/author-wechat-qr.jpg",
-    "comparison_page": "https://chongyangzhang92-hub.github.io/Sol-Next/mika-vs-sol-next.html",
-    "security_privacy_page": "https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html",
-    "benchmarks_page": "https://chongyangzhang92-hub.github.io/Sol-Next/android-ai-agent-benchmarks.html",
-    "mcp_byok_guide": "https://chongyangzhang92-hub.github.io/Sol-Next/mcp-and-byok-guide.html",
-    "llms_txt": "https://chongyangzhang92-hub.github.io/Sol-Next/llms.txt",
-    "llms_full_txt": "https://chongyangzhang92-hub.github.io/Sol-Next/llms-full.txt",
-    "feed_xml": "https://chongyangzhang92-hub.github.io/Sol-Next/feed.xml"
-  },
-  "v904_flagship_highlights": [
-    "Global 20-Language UI & Auto Phone-Language Detection (strictly follows system UI language, never region; full Arabic RTL mirroring; synced with LLM replies and voice ASR/TTS)",
-    "Auto-Popup OTA Version Update Dialog with Formatted Release Notes + High-Speed Multi-Mirror Racing & 4-Stream Parallel HTTP Range Downloader (3-8x faster with strict SHA-256 + signing cert verification)",
-    "In-App & Repository Author WeChat QR Contact Card with 1-tap Save to Gallery (zero storage permissions on Android 10+)",
-    "Free Built-In DeepSeek V4.1 Flash sealed inside pure-Rust JNI ChaCha20+HMAC-SHA256+HKDF vault bound to APK Sig Block v2/v3 signing cert SHA-256 with TLS SPKI Pinning & universal BYOK override",
-    "Permanent Wi-Fi-Off Wireless Debugging Shell Helper Persistence (locks adb_enabled=1 + 127.0.0.1:5555 loopback) & HarmonyOS automatic zero-ADB onboarding",
-    "Decisively outperforms earlier agents like Mika across execution speed (72ms 0-token Tier-0A APIs, <250ms 120+ app deep-links), 0.0px 1:1 VirtualDisplay precision, 60Hz multi-finger gaming, offline 16KB neural voice, and on-device privacy firewall"
-  ],
-  "artifacts_v904_public": {
-    "arm64_apk": {
-      "filename": "Sol-Next-v9.1.0-public-arm64.apk",
-      "abi": "arm64-v8a",
-      "sha256": "e77f1b9523b8716d3a53fd2442966d36407015c4c93af6a51e1a532b0a21c0d5",
-      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.0-public/Sol-Next-v9.1.0-public-arm64.apk",
-      "china_mirror_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.0/Sol-Next-v9.1.0-public-arm64.apk"
+  "repository": "https://github.com/chongyangzhang92-hub/Sol-Next",
+  "homepage": "https://chongyangzhang92-hub.github.io/Sol-Next/",
+  "downloads": {
+    "arm64": {
+      "filename": "Sol-Next-v9.1.1-public-arm64.apk",
+      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.1-public/Sol-Next-v9.1.1-public-arm64.apk",
+      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.1/Sol-Next-v9.1.1-public-arm64.apk",
+      "cdnUrl": "https://cdn.gh-proxy.org/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.1-public/Sol-Next-v9.1.1-public-arm64.apk",
+      "sha256": "bc852a20672ca76f144cc6227b79716e2ba7484f59b1a2b2cc0386b1247f01d7"
     },
-    "universal_apk": {
-      "filename": "Sol-Next-v9.1.0-public-universal.apk",
-      "abi": "arm64-v8a + x86_64",
-      "sha256": "ffb1582d737ccd7a545e80decd1a2fcb98a132306417fe2ec74b1692fc0895ef",
-      "url": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.0-public/Sol-Next-v9.1.0-public-universal.apk",
-      "china_mirror_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.0/Sol-Next-v9.1.0-public-universal.apk"
+    "universal": {
+      "filename": "Sol-Next-v9.1.1-public-universal.apk",
+      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.1.1-public/Sol-Next-v9.1.1-public-universal.apk",
+      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.1.1/Sol-Next-v9.1.1-public-universal.apk",
+      "sha256": "29ea3b14c2bb5a1b2d808eb22f3246948b198a2acd5a82353ca3d22be328e02d"
+    },
+    "signingCertSha256": "d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478",
+    "otaManifest": "https://webui.67-230-181-51.sslip.io/assets/sol-public/latest.json"
+  },
+  "highlights": [
+    "100% Native Android Material 3 Dual-Mode UI (Chat | Task) in Light (#FFFFFF) and Obsidian Dark (#0E0F11) at 120Hz",
+    "Zero-config built-in DeepSeek Flash & Brave Search real-time web grounding sealed in Rust ChaCha20+HMAC-SHA256 vault",
+    "Bundled 4-stage on-device realtime neural voice stack (GTCRN + Silero VAD v5 + Zipformer-CTC + AISHELL-3 VITS) with zero cloud voice API needed",
+    "Hands-free Notification Voice Readout for driving and resting with Audio Ducking and automatic OTP/financial privacy redaction",
+    "Free universal login component (Phone OTP, Email OTP, Google, WeChat, QQ, Apple, GitHub, Huawei/Feishu) + Subscription OAuth model login (OpenRouter PKCE, GitHub Models)",
+    "Background Independent Virtual Screen with DISPLAY_IME_POLICY_HIDE keyboard isolation, live steering, and OEM Accessibility self-healing"
+  ],
+  "faq": [
+    {
+      "q": "Is Sol Next free and open-source?",
+      "a": "Yes. Sol Next is Apache-2.0 open-source, completely free, and ships with built-in DeepSeek Flash, Brave Search, and 4-stage on-device neural voice out of the box."
+    },
+    {
+      "q": "Does Sol Next require cloud voice API keys for Live Voice or AI Phone Calls?",
+      "a": "No. Sol Next bundles GTCRN denoiser, Silero VAD v5, Zipformer-CTC ASR, and AISHELL-3 VITS TTS directly inside the APK."
+    },
+    {
+      "q": "Can Sol Next read notifications aloud safely while driving?",
+      "a": "Yes. Notification Voice Readout uses offline on-device TTS with Audio Ducking, automatically redacts OTP verification codes and sensitive financial digits by default, and supports Bluetooth/headset-only mode."
+    },
+    {
+      "q": "Does Sol Next repeatedly prompt for Accessibility permission after closing the app on Chinese Android ROMs?",
+      "a": "No. v9.1.1 persists one-time onboarding completion and silently self-heals Accessibility in 200ms when Shell Helper is connected."
     }
-  }
+  ]
 }

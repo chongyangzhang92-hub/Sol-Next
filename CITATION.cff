@@ -1,40 +1,24 @@
 cff-version: 1.2.0
-title: "Sol Next 9.0.4: Independent Next-Generation Global Voice-First Multimodal Android OS Agent"
-message: "If you reference Sol Next in research, benchmarks, or open-source AI agent directories, please cite it using this metadata."
+title: "Sol Next — Open-Source Android AI Assistant & Autonomous Action Agent"
+message: "If you reference Sol Next in research, benchmarks, or technical articles, please cite it using this metadata."
 type: software
 authors:
-  - alias: chongyangzhang92-hub
-    affiliation: "许昌北海医院 (Xuchang Beihai Hospital)"
-    family-names: Zhang
-    given-names: Chongyang
+  - family-names: "Zhang"
+    given-names: "Chongyang"
+    affiliation: "Xuchang Beihai Hospital (许昌北海医院)"
 repository-code: "https://github.com/chongyangzhang92-hub/Sol-Next"
 url: "https://chongyangzhang92-hub.github.io/Sol-Next/"
-abstract: >-
-  Sol Next 9.0.4 (Dawn Orbit, ai.sol.next, Build 904) is a brand-new, independent,
-  open-source voice+text multimodal Android 10-16/17 & HarmonyOS AI mobile agent.
-  It features global 20-language UI with strict phone-language auto-detection
-  (including Arabic RTL), free built-in DeepSeek V4.1 Flash sealed inside a pure-Rust
-  JNI ChaCha20+HMAC-SHA256+HKDF vault bound to APK Sig Block v2/v3 signing cert
-  SHA-256 with TLS SPKI pinning and universal BYOK override, auto-popup OTA updates
-  with release notes and 4-stream parallel HTTP Range mirror acceleration, Wi-Fi-off
-  persistent Wireless Debugging Shell Helper, built-in 16KB offline neural ASR & 112ms
-  TTS, 72ms Tier-0A native System APIs, 120+ app deep-link teleports, 1:1 physical-DPI
-  background VirtualDisplay, Android 17 Generative UI cards, carrier-grade AI calling,
-  and zero-dependency CLI (--json) + stdio MCP Server integration.
+license: Apache-2.0
+version: "9.1.1-public"
+date-released: "2026-11-28"
 keywords:
   - android-ai-agent
-  - mobile-gui-agent
-  - multimodal-os-agent
+  - mobile-assistant
+  - on-device-voice
+  - material-3
+  - background-virtual-display
+  - brave-search
   - deepseek
-  - phone-use
-  - multilingual-ai-agent
-  - rust-jni
-  - virtual-display
-  - wechat-automation
-  - zero-trust-privacy
-  - byok
-  - mcp-server
-  - llms-txt
-license: Apache-2.0
-version: "9.0.4-public"
-date-released: "2026-11-27"
+  - notification-voice-readout
+  - rust-android
+  - open-source

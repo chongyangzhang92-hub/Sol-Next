@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Sol Next 9.0.4 — 晨曦轨道 · Independent Global 20-Language Android &amp; HarmonyOS AI OS Agent</title>
-  <subtitle>Brand-new independent open-source Android 10–16/17 &amp; HarmonyOS AI Mobile OS Agent by 许昌北海医院张重阳: 20 world languages auto-matching phone language, auto-popup OTA with release notes &amp; 4-stream multi-mirror accelerator, free built-in Rust JNI encrypted DeepSeek V4.1 Flash + universal BYOK, Wi-Fi-off persistent Wireless Debugging, and China direct high-speed mirrors.</subtitle>
-  <link href="https://chongyangzhang92-hub.github.io/Sol-Next/" rel="alternate" type="text/html" />
-  <link href="https://chongyangzhang92-hub.github.io/Sol-Next/feed.xml" rel="self" type="application/atom+xml" />
+  <title>Sol Next Releases — Open-Source Android AI Assistant &amp; Mobile Agent</title>
+  <subtitle>Official releases for Sol Next (Android 10–16 &amp; HarmonyOS)</subtitle>
+  <link href="https://chongyangzhang92-hub.github.io/Sol-Next/feed.xml" rel="self"/>
+  <link href="https://chongyangzhang92-hub.github.io/Sol-Next/"/>
   <id>https://chongyangzhang92-hub.github.io/Sol-Next/</id>
-  <updated>2026-11-27T14:20:00+08:00</updated>
+  <updated>2026-11-28T00:45:00Z</updated>
   <author>
-    <name>许昌北海医院张重阳 (chongyangzhang92-hub)</name>
+    <name>Zhang Chongyang (许昌北海医院张重阳)</name>
     <uri>https://github.com/chongyangzhang92-hub</uri>
   </author>
   <entry>
-    <title>Sol Next v9.0.4 Public (Build 904) — 全球 20 国语言自动切换 + OTA 弹窗版本说明与 4 线程极速加速 + 微信扫码联系作者 + 国内高速镜像</title>
-    <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.4-public" rel="alternate" type="text/html" />
-    <id>tag:github.com,2026-11-27:chongyangzhang92-hub/Sol-Next/v9.0.4-public</id>
-    <published>2026-11-27T14:20:00+08:00</published>
-    <updated>2026-11-27T14:20:00+08:00</updated>
-    <summary type="text">Sol Next v9.0.4 Public (Build 904, package ai.sol.next) delivers global 20-language UI strictly following phone system language (including Arabic RTL), auto-popup OTA version update dialog with formatted release notes, 4-stream parallel HTTP Range + multi-mirror racing download accelerator (with strict SHA-256 and cert verification), built-in author WeChat QR contact card, China direct high-speed download mirrors, and 20-language GitHub homepage &amp; website.</summary>
-  </entry>
-  <entry>
-    <title>Sol Next v9.0.3 Public (Build 903) — 免费内置原生加密 DeepSeek V4.1 Flash + 关 Wi-Fi 无线调试不断连</title>
-    <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.0.3-public" rel="alternate" type="text/html" />
-    <id>tag:github.com,2026-11-27:chongyangzhang92-hub/Sol-Next/v9.0.3-public</id>
-    <published>2026-11-27T13:10:00+08:00</published>
-    <updated>2026-11-27T13:30:00+08:00</updated>
-    <summary type="text">Introduced free built-in DeepSeek V4.1 Flash sealed in pure-Rust JNI ChaCha20+HMAC-SHA256+HKDF vault with APK cert binding and TLS SPKI pinning, plus permanent Wi-Fi-off Wireless Debugging Shell Helper persistence.</summary>
+    <title>Sol Next v9.1.1-public (Build 911) — Material 3 Dual-Mode, On-Device 4-Stage Realtime Voice, Built-In Brave Search &amp; Hands-Free Notification Readout</title>
+    <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.1-public"/>
+    <id>https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.1.1-public</id>
+    <updated>2026-11-28T00:45:00Z</updated>
+    <summary>Full native Material 3 Light/Dark dual-mode UI (Chat | Task), built-in DeepSeek Flash &amp; Brave Search real-time web grounding, bundled 4-stage on-device realtime neural voice (GTCRN + Silero VAD v5 + Zipformer-CTC + AISHELL-3 VITS) for Live Voice &amp; AI Phone Calls, hands-free driving Notification Voice Readout with Audio Ducking &amp; OTP redaction, universal free login, Subscription OAuth model login, and OEM Accessibility self-healing.</summary>
   </entry>
 </feed>
