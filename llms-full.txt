@@ -1,7 +1,7 @@
-# Sol Next — Full Technical & Product Reference (v9.3.0-public, Build 930)
+# Sol Next — Full Technical & Product Reference (v9.3.1-public, Build 931)
 
 ## 1. Executive Summary
-Sol Next is an open-source (Apache-2.0), zero-cost Android & HarmonyOS AI personal assistant and autonomous mobile phone agent created by Zhang Chongyang (许昌北海医院张重阳). Built on a **100% zero-Python Full-Stack Rust 2024** foundation, Sol Next v9.3.0 combines:
+Sol Next is an open-source (Apache-2.0), zero-cost Android & HarmonyOS AI personal assistant and autonomous mobile phone agent created by Zhang Chongyang (许昌北海医院张重阳). Built on a **100% zero-Python Full-Stack Rust 2024** foundation, Sol Next v9.3.1 combines:
 1. A pure native Jetpack Compose Material 3 dual-mode experience (`Chat` + `Task`) with Light (`#FFFFFF`) and Obsidian Dark (`#0E0F11`) themes at up to 120Hz.
 2. Mature cloud account authentication (PBKDF2-HMAC-SHA256 200k-iteration phone/email + password & native Google Sign-In) that automatically unlocks **free built-in DeepSeek** and **Brave Search** real-time web grounding, alongside 1-tap BYOK connection testing and OpenRouter PKCE OAuth.
 3. **2026 SOTA 24kHz On-Device Neural Voice** bundled uncompressed inside the APK (GTCRN denoiser -> Silero VAD v5 -> X-ASR 160ms streaming Zipformer2 Transducer -> Kokoro v1.1 24kHz HD 103-voice bilingual TTS) with zero cloud voice API keys required.
@@ -31,12 +31,12 @@ Bundled directly inside `assets/sol_neural_voice/` (mmap zero-copy `noCompress`)
 - **Android 13 Zero-MotionEvent IME Isolation**: On `SDK_INT <= 33`, virtual-display input bypasses `InputDispatcher` via direct Accessibility `ACTION_SET_TEXT` / `ACTION_CLICK` / `ACTION_IME_ENTER`, preventing main-screen IME collapse.
 - **Quality Gate**: 371/371 automated tests passing (`sol-core` + `app` + `sol-kernel` + `sol-builder`), `:app:lintVitalRelease` clean, 16KB page-aligned.
 
-## 3. Official Downloads & Checksums (v9.3.0-public)
-- Release Page: https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.3.0-public
-- ARM64 APK (386 MB / 404,410,759 bytes): https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-arm64.apk
-  - China Direct Mirror: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.0/Sol-Next-v9.3.0-public-arm64.apk
-  - SHA-256: `92c51afd5f60233bc73b164b291a91334c02beca58953adc614ae76654ddfbc2`
-- Universal APK (424 MB / 444,992,739 bytes): https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-universal.apk
-  - China Direct Mirror: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.0/Sol-Next-v9.3.0-public-universal.apk
-  - SHA-256: `504cc6dcbb52b02dd3ccf3bc12bb59597426079f79c2d6d47dc4803cbfbf0c3a`
+## 3. Official Downloads & Checksums (v9.3.1-public)
+- Release Page: https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.3.1-public
+- ARM64 APK (336 MB / 404,410,759 bytes): https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.1-public/Sol-Next-v9.3.1-public-arm64.apk
+  - China Direct Mirror: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.1/Sol-Next-v9.3.1-public-arm64.apk
+  - SHA-256: `e6a2c8d69909275dd2b255dcdb68fd75107bd471986af52404c9215879e2283c`
+- Universal APK (374 MB / 444,992,739 bytes): https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.1-public/Sol-Next-v9.3.1-public-universal.apk
+  - China Direct Mirror: https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.1/Sol-Next-v9.3.1-public-universal.apk
+  - SHA-256: `32ed3ab9ade612ed2559c7439b77b096c864cd1a2a52debf6eaa7faf6187bd0a`
 - Public OTA Manifest: https://webui.67-230-181-51.sslip.io/assets/sol-public/latest.json

@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Sol Next",
-  "version": "9.3.0-public",
+  "version": "9.3.1-public",
   "buildNumber": 930,
   "releaseDate": "2026-11-28",
   "license": "Apache-2.0",
@@ -26,19 +26,19 @@
   "homepage": "https://chongyangzhang92-hub.github.io/Sol-Next/",
   "downloads": {
     "arm64": {
-      "filename": "Sol-Next-v9.3.0-public-arm64.apk",
-      "sizeBytes": 404410759,
-      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-arm64.apk",
-      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.0/Sol-Next-v9.3.0-public-arm64.apk",
-      "cdnUrl": "https://cdn.gh-proxy.org/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-arm64.apk",
-      "sha256": "92c51afd5f60233bc73b164b291a91334c02beca58953adc614ae76654ddfbc2"
+      "filename": "Sol-Next-v9.3.1-public-arm64.apk",
+      "sizeBytes": 352111080,
+      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.1-public/Sol-Next-v9.3.1-public-arm64.apk",
+      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.1/Sol-Next-v9.3.1-public-arm64.apk",
+      "cdnUrl": "https://cdn.gh-proxy.org/https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.1-public/Sol-Next-v9.3.1-public-arm64.apk",
+      "sha256": "e6a2c8d69909275dd2b255dcdb68fd75107bd471986af52404c9215879e2283c"
     },
     "universal": {
-      "filename": "Sol-Next-v9.3.0-public-universal.apk",
-      "sizeBytes": 444992739,
-      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-universal.apk",
-      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.0/Sol-Next-v9.3.0-public-universal.apk",
-      "sha256": "504cc6dcbb52b02dd3ccf3bc12bb59597426079f79c2d6d47dc4803cbfbf0c3a"
+      "filename": "Sol-Next-v9.3.1-public-universal.apk",
+      "sizeBytes": 392693060,
+      "githubUrl": "https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.1-public/Sol-Next-v9.3.1-public-universal.apk",
+      "chinaDirectUrl": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.1/Sol-Next-v9.3.1-public-universal.apk",
+      "sha256": "32ed3ab9ade612ed2559c7439b77b096c864cd1a2a52debf6eaa7faf6187bd0a"
     },
     "signingCertSha256": "d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478",
     "otaManifest": "https://webui.67-230-181-51.sslip.io/assets/sol-public/latest.json"
@@ -53,16 +53,16 @@
   ],
   "faq": [
     {
-      "q": "Does normal account sign-in include free built-in DeepSeek in Sol Next v9.3.0?",
-      "a": "Yes. v9.3.0 replaces legacy dummy OTP with a full PBKDF2-HMAC-SHA256 cloud account system and native Google Sign-In. Every signed-in account automatically activates free built-in DeepSeek and Brave Search."
+      "q": "Does normal account sign-in include free built-in DeepSeek in Sol Next v9.3.1?",
+      "a": "Yes. v9.3.1 replaces legacy dummy OTP with a full PBKDF2-HMAC-SHA256 cloud account system and native Google Sign-In. Every signed-in account automatically activates free built-in DeepSeek and Brave Search."
     },
     {
-      "q": "Does Sol Next v9.3.0 prevent the virtual display from stealing the keyboard on Android 13?",
+      "q": "Does Sol Next v9.3.1 prevent the virtual display from stealing the keyboard on Android 13?",
       "a": "Yes. On Android 13 (API 33) and below, Sol Next uses direct zero-MotionEvent Accessibility passthrough (ACTION_SET_TEXT / ACTION_CLICK / ACTION_IME_ENTER) so background virtual-display input never steals Display 0 IME focus; Android 14-16 also enforces DISPLAY_IME_POLICY_HIDE."
     },
     {
-      "q": "Why is the v9.3.0 ARM64 APK 386 MB?",
-      "a": "v9.3.0 bundles 2026 SOTA X-ASR 160ms (161 MB) and Kokoro v1.1 24kHz HD 103-voice TTS (200 MB) uncompressed for zero-copy mmap instant startup with zero cloud voice fees."
+      "q": "Why is the v9.3.1 ARM64 APK 336 MB?",
+      "a": "v9.3.1 bundles 2026 SOTA X-ASR 160ms (161 MB) and Kokoro v1.1 24kHz HD 103-voice TTS (200 MB) uncompressed for zero-copy mmap instant startup with zero cloud voice fees."
     },
     {
       "q": "What native compute accelerators does libsol_kernel.so v600 support?",

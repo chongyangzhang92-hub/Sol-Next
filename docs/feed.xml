@@ -11,11 +11,11 @@
     <uri>https://github.com/chongyangzhang92-hub</uri>
   </author>
   <entry>
-    <title>Sol Next v9.3.0-public (Build 930) — Full-Stack Rust 2024 (Zero Python), SOTA 24kHz On-Device Voice (X-ASR 160ms + Kokoro v1.1), ARM64 NEON/SVE2 + Vulkan + NPU Kernel, Android 13 Non-Stealing IME &amp; Mature Cloud Auth with Free DeepSeek</title>
-    <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.3.0-public"/>
-    <id>https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.3.0-public</id>
+    <title>Sol Next v9.3.1-public (Build 931) — Full-Stack Rust 2024 (Zero Python), SOTA 24kHz On-Device Voice (X-ASR 160ms + Kokoro v1.1), ARM64 NEON/SVE2 + Vulkan + NPU Kernel, Android 13 Non-Stealing IME &amp; Mature Cloud Auth with Free DeepSeek</title>
+    <link href="https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.3.1-public"/>
+    <id>https://github.com/chongyangzhang92-hub/Sol-Next/releases/tag/v9.3.1-public</id>
     <updated>2026-11-28T08:05:00Z</updated>
-    <summary>Flagship v9.3.0 release delivering 100% zero-Python Full-Stack Rust 2024 architecture (rust/sol-builder, sol-world-rs 16.7 MB RSS, sol-engine-rs 3.66 MB RSS), 2026 SOTA 24kHz on-device neural voice (X-ASR 160ms RTF 0.20 + Kokoro v1.1 24kHz HD 103 voices RTF 0.701), hand-written ARM64 NEON/DotProd/I8MM/SVE2 inline assembly + Vulkan 1.1 Compute Shaders + NNAPI NPU kernel (libsol_kernel.so v600, up to 6.04x speedup), Android 13 zero-MotionEvent IME isolation, mature PBKDF2-HMAC-SHA256 cloud account center unlocking free built-in DeepSeek, and 371/371 passing tests.</summary>
+    <summary>Flagship v9.3.1 release delivering 100% zero-Python Full-Stack Rust 2024 architecture (rust/sol-builder, sol-world-rs 16.7 MB RSS, sol-engine-rs 3.66 MB RSS), 2026 SOTA 24kHz on-device neural voice (X-ASR 160ms RTF 0.20 + Kokoro v1.1 24kHz HD 103 voices RTF 0.701), hand-written ARM64 NEON/DotProd/I8MM/SVE2 inline assembly + Vulkan 1.1 Compute Shaders + NNAPI NPU kernel (libsol_kernel.so v600, up to 6.04x speedup), Android 13 zero-MotionEvent IME isolation, mature PBKDF2-HMAC-SHA256 cloud account center unlocking free built-in DeepSeek, and 371/371 passing tests.</summary>
   </entry>
   <entry>
     <title>Sol Next v9.2.0-public (Build 920) — 12-Upgrade Apex Execution Kernel, Zero-Anim Toggle, Headset/Car-BT Task Voice Gating, Zero-Lag TextFieldState IME &amp; 3-Tab AI Phone Call Suite</title>

@@ -23,23 +23,23 @@ from typing import Any
 
 PACKAGE_ID = "ai.sol.next"
 MAIN_ACTIVITY = f"{PACKAGE_ID}/ai.sol.next.canvas.SolCanvasActivity"
-RELEASE_TAG = "v9.3.0-public"
+RELEASE_TAG = "v9.3.1-public"
 REPO_SLUG = "chongyangzhang92-hub/Sol-Next"
 
 ARTIFACTS = {
     "arm64": {
-        "filename": "Sol-Next-v9.3.0-public-arm64.apk",
-        "url": f"https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.3.0-public-arm64.apk",
-        "china_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.0/Sol-Next-v9.3.0-public-arm64.apk",
-        "ghfast_url": f"https://ghfast.top/https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.3.0-public-arm64.apk",
-        "sha256": "92c51afd5f60233bc73b164b291a91334c02beca58953adc614ae76654ddfbc2",
+        "filename": "Sol-Next-v9.3.1-public-arm64.apk",
+        "url": f"https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.3.1-public-arm64.apk",
+        "china_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.1/Sol-Next-v9.3.1-public-arm64.apk",
+        "ghfast_url": f"https://ghfast.top/https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.3.1-public-arm64.apk",
+        "sha256": "e6a2c8d69909275dd2b255dcdb68fd75107bd471986af52404c9215879e2283c",
     },
     "universal": {
-        "filename": "Sol-Next-v9.3.0-public-universal.apk",
-        "url": f"https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.3.0-public-universal.apk",
-        "china_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.0/Sol-Next-v9.3.0-public-universal.apk",
-        "ghfast_url": f"https://ghfast.top/https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.3.0-public-universal.apk",
-        "sha256": "504cc6dcbb52b02dd3ccf3bc12bb59597426079f79c2d6d47dc4803cbfbf0c3a",
+        "filename": "Sol-Next-v9.3.1-public-universal.apk",
+        "url": f"https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.3.1-public-universal.apk",
+        "china_url": "https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.1/Sol-Next-v9.3.1-public-universal.apk",
+        "ghfast_url": f"https://ghfast.top/https://github.com/{REPO_SLUG}/releases/download/{RELEASE_TAG}/Sol-Next-v9.3.1-public-universal.apk",
+        "sha256": "32ed3ab9ade612ed2559c7439b77b096c864cd1a2a52debf6eaa7faf6187bd0a",
     },
 }
 
@@ -225,7 +225,7 @@ def cmd_install(args: argparse.Namespace) -> dict[str, Any]:
         "sha256": actual_sha,
         "sha256Verified": (actual_sha == meta["sha256"]) if not args.apk else None,
         "permissionsGrantedCount": len(granted),
-        "nextStep": "Open Sol Next v9.3.0 -> works immediately with free built-in Rust-encrypted DeepSeek V4.1 Flash, or override in Settings with your own BYOK API Key.",
+        "nextStep": "Open Sol Next v9.3.1 -> works immediately with free built-in Rust-encrypted DeepSeek V4.1 Flash, or override in Settings with your own BYOK API Key.",
     }
 
 

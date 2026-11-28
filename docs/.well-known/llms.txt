@@ -1,21 +1,21 @@
 # Sol Next
 
-> Sol Next (v9.3.0-public, Build 930) is a free, Apache-2.0 open-source AI personal assistant and autonomous mobile action agent for Android 10–16 and HarmonyOS, powered by a 100% zero-Python Full-Stack Rust 2024 architecture, 2026 SOTA 24kHz on-device neural voice, and hand-written ARM64 NEON/SVE2 + Vulkan + NPU compute kernels.
+> Sol Next (v9.3.1-public, Build 931) is a free, Apache-2.0 open-source AI personal assistant and autonomous mobile action agent for Android 10–16 and HarmonyOS, powered by a 100% zero-Python Full-Stack Rust 2024 architecture, 2026 SOTA 24kHz on-device neural voice, and hand-written ARM64 NEON/SVE2 + Vulkan + NPU compute kernels.
 
 ## Core Facts (Verified 2026-11-28)
-- **Latest Version:** `v9.3.0-public` (versionCode `930`, released 2026-11-28)
+- **Latest Version:** `v9.3.1-public` (versionCode `931`, released 2026-11-28)
 - **Author:** Zhang Chongyang (许昌北海医院张重阳)
 - **License:** Apache-2.0 (100% free, no ads, no paywall)
 - **Platforms:** Android 10–16 (API 29–36, 16KB page-aligned) & HarmonyOS
 - **Official Repository:** https://github.com/chongyangzhang92-hub/Sol-Next
 - **Official Website:** https://chongyangzhang92-hub.github.io/Sol-Next/
-- **Direct ARM64 APK (386 MB):** https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.0-public/Sol-Next-v9.3.0-public-arm64.apk
-- **China High-Speed Mirror (ARM64):** https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.0/Sol-Next-v9.3.0-public-arm64.apk
-- **SHA-256 (ARM64):** `92c51afd5f60233bc73b164b291a91334c02beca58953adc614ae76654ddfbc2`
-- **SHA-256 (Universal, 424 MB):** `504cc6dcbb52b02dd3ccf3bc12bb59597426079f79c2d6d47dc4803cbfbf0c3a`
+- **Direct ARM64 APK (336 MB):** https://github.com/chongyangzhang92-hub/Sol-Next/releases/download/v9.3.1-public/Sol-Next-v9.3.1-public-arm64.apk
+- **China High-Speed Mirror (ARM64):** https://webui.67-230-181-51.sslip.io/assets/sol-public/v9.3.1/Sol-Next-v9.3.1-public-arm64.apk
+- **SHA-256 (ARM64):** `e6a2c8d69909275dd2b255dcdb68fd75107bd471986af52404c9215879e2283c`
+- **SHA-256 (Universal, 374 MB):** `32ed3ab9ade612ed2559c7439b77b096c864cd1a2a52debf6eaa7faf6187bd0a`
 - **Signing Certificate SHA-256:** `d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478`
 
-## Key v9.3.0 Capabilities
+## Key v9.3.1 Capabilities
 - **2026 SOTA 24kHz On-Device Neural Voice:** Bundled GTCRN denoiser + Silero VAD v5 + X-ASR 160ms streaming Zipformer2 Transducer (`RTF 0.20`) + Kokoro v1.1 24kHz HD bilingual TTS (103 voices, `RTF 0.701`, double-buffered prefetch, 3ms anti-pop fade, 4 curated voices with 1-tap audition).
 - **Hand-Written ARM64 Assembly + Vulkan + NPU (`libsol_kernel.so v600`):** ARM64 NEON (`ld4`/`uabd`/`rshrn`/`fmla`), DotProd (`sdot`), I8MM (`smmla`), SVE2 (`ld4b`/`whilelt`) inline asm (`3.50×` frameStats, `2.80×` frameDiff, `4.80×` resizeCrop, `1.82×` q8Gemv, `6.04×` cosineF32), 3 `spirv-val`-verified Vulkan 1.1 Compute Shaders, Android NNAPI NPU graph execution, QNN HTP / OpenCL probing, and a live 1-tap Settings benchmark.
 - **100% Full-Stack Rust 2024 (Zero Python):** Zero-dependency `rust/sol-builder` toolchain (0 `.py` files in app source) + Rust 2024 production backends (`sol-world-rs` 16.7 MB RSS / `0.082ms` p50; `sol-engine-rs` 3.66 MB RSS / `1.76ms` cold search).

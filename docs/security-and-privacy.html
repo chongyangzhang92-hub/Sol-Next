@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sol Next 9.3.0 安全与隐私白皮书 — 零内置 Key、最小攻击面与数据最小化架构</title>
-  <meta name="description" content="Sol Next 9.3.0 零信任安全与隐私白皮书：详述公开版 100% 零内置 API Key 审计、直连自选模型/本地 Ollama、最小攻击面架构（对比重型浏览器与 Linux 沙箱）、Tier-0A 72ms 本地 0 Token 零上云、Rust v6.00 -97% 剪枝减少屏幕 PII 外传、单帧视觉滑窗、微信单次发送防重发契约与 Android KeyStore 硬件加密。" />
+  <title>Sol Next 9.3.1 安全与隐私白皮书 — 零内置 Key、最小攻击面与数据最小化架构</title>
+  <meta name="description" content="Sol Next 9.3.1 零信任安全与隐私白皮书：详述公开版 100% 零内置 API Key 审计、直连自选模型/本地 Ollama、最小攻击面架构（对比重型浏览器与 Linux 沙箱）、Tier-0A 72ms 本地 0 Token 零上云、Rust v6.00 -97% 剪枝减少屏幕 PII 外传、单帧视觉滑窗、微信单次发送防重发契约与 Android KeyStore 硬件加密。" />
   <meta name="keywords" content="Sol Next Security, Android AI Agent Privacy, Mika Privacy Comparison, Zero API Key Android Agent, BYOK Security Audit, Local Ollama Android Agent, Android KeyStore AI, WeChat Anti-Duplicate Send, Minimal Attack Surface Mobile Agent" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#05070c" />
@@ -12,7 +12,7 @@
   <link rel="alternate" type="text/plain" title="LLMs.txt" href="https://chongyangzhang92-hub.github.io/Sol-Next/llms.txt" />
   <link rel="alternate" type="application/json" title="AI Facts JSON" href="https://chongyangzhang92-hub.github.io/Sol-Next/ai-facts.json" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Sol Next 9.3.0 Security & Privacy Architecture — Zero Built-In Keys, Minimal Attack Surface & Local Encryption" />
+  <meta property="og:title" content="Sol Next 9.3.1 Security & Privacy Architecture — Zero Built-In Keys, Minimal Attack Surface & Local Encryption" />
   <meta property="og:description" content="7 auditable layers of security and privacy protection: zero built-in keys, zero relay servers, on-device Rust PII minimization (-74% to -97%), 72ms local 0-token execution, single-frame vision, anti-duplicate send contract & Android KeyStore hardware crypto." />
   <meta property="og:url" content="https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html" />
   <meta property="og:image" content="https://chongyangzhang92-hub.github.io/Sol-Next/media/v801/compare-security-privacy.png" />
@@ -24,7 +24,7 @@
     "@graph": [
       {
         "@type": "TechArticle",
-        "headline": "Sol Next 9.3.0 Security & Privacy Architecture: Zero Built-In Keys, Minimal Attack Surface & On-Device Data Minimization",
+        "headline": "Sol Next 9.3.1 Security & Privacy Architecture: Zero Built-In Keys, Minimal Attack Surface & On-Device Data Minimization",
         "datePublished": "2026-11-28",
         "dateModified": "2026-11-28",
         "url": "https://chongyangzhang92-hub.github.io/Sol-Next/security-and-privacy.html",
@@ -35,18 +35,18 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "为什么说 Sol Next 9.3.0 在安全与隐私架构上比常规手机 Agent 和重型沙箱方案更安全？",
+            "name": "为什么说 Sol Next 9.3.1 在安全与隐私架构上比常规手机 Agent 和重型沙箱方案更安全？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sol Next 9.3.0 从 6 个可审计维度降低了隐私与安全风险：1) 公开版 100% 零内置密钥与零私有中转（支持直连官方厂商或 100% 离线本地 Ollama/vLLM）；2) 坚持最小攻击面原则，不打包嵌入式桌面浏览器与 Linux Shell 沙箱容器，仅开放 10 个强类型正交 OS 工具；3) 端侧数据最小化，Tier-0A 系统查询 72ms 零上云，Rust v6.00 端侧剪枝 -74%~-97% 减少无关屏幕 PII 上传；4) 单帧按需视觉滑窗，绝不连续录屏上传云端；5) 微信单次发送 4x85ms 气泡核验 + 存疑即停机防误发，付款/转账/删除强制弹窗人工审批；6) Android KeyStore 硬件级 AES-GCM 本地加密个人数字分身与完整 SHA-256 供应链校验。"
+              "text": "Sol Next 9.3.1 从 6 个可审计维度降低了隐私与安全风险：1) 公开版 100% 零内置密钥与零私有中转（支持直连官方厂商或 100% 离线本地 Ollama/vLLM）；2) 坚持最小攻击面原则，不打包嵌入式桌面浏览器与 Linux Shell 沙箱容器，仅开放 10 个强类型正交 OS 工具；3) 端侧数据最小化，Tier-0A 系统查询 72ms 零上云，Rust v6.00 端侧剪枝 -74%~-97% 减少无关屏幕 PII 上传；4) 单帧按需视觉滑窗，绝不连续录屏上传云端；5) 微信单次发送 4x85ms 气泡核验 + 存疑即停机防误发，付款/转账/删除强制弹窗人工审批；6) Android KeyStore 硬件级 AES-GCM 本地加密个人数字分身与完整 SHA-256 供应链校验。"
             }
           },
           {
             "@type": "Question",
-            "name": "How can users independently verify Sol Next 9.3.0 Public Edition has zero embedded API keys?",
+            "name": "How can users independently verify Sol Next 9.3.1 Public Edition has zero embedded API keys?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Download Sol-Next-v9.3.0-public-arm64.apk, verify its SHA-256 digest (92c51afd5f60233bc73b164b291a91334c02beca58953adc614ae76654ddfbc2), and run: unzip -l Sol-Next-v9.3.0-public-arm64.apk | grep sol-models. The output is guaranteed empty."
+              "text": "Download Sol-Next-v9.3.1-public-arm64.apk, verify its SHA-256 digest (e6a2c8d69909275dd2b255dcdb68fd75107bd471986af52404c9215879e2283c), and run: unzip -l Sol-Next-v9.3.1-public-arm64.apk | grep sol-models. The output is guaranteed empty."
             }
           }
         ]
@@ -81,7 +81,7 @@
 <body>
   <div class="wrap">
     <nav>
-      <a class="brand" href="./">✦ Sol Next 9.3.0</a>
+      <a class="brand" href="./">✦ Sol Next 9.3.1</a>
       <div class="nav-links">
         <a href="./">产品官网</a>
         <a href="./mika-vs-sol-next.html">Sol Next vs Mika</a>
@@ -92,14 +92,14 @@
     </nav>
 
     <span class="kicker">ZERO-TRUST SECURITY &amp; PRIVACY WHITEPAPER · 可审计安全隐私架构</span>
-    <h1>Sol Next 9.3.0 安全与隐私架构：零内置密钥、最小攻击面与端侧数据最小化</h1>
+    <h1>Sol Next 9.3.1 安全与隐私架构：零内置密钥、最小攻击面与端侧数据最小化</h1>
     <p class="lead">
-      把手机操作权限交给 AI 智能体时，<strong>速度与精准度之外，隐私边界与防误操作安全是第一生命线</strong>。Sol Next 9.3.0 在设计阶段就采用<strong>零信任 BYOK、最小攻击面、端侧数据剪枝、单帧视觉滑窗、确定性防重发契约与硬件加密</strong>六重纵深防御，让每一项安全承诺都可以被开发者和用户独立验证。
+      把手机操作权限交给 AI 智能体时，<strong>速度与精准度之外，隐私边界与防误操作安全是第一生命线</strong>。Sol Next 9.3.1 在设计阶段就采用<strong>零信任 BYOK、最小攻击面、端侧数据剪枝、单帧视觉滑窗、确定性防重发契约与硬件加密</strong>六重纵深防御，让每一项安全承诺都可以被开发者和用户独立验证。
     </p>
 
     <figure>
-      <a href="media/v801/compare-security-privacy.png" target="_blank"><img src="media/v801/compare-security-privacy.png" alt="Sol Next 9.3.0 六重零信任安全与隐私架构对比图" /></a>
-      <figcaption><strong>Sol Next 9.3.0 零信任隐私与最小攻击面架构对比图</strong>（点击查看 2K 高清原图）。</figcaption>
+      <a href="media/v801/compare-security-privacy.png" target="_blank"><img src="media/v801/compare-security-privacy.png" alt="Sol Next 9.3.1 六重零信任安全与隐私架构对比图" /></a>
+      <figcaption><strong>Sol Next 9.3.1 零信任隐私与最小攻击面架构对比图</strong>（点击查看 2K 高清原图）。</figcaption>
     </figure>
 
     <div class="grid">
@@ -131,17 +131,17 @@
 
     <h2 style="margin:36px 0 10px;font-size:24px">公开版密码学与零密钥独立审计命令</h2>
     <pre># 1. 校验官方 ARM64 APK SHA-256 哈希
-sha256sum Sol-Next-v9.3.0-public-arm64.apk
-# 预期: 92c51afd5f60233bc73b164b291a91334c02beca58953adc614ae76654ddfbc2
+sha256sum Sol-Next-v9.3.1-public-arm64.apk
+# 预期: e6a2c8d69909275dd2b255dcdb68fd75107bd471986af52404c9215879e2283c
 
 # 2. 审计 APK 内不含任何内置 API 密钥凭据文件（预期输出为空）
-unzip -l Sol-Next-v9.3.0-public-arm64.apk | grep sol-models
+unzip -l Sol-Next-v9.3.1-public-arm64.apk | grep sol-models
 
 # 3. 核验 APK 签名证书 SHA-256（与历史公开版完全一致）
 # d7a6fed0ff42843a20329944f2b1741060048610546df6cf2ad8179cfe335478</pre>
 
     <footer>
-      <span>Sol Next 9.3.0 (Build 930) · Apache-2.0 · 全新独立产品 · 作者：许昌北海医院张重阳</span>
+      <span>Sol Next 9.3.1 (Build 931) · Apache-2.0 · 全新独立产品 · 作者：许昌北海医院张重阳</span>
       <span><a href="./">产品官网</a> · <a href="./mika-vs-sol-next.html">Mika 对比页</a> · <a href="./android-ai-agent-benchmarks.html">实测基准</a></span>
     </footer>
   </div>
